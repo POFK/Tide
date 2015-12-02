@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 class Tidels():
     @classmethod
-    def LoadData(self,filename='/home/mtx/data/tidels/0.000den00.bin'):
+    def LoadData(self,filename='/home/mtx/data/tide/0.000den00.bin'):
         f=open(filename,'rb')
         data=f.read()
         f.close()
@@ -17,7 +17,7 @@ N=1024
 L=1.2*10**3   #Mpc
 H=L/1024.
 kf=2*np.pi/L
-data=Tidels.LoadData(filename='/home/mtx/data/tidels/0.000den00.bin')
+data=Tidels.LoadData(filename='/home/mtx/data/tide/0.000den00.bin')
 #########################################################################
 delta_k=np.fft.fftn(data)
 del data
