@@ -18,20 +18,22 @@ L=1.2
 H=L/1024.
 kf=2*np.pi/L
 data=Tidels.LoadData(filename='/home/mtx/data/tidels/0.000den00.bin')
+#########################################################################
 delta_k=np.fft.fftn(data)
 del data
 x=np.arange(1024)
 for i in np.arange(1,1024/2+1):
     x[1024-i]=x[i]
 window_k=np.sinc(np.pi/N*x[:,None,None])*np.sinc(np.pi/N*x[None,:,None])*np.sinc(np.pi/N*x[None,None,:])
-Pk=np.abs(delta_k/window_k)**2
+Pk=(np.abs(delta_k/window_k)**2).reshape(-1)[1:]
 del window_k
 #########################################################################
-k=np.log10(2*np.pi/L*((x[:,None,None]**2+x[None,:,None]**2+x[None,None,:]**2)**(1./2.)))
+k=np.log10(2*np.pi/L*((x[:,None,None]**2+x[None,:,None]**2+x[None,None,:]**2)**(1./2.)).reshape(-1)[1:])
 kmax=k.max()
 kmin=k.min()
 x=np.linspace(kmin,kmax,20)
 dx=x[1]-x[0]
+x=x+dx/2.
 P=[]
 for i in x:
     P.append(Pk[((i-dx/2.)<=k)*(k<(i+dx/2.))].sum()/float(len(Pk[((i-dx/2.)<=k)*(k<(i+dx/2.))])))
