@@ -20,10 +20,10 @@ data=Tidels.LoadData(filename='/home/mtx/data/tide/0.000den00.bin')
 #########################################################################
 delta_k=np.fft.fftn(data)
 del data
-x=np.arange(1024,dtype=np.float16)
+x=np.arange(1024)
 for i in np.arange(1,1024/2+1):
     x[1024-i]=x[i]
-window_k=np.sinc(H/2*x[:,None,None])*np.sinc(H/2*x[None,:,None])*np.sinc(H/2*x[None,None,:])
+window_k=np.sinc(np.pi/N*x[:,None,None])*np.sinc(np.pi/N*x[None,:,None])*np.sinc(np.pi/N*x[None,None,:])
 Pk=(np.abs(delta_k/window_k)**2.)
 del window_k
 #########################################################################
