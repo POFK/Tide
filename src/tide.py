@@ -16,29 +16,28 @@ class Tidels():
 N=1024
 L=1.2*10**3   #Mpc
 H=L/1024.
-kf=2*np.pi/L
 data=Tidels.LoadData(filename='/home/mtx/data/tide/0.000den00.bin')
 #########################################################################
 delta_k=np.fft.fftn(data)
 del data
-x=np.arange(1024)
+x=np.arange(1024,dtype=np.float16)
 for i in np.arange(1,1024/2+1):
     x[1024-i]=x[i]
-window_k=np.sinc(np.pi/N*x[:,None,None])*np.sinc(np.pi/N*x[None,:,None])*np.sinc(np.pi/N*x[None,None,:])
-Pk=(np.abs(delta_k/window_k)**2)
+window_k=np.sinc(H/2*x[:,None,None])*np.sinc(H/2*x[None,:,None])*np.sinc(H/2*x[None,None,:])
+Pk=(np.abs(delta_k/window_k)**2.)
 del window_k
 #########################################################################
-k=((x[:,None,None]**2+x[None,:,None]**2+x[None,None,:]**2)**(1./2.))
-kmax=k.max()
-kmin=1
-x=np.linspace(np.log10(kmin),np.log10(kmax),20,endpoint=True)
+kn=((x[:,None,None]**2.+x[None,:,None]**2.+x[None,None,:]**2.)**(1./2.))
+kn_max=kn.max()
+kn_min=1
+x=np.linspace(np.log10(kn_min),np.log10(kn_max),20,endpoint=True)
 dx=x[1]-x[0]
 P=[]
 for i in x:
-    P.append(Pk[(10**(i-dx/2.)<=k)*(k<10**(i+dx/2.))].sum()/float(len(Pk[(10**(i-dx/2.)<=k)*(k<10**(i+dx/2.))])))
+    P.append(Pk[(10**(i-dx/2.)<kn)*(kn<=10**(i+dx/2.))].sum()/float(len(Pk[(10**(i-dx/2.)<kn)*(kn<=10**(i+dx/2.))])))
 P=L**3./(1024.**6.)*np.array(P)
 x=10**x*2*np.pi/L
-######### save with no log###############
+######### save data with no log###############
 np.savetxt('PS_data',np.c_[x,P])
 
 
