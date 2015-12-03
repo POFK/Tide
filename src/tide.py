@@ -3,7 +3,7 @@
 import struct 
 import numpy as np
 import matplotlib.pyplot as plt
-class Tidels():
+class Tide():
     @classmethod
     def LoadData(self,filename='/home/mtx/data/tide/0.000den00.bin'):
         f=open(filename,'rb')
@@ -16,7 +16,7 @@ class Tidels():
 N=1024
 L=1.2*10**3   #Mpc
 H=L/1024.
-data=Tidels.LoadData(filename='/home/mtx/data/tide/0.000den00.bin')
+data=Tide.LoadData(filename='/home/mtx/data/tide/0.000den00.bin')
 #########################################################################
 delta_k=np.fft.fftn(data)
 del data
@@ -43,5 +43,4 @@ for i in x:
 P=L**3./(1024.**6)*np.array(P)
 k=np.array(k)*2*np.pi/L
 ######### save data with no log###############
-np.savetxt('PS_data_test',np.c_[k,P])
-
+np.savetxt('PS_data',np.c_[k,P])

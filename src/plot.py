@@ -2,7 +2,7 @@
 # coding=utf-8
 import matplotlib.pyplot as plt
 import numpy as np
-data=np.loadtxt('PS_data_test')
+data=np.loadtxt('PS_data')
 data2=np.loadtxt('1.000pk00.dat')
 #data=np.loadtxt('data_nolog')
 plt.loglog(data[:,0],data[:,1],'-bo')
