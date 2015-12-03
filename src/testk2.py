@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 # coding=utf-8
+
+#!/usr/bin/env python
+# coding=utf-8
 import numpy  as np
 from mpi4py import MPI
 import time
@@ -18,8 +21,8 @@ dx=x[1]-x[0]
 P=[]
 k=[]
 i=x[rank]
-#bool=(10**(i-dx/2.)<kn)*(kn<10**(i+dx/2.)) # method 1
-bool=np.abs(kn-10**i)<(10**(dx/2.))       # method 2
+#bool=(10**(i-dx/2.)<kn)*(kn<10**(i+dx/2.))
+bool=np.abs(np.log10(kn)-i)<(dx/2.)
 a=kn[bool].sum()/len(kn[bool])
 b=2*np.pi/1.2/10**3*a
 if rank!=0:
@@ -31,7 +34,7 @@ elif rank==0:
         time.sleep(0.1)
         b2=comm.recv(source=j)
         yyy.append(b2)
-    np.savetxt('K_test2',np.array(yyy))
+    np.savetxt('K_test',np.array(yyy))
 
 
 
