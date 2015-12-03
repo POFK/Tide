@@ -1,8 +1,5 @@
 #!/usr/bin/env python
 # coding=utf-8
-
-#!/usr/bin/env python
-# coding=utf-8
 import numpy  as np
 from mpi4py import MPI
 import time
@@ -13,18 +10,23 @@ rank=comm.Get_rank()
 x=np.arange(1024)
 for i in np.arange(1,1024/2+1):
     x[1024-i]=x[i]
-kn=((x[:,None,None]**2.+x[None,:,None]**2.+x[None,None,:]**2.)**(1./2.))
-kn_max=512.
-kn_min=1.
-x=np.linspace(np.log10(kn_min),np.log10(kn_max),20,endpoint=True)
-dx=x[1]-x[0]
-P=[]
-k=[]
-i=x[rank]
-#bool=(10**(i-dx/2.)<kn)*(kn<10**(i+dx/2.))
-bool=np.abs(np.log10(kn)-i)<(dx/2.)
-a=kn[bool].sum()/len(kn[bool])
-b=2*np.pi/1.2/10**3*a
+
+kmin=1
+kmax=512
+delta=np.log10(kmax)/20.
+Ki=rank*delta
+count=0
+Sk=0
+for i in x:
+    for j in x:
+        for k in x:
+            K=np.sqrt(i**2+j**2+k**2)
+            if K>10**(Ki-delta/2) and K<10**(Ki+delta/2):
+                count++
+                Sk=K+Sk
+Kout=Sk/count
+b=np.array([Kout,count])
+##########################################################################
 if rank!=0:
     comm.send(b,dest=0)
 elif rank==0:
@@ -35,9 +37,3 @@ elif rank==0:
         b2=comm.recv(source=j)
         yyy.append(b2)
     np.savetxt('K_test',np.array(yyy))
-
-
-
-
-
-
