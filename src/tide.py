@@ -23,10 +23,11 @@ del data
 x=np.arange(1024)
 for i in np.arange(1,1024/2+1):
     x[1024-i]=x[i]
-#window_k=np.sinc(np.pi/N*x[:,None,None])*np.sinc(np.pi/N*x[None,:,None])*np.sinc(np.pi/N*x[None,None,:])
-#Pk=(np.abs(delta_k/window_k)**2.)
-#del window_k
-Pk=delta_k
+print x
+window_k=np.sinc(np.pi/N*x[:,None,None])*np.sinc(np.pi/N*x[None,:,None])*np.sinc(np.pi/N*x[None,None,:])
+Pk=(np.abs(delta_k/window_k)**2.)
+del window_k
+#Pk=np.abs(delta_k)**2.
 #########################################################################
 kn=((x[:,None,None]**2.+x[None,:,None]**2.+x[None,None,:]**2.)**(1./2.))
 kn_max=512
@@ -37,13 +38,10 @@ P=[]
 k=[]
 for i in x:
     bool=(10**(i-dx/2.)<kn)*(kn<=10**(i+dx/2.))
-    P.append(Pk[bool].sum()/float(len(Pk[bool])))
-    k.append(kn[bool].sum()/float(len(kn[bool])))
-P=L**3./(1024.**6.)*np.array(P)
-k=10**np.array(k)*2*np.pi/L
+    P.append(Pk[bool].sum()/len(Pk[bool]))
+    k.append(kn[bool].sum()/len(kn[bool]))
+P=L**3./(1024.**6)*np.array(P)
+k=np.array(k)*2*np.pi/L
 ######### save data with no log###############
-np.savetxt('PS_data_noWindow',np.c_[k,P])
-
-
-
+np.savetxt('PS_data_test',np.c_[k,P])
 
