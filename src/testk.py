@@ -17,9 +17,9 @@ x=np.linspace(np.log10(kn_min),np.log10(kn_max),20,endpoint=False)
 dx=x[1]-x[0]
 P=[]
 k=[]
-i=x[rank]
-bool=(10**(i-dx/2.)<kn)*(kn<10**(i+dx/2.)) # method 1
-#bool=np.abs(np.log10(kn)-i)<(dx/2.)         # method 2
+i=x[rank]#+0.5*dx
+#bool=(10**(i-dx/2.)<=kn)*(kn<=10**(i+dx/2.)) # method 1
+bool=((10**x[rank])<=kn)*(kn<(10**(x[rank]+dx)))
 
 a1=kn[bool].sum()
 a2=len(kn[bool])

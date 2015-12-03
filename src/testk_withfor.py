@@ -22,7 +22,7 @@ for i in x:
         for k in x:
             K=np.sqrt(i**2+j**2+k**2)
             if K>10**(Ki-delta/2) and K<10**(Ki+delta/2):
-                count++
+                count=count+1
                 Sk=K+Sk
 Kout=Sk/count
 b=np.array([Kout,count])
@@ -36,4 +36,6 @@ elif rank==0:
         time.sleep(0.1)
         b2=comm.recv(source=j)
         yyy.append(b2)
-    np.savetxt('K_test',np.array(yyy))
+    yyy=np.array(yyy)
+    yyy[:,0]=2*np.pi/(1.2*10**3)*yyy[:,0]
+    np.savetxt('K_test',yyy)
