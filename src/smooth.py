@@ -39,7 +39,7 @@ del delta_k
 smoothed_x=np.fft.ifft(smoothed_k)
 del smoothed_k
 dtype=np.dtype([('smoothed_x','f4')])
-smoothed_x=np.array(smoothed_x,dtype=dtype)
+smoothed_x=np.array(np.abs(smoothed_x),dtype=dtype)
 f=h5py.File('/home/mtx/data/tide/outdata/0.000den00_smooth.hdf5',mode='w')
 f.create_dataset(name='data',data=smoothed_x)
 f.close()
