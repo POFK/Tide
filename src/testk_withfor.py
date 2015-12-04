@@ -20,8 +20,8 @@ Sk=0
 for i in x:
     for j in x:
         for k in x:
-            K=np.sqrt(i**2+j**2+k**2)
-            if K>10**(Ki-delta/2) and K<10**(Ki+delta/2):
+            K=np.sqrt(i*i+j*j+k*k)
+            if K>10**(Ki) and K<10**(Ki+delta):
                 count=count+1
                 Sk=K+Sk
 Kout=Sk/count
@@ -38,4 +38,4 @@ elif rank==0:
         yyy.append(b2)
     yyy=np.array(yyy)
     yyy[:,0]=2*np.pi/(1.2*10**3)*yyy[:,0]
-    np.savetxt('K_test',yyy)
+    np.savetxt('K_test_withFor',yyy)

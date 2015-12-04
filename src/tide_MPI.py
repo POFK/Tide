@@ -29,9 +29,9 @@ class Tide():
         for i in np.arange(1,1024/2+1):
             x[1024-i]=x[i]
         return x
-######################## Load data and Window func#######################
+######################## Load data and Window func #######################
 #if rank==0:
-data=Tide.LoadData(filename='/home/mtx/data/tide/0.000den00.bin')
+data=Tide.LoadData(filename='/home/zhm/tides00/0.000den00.bin')
 x=Tide.GetX()                 #x: 0,1,2,...,512,511,...,2,1
 delta_k=np.abs(np.fft.fftn(data))**2
 del data
@@ -54,7 +54,7 @@ Ln=[]
 MPI_Num=20/size
 for i in range(rank*MPI_Num,(rank+1)*MPI_Num):
     bool=((10**x[i])<=kn)*(kn<(10**(x[i]+dx)))
-    P.append(Pk[bool].sum()/float(len(Pk[bool])))
+    P.append(Pk[bool].sum()/float(len(kn[bool])))
     k.append(kn[bool].sum()/float(len(kn[bool])))
     Ln.append(len(kn[bool]))
 if rank!=0:
