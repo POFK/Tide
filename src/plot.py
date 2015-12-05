@@ -10,7 +10,7 @@ data2=np.loadtxt('1.000pk00.dat')
 #plt.loglog(data[:,0],data[:,1],'-bo')
 #plt.loglog(data2[:,0],data2[:,1],'-ro')
 plt.plot(np.log10(data2[:,0]),np.log10(data2[:,1]),'-or')
-plt.plot(np.log10(data[:,0]),np.log10(data[:,1]/2.7),'-bo')
+plt.plot(np.log10(data[:,0]),np.log10(data[:,1]/(1.2/1.024)**6),'-bo')
 
 plt.show()
 #plt.savefig('ps.png')

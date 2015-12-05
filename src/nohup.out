@@ -1,19 +1,10 @@
 Traceback (most recent call last):
-  File "tide.py", line 34, in <module>
-    np.savetxt('delta_data',delta_k[np.abs(w)<(10**-8)])
-NameError: name 'w' is not defined
+  File "smooth.py", line 39, in <module>
+    print 'delta k:' (np.abs(smoothed_k)-data_S).sum()
+TypeError: 'str' object is not callable
+delta k: 9113912.59172
+delta x:
 Traceback (most recent call last):
-  File "testk_withfor.py", line 27, in <module>
-    Kout=Sk/count
-ZeroDivisionError: integer division or modulo by zero
--------------------------------------------------------
-Primary job  terminated normally, but 1 process returned
-a non-zero exit code.. Per user-direction, the job has been aborted.
--------------------------------------------------------
---------------------------------------------------------------------------
-mpirun detected that one or more processes exited with non-zero status, thus causing
-the job to be terminated. The first process to do so was:
-
-  Process name: [[56727,1],0]
-  Exit code:    1
---------------------------------------------------------------------------
+  File "smooth.py", line 45, in <module>
+    print 'delta x:', (np.abs(smoothed_x)-data_S).sum()
+TypeError: Not implemented for this type

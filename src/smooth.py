@@ -29,17 +29,20 @@ class Tide():
 ######################## Load data and Window func #######################
 #if rank==0:
 data=Tide.LoadData()#filename='/home/zhm/tides00/0.000den00.bin')
+data_S=Tide.LoadData(filename='/home/mtx/data/tide/0.000dens1.25.bin')
 x=Tide.GetX()                 #x: 0,1,2,...,512,511,...,2,1
 delta_k=np.fft.fftn(data)
 del data
 k=(x[:,None,None]**2.+x[None,:,None]**2.+x[None,None,:]**2.)**(1./2.)
 sigma=1.25
 smoothed_k=delta_k*np.exp(-k*k*sigma**2)
+print 'delta k:', (np.abs(smoothed_k)-data_S).sum()
 del delta_k
 smoothed_x=np.fft.ifft(smoothed_k)
 del smoothed_k
 dtype=np.dtype([('smoothed_x','f4')])
 smoothed_x=np.array(np.abs(smoothed_x),dtype=dtype)
+print 'delta x:', (np.abs(smoothed_x)-data_S).sum()
 f=h5py.File('/home/mtx/data/tide/outdata/0.000den00_smooth.hdf5',mode='w')
 f.create_dataset(name='data',data=smoothed_x)
 f.close()
