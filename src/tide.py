@@ -33,13 +33,7 @@ data = Tide.LoadData(filename='/home/zhm/tides01/0.000den00.bin')
 x = Tide.GetX()  # x: 0,1,2,...,512,511,...,2,1
 delta_k = np.fft.fftn(data)
 del data
-window_k = np.sinc(np.pi / N * x[:,
-                                 None,
-                                 None]) * np.sinc(np.pi / N * x[None,
-                                                                :,
-                                                                None]) * np.sinc(np.pi / N * x[None,
-                                                                                               None,
-                                                                                               :])
+window_k = np.sinc(np.pi / N * x[:,None,None]) * np.sinc(np.pi / N * x[None,:,None]) * np.sinc(np.pi / N * x[None,None,:])
 Pk = (np.abs(delta_k) / window_k)**2
 del window_k
 del delta_k
@@ -47,8 +41,7 @@ del delta_k
 #########################################################################
 kn = ((x**2)[:, None, None] +
       (x**2)[None, :, None] +
-      (x**2)[None, None, :])**(1. /
-                               2.)
+      (x**2)[None, None, :])**(1. / 2.)
 kn_max = 512
 kn_min = 1
 x = np.linspace(np.log10(kn_min), np.log10(kn_max), 20, endpoint=False)

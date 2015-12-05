@@ -37,12 +37,14 @@ k=(x[:,None,None]**2.+x[None,:,None]**2.+x[None,None,:]**2.)**(1./2.)
 sigma=1.25
 smoothed_k=delta_k*np.exp(-k*k*sigma**2)
 print 'delta k:', (np.abs(smoothed_k)-data_S).sum()
+print np.abs(smoothed_k[:3,:3,:3]),data_S[:3,:3,:3]
 del delta_k
 smoothed_x=np.fft.ifft(smoothed_k)
+print 'delta x:', (np.abs(smoothed_x)-data_S).sum()
+print np.abs(smoothed_x[:3,:3,:3]),data_S[:3,:3,:3]
 del smoothed_k
 dtype=np.dtype([('smoothed_x','f4')])
 smoothed_x=np.array(np.abs(smoothed_x),dtype=dtype)
-print 'delta x:', (np.abs(smoothed_x)-data_S).sum()
 f=h5py.File('/home/mtx/data/tide/outdata/0.000den00_smooth.hdf5',mode='w')
 f.create_dataset(name='data',data=smoothed_x)
 f.close()
