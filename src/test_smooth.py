@@ -11,4 +11,3 @@ print np.abs((data1-data2).sum())
 =======
 data2=f['data'].value
 print np.abs(data1-data2).sum()
->>>>>>> upstream/master

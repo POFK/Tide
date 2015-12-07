@@ -36,14 +36,14 @@ class Tide():
 # if rank==0:
 data = Tide.LoadData(filename='/home/zhm/tides00/0.000den00.bin')
 x = Tide.GetX()  # x: 0,1,2,...,512,511,...,2,1
-delta_k = np.abs(np.fft.fftn(data))**2
+delta_k = (np.abs(np.fft.fftn(data)))**2
 del data
-window_k = np.sinc(np.pi / N * x[:,None,None]) * np.sinc(np.pi / N * x[None,:,None]) * np.sinc(np.pi / N * x[None,None,:])
+window_k = np.sinc( 1./N* x[:,None,None]) * np.sinc( 1./N * x[None,:,None]) * np.sinc( 1./N * x[None,None,:])
 
-Pk = delta_k / (window_k**2)
+#Pk = delta_k / (window_k**2)
+Pk=delta_k
 del window_k
 del delta_k
-# Pk=np.abs(delta_k)**2.
 #############################################################################
 #Pk = comm.bcast(Pk if rank == 0 else None, root=0)
 kn = (x[:, None, None]**2. +
@@ -71,7 +71,7 @@ elif rank == 0:
         k = k + a1
         P = P + a2
         Ln = Ln + a3
-    P = L**3. / (1024.**6) * np.array(P)
+    P = 1./L**3 * np.array(P)
     k = np.array(k) * 2 * np.pi / L
 ######### save data with no log###############
-    np.savetxt('PS_data', np.c_[k, P, Ln])
+    np.savetxt('PS_data_NW', np.c_[k, P, Ln])

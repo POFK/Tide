@@ -34,14 +34,12 @@ x=Tide.GetX()                 #x: 0,1,2,...,512,511,...,2,1
 delta_k=np.fft.fftn(data)
 del data
 k=(x[:,None,None]**2.+x[None,:,None]**2.+x[None,None,:]**2.)**(1./2.)
+window_k = np.sinc( 1./N* x[:,None,None]) * np.sinc( 1./N * x[None,:,None]) * np.sinc( 1./N * x[None,None,:])
 sigma=1.25
-smoothed_k=delta_k*np.exp(-k*k*sigma**2)
-print 'delta k:', (np.abs(smoothed_k)-data_S).sum()
-print np.abs(smoothed_k[:3,:3,:3]),data_S[:3,:3,:3]
+smoothed_k=(delta_k*np.exp(-k*k*sigma**2))/window_k
 del delta_k
-smoothed_x=np.fft.ifft(smoothed_k)
-print 'delta x:', (np.abs(smoothed_x)-data_S).sum()
-print np.abs(smoothed_x[:3,:3,:3]),data_S[:3,:3,:3]
+smoothed_x=np.fft.ifftn(smoothed_k)
+print 'delta x:', (np.abs(smoothed_x)-data_S)[:5,:5,:5],'\n\n\n'
 del smoothed_k
 dtype=np.dtype([('smoothed_x','f4')])
 smoothed_x=np.array(np.abs(smoothed_x),dtype=dtype)
