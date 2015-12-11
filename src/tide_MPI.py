@@ -35,7 +35,8 @@ class Tide():
 ######################## Load data and Window func #######################
 # if rank==0:
 data = Tide.LoadData(filename='/home/zhm/tides00/0.000den00.bin')
-x = Tide.GetX()  # x: 0,1,2,...,512,511,...,2,1
+#x = Tide.GetX()  # x: 0,1,2,...,512,511,...,2,1
+x=np.fft.fftfreq(N,1./N)
 delta_k = (np.abs(np.fft.fftn(data)))**2
 del data
 window_k = np.sinc( 1./N* x[:,None,None]) * np.sinc( 1./N * x[None,:,None]) * np.sinc( 1./N * x[None,None,:])
