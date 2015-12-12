@@ -65,5 +65,3 @@ class Tide():
         data=np.loadtxt('lcdm_pk.dat')
         f=interpolate.interp1d(data[:,0],data[:,1],kind=3)
         return f
-
-
