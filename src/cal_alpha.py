@@ -15,12 +15,11 @@ D= lambda a: D1(a)/D1(a0)
 F0=lambda x: 1./x**2/H(x)*D(x)
 F1=lambda a: 1./a**3/H(a)*integrate.quad(F0,0,a)[0]
 F=integrate.quad(F1,0,a0)[0]
-print F
 ################## Dsigma(a) ##################
-Htao1 =lambda a: a**2*H(a)*(-3.*H0/(2.*a**4*(Omgm/a**3+Omgla)**0.5)) # partial H(t)
-Dtao1=lambda a: a**2*H(a)*2.5*Omgm/H0*(
-        -3.*H0/(2.*a**4*(Omgm/a**3+Omgla)**0.5)*integrate.quad(lambda x: 1./(x*H(x)/H0)**3,0,a)[0]+H(a)/(a*H(a)/H0)**3
-        )/D1(1.)
-Dsigma0= lambda a: 1./(a**2*H(a))*(H(a0)*D(a)-H(a)*D(a0))/(Htao1(a)*D(a)-H(a)*Dtao1(a))*(D(a)**2)/(a*D(a0))
-Dsigma=integrate.quad(Dsigma0,0,a0)[0]
-print Dsigma
+
+Dsigma=-H(a0)*integrate.quad(lambda x: D(x)**3/x**2/H(x)/(2.5*Omgm*H0**2),0,a0)[0]+integrate.quad(lambda y:(D(y)/D(1))**2/y**2/(2.5*Omgm*H0**2),0,a0)[0]
+#########################alpha beta #############################
+alpha=-Dsigma+F
+beta=F
+print alpha
+print beta
