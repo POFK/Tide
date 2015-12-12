@@ -61,7 +61,7 @@ class Tide():
         Pk = (np.abs(delta_k) / window_k)**2
         return Pk
     @classmethod
-    def Get_wk(self,k):
+    def Get_wk(self):
         alpha=0.000211210262094
         beta=0.000470867426204
         data=np.loadtxt('lcdm_pk.dat')
@@ -70,8 +70,9 @@ class Tide():
         Pkg=interpolate.interp1d(np.log10(data[:,0]),np.log10(data[:,1]),kind=3)
         dPkg=np.gradient(Pkg(x),x[1]-x[0])
         fdPkg=interpolate.interp1d(x,dPkg,kind=3)
-        def fk(k=k):
+        def fk(k):
             s=2*alpha-beta*fdPkg(np.log10(k))
             return s
-        wk=fk(k)/Pk(k)
-        return fk
+        def wk(k):
+            return (fk(k)/Pk(k))**0.5
+        return wk
