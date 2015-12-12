@@ -30,10 +30,10 @@ class Tide():
         return x
 #########################################################################
 data = Tide.LoadData(filename='/home/zhm/tides01/0.000den00.bin')
-x = Tide.GetX()  # x: 0,1,2,...,512,511,...,2,1
+x = np.fft.fftfreq(N,1./N)  # x: 0,1,2,...,512,511,...,2,1
 delta_k = np.fft.fftn(data)
 del data
-window_k = np.sinc(np.pi / N * x[:,None,None]) * np.sinc(np.pi / N * x[None,:,None]) * np.sinc(np.pi / N * x[None,None,:])
+window_k = np.sinc(1. / N * x[:,None,None]) * np.sinc(1. / N * x[None,:,None]) * np.sinc(1. / N * x[None,None,:])
 Pk = (np.abs(delta_k) / window_k)**2
 del window_k
 del delta_k

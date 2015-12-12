@@ -2,7 +2,8 @@
 # coding=utf-8
 import struct
 import numpy as np
-import matplotlib.pyplot as plt
+import scipy.integrate as integrate
+import scipy.interpolate as interpolate
 ####################################################
 N = 1024
 L = 1.2 * 10**3  # Mpc
@@ -31,7 +32,6 @@ class Tide():
     @classmethod
     def Get_Alpha_Beta(self):
         '''return alpha,beta'''
-        import scipy.integrate as integrate
         ################## par  ##################
         a0 = 1.
         H0 = 67.8 # km/s/MPc
@@ -53,3 +53,17 @@ class Tide():
         alpha=-Dsigma+F
         beta=F
         return (alpha,beta)
+    @classmethod
+    def PowerSpectrum(self,data):
+        x = np.fft.fftfreq(N,1./N)  # x: 0,1,2,...,512,511,...,2,1
+        delta_k = np.fft.fftn(data)
+        window_k = np.sinc(1. / N * x[:,None,None]) * np.sinc(1. / N * x[None,:,None]) * np.sinc(1. / N * x[None,None,:])
+        Pk = (np.abs(delta_k) / window_k)**2
+        return Pk
+    @classmethod
+    def Get_fk(self):
+        data=np.loadtxt('lcdm_pk.dat')
+        f=interpolate.interp1d(data[:,0],data[:,1],kind=3)
+        return f
+
+
