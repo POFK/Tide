@@ -55,15 +55,25 @@ class Tide():
         return (alpha,beta)
     @classmethod
     def PowerSpectrum(self,data):
-        x = np.fft.fftfreq(N,1./N)  # x: 0,1,2,...,512,511,...,2,1
+        x = np.fft.fftfreq(N,1./N)  # x: 0,1,2,...,512,-511,...,-2,-1
         delta_k = np.fft.fftn(data)
         window_k = np.sinc(1. / N * x[:,None,None]) * np.sinc(1. / N * x[None,:,None]) * np.sinc(1. / N * x[None,None,:])
         Pk = (np.abs(delta_k) / window_k)**2
         return Pk
     @classmethod
-    def Get_fk(self):
+    def Get_wk(self,k):
+        alpha=0.000211210262094
+        beta=0.000470867426204
         data=np.loadtxt('lcdm_pk.dat')
-        f=interpolate.interp1d(data[:,0],data[:,1],kind=3)
-        return f
+        x=np.linspace(np.log10(data[:,0].min()),np.log10(data[:,0].max()),1000)
+        Pk=interpolate.interp1d(data[:,0],data[:,1],kind=3)
+        Pkg=interpolate.interp1d(np.log10(data[:,0]),np.log10(data[:,1]),kind=3)
+        dPkg=np.gradient(Pkg(x),x[1]-x[0])
+        fdPkg=interpolate.interp1d(x,dPkg,kind=3)
+        def fk(k=k):
+            s=2*alpha-beta*fdPkg(np.log10(k))
+            return s
+        wk=fk(k)/Pk(k)
+        return wk
 
 

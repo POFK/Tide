@@ -3,6 +3,7 @@
 import scipy.integrate as integrate
 import scipy.interpolate as interpolate
 import numpy as np
+import matplotlib.pyplot as plt
 ################## par  ##################
 a0 = 1.
 H0 = 67.8 # km/s/MPc
@@ -25,4 +26,15 @@ alpha=-Dsigma+F
 beta=F
 ######################## interpolate ###############################
 data=np.loadtxt('lcdm_pk.dat')
-f=interpolate.interp1d(data[:,0],data[:,1],kind=3)
+a=np.linspace(np.log10(data[:,0].min()),np.log10(data[:,0].max()),1000)
+
+from TIDES import *
+Pk,Pkg=Tide.Get_fk()
+dPkg=np.gradient(Pkg(a),a[1]-a[0])
+fdPkg=interpolate.interp1d(a,dPkg,kind=3)
+def fk(k):
+    s=2*alpha-beta*fdPkg(np.log10(k))
+    return s
+print alpha
+print beta
+
