@@ -41,8 +41,7 @@ delta_k = (np.abs(np.fft.fftn(data)))**2
 del data
 window_k = np.sinc( 1./N* x[:,None,None]) * np.sinc( 1./N * x[None,:,None]) * np.sinc( 1./N * x[None,None,:])
 
-#Pk = delta_k / (window_k**2)
-Pk=delta_k
+Pk = delta_k / (window_k**2)
 del window_k
 del delta_k
 #############################################################################
