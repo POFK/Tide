@@ -65,6 +65,7 @@ class Tide():
         alpha=0.000211210262094
         beta=0.000470867426204
         data=np.loadtxt('lcdm_pk.dat')
+<<<<<<< HEAD
         x=np.linspace(np.log10(data[:,0].min()),np.log10(data[:,0].max()),1000)
         Pk=interpolate.interp1d(data[:,0],data[:,1],kind=3)
         Pkg=interpolate.interp1d(np.log10(data[:,0]),np.log10(data[:,1]),kind=3)
@@ -77,3 +78,7 @@ class Tide():
         return wk
 
 
+=======
+        f=interpolate.interp1d(data[:,0],data[:,1],kind=3)
+        return f
+>>>>>>> 415f0a6a10b234eeff52629c0c8376d71ab13159
