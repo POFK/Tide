@@ -25,11 +25,11 @@ W[0,0,0]=0
 delta_gk_wx=delta_gk*W*1j*(Kx[:,None,None]+zero[None,:,None]+zero[None,None,:])
 del K
 dtype=np.dtype([('partialX_delta','f4')])
-#result=np.array(np.fft.ifftn(delta_gk_wx).real,dtype=dtype)
-#del delta_gk_wx
-#f=h5py.File('/home/mtx/data/tide/outdata/0.000den00_wdensgx.hdf5',mode='w')
-#f.create_dataset(name='data',data=result)
-#f.close()
+result=np.array(np.fft.ifftn(delta_gk_wx).real,dtype=dtype)
+del delta_gk_wx
+f=h5py.File('/home/mtx/data/tide/outdata/0.000den00_wdensgx.hdf5',mode='w')
+f.create_dataset(name='data',data=result)
+f.close()
 ############### delta_g^y #############################
 delta_gk_wy=delta_gk*W*1j*(Kx[None,:,None]+zero[:,None,None]+zero[None,None,:])
 result=np.array(np.fft.ifftn(delta_gk_wy).real,dtype=dtype)
