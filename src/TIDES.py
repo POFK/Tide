@@ -67,6 +67,7 @@ class Tide():
         Omgm = 0.049+0.259
         Omgla = 0.692'''
         H0=67.8
+        Q=0.1681732
         alpha=0.000211210262094*H0**2
         beta=0.000470867426204*H0**2
         data=np.loadtxt('lcdm_pk.dat')
@@ -79,5 +80,6 @@ class Tide():
             s=2*alpha-beta*fdPkg(np.log10(k))
             return s
         def wk(k):
-            return (fk(k)/Pk(k))**0.5/k
+#           return (fk(k)/Pk(k))**0.5/k
+            return (fk(k)/Pk(k)/np.sqrt(Q))**0.5/k
         return wk

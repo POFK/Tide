@@ -4,6 +4,7 @@ import struct
 from mpi4py import MPI
 import numpy as np
 import matplotlib.pyplot as plt
+'''It's ok'''
 ####################################################
 N = 1024
 L = 1.2 * 10**3  # Mpc
