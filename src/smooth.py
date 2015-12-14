@@ -41,11 +41,11 @@ sigma=1.25
 smoothed_k=(delta_k*np.exp(-0.5*(Kf*Kf)*k*k*sigma**2))/window_k
 del delta_k
 smoothed_x=np.fft.ifftn(smoothed_k)
-print 'smooth_delta x(with Kf):', (np.abs(smoothed_x)-data_S)[:5,:5,:5],'\n\n\n'
-print '\n\n\n',np.abs(np.abs(smoothed_x)-data_S).sum()
+#print 'smooth_delta x(with Kf):', (np.abs(smoothed_x)-data_S)[:5,:5,:5],'\n\n\n'
+#print '\n\n\n',np.abs(np.abs(smoothed_x)-data_S).sum()
 del smoothed_k
 dtype=np.dtype([('smoothed_x','f4')])
-smoothed_x=np.array(np.log10(np.abs(smoothed_x)),dtype=dtype)
+smoothed_x=np.array(np.log(np.abs(smoothed_x)),dtype=dtype)
 f=h5py.File('/home/mtx/data/tide/outdata/0.000den00_smoothg.hdf5',mode='w')
 f.create_dataset(name='data',data=smoothed_x)
 f.close()

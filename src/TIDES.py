@@ -81,5 +81,5 @@ class Tide():
             return s
         def wk(k):
 #           return (fk(k)/Pk(k))**0.5/k
-            return (fk(k)/Pk(k)/np.sqrt(Q))**0.5/k
+            return (fk(k)/Pk(k)/Q)**0.5/k
         return wk

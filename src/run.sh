@@ -1,5 +1,5 @@
 #!/bin/bash
-sleep 40m
-nohup python cal_gamma.py &
-sleep 80m
-nohup python cal_cappa.py &
+#sleep 40m
+python delta_w.py
+python cal_gamma.py
+python cal_kappa.py
