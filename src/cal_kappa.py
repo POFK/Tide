@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python
 # coding=utf-8
 import h5py
@@ -23,9 +22,9 @@ zero=np.zeros_like(Kx)
 k1=Kx[:,None,None]+zero[None,:,None]+zero[None,None,:]
 k2=Kx[None,:,None]+zero[:,None,None]+zero[None,None,:]
 S=k1**2+k2**2
+
 S[0,0,:]=np.ones_like(S[0,0,:])
-kappa_2dk=1./S*(np.subtract(k1**2,k2**2)*gamma1_k+2*k1*k2*gamma2_k)
-kappa_3dk=2*(Kx[:,None,None]**2+Kx[None,:,None]**2+Kx[None,None,:]**2)/(3*S)**2*kappa_2d
+kappa_3dk=2*(Kx[:,None,None]**2+Kx[None,:,None]**2+Kx[None,None,:]**2)/(S**2)*((k1**2-k2**2)*gamma1_k+2*k1*k2*gamma2_k)
 del S
 ############################## save data ##############################
 kappa_3dx=np.fft.ifftn(kappa_3dk).real

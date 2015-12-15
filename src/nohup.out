@@ -1,9 +1,0 @@
-/home/mtx/github/Tide/src/TIDES.py:84: RuntimeWarning: invalid value encountered in sqrt
-  return (fk(k)/Pk(k)/Q)**0.5/k
-(1024, 1024, 1024)
-deltagx is ok
-deltagy is ok
-  File "cal_kappa.py", line 26
-    kappa_3d=2*(Kx[:,None,None]**2+Kx[None,:,None]**2+Kx[None,None,:]**2)/(3*S)**2)*kappa_2d
-                                                                                  ^
-SyntaxError: invalid syntax

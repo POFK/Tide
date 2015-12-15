@@ -75,4 +75,4 @@ elif rank == 0:
     P = 1./L**3 * np.array(P)
     k = np.array(k) * 2 * np.pi / L
 ######### save data with no log###############
-    np.savetxt('PS_data_NW', np.c_[k, P, Ln])
+    np.savetxt('PS_data', np.c_[k, P, Ln])

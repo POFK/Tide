@@ -54,11 +54,14 @@ class Tide():
         beta=F
         return (alpha,beta)
     @classmethod
-    def PowerSpectrum(self,data):
+    def AutoPowerSpectrum(self,data,window=True):
         x = np.fft.fftfreq(N,1./N)  # x: 0,1,2,...,512,-511,...,-2,-1
         delta_k = np.fft.fftn(data)
         window_k = np.sinc(1. / N * x[:,None,None]) * np.sinc(1. / N * x[None,:,None]) * np.sinc(1. / N * x[None,None,:])
-        Pk = (np.abs(delta_k) / window_k)**2
+        if window==True:
+            Pk = (np.abs(delta_k) / window_k)**2
+        else :
+            Pk=np.abs(delta_k)**2
         return Pk
     @classmethod
     def Get_wk(self):
