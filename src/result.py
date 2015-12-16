@@ -3,12 +3,17 @@
 import numpy as np
 from TIDES import *
 import h5py
+from mpi4py import MPI
 '''get kappa(kv,kp),b,w, and get kappa(x)'''
 N=1024
 L=1.2*10**3
 #f=h5py.File('/home/mtx/data/tide/outdata/0.000den00_wkappa3d_x.hdf5')
 #kappa3dx=np.array(f['data'].value,dtype=np.float16)
 #f.close()
+################################################################################
+comm = MPI.COMM_WORLD
+size = comm.Get_size()
+rank = comm.Get_rank()
 ################################################################################
 bins=10
 x=np.fft.fftfreq(N,1./N)

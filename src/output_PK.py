@@ -6,7 +6,7 @@ from TIDES import *
 N=1024.
 L=1.2*10**3
 f=h5py.File('/home/mtx/data/tide/outdata/0.000den00_wkappa3d_x.hdf5')
-kappa3dx=np.array(f['data'].value,dtype=np.float16)
+kappa3dx=np.array(f['data'].value,dtype=np.float)
 f.close()
 deltax=Tide.LoadData(filename='/home/mtx/data/tide/0.000den00.bin')
 kappa3dk=np.fft.fftn(kappa3dx)

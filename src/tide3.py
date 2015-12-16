@@ -13,6 +13,11 @@ x = np.fft.fftfreq(N,1./N)  # x: 0,1,2,...,512,511,...,2,1
 ############################################################
 #data = Tide.LoadData(filename='/home/zhm/tides00/0.000den00.bin')
 #Pk=Tide.AutoPowerSpectrum(data,window=True)
+#dtype=np.dtype([('Pk','f4')])
+#result=np.array(Pk,dtype=dtype)
+#f=h5py.File('/home/mtx/data/tide/outdata/0.000den00_Pk_delta.hdf5',mode='w')
+#f.create_dataset(name='data',data=result)
+#f.close()
 ############################################################
 f=h5py.File('/home/mtx/data/tide/outdata/0.000den00_Pk_delta.hdf5')
 Pk=np.array(f['data'].value,dtype=np.float)
@@ -32,7 +37,7 @@ n,bin1=np.histogram(kn,bins=10**x)
 k,bin2=np.histogram(kn,bins=10**x,weights=kn)
 P,bin3=np.histogram(kn,bins=10**x,weights=Pk)
 k=np.pi*2*k/L/n
-P=P/n/L**3
+P=P/n#/L**3
 ######### save data with no log###############
 np.savetxt('PS_data_with_histogram', np.c_[k, P, n])
 #############################plot###############################
