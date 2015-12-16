@@ -15,15 +15,15 @@ rank = comm.Get_rank()
 if rank == 0 :
     f=h5py.File('/home/mtx/data/tide/outdata/0.000den00_Pk_delta.hdf5')
     Pk_d=f['data'].value
-    Pk_d=deltak.reshape(8*size,-1)
+    Pk_d=Pk_d.reshape(8*size,-1)
     f.close()
     f=h5py.File('/home/mtx/data/tide/outdata/0.000den00_Pk_kappa_delta.hdf5')
     Pk_kd=f['data'].value
-    Pk_kd=deltak.reshape(8*size,-1)
+    Pk_kd=Pk_kd.reshape(8*size,-1)
     f.close()
     f=h5py.File('/home/mtx/data/tide/outdata/0.000den00_Pk_kappa.hdf5')
     Pk_k=f['data'].value
-    Pk_k=deltak.reshape(8*size,-1)
+    Pk_k=Pk_k.reshape(8*size,-1)
     f.close()
 #################################################################################
 ############################################################
@@ -45,7 +45,11 @@ bins=10
 bin=np.linspace(0,np.log10(512),bins,endpoint=False)
 dbin=bin[1]-bin[0]
 P_deltak=[]
-k=[]
+Pk_d1=[]
+Pk_kd1=[]
+Pk_k1=[]
+KV1=[]
+KP1=[]
 for i in range(8):
     Pk_d1.append(comm.scatter(Pk_d[i::8],root=0))
     Pk_kd1.append(comm.scatter(Pk_kd[i::8],root=0))
@@ -76,14 +80,14 @@ for i in range(bins):
     for j in range(bins):
         if rank==0:
             if i+j==0:
-                bool1=(10**bin[i]<=k)*(k<(10**(bin[i]+dbin)))
-                bool2=(10**bin[i]<=k)*(k<(10**(bin[i]+dbin)))
+                bool1=(10**bin[i]<=KV1)*(KV1<(10**(bin[i]+dbin)))
+                bool2=(10**bin[i]<=KP1)*(KP1<(10**(bin[i]+dbin)))
                 bool=bool1*bool2
                 bool[0,0]=False
                 print bool.shape
             else :
-                bool1=(10**bin[i]<=k)*(k<(10**(bin[i]+dbin)))
-                bool2=(10**bin[i]<=k)*(k<(10**(bin[i]+dbin)))
+                bool1=(10**bin[i]<=KV1)*(KV1<(10**(bin[i]+dbin)))
+                bool2=(10**bin[i]<=KP1)*(KP1<(10**(bin[i]+dbin)))
                 bool=bool1*bool2
             kn[i,j]=len(Pk_d1[bool])
             pk1[i,j]=Pk_d1[bool].sum()
@@ -101,9 +105,9 @@ if rank==0:
     b=pk2/pk1
     Pn=pk3-b**2*pk1
     W=pk1/(pk1+Pn/(b**2))
-    np.savetxt('result_b',b)
-    np.savetxt('result_Pn',Pn)
-    np.savetxt('result_W',W)
+    np.savetxt('/home/mtx/data/tide/outdata/result_b',b)
+    np.savetxt('/home/mtx/data/tide/outdata/result_Pn',Pn)
+    np.savetxt('/home/mtx/data/tide/outdata/result_W',W)
 ################################################################################
 b,W,Pn = comm.bcast([b,W,Pn] if rank == 0 else None, root = 0)
 ################################################################################
@@ -122,13 +126,13 @@ for i in range(bins):
     for j in range(bins):
         if rank==0:
             if i+j==0:
-                bool1=(10**bin[i]<=k)*(k<(10**(bin[i]+dbin)))
-                bool2=(10**bin[i]<=k)*(k<(10**(bin[i]+dbin)))
+                bool1=(10**bin[i]<=KV1)*(KV1<(10**(bin[i]+dbin)))
+                bool2=(10**bin[i]<=KP1)*(KP1<(10**(bin[i]+dbin)))
                 bool=bool1*bool2
                 bool[0,0]=False
             else :
-                bool1=(10**bin[i]<=k)*(k<(10**(bin[i]+dbin)))
-                bool2=(10**bin[i]<=k)*(k<(10**(bin[i]+dbin)))
+                bool1=(10**bin[i]<=KV1)*(KV1<(10**(bin[i]+dbin)))
+                bool2=(10**bin[i]<=KP1)*(KP1<(10**(bin[i]+dbin)))
                 bool=bool1*bool2
             kappa_k=kappa_k[bool]/b[i,j]*W[i,j]
 kappa_k=kappa_k.reshape(-1)
@@ -147,7 +151,7 @@ if rank==0:
     result=np.fft.ifftn(result).real
 
     dtype=np.dtype([('kappa','f4')])
-    result=np.array(result),dtype=dtype)
+    result=np.array(result,dtype=dtype)
     f=h5py.File('/home/mtx/data/tide/outdata/0.000den00_result_kappa.hdf5',mode='w')
     f.create_dataset(name='data',data=result)
     f.close()
