@@ -13,12 +13,11 @@ size = comm.Get_size()
 rank = comm.Get_rank()
 ########################## Load data ############################################
 if rank == 0 :
-    f=h5py.File('/home/mtx/data/tide/outdata/0.000den00_Pk_delta.hdf5')
+    f=h5py.File('/home/mtx/data/tide/outdata/0.000den00_Pk_kappa.hdf5')
     Pk_d=f['data'].value
     Pk_d=Pk_d.reshape(8*size,-1)
     f.close()
 #################################################################################
-############################################################
     x=np.fft.fftfreq(N,1./N)
     K = ((x**2)[:, None, None] +(x**2)[None, :, None] +(x**2)[None, None, :])**(1. / 2.)
     K=K.reshape(8*size,-1)
@@ -65,4 +64,4 @@ if rank==0:
     n=n_1
     kx=kx_1*np.pi*2/L/n
     Pk=Pk_1/n
-    np.savetxt('PS_test_mpi_bin1d',np.c_[kx,Pk,n])
+    np.savetxt('PS_Pkappa',np.c_[kx,Pk,n])

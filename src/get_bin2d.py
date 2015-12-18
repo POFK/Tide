@@ -78,8 +78,8 @@ pk3=np.zeros([bins,bins])  #Pk_k1
 kn=np.zeros([bins,bins])
 for i in range(bins):
     for j in range(bins):
-        bool1=(10**bin[i]<=KV1)*(KV1<(10**(bin[i]+dbin)))
-        bool2=(10**bin[j]<=KP1)*(KP1<(10**(bin[j]+dbin)))
+        bool1=(10**bin[j]<=KV1)*(KV1<(10**(bin[j]+dbin)))
+        bool2=(10**bin[i]<=KP1)*(KP1<(10**(bin[i]+dbin)))
         bool=bool1*bool2
         if i+j==0:
             if rank==0:
@@ -95,7 +95,6 @@ kn=comm.reduce(kn,root=0)
 pk1=comm.reduce(pk1,root=0)#Pk_d
 pk2=comm.reduce(pk2,root=0)#Pk_kd
 pk3=comm.reduce(pk3,root=0)#Pk_k
-
 ####################################################################################################
 if rank==0:
     b=pk2/pk1
@@ -120,8 +119,8 @@ if rank==0:
 #kappa_k=np.array(kappa_k)
 #for i in range(bins):
 #    for j in range(bins):
-#        bool1=(10**bin[i]<=KV1)*(KV1<(10**(bin[i]+dbin)))
-#        bool2=(10**bin[j]<=KP1)*(KP1<(10**(bin[j]+dbin)))
+#        bool1=(10**bin[j]<=KV1)*(KV1<(10**(bin[j]+dbin)))
+#        bool2=(10**bin[i]<=KP1)*(KP1<(10**(bin[i]+dbin)))
 #        bool=bool1*bool2
 #        if i+j==0:
 #            if rank==0:
