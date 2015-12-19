@@ -41,9 +41,16 @@ else :
     KP=[]
     kappak=[]
 ################################################################################
+#bins=10
+#bin=np.linspace(0,np.log10(512),bins,endpoint=False)
+#dbin=bin[1]-bin[0]
 bins=10
-bin=np.linspace(0,np.log10(512),bins,endpoint=False)
-dbin=bin[1]-bin[0]
+binlog=np.linspace(0,np.log10(512),bins,endpoint=False)
+dbinlog=binlog[2]-binlog[1]
+binlog=np.hstack((binlog,binlog[-1]+dbinlog))
+bin=10**binlog
+bin[0]=0
+################################################################################
 P_deltak=[]
 Pk_d1=[]
 Pk_kd1=[]
@@ -78,8 +85,8 @@ pk3=np.zeros([bins,bins])  #Pk_k1
 kn=np.zeros([bins,bins])
 for i in range(bins):
     for j in range(bins):
-        bool1=(10**bin[j]<=KV1)*(KV1<(10**(bin[j]+dbin)))
-        bool2=(10**bin[i]<=KP1)*(KP1<(10**(bin[i]+dbin)))
+        bool1=(bin[j]<=KV1)*(KV1<bin[j+1])
+        bool2=(bin[i]<=KP1)*(KP1<bin[i+1])
         bool=bool1*bool2
         if i+j==0:
             if rank==0:
@@ -88,7 +95,6 @@ for i in range(bins):
         pk1[i,j]=Pk_d1[bool].sum()
         pk2[i,j]=Pk_kd1[bool].sum()
         pk3[i,j]=Pk_k1[bool].sum()
-print kn
 
 ####################################################################################################
 kn=comm.reduce(kn,root=0)
@@ -100,6 +106,8 @@ if rank==0:
     b=pk2/pk1
     Pn=pk3-b**2*pk1
     W=pk1/(pk1+Pn/(b**2))
+    Pd=pk1/kn
+    np.savetxt('/home/mtx/data/tide/outdata/result_Pd',Pd)
     np.savetxt('/home/mtx/data/tide/outdata/result_b',b)
     np.savetxt('/home/mtx/data/tide/outdata/result_Pn',Pn)
     np.savetxt('/home/mtx/data/tide/outdata/result_W',W)

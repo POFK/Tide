@@ -15,6 +15,7 @@ class Tide():
 
     @classmethod
     def LoadData(self, filename='/home/mtx/data/tide/0.000den00.bin'):
+        '''read bin data'''
         f = open(filename, 'rb')
         data = f.read()
         f.close()
@@ -23,12 +24,6 @@ class Tide():
         data = data.reshape((1024, 1024, 1024), order='F')
         return data
 
-    @classmethod
-    def GetX(self):
-        x = np.arange(1024)
-        for i in np.arange(1, 1024 / 2 + 1):
-            x[1024 - i] = x[i]
-        return x
     @classmethod
     def Get_Alpha_Beta(self):
         '''return alpha,beta'''
@@ -53,6 +48,7 @@ class Tide():
         alpha=-Dsigma+F
         beta=F
         return (alpha,beta)
+
     @classmethod
     def AutoPowerSpectrum(self,data,window=True):
         x = np.fft.fftfreq(N,1./N)  # x: 0,1,2,...,512,-511,...,-2,-1
@@ -63,6 +59,15 @@ class Tide():
         else :
             Pk=np.abs(delta_k)**2
         return Pk
+
+    @classmethod
+    def CrossPowerSpectrum(self,data1,data2):
+        x = np.fft.fftfreq(N,1./N)  # x: 0,1,2,...,512,-511,...,-2,-1
+        delta_k1 = np.fft.fftn(data1)
+        delta_k2 = np.fft.fftn(data2)
+        Pk=(delta_k1.conjugate()*delta_k2+delta_k2.conjugate()*delta_k1)/2
+        return Pk.real
+
     @classmethod
     def Get_wk(self):
         '''par:
@@ -86,3 +91,28 @@ class Tide():
 #           return (fk(k)/Pk(k))**0.5/k
             return (fk(k)/Pk(k)/Q)**0.5/k
         return wk
+    @classmethod
+    def Smooth(self,data,sigma=1.25,log=True):
+        Kf=2*np.pi/(1.2*10**3)
+        x = np.fft.fftfreq(N,1./N)  # x: 0,1,2,...,512,-511,...,-2,-1
+        delta_k=np.fft.fftn(data)
+        k=(x[:,None,None]**2.+x[None,:,None]**2.+x[None,None,:]**2.)**(1./2.)
+        window_k = np.sinc( 1./N* x[:,None,None]) * np.sinc( 1./N * x[None,:,None]) * np.sinc( 1./N * x[None,None,:])
+        smoothed_k=(delta_k*np.exp(-0.5*(Kf*Kf)*k*k*sigma**2))/window_k
+        smoothed_x=np.fft.ifftn(smoothed_k)
+        if log==True:
+            return np.log10(np.abs(smoothed_x))
+        if log==False:
+            return smoothed_x.real
+    @classmethod
+    def SaveDataHdf5(self,data,filename):
+        dtype=np.dtype([('data','f4')])
+        f=h5py.File(filename,mode='w')
+        f.create_dataset(name='data',data=data)
+        f.close()
+    @clasmethod
+    def LoadDataOfhdf5(self,filename):
+        f=h5py.File(filename)
+        data=np.array(f['data'].value,dtype=np.float)
+        f.close()
+        return data

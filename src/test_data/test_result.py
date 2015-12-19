@@ -3,7 +3,7 @@
 import TIDES as td
 import numpy as np
 import h5py
-data1=td.Tide.LoadData(filename='/home/mtx/data/tide/0.000wfkappa1.25.bin')
+data1=td.Tide.LoadData(filename='/home/mtx/data/tide/0.000uwkappa1.25.bin')
 f=h5py.File('/home/mtx/data/tide/outdata/0.000den00_result_kappa.hdf5')
 #data1=td.Tide.LoadData(filename='/home/mtx/data/tide/0.000wgam11.25.bin')
 #f=h5py.File('/home/mtx/data/tide/outdata/0.000den00_wgamma1.hdf5')

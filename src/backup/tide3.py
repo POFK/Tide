@@ -5,7 +5,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 from TIDES import *
 import h5py
+'''get bin with np.histogram...'''
 ####################################################
+
 N = 1024
 L = 1.2 * 10**3  # Mpc
 H = L / 1024.
