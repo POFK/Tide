@@ -39,8 +39,7 @@ class Tide():
     def LoadDataOfhdf5(self,filename):
         print 'Loading hdf5'
         f=h5py.File(filename)
-        data=f['data'].value
-        data=np.array(data,dtype=np.float)
+        data=np.array(f['data'].value,dtype=np.float)
         f.close()
         return data
 
@@ -73,8 +72,8 @@ class Tide():
     def AutoPowerSpectrum(self,data,window=True):
         x = np.fft.fftfreq(N,1./N)  # x: 0,1,2,...,512,-511,...,-2,-1
         delta_k = np.fft.fftn(data)
+        window_k = np.sinc(1. / N * x[:,None,None]) * np.sinc(1. / N * x[None,:,None]) * np.sinc(1. / N * x[None,None,:])
         if window==True:
-            window_k = np.sinc(1. / N * x[:,None,None]) * np.sinc(1. / N * x[None,:,None]) * np.sinc(1. / N * x[None,None,:])
             Pk = (np.abs(delta_k) / window_k)**2
         else :
             Pk=np.abs(delta_k)**2

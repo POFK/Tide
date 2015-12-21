@@ -7,21 +7,23 @@ from mpi4py import MPI
 '''get kappa(kv,kp),b,w, and get kappa(x)'''
 N=1024
 L=1.2*10**3
+#name='tides00'
+name='old_test'
 #################################################################################
 comm = MPI.COMM_WORLD
 size = comm.Get_size()
 rank = comm.Get_rank()
 ########################## Load data ############################################
 if rank == 0 :
-    f=h5py.File('/home/mtx/data/tide/outdata/old_test/0.000den00_Pk_delta.hdf5')
+    f=h5py.File('/home/mtx/data/tide/outdata/'+name+'/0.000den00_Pk_delta.hdf5')
     Pk_d=f['data'].value
     Pk_d=Pk_d.reshape(8*size,-1)
     f.close()
-    f=h5py.File('/home/mtx/data/tide/outdata/old_test/0.000den00_Pk_kappa_delta.hdf5')
+    f=h5py.File('/home/mtx/data/tide/outdata/'+name+'/0.000den00_Pk_kappa_delta.hdf5')
     Pk_kd=f['data'].value
     Pk_kd=Pk_kd.reshape(8*size,-1)
     f.close()
-    f=h5py.File('/home/mtx/data/tide/outdata/old_test/0.000den00_Pk_kappa.hdf5')
+    f=h5py.File('/home/mtx/data/tide/outdata/'+name+'/0.000den00_Pk_kappa.hdf5')
     Pk_k=f['data'].value
     Pk_k=Pk_k.reshape(8*size,-1)
     f.close()
@@ -107,51 +109,51 @@ if rank==0:
     Pn=pk3-b**2*pk1
     W=pk1/(pk1+Pn/(b**2))
     Pd=pk1/kn
-    np.savetxt('/home/mtx/data/tide/outdata/old_test/result_Pd',Pd)
-    np.savetxt('/home/mtx/data/tide/outdata/old_test/result_b',b)
-    np.savetxt('/home/mtx/data/tide/outdata/old_test/result_Pn',Pn)
-    np.savetxt('/home/mtx/data/tide/outdata/old_test/result_W',W)
-    np.savetxt('/home/mtx/data/tide/outdata/old_test/result_n',kn)
+    np.savetxt('/home/mtx/data/tide/outdata/'+name+'/result_Pd',Pd)
+    np.savetxt('/home/mtx/data/tide/outdata/'+name+'/result_b',b)
+    np.savetxt('/home/mtx/data/tide/outdata/'+name+'/result_Pn',Pn)
+    np.savetxt('/home/mtx/data/tide/outdata/'+name+'/result_W',W)
+    np.savetxt('/home/mtx/data/tide/outdata/'+name+'/result_n',kn)
 #################################################################################
-#b,W,Pn = comm.bcast([b,W,Pn] if rank == 0 else None, root = 0)
-#################################################################################
-#if rank==0:
-#    f=h5py.File('/home/mtx/data/tide/outdata/0.000den00_wkappa3d_x.hdf5')
-#    kappa3dx=np.array(f['data'].value,dtype=np.float16)
-#    f.close()
-#    kappak=np.fft.fft(kappa3dx)
-#    kappak=kappak.reshape(8*size,-1)
-#kappa_k=[]
-#for i in range(8):
-#    kappa_k.append(comm.scatter(kappak[i::8],root=0))
-#kappa_k=np.array(kappa_k)
-#for i in range(bins):
-#    for j in range(bins):
-#        bool1=(10**bin[j]<=KV1)*(KV1<(10**(bin[j]+dbin)))
-#        bool2=(10**bin[i]<=KP1)*(KP1<(10**(bin[i]+dbin)))
-#        bool=bool1*bool2
-#        if i+j==0:
-#            if rank==0:
-#                bool[0,0]=False
-#        kappa_k[bool]=kappa_k[bool]/b[i,j]*W[i,j]
-#kappa_k=kappa_k.reshape(-1)
-#NN=16
-#ss=len(kappa_k)/NN
-#combine_data=[]
-#for i in range(NN):
-#    x=comm.gather(kappa_k[i*ss:(i+1)*ss],root=0)
-#    combine_data.append(x)
-#if rank==0:
-#    combine_data=np.array(combine_data)
-#    result=[]
-#    for i in range(size):
-#        for j in range(NN):
-#            result.append(combine_data[j,i])
-#    result=np.array(result).reshape(1024,1024,1024)
-#    result=np.fft.ifftn(result).real
-#
-#    dtype=np.dtype([('kappa','f4')])
-#    result=np.array(result,dtype=dtype)
-#    f=h5py.File('/home/mtx/data/tide/outdata/0.000den00_result_kappa.hdf5',mode='w')
-#    f.create_dataset(name='data',data=result)
-#    f.close()
+b,W,Pn = comm.bcast([b,W,Pn] if rank == 0 else None, root = 0)
+################################################################################
+if rank==0:
+    f=h5py.File('/home/mtx/data/tide/outdata/'name'/0.000den00_wkappa3d_x.hdf5')
+    kappa3dx=np.array(f['data'].value,dtype=np.float16)
+    f.close()
+    kappak=np.fft.fft(kappa3dx)
+    kappak=kappak.reshape(8*size,-1)
+kappa_k=[]
+for i in range(8):
+    kappa_k.append(comm.scatter(kappak[i::8],root=0))
+kappa_k=np.array(kappa_k)
+for i in range(bins):
+    for j in range(bins):
+        bool1=(bin[j]<=KV1)*(KV1<bin[j+1])
+        bool2=(bin[i]<=KP1)*(KP1<bin[i+1])
+        bool=bool1*bool2
+        if i+j==0:
+            if rank==0:
+                bool[0,0]=False
+        kappa_k[bool]=kappa_k[bool]/b[i,j]*W[i,j]
+kappa_k=L**3*kappa_k.reshape(-1)
+NN=16
+ss=len(kappa_k)/NN
+combine_data=[]
+for i in range(NN):
+    x=comm.gather(kappa_k[i*ss:(i+1)*ss],root=0)
+    combine_data.append(x)
+if rank==0:
+    combine_data=np.array(combine_data)
+    result=[]
+    for i in range(size):
+        for j in range(NN):
+            result.append(combine_data[j,i])
+    result=np.array(result).reshape(1024,1024,1024)
+    result=np.fft.ifftn(result).real
+
+    dtype=np.dtype([('kappa','f4')])
+    result=np.array(result,dtype=dtype)
+    f=h5py.File('/home/mtx/data/tide/outdata/'+name+'/0.000den00_result_kappa.hdf5',mode='w')
+    f.create_dataset(name='data',data=result)
+    f.close()

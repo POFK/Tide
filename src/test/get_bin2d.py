@@ -13,15 +13,15 @@ size = comm.Get_size()
 rank = comm.Get_rank()
 ########################## Load data ############################################
 if rank == 0 :
-    f=h5py.File('/home/mtx/data/tide/outdata/old_test/0.000den00_Pk_delta.hdf5')
+    f=h5py.File('/home/mtx/data/tide/outdata/0.000den00_Pk_delta.hdf5')
     Pk_d=f['data'].value
     Pk_d=Pk_d.reshape(8*size,-1)
     f.close()
-    f=h5py.File('/home/mtx/data/tide/outdata/old_test/0.000den00_Pk_kappa_delta.hdf5')
+    f=h5py.File('/home/mtx/data/tide/outdata/0.000den00_Pk_kappa_delta.hdf5')
     Pk_kd=f['data'].value
     Pk_kd=Pk_kd.reshape(8*size,-1)
     f.close()
-    f=h5py.File('/home/mtx/data/tide/outdata/old_test/0.000den00_Pk_kappa.hdf5')
+    f=h5py.File('/home/mtx/data/tide/outdata/0.000den00_Pk_kappa.hdf5')
     Pk_k=f['data'].value
     Pk_k=Pk_k.reshape(8*size,-1)
     f.close()
@@ -107,11 +107,11 @@ if rank==0:
     Pn=pk3-b**2*pk1
     W=pk1/(pk1+Pn/(b**2))
     Pd=pk1/kn
-    np.savetxt('/home/mtx/data/tide/outdata/old_test/result_Pd',Pd)
-    np.savetxt('/home/mtx/data/tide/outdata/old_test/result_b',b)
-    np.savetxt('/home/mtx/data/tide/outdata/old_test/result_Pn',Pn)
-    np.savetxt('/home/mtx/data/tide/outdata/old_test/result_W',W)
-    np.savetxt('/home/mtx/data/tide/outdata/old_test/result_n',kn)
+    np.savetxt('/home/mtx/data/tide/outdata/result_Pd',Pd)
+    np.savetxt('/home/mtx/data/tide/outdata/result_b',b)
+    np.savetxt('/home/mtx/data/tide/outdata/result_Pn',Pn)
+    np.savetxt('/home/mtx/data/tide/outdata/result_W',W)
+    np.savetxt('/home/mtx/data/tide/outdata/result_n',kn)
 #################################################################################
 #b,W,Pn = comm.bcast([b,W,Pn] if rank == 0 else None, root = 0)
 #################################################################################

@@ -1,16 +1,19 @@
 #!/usr/bin/env python
 # coding=utf-8
+
 import struct
 import numpy as np
 import scipy.integrate as integrate
 import scipy.interpolate as interpolate
-import h5py
+from mpi4py import MPI
 ####################################################
 N = 1024
 L = 1.2 * 10**3  # Mpc
 H = L / 1024.
 ####################################################
-
+comm = MPI.COMM_WORLD
+size = comm.Get_size()
+rank = comm.Get_rank()
 
 class Tide():
 
@@ -22,7 +25,7 @@ class Tide():
         data = f.read()
         f.close()
         data = struct.unpack('1073741824f', data)
-        data = np.array(data, dtype=np.float)
+        data = np.array(data, dtype=np.float16)
         data = data.reshape((1024, 1024, 1024), order='F')
         return data
 
@@ -30,17 +33,14 @@ class Tide():
     def SaveDataHdf5(self,data,filename):
         print 'Save data....................'
         dtype=np.dtype([('data','f4')])
-        data=np.array(data,dtype=dtype)
         f=h5py.File(filename,mode='w')
         f.create_dataset(name='data',data=data)
         f.close()
 
     @classmethod
     def LoadDataOfhdf5(self,filename):
-        print 'Loading hdf5'
         f=h5py.File(filename)
-        data=f['data'].value
-        data=np.array(data,dtype=np.float)
+        data=np.array(f['data'].value,dtype=np.float)
         f.close()
         return data
 
@@ -73,8 +73,8 @@ class Tide():
     def AutoPowerSpectrum(self,data,window=True):
         x = np.fft.fftfreq(N,1./N)  # x: 0,1,2,...,512,-511,...,-2,-1
         delta_k = np.fft.fftn(data)
+        window_k = np.sinc(1. / N * x[:,None,None]) * np.sinc(1. / N * x[None,:,None]) * np.sinc(1. / N * x[None,None,:])
         if window==True:
-            window_k = np.sinc(1. / N * x[:,None,None]) * np.sinc(1. / N * x[None,:,None]) * np.sinc(1. / N * x[None,None,:])
             Pk = (np.abs(delta_k) / window_k)**2
         else :
             Pk=np.abs(delta_k)**2

@@ -2,8 +2,8 @@
 # coding=utf-8
 import h5py
 import numpy as np
-f=h5py.File('/home/mtx/data/tide/outdata/old_test/0.000den00_wdensgx.hdf5')
-g=h5py.File('/home/mtx/data/tide/outdata/old_test/0.000den00_wdensgy.hdf5')
+f=h5py.File('/home/mtx/data/tide/outdata/0.000den00_wdensgx.hdf5')
+g=h5py.File('/home/mtx/data/tide/outdata/0.000den00_wdensgy.hdf5')
 delta_gx=np.array(f['data'].value,dtype=np.float16)
 delta_gy=np.array(g['data'].value,dtype=np.float16)
 f.close()
@@ -30,7 +30,7 @@ del S
 kappa_3dx=np.fft.ifftn(kappa_3dk).real
 dtype=np.dtype([('kappa3dx','f4')])
 result=np.array(kappa_3dx,dtype=dtype)
-f=h5py.File('/home/mtx/data/tide/outdata/old_test/0.000den00_wkappa3d_x.hdf5',mode='w')
+f=h5py.File('/home/mtx/data/tide/outdata/0.000den00_wkappa3d_x.hdf5',mode='w')
 f.create_dataset(name='data',data=result)
 f.close()
 
