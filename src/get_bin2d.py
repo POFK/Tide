@@ -17,7 +17,7 @@ if rank == 0 :
     Pk_d=f['data'].value
     Pk_d=Pk_d.reshape(8*size,-1)
     f.close()
-    f=h5py.File('/home/mtx/data/tide/outdata/old_test/0.000den00_Pk_kappa_delta.hdf5')
+    f=h5py.File('/home/mtx/data/tide/outdata/old_test/0.000den00_Pk_delta_kappa.hdf5')
     Pk_kd=f['data'].value
     Pk_kd=Pk_kd.reshape(8*size,-1)
     f.close()
@@ -95,7 +95,6 @@ for i in range(bins):
         pk1[i,j]=Pk_d1[bool].sum()
         pk2[i,j]=Pk_kd1[bool].sum()
         pk3[i,j]=Pk_k1[bool].sum()
-
 ####################################################################################################
 kn=comm.reduce(kn,root=0)
 pk1=comm.reduce(pk1,root=0)#Pk_d
@@ -104,9 +103,16 @@ pk3=comm.reduce(pk3,root=0)#Pk_k
 ####################################################################################################
 if rank==0:
     b=pk2/pk1
-    Pn=pk3-b**2*pk1
-    W=pk1/(pk1+Pn/(b**2))
-    Pd=pk1/kn
+    Pn=(pk3-b**2*pk1)/kn
+    W=pk1/kn/(pk1/kn+Pn/(b**2))
+#    np.savetxt('./result_b',b)
+#    np.savetxt('./result_W',W)
+#    np.savetxt('./result_kn',kn)
+#    np.savetxt('./result_Pd',pk1/kn)
+#    np.savetxt('./result_Pk',pk3/kn)
+#    np.savetxt('./result_Pdk',pk2/kn)
+
+
     np.savetxt('/home/mtx/data/tide/outdata/old_test/result_Pd',Pd)
     np.savetxt('/home/mtx/data/tide/outdata/old_test/result_b',b)
     np.savetxt('/home/mtx/data/tide/outdata/old_test/result_Pn',Pn)

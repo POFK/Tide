@@ -5,7 +5,7 @@ import h5py
 from TIDES import *
 N=1024.
 L=1.2*10**3
-f=h5py.File('/home/mtx/data/tide/outdata/0.000den00_wkappa3d_x.hdf5')
+f=h5py.File('/home/mtx/data/tide/outdata/old_test/0.000den00_wkappa3d_x.hdf5')
 kappa3dx=np.array(f['data'].value,dtype=np.float)
 f.close()
 deltax=Tide.LoadData(filename='/home/mtx/data/tide/0.000den00.bin')
@@ -16,7 +16,7 @@ Pk_delta=1./L**3*Tide.AutoPowerSpectrum(deltax,window=True)
 dtype=np.dtype([('Pk','f4')])
 
 result=np.array(Pk_delta,dtype=dtype)
-f=h5py.File('/home/mtx/data/tide/outdata/0.000den00_Pk_delta.hdf5',mode='w')
+f=h5py.File('/home/mtx/data/tide/outdata/old_test/0.000den00_Pk_delta.hdf5',mode='w')
 f.create_dataset(name='data',data=result)
 f.close()
 
@@ -26,11 +26,11 @@ del kappa3dx
 del deltax
 
 result=np.array(Pk_kappa,dtype=dtype)
-f=h5py.File('/home/mtx/data/tide/outdata/0.000den00_Pk_kappa.hdf5',mode='w')
+f=h5py.File('/home/mtx/data/tide/outdata/old_test/0.000den00_Pk_kappa.hdf5',mode='w')
 f.create_dataset(name='data',data=result)
 f.close()
 
 result=np.array(Pk_kappa_delta.real,dtype=dtype)
-f=h5py.File('/home/mtx/data/tide/outdata/0.000den00_Pk_kappa_delta.hdf5',mode='w')
+f=h5py.File('/home/mtx/data/tide/outdata/old_test/0.000den00_Pk_delta_kappa.hdf5',mode='w')
 f.create_dataset(name='data',data=result)
 f.close()
