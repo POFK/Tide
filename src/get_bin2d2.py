@@ -4,11 +4,12 @@ import numpy as np
 from TIDES import *
 import h5py
 from mpi4py import MPI
+import sys
 '''get kappa(kv,kp),b,w, and get kappa(x)'''
 N=1024
 L=1.2*10**3
+name=sys.argv[1]
 #name='tides00'
-name='old_test'
 #################################################################################
 comm = MPI.COMM_WORLD
 size = comm.Get_size()
@@ -107,7 +108,7 @@ pk3=comm.reduce(pk3,root=0)#Pk_k
 if rank==0:
     b=pk2/pk1
     Pn=pk3-b**2*pk1
-    W=pk1/kn/(pk1/kn+Pn/(b**2))
+    W=pk1/(pk1+Pn/(b**2))
     Pd=pk1/kn
     np.savetxt('/home/mtx/data/tide/outdata/'+name+'/result_b',b)
     np.savetxt('/home/mtx/data/tide/outdata/'+name+'/result_Pn',Pn)
@@ -153,6 +154,6 @@ if rank==0:
 
     dtype=np.dtype([('kappa','f4')])
     result=np.array(result,dtype=dtype)
-    f=h5py.File('/home/mtx/data/tide/outdata/'+name+'/0.000den00_result_kappa.hdf5',mode='w')
+    f=h5py.File('/home/mtx/data/tide/outdata/'+name+'/0.000den00_result_wfkappax.hdf5',mode='w')
     f.create_dataset(name='data',data=result)
     f.close()

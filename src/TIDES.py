@@ -98,7 +98,7 @@ class Tide():
         Q=0.1681732
         alpha=0.000211210262094*H0**2
         beta=0.000470867426204*H0**2
-        data=np.loadtxt('lcdm_pk.dat')
+        data=np.loadtxt('/home/mtx/github/Tide/src/lcdm_pk.dat')
         x=np.linspace(np.log10(data[:,0].min()),np.log10(data[:,0].max()),1000)
         Pk=interpolate.interp1d(data[:,0],data[:,1],kind=3)
         Pkg=interpolate.interp1d(np.log10(data[:,0]),np.log10(data[:,1]),kind=3)
@@ -138,8 +138,9 @@ class Tide():
         nx=np.fft.fftfreq(N,1./N)
         Kx=2*np.pi/L*nx
         zero=np.zeros_like(Kx)
-        K=np.sqrt(Kx[:,None,None]**2+Kx[None,:,None]**2+Kx[None,None,:]**2)
-        K[0,0,0]=10**(-4)
+        K=Kx[:,None,None]**2+Kx[None,:,None]**2+Kx[None,None,:]**2
+        K[0,0,0]=10**(-8)
+        K=np.sqrt(K)
         delta_gk=np.fft.fftn(data)
         del data
         W=wk(K)

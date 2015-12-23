@@ -12,8 +12,8 @@ L=1.2*10**3
 wfkappa_3dx=Tide.LoadDataOfhdf5('0.000den00_result_wfkappax.hdf5')
 delta_x=Tide.LoadData(filename=Inputfilename1)
 #######################################save data#########################################
-wfPk_delta=1./L**3*Tide.AutoPowerSpectrum(data=delta_x)
-wfPk_kappa=1./L**3*Tide.AutoPowerSpectrum(data=wfkappa_3dx)
+wfPk_delta=1./L**3*Tide.AutoPowerSpectrum(data=delta_x,window=True)
+wfPk_kappa=1./L**3*Tide.AutoPowerSpectrum(data=wfkappa_3dx,window=False)
 wfPk_delta_kappa=1./L**3*Tide.CrossPowerSpectrum(data1=delta_x,data2=wfkappa_3dx)
 
 Tide.SaveDataHdf5(Pk_kappa,Outputfilename+'0.000den00_wfPk_kappa.hdf5')

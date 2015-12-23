@@ -16,7 +16,7 @@ size = comm.Get_size()
 rank = comm.Get_rank()
 ########################## Load data ############################################
 if rank == 0 :
-    f=h5py.File(filename)#'/home/mtx/data/tide/outdata/old_test/0.000den00_Pk_kappa_delta.hdf5')
+    f=h5py.File(filename1)#'/home/mtx/data/tide/outdata/old_test/0.000den00_Pk_kappa_delta.hdf5')
     Pk_d=f['data'].value
     Pk_d=Pk_d.reshape(8*size,-1)
     f.close()
@@ -67,4 +67,4 @@ if rank==0:
     n=n_1
     kx=kx_1*np.pi*2/L/n
     Pk=Pk_1/n
-    np.savetxt(filename,np.c_[kx,Pk,n])#'/home/mtx/data/tide/outdata/old_test/PS_Pkkd',np.c_[kx,Pk,n])
+    np.savetxt(filename2,np.c_[kx,Pk,n])#'/home/mtx/data/tide/outdata/old_test/PS_Pkkd',np.c_[kx,Pk,n])

@@ -20,10 +20,10 @@ kappa_3dx=Tide.CalKappa(gamma1,gamma2)
 del gamma1
 del gamma2
 #######################################save data#########################################
-Tide.SaveDataHdf5(kappa_3dx,Outputfilename+'0.000den00_kappa3dx.hdf5')
-Pk_delta=Tide.AutoPowerSpectrum(data=delta_x)
-Pk_kappa=Tide.AutoPowerSpectrum(data=kappa_3dx)
-Pk_delta_kappa=Tide.CrossPowerSpectrum(data1=delta_x,data2=kappa_3dx)
+Tide.SaveDataHdf5(kappa_3dx,Outputfilename+'0.000den00_wkappa3d_x.hdf5')
+Pk_delta=1./L**3*Tide.AutoPowerSpectrum(data=delta_x,window=True)
+Pk_kappa=1./L**3*Tide.AutoPowerSpectrum(data=kappa_3dx,window=False)
+Pk_delta_kappa=1./L**3*Tide.CrossPowerSpectrum(data1=delta_x,data2=kappa_3dx)
 
 Tide.SaveDataHdf5(Pk_kappa,Outputfilename+'0.000den00_Pk_kappa.hdf5')
 Tide.SaveDataHdf5(Pk_delta,Outputfilename+'0.000den00_Pk_delta.hdf5')
