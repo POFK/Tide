@@ -109,7 +109,6 @@ if rank==0:
     Pn=pk3-b**2*pk1
     W=pk1/kn/(pk1/kn+Pn/(b**2))
     Pd=pk1/kn
-    np.savetxt('/home/mtx/data/tide/outdata/'+name+'/result_Pd',Pd)
     np.savetxt('/home/mtx/data/tide/outdata/'+name+'/result_b',b)
     np.savetxt('/home/mtx/data/tide/outdata/'+name+'/result_Pn',Pn)
     np.savetxt('/home/mtx/data/tide/outdata/'+name+'/result_W',W)
@@ -118,7 +117,7 @@ if rank==0:
 b,W,Pn = comm.bcast([b,W,Pn] if rank == 0 else None, root = 0)
 ################################################################################
 if rank==0:
-    f=h5py.File('/home/mtx/data/tide/outdata/'+name+'/0.000den00_kappa3dx.hdf5')
+    f=h5py.File('/home/mtx/data/tide/outdata/'+name+'/0.000den00_wkappa3d_x.hdf5')
     kappa3dx=np.array(f['data'].value,dtype=np.float16)
     f.close()
     kappak=np.fft.fft(kappa3dx)
@@ -136,7 +135,7 @@ for i in range(bins):
             if rank==0:
                 bool[0,0]=False
         kappa_k[bool]=kappa_k[bool]/b[i,j]*W[i,j]
-kappa_k=L**3*kappa_k.reshape(-1)
+kappa_k=kappa_k.reshape(-1)
 NN=16
 ss=len(kappa_k)/NN
 combine_data=[]

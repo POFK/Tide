@@ -103,8 +103,8 @@ pk3=comm.reduce(pk3,root=0)#Pk_k
 ####################################################################################################
 if rank==0:
     b=pk2/pk1
-    Pn=(pk3-b**2*pk1)/kn
-    W=pk1/kn/(pk1/kn+Pn/(b**2))
+    Pn=(pk3-b**2*pk1)
+    W=pk1/(pk1+Pn/(b**2))
 #    np.savetxt('./result_b',b)
 #    np.savetxt('./result_W',W)
 #    np.savetxt('./result_kn',kn)
