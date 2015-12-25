@@ -1,6 +1,6 @@
 #mpirun -hostfile myhostfile python mpi_test.py
-fat   slots=8 
-node2 slots=6 
-node3 slots=6 
-node4 slots=6 
-node5 slots=6 
+#fat   slots=8 
+node2 slots=8 
+node3 slots=8 
+node4 slots=8 
+node5 slots=8 
