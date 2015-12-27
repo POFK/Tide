@@ -12,8 +12,8 @@ sh run.sh tides00
 #echo 'tides05 step1 ok'
 #################################################################################
 #python cal_bw.py tides00 smooth2.5 # calculation b w 
-cp ~/data/tide/outdata/tides00/halo/smooth2.5/result_b ./
-cp ~/data/tide/outdata/tides00/halo/smooth2.5/result_W ./
+cp ~/data/tide/outdata/tides00/halo/smooth1.00/result_b ./
+cp ~/data/tide/outdata/tides00/halo/smooth1.00/result_W ./
 #################################################################################
 sh run2.sh tides00
 #sh run2.sh tides01

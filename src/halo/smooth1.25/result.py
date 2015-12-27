@@ -11,7 +11,7 @@ print Inputfilename
 print Outputfilename
 ########################################load data########################################
 delta_x=Tide.LoadData(filename=Inputfilename)
-deltag=Tide.Smooth(data=delta_x,sigma=2.5,log=False)
+deltag=Tide.Smooth(data=delta_x,sigma=1.25,log=False)
 deltag[deltag>0]=np.log(deltag[deltag>0])
 delta_gx,delta_gy=Tide.DeltagW(deltag)
 del deltag

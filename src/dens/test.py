@@ -10,24 +10,23 @@ import sys
 N=1024
 L=1.2*10**3
 name=sys.argv[1]
-name2=sys.argv[2]
 #name='tides00'
 #################################################################################
 comm = MPI.COMM_WORLD
 size = comm.Get_size()
 rank = comm.Get_rank()
 ########################## Load data ############################################
-f=h5py.File('/home/mtx/data/tide/outdata/'+name+'/halo/'+name2+'/0.000halo00_Pk_delta.hdf5','r')
+f=h5py.File('/home/mtx/data/tide/outdata/'+name+'/0.000den00_Pk_delta.hdf5','r')
 Pk_d=f['data'][rank*(1024/size):(rank+1)*(1024/size)]
 Pk_d=np.array(Pk_d,dtype=np.float)
 f.close()
 
-f=h5py.File('/home/mtx/data/tide/outdata/'+name+'/halo/'+name2+'/0.000halo00_Pk_delta_kappa.hdf5','r')
+f=h5py.File('/home/mtx/data/tide/outdata/'+name+'/0.000den00_Pk_delta_kappa.hdf5','r')
 Pk_kd=f['data'][rank*(1024/size):(rank+1)*(1024/size)]
 Pk_kd=np.array(Pk_kd,dtype=np.float)
 f.close()
 
-f=h5py.File('/home/mtx/data/tide/outdata/'+name+'/halo/'+name2+'/0.000halo00_Pk_kappa.hdf5','r')
+f=h5py.File('/home/mtx/data/tide/outdata/'+name+'/0.000den00_Pk_kappa.hdf5','r')
 Pk_k=f['data'][rank*(1024/size):(rank+1)*(1024/size)]
 Pk_k=np.array(Pk_k,dtype=np.float)
 f.close()
@@ -68,10 +67,12 @@ for i in range(bins):
 ####################################################################################################
 if rank==0:
     b=pk2/pk1
-    Pn=pk3-b**2*pk1
+    Pn=(pk3-b**2*pk1)/kn
     W=pk1/(pk1+Pn/(b**2))
-    np.savetxt('/home/mtx/data/tide/outdata/'+name+'/halo/'+name2+'/result_b',b)
-    np.savetxt('/home/mtx/data/tide/outdata/'+name+'/halo/'+name2+'/result_Pn',Pn)
-    np.savetxt('/home/mtx/data/tide/outdata/'+name+'/halo/'+name2+'/result_W',W)
-    np.savetxt('/home/mtx/data/tide/outdata/'+name+'/halo/'+name2+'/result_n',kn)
+    Pka=pk3/kn
+    np.savetxt('/home/mtx/data/tide/outdata/'+name+'/result_b',b)
+    np.savetxt('/home/mtx/data/tide/outdata/'+name+'/result_Pn',Pn)
+    np.savetxt('/home/mtx/data/tide/outdata/'+name+'/result_W',W)
+    np.savetxt('/home/mtx/data/tide/outdata/'+name+'/result_n',kn)
+    np.savetxt('/home/mtx/data/tide/outdata/'+name+'/result_Pk',Pka)
 

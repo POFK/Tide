@@ -29,10 +29,8 @@ class Tide():
     @classmethod
     def SaveDataHdf5(self,data,filename):
         print 'Save data....................'
-        dtype=np.dtype([('data','f4')])
-        data=np.array(data,dtype=dtype)
         f=h5py.File(filename,mode='w')
-        f.create_dataset(name='data',data=data)
+        f.create_dataset(name='data',dtype='f4',data=data)
         f.close()
 
     @classmethod
@@ -40,7 +38,6 @@ class Tide():
         print 'Loading hdf5'
         f=h5py.File(filename)
         data=f['data'].value
-        data=np.array(data,dtype=np.float16)
         f.close()
         return data
 
