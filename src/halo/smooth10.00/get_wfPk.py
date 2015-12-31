@@ -13,6 +13,7 @@ L=1.2*10**3
 wfkappa_3dx=Tide.LoadDataOfhdf5(Outputfilename+'0.000halo00_result_wfkappax.hdf5')
 delta_x=Tide.LoadData(filename=Inputfilename)
 #######################################save data#########################################
+#wfkappa_3dx=Tide.Smooth(data=wfkappa_3dx,sigma=3,log=False)
 wfPk_delta=L**3/N**6*Tide.AutoPowerSpectrum(data=delta_x,window=True)
 wfPk_delta[0,0,0]=0
 wfPk_kappa=L**3/N**6*Tide.AutoPowerSpectrum(data=wfkappa_3dx,window=False)

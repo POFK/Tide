@@ -6,7 +6,7 @@ name1='/home/mtx/data/tide/outdata/'$name_1'/halo/'$name_2'/'
 name2='/home/mtx/data/tide/outdata/'$name_1'/halo/'$name_2'/'
 echo $name1'0.000halo00_wfPk_kappa.hdf5' $name2'PS_KK'
 ################################################################################
-python result.py $name_1 $name_2
+#python result.py $name_1 $name_2
 mpirun -hostfile node_hostfile python get_bin2d1.py $name_1 $name_2
 echo 'step 1 ok'
 #python get_wfPk.py $name_1 $name_2

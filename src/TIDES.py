@@ -78,13 +78,15 @@ class Tide():
         return Pk
 
     @classmethod
-    def CrossPowerSpectrum(self,data1,data2):
+    def CrossPowerSpectrum(self,data1,data2,window=False):
         '''data1:delta,data2:kappa'''
         x = np.fft.fftfreq(N,1./N)  # x: 0,1,2,...,512,-511,...,-2,-1
         delta_k1 = np.fft.fftn(data1)
         window_k = np.sinc(1. / N * x[:,None,None]) * np.sinc(1. / N * x[None,:,None]) * np.sinc(1. / N * x[None,None,:])
         delta_k1=delta_k1/window_k
         delta_k2 = np.fft.fftn(data2)
+        if window==True:
+            delta_k2=delta_k2/window_k
         Pk=(delta_k1.conjugate()*delta_k2+delta_k2.conjugate()*delta_k1)/2
         return Pk.real
 

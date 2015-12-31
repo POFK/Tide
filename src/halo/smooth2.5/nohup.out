@@ -1,8 +1,452 @@
 /home/mtx/data/tide/outdata/tides00/halo/smooth2.5/0.000halo00_wfPk_kappa.hdf5 /home/mtx/data/tide/outdata/tides00/halo/smooth2.5/PS_KK
+step 1 ok
+/home/mtx/data/tide/outdata/tides00/halo/smooth2.5/0.000halo00_wfPk_kappa.hdf5 /home/mtx/data/tide/outdata/tides00/halo/smooth2.5/PS_KK
 /home/mtx/data/tide/outdata/tides00/halo/smooth2.5/
 Loading hdf5
 Loading data.................
 Save data....................
 Save data....................
 Save data....................
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[56370,1],1]
+  Exit code:    1
+--------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "get_bin1d.py", line 4, in <module>
+    from TIDES import *
+  File "/home/mtx/github/Tide/src/TIDES.py", line 88
+    if window=True:
+             ^
+SyntaxError: invalid syntax
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[56374,1],17]
+  Exit code:    1
+--------------------------------------------------------------------------
 step 2 ok
