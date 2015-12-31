@@ -47,7 +47,7 @@ delta_k=delta_k/window_k
 kappa_3dk=np.fft.fftn(kappa_3dx)
 Pk_delta=L**3/N**6*np.abs(delta_k)**2
 Pk_kappa=L**3/N**6*np.abs(kappa_3dk)**2
-Pk_delta_kappa=L**3/N**6*(delta_k.conjugate()*kappa_3dk+kappa_3dk.conjugate()*delta_k)/2
+Pk_delta_kappa=(L**3/N**6*(delta_k.conjugate()*kappa_3dk+kappa_3dk.conjugate()*delta_k)/2).real
 
 Tide.SaveDataHdf5(Pk_kappa,Outputfilename+'0.000halo00_Pk_kappa.hdf5')
 Tide.SaveDataHdf5(Pk_delta,Outputfilename+'0.000halo00_Pk_delta.hdf5')
