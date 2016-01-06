@@ -19,20 +19,20 @@ halo_k=np.fft.fftn(halo_x)
 Ph=L**3/N**6*np.abs(halo_k)**2
 W=Ph/(Ph+3.3*10**3)  #wiener filter
 del halo_x
+bias=np.sqrt(2.6)
 halo_k=halo_k*W
 ########################## smooth and window function###########################
 k=(x[:,None,None]**2.+x[None,:,None]**2.+x[None,None,:]**2.)**(1./2.)
 window_k = np.sinc( 1./N* x[:,None,None]) * np.sinc( 1./N * x[None,:,None]) * np.sinc( 1./N * x[None,None,:])
 halo_k=halo_k*(np.exp(-0.5*(Kf*Kf)*k*k*sigma**2))/window_k
 del k
-Pk_h=np.abs(halo_k)**2
+Pk_h=L**3/N**6*np.abs(halo_k)**2
 deltag=np.fft.ifftn(halo_k).real
 del halo_k
 
 ################################################################################
 Tide.SaveDataHdf5(Pk_h,Outputfilename+'0.000halo00_Pk_halo.hdf5')
 ################################################################################
-bias=np.sqrt(2.799613)
 deltag=(deltag-1)/bias+1
 deltag[deltag>0]=np.log(deltag[deltag>0])
 delta_gx,delta_gy=Tide.DeltagW(deltag)

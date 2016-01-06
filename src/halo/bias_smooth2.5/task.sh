@@ -1,4 +1,6 @@
 #!/bin/bash
+com=`date '+%Y/%m/%d_%H:%M:%S'`
+echo '**************************************'$com'******************************************'
 sh run.sh tides00
 #sh run.sh tides01
 #echo 'tides01 step1 ok'
@@ -26,3 +28,4 @@ sh run2.sh tides00
 #echo 'tides04 step2 ok'
 #sh run2.sh tides05
 #echo 'tides05 step2 ok'
+echo '********************************************************************************'

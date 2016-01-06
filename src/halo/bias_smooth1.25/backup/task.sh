@@ -1,7 +1,5 @@
 #!/bin/bash
 echo '################################################################################'
-com=`date '+%Y/%m/%d_%H:%M:%S'`
-echo $com
 echo '\n'
 sh run.sh tides00
 #sh run.sh tides01

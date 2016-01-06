@@ -1,4 +1,6 @@
 #!/bin/bash
+com=`date '+%Y/%m/%d_%H:%M:%S'`
+echo '**************************************'$com'******************************************'
 sh run.sh tides00
 #sh run.sh tides01
 #echo 'tides01 step1 ok'
@@ -12,8 +14,8 @@ sh run.sh tides00
 #echo 'tides05 step1 ok'
 #################################################################################
 #python cal_bw.py tides00 smooth2.5 # calculation b w 
-cp ~/data/tide/outdata/tides00/halo/smooth5.00/result_b ./
-cp ~/data/tide/outdata/tides00/halo/smooth5.00/result_W ./
+cp ~/data/tide/outdata/tides00/halo/bias_smooth5.00/result_b ./
+cp ~/data/tide/outdata/tides00/halo/bias_smooth5.00/result_W ./
 #################################################################################
 sh run2.sh tides00
 #sh run2.sh tides01
@@ -26,3 +28,5 @@ sh run2.sh tides00
 #echo 'tides04 step2 ok'
 #sh run2.sh tides05
 #echo 'tides05 step2 ok'
+echo '\n'
+echo '################################################################################'

@@ -19,17 +19,14 @@ rank = comm.Get_rank()
 ########################## Load data ############################################
 f=h5py.File('/home/mtx/data/tide/outdata/'+name+'/halo/'+name2+'/0.000halo00_Pk_delta.hdf5','r')
 Pk_d=f['data'][rank*(1024/size):(rank+1)*(1024/size)]
-Pk_d=np.array(Pk_d,dtype=np.float)
 f.close()
 
 f=h5py.File('/home/mtx/data/tide/outdata/'+name+'/halo/'+name2+'/0.000halo00_Pk_delta_kappa.hdf5','r')
 Pk_kd=f['data'][rank*(1024/size):(rank+1)*(1024/size)]
-Pk_kd=np.array(Pk_kd,dtype=np.float)
 f.close()
 
 f=h5py.File('/home/mtx/data/tide/outdata/'+name+'/halo/'+name2+'/0.000halo00_Pk_kappa.hdf5','r')
 Pk_k=f['data'][rank*(1024/size):(rank+1)*(1024/size)]
-Pk_k=np.array(Pk_k,dtype=np.float)
 f.close()
 #################################################################################
 x=np.fft.fftfreq(N,1./N)
@@ -74,4 +71,3 @@ if rank==0:
     np.savetxt('/home/mtx/data/tide/outdata/'+name+'/halo/'+name2+'/result_Pn',Pn)
     np.savetxt('/home/mtx/data/tide/outdata/'+name+'/halo/'+name2+'/result_W',W)
     np.savetxt('/home/mtx/data/tide/outdata/'+name+'/halo/'+name2+'/result_n',kn)
-
