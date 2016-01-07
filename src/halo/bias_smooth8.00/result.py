@@ -5,7 +5,7 @@ from TIDES import *
 import sys
 name=sys.argv[1]
 name2=sys.argv[2]
-sigma=2.5
+sigma=8.00
 Inputfilename='/home/zhm/'+name+'/0.000halo00.bin'
 Outputfilename='/home/mtx/data/tide/outdata/'+name+'/halo/'+name2+'/'
 print Inputfilename

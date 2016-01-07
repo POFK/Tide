@@ -5,7 +5,7 @@ from TIDES import *
 import sys
 name=sys.argv[1]
 name2=sys.argv[2]
-sigma=2.5
+sigma=2.0
 Inputfilename='/home/zhm/'+name+'/0.000halo00.bin'
 Outputfilename='/home/mtx/data/tide/outdata/'+name+'/halo/'+name2+'/'
 print Inputfilename
@@ -16,23 +16,14 @@ halo_x=Tide.LoadData(filename=Inputfilename)
 Kf=2*np.pi/(1.2*10**3)
 x = np.fft.fftfreq(N,1./N)  # x: 0,1,2,...,512,-511,...,-2,-1
 halo_k=np.fft.fftn(halo_x)
-#********************************************************************************
-k=(x[:,None,None]**2.+x[None,:,None]**2.+x[None,None,:]**2.)**(1./2.)
-window_k = np.sinc( 1./N* x[:,None,None]) * np.sinc( 1./N * x[None,:,None]) * np.sinc( 1./N * x[None,None,:])
-
-halo_k2=halo_k*(np.exp(-0.5*(Kf*Kf)*k*k*sigma**2))/window_k
-Ph=L**3/N**6*np.abs(halo_k2)**2
+Ph=L**3/N**6*np.abs(halo_k)**2
 W=Ph/(Ph+3.3*10**3)  #wiener filter
-del halo_k2
-#********************************************************************************
-#Ph=L**3/N**6*np.abs(halo_k)**2
-#W=Ph/(Ph+3.3*10**3)  #wiener filter
 del halo_x
 bias=np.sqrt(2.6)
 halo_k=halo_k*W
 ########################## smooth and window function###########################
-#k=(x[:,None,None]**2.+x[None,:,None]**2.+x[None,None,:]**2.)**(1./2.)
-#window_k = np.sinc( 1./N* x[:,None,None]) * np.sinc( 1./N * x[None,:,None]) * np.sinc( 1./N * x[None,None,:])
+k=(x[:,None,None]**2.+x[None,:,None]**2.+x[None,None,:]**2.)**(1./2.)
+window_k = np.sinc( 1./N* x[:,None,None]) * np.sinc( 1./N * x[None,:,None]) * np.sinc( 1./N * x[None,None,:])
 halo_k=halo_k*(np.exp(-0.5*(Kf*Kf)*k*k*sigma**2))/window_k
 del k
 Pk_h=L**3/N**6*np.abs(halo_k)**2
@@ -42,7 +33,7 @@ del halo_k
 ################################################################################
 Tide.SaveDataHdf5(Pk_h,Outputfilename+'0.000halo00_Pk_halo.hdf5')
 ################################################################################
-deltag=(deltag-1)/bias+1
+#deltag=(deltag-1)/bias+1
 deltag[deltag>0]=np.log(deltag[deltag>0])
 delta_gx,delta_gy=Tide.DeltagW(deltag)
 del deltag
