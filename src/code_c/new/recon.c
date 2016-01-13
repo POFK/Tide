@@ -14,10 +14,10 @@
 #define kf   (2.*PI/box) // fundamental frequency
 #define ic   500          // number of filters
 
-char path[80] =    {"/home/zhm/tides00/0.000den00.bin"};
+char path[80] =    {"/home/mtx/data/tide/outdata/old_test/c_test_data/0.000deng1.25.bin"};
 char pathout[80] = {"/home/mtx/data/tide/outdata/old_test/c_test_data/0.000uwkappa1.25.bin"};
 
-char patf[80]    = {"./filter/coeffz1.dat"};
+char patf[80]    = {"./filter/coeffz0.dat"};
 double k_initial[ic] = {0.};
 double f_initial[ic] = {0.};
  

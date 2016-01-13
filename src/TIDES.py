@@ -22,7 +22,7 @@ class Tide():
         data = f.read()
         f.close()
         data = struct.unpack('1073741824f', data)
-        data = np.array(data, dtype=np.float16)
+        data = np.array(data, dtype=np.float)
         data = data.reshape((1024, 1024, 1024), order='F')
         return data
 
@@ -38,6 +38,7 @@ class Tide():
         print 'Loading hdf5'
         f=h5py.File(filename)
         data=f['data'].value
+        data=np.array(data,dtype=np.float)
         f.close()
         return data
 

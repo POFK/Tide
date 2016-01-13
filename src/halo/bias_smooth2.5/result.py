@@ -6,7 +6,7 @@ import sys
 name=sys.argv[1]
 name2=sys.argv[2]
 sigma=2.5
-Inputfilename='/home/zhm/'+name+'/0.000halo00.bin'
+Inputfilename='/home/zhm/'+name+'/halorhobin1024m1z0.000.dat'
 Outputfilename='/home/mtx/data/tide/outdata/'+name+'/halo/'+name2+'/'
 print Inputfilename
 print Outputfilename
@@ -15,6 +15,8 @@ halo_x=Tide.LoadData(filename=Inputfilename)
 #####################add later of wiener filter and smooth######################
 Kf=2*np.pi/(1.2*10**3)
 x = np.fft.fftfreq(N,1./N)  # x: 0,1,2,...,512,-511,...,-2,-1
+sum=halo_x.sum()
+halo_x=(1024**3)/sum*halo_x
 halo_k=np.fft.fftn(halo_x)
 #********************************************************************************
 k=(x[:,None,None]**2.+x[None,:,None]**2.+x[None,None,:]**2.)**(1./2.)
@@ -22,7 +24,7 @@ window_k = np.sinc( 1./N* x[:,None,None]) * np.sinc( 1./N * x[None,:,None]) * np
 
 halo_k2=halo_k*(np.exp(-0.5*(Kf*Kf)*k*k*sigma**2))/window_k
 Ph=L**3/N**6*np.abs(halo_k2)**2
-W=Ph/(Ph+3.3*10**3)  #wiener filter
+W=Ph/(Ph+(1024.**3)/sum)  #wiener filter
 del halo_k2
 #********************************************************************************
 #Ph=L**3/N**6*np.abs(halo_k)**2
@@ -54,7 +56,7 @@ del gamma1
 del gamma2
 #######################################save data#########################################
 Tide.SaveDataHdf5(kappa_3dx,Outputfilename+'0.000halo00_wkappa3d_x.hdf5')
-Inputfilename='/home/zhm/'+name+'/0.000den00.bin'
+Inputfilename='/home/zhm/ptides/data/den1024z0.000.dat'
 delta_x=Tide.LoadData(filename=Inputfilename)
 delta_k=np.fft.fftn(delta_x)
 delta_k=delta_k/window_k

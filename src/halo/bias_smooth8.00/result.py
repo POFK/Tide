@@ -42,7 +42,7 @@ del halo_k
 ################################################################################
 Tide.SaveDataHdf5(Pk_h,Outputfilename+'0.000halo00_Pk_halo.hdf5')
 ################################################################################
-deltag=(deltag-1)/bias+1
+#deltag=(deltag-1)/bias+1
 deltag[deltag>0]=np.log(deltag[deltag>0])
 delta_gx,delta_gy=Tide.DeltagW(deltag)
 del deltag
