@@ -116,7 +116,7 @@ class Tide():
         return wk
 
     @classmethod
-    def Smooth(self,data,sigma=1.25,log=True):
+    def Smooth(self,data,sigma=1.25,log=False):
 
         print 'Smoothing....................'
         Kf=2*np.pi/(1.2*10**3)
