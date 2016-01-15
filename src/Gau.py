@@ -62,5 +62,5 @@ hist2=np.histogram(data,bins=n)
 plt.plot(hist2[1][:-1],hist2[0],'ro-',label='2')
 #plt.xlim(0,4)
 plt.legend()
-plt.savefig('Gau'+name+'.png')
+plt.savefig(output+'.png')
 print 'ok'
