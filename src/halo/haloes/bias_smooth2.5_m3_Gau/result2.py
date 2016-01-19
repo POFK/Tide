@@ -29,7 +29,7 @@ Outputfilename='/home/mtx/data/tide/outdata/'+name+'/halo/'+name2+'/'
 #del halo_k2
 ##********************************************************************************
 #del halo_x
-#bias=np.sqrt(2.4)
+#bias=np.sqrt(0.6)
 #halo_k=halo_k*W
 ########################### smooth and window function###########################
 ##k=(x[:,None,None]**2.+x[None,:,None]**2.+x[None,None,:]**2.)**(1./2.)
@@ -42,9 +42,9 @@ Outputfilename='/home/mtx/data/tide/outdata/'+name+'/halo/'+name2+'/'
 #
 #################################################################################
 #Tide.SaveDataHdf5(Pk_h,Outputfilename+'0.000halo00_Pk_halo.hdf5')
-#Tide.SaveDataHdf5(deltag,Outputfilename+'0.000halo00_Pk_halo_s'+sigma+'.hdf5')
-call('/home/mtx/github/Tide/src/Gau.py %s %s'%(Outputfilename+'0.000halo00_Pk_halo_s'+sigma+'.hdf5',Outputfilename+'0.000halo00_Pk_halo_sGau'+sigma+'.hdf5'),shell=True)
-#deltag=Tide.LoadDataOfhdf5(Outputfilename+'0.000halo00_Pk_halo_sGau'+sigma+'.hdf5')
+#Tide.SaveDataHdf5(deltag,Outputfilename+'0.000halo00_den_smooth'+str(sigma)+'.hdf5')
+call('/home/mtx/github/Tide/src/Gau.py %s %s'%(Outputfilename+'0.000halo00_den_smooth'+str(sigma)+'.hdf5',Outputfilename+'0.000halo00_den_sGau'+str(sigma)+'.hdf5'),shell=True)
+#deltag=Tide.LoadDataOfhdf5(Outputfilename+'0.000halo00_den_sGau'+str(sigma)+'.hdf5')
 #################################################################################
 ##deltag=(deltag-1)/bias+1
 #deltag[deltag>0]=np.log(deltag[deltag>0])

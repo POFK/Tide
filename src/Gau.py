@@ -25,7 +25,7 @@ data2=data[sort_data]
 
 ###############################gauss...#########################################
 n=1024
-x=np.linspace(0,4,1000)
+x=np.linspace(0,2,1000)
 def gau(x):
     gau=np.exp(-0.5*x**2)
     return gau
@@ -46,7 +46,6 @@ index=np.array(index)
 
 for j in np.arange(n):
     data2[index[sort_h[j]]:index[sort_h[j]+1]]=x[j]
-    print j
 
 data[sort_data]=data2
 

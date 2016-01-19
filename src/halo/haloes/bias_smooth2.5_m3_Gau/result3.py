@@ -14,14 +14,14 @@ Outputfilename='/home/mtx/data/tide/outdata/'+name+'/halo/'+name2+'/'
 #########################################load data########################################
 #halo_x=Tide.LoadDataOfhdf5(filename=Inputfilename)
 ######################add later of wiener filter and smooth######################
-#Kf=2*np.pi/(1.2*10**3)
-#x = np.fft.fftfreq(N,1./N)  # x: 0,1,2,...,512,-511,...,-2,-1
+Kf=2*np.pi/(1.2*10**3)
+x = np.fft.fftfreq(N,1./N)  # x: 0,1,2,...,512,-511,...,-2,-1
 #sum=4154469.
 #halo_x=(1024**3)/sum*halo_x
 #halo_k=np.fft.fftn(halo_x)
 ##********************************************************************************
-#k=(x[:,None,None]**2.+x[None,:,None]**2.+x[None,None,:]**2.)**(1./2.)
-#window_k = np.sinc( 1./N* x[:,None,None]) * np.sinc( 1./N * x[None,:,None]) * np.sinc( 1./N * x[None,None,:])
+k=(x[:,None,None]**2.+x[None,:,None]**2.+x[None,None,:]**2.)**(1./2.)
+window_k = np.sinc( 1./N* x[:,None,None]) * np.sinc( 1./N * x[None,:,None]) * np.sinc( 1./N * x[None,None,:])
 #
 #halo_k2=halo_k/window_k
 #Ph=L**3/N**6*np.abs(halo_k2)**2
@@ -42,11 +42,12 @@ Outputfilename='/home/mtx/data/tide/outdata/'+name+'/halo/'+name2+'/'
 #
 #################################################################################
 #Tide.SaveDataHdf5(Pk_h,Outputfilename+'0.000halo00_Pk_halo.hdf5')
-#Tide.SaveDataHdf5(deltag,Outputfilename+'0.000halo00_Pk_halo_s'+sigma+'.hdf5')
-#call('/home/mtx/github/Tide/src/Gau.py %s %s'%(Outputfilename+'0.000halo00_Pk_halo_s'+sigma+'.hdf5',Outputfilename+'0.000halo00_Pk_halo_sGau'+sigma+'.hdf5'),shell=True)
-deltag=Tide.LoadDataOfhdf5(Outputfilename+'0.000halo00_Pk_halo_sGau'+sigma+'.hdf5')
+#Tide.SaveDataHdf5(deltag,Outputfilename+'0.000halo00_den_smooth'+str(sigma)+'.hdf5')
+#call('/home/mtx/github/Tide/src/Gau.py %s %s'%(Outputfilename+'0.000halo00_den_smooth'+str(sigma)+'.hdf5',Outputfilename+'0.000halo00_den_sGau'+str(sigma)+'.hdf5'),shell=True)
+deltag=Tide.LoadDataOfhdf5(Outputfilename+'0.000halo00_den_sGau'+str(sigma)+'.hdf5')
 ################################################################################
-#deltag=(deltag-1)/bias+1
+bias=np.sqrt(0.9)
+deltag=(deltag-1)/bias+1
 deltag[deltag>0]=np.log(deltag[deltag>0])
 delta_gx,delta_gy=Tide.DeltagW(deltag)
 del deltag
