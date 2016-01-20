@@ -14,8 +14,8 @@ sh run.sh haloes
 #echo 'tides05 step1 ok'
 #################################################################################
 #python cal_bw.py tides00 smooth2.5 # calculation b w 
-cp ~/data/tide/outdata/haloes/halo/bias_smooth2.5_m3/result_b ./
-cp ~/data/tide/outdata/haloes/halo/bias_smooth2.5_m3/result_W ./
+cp ~/data/tide/outdata/haloes/halo/bias_smooth2.5_m3 ./
+cp ~/data/tide/outdata/haloes/halo/bias_smooth2.5_m3 ./
 #################################################################################
 sh run2.sh haloes
 #sh run2.sh tides01
@@ -28,4 +28,5 @@ sh run2.sh haloes
 #echo 'tides04 step2 ok'
 #sh run2.sh tides05
 #echo 'tides05 step2 ok'
-echo '********************************************************************************'
+com=`date '+%Y/%m/%d_%H:%M:%S'`
+echo '**************************END IN:    '$com'******************************************'

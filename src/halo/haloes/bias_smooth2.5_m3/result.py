@@ -28,7 +28,7 @@ W=Ph/(Ph+(1024.**3)/sum)  #wiener filter
 del halo_k2
 #********************************************************************************
 del halo_x
-bias=np.sqrt(2.4)
+bias=np.sqrt(2.6)
 halo_k=halo_k*W
 ########################## smooth and window function###########################
 #k=(x[:,None,None]**2.+x[None,:,None]**2.+x[None,None,:]**2.)**(1./2.)
