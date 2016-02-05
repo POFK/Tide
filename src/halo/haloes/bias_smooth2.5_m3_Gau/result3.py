@@ -46,9 +46,9 @@ window_k = np.sinc( 1./N* x[:,None,None]) * np.sinc( 1./N * x[None,:,None]) * np
 #call('/home/mtx/github/Tide/src/Gau.py %s %s'%(Outputfilename+'0.000halo00_den_smooth'+str(sigma)+'.hdf5',Outputfilename+'0.000halo00_den_sGau'+str(sigma)+'.hdf5'),shell=True)
 deltag=Tide.LoadDataOfhdf5(Outputfilename+'0.000halo00_den_sGau'+str(sigma)+'.hdf5')
 ################################################################################
-bias=np.sqrt(0.9)
-deltag=(deltag-1)/bias+1
-deltag[deltag>0]=np.log(deltag[deltag>0])
+#bias=np.sqrt(0.9)
+#deltag=(deltag-1)/bias+1
+#deltag[deltag>0]=np.log(deltag[deltag>0])
 delta_gx,delta_gy=Tide.DeltagW(deltag)
 del deltag
 gamma1,gamma2=Tide.CalGamma(delta_gx,delta_gy)
@@ -71,5 +71,3 @@ Pk_delta_kappa=(L**3/N**6*(delta_k.conjugate()*kappa_3dk+kappa_3dk.conjugate()*d
 Tide.SaveDataHdf5(Pk_kappa,Outputfilename+'0.000halo00_Pk_kappa.hdf5')
 Tide.SaveDataHdf5(Pk_delta,Outputfilename+'0.000halo00_Pk_delta.hdf5')
 Tide.SaveDataHdf5(Pk_delta_kappa,Outputfilename+'0.000halo00_Pk_delta_kappa.hdf5')
-
-

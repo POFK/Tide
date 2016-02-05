@@ -7,7 +7,7 @@ import scipy.interpolate as interpolate
 import h5py
 ####################################################
 N = 1024
-L = 1.2 * 10**3  # Mpc
+L = 0.6 * 10**3  # Mpc
 H = L / 1024.
 ####################################################
 
@@ -17,12 +17,13 @@ class Tide():
     @classmethod
     def LoadData(self, filename='/home/mtx/data/tide/0.000den00.bin'):
         '''read bin data'''
-        print 'Loading data.................'
-        f = open(filename, 'rb')
-        data = f.read()
-        f.close()
-        data = struct.unpack('1073741824f', data)
-        data = np.array(data, dtype=np.float)
+        print 'Loading data  in  filename'
+#       f = open(filename, 'rb')
+#       data = f.read()
+#       f.close()
+#       data = struct.unpack('1073741824f', data)
+#       data = np.array(data, dtype=np.float)
+        data=np.fromfile(filename,dtype='f4',count=1024**3)
         data = data.reshape((1024, 1024, 1024), order='F')
         return data
 

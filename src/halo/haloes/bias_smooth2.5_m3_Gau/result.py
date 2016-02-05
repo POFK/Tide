@@ -6,7 +6,7 @@ import sys
 from subprocess import call
 name=sys.argv[1]
 name2=sys.argv[2]
-sigma=2.5
+sigma=1.25
 Inputfilename='/home/mtx/data/tide/haloes/halorhobin1024m3z0.000.dat.hdf5'
 Outputfilename='/home/mtx/data/tide/outdata/'+name+'/halo/'+name2+'/'
 print Inputfilename
@@ -29,7 +29,7 @@ W=Ph/(Ph+(1024.**3)/sum)  #wiener filter
 del halo_k2
 #********************************************************************************
 del halo_x
-bias=np.sqrt(0.6)
+#bias=np.sqrt(0.6)
 halo_k=halo_k*W
 ########################## smooth and window function###########################
 #k=(x[:,None,None]**2.+x[None,:,None]**2.+x[None,None,:]**2.)**(1./2.)
