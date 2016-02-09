@@ -4,7 +4,7 @@ import numpy as np
 from Gau import Gau
 from TIDES import *
 import sys
-sigma=2.5
+sigma=1.25
 Inputfilename='/home/zhm/tides20/0.000halo.bin'
 Outputfilename='/home/mtx/data/tide/halo_new/outdata/'
 print Inputfilename

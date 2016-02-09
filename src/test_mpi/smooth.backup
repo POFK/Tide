@@ -17,66 +17,80 @@ H=L/N
 Kf=2*np.pi/L
 fn=np.fft.fftfreq(N,1./N)  #x: 0,1,2,...,512,-511,-510,...,-2,-1
 fnc=np.arange(N/2+1)
+mpi_fn=np.array_split(fn,size)
 Sigma=1.25
+nthreads=16
 
 #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
 #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#  Load data: #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
-senddata=None
+#senddata=None
 smooth_k=None
+deltagw1=None
+deltagw2=None
 deltak=None
 k=None
 window_k=None
-recvdata_k1=np.empty((N/(size-1),N,N),dtype=np.complex)
-senddata_k1=np.empty((N/(size-1),N,N),dtype=np.complex)
-recvdata_x1=np.empty((N/(size-1),N,N),dtype=np.float)
-recvdata_x2=np.empty((N/(size-1),N,N),dtype=np.float)
-zeros=np.zeros(size)
-counts=zeros+N**3/(size-1)
-counts[0]=0
-dspls=(np.arange(size)-1)*N**3/(size-1)
-dspls[0]=0
+recvdata_k1=np.empty((N/(size),N,N/2+1),dtype=np.complex128)
+senddata_k1=np.empty((N/(size),N,N/2+1),dtype=np.complex128)
+#recvdata_x1=np.empty((N/(size),N,N),dtype=np.float64)
+#recvdata_x2=np.empty((N/(size),N,N),dtype=np.float64)
+wk=Tide.Get_wk()
 
 
 if rank==0:
     deltax=np.linspace(0,N,N**3).reshape(N,N,N)
     change=np.array(Tide.LoadData(Input),dtype=np.float64)
     deltax[:]=change[:]
-    print '0'
+    deltax=np.array(deltax,dtype=np.float64)
     del change
-    deltak=np.empty((N,N,N/2+1),dtype=np.complex)
-    print deltax.shape
-    print deltax.dtype
-    fft=fftw.Plan(inarray=deltax,outarray=deltak,direction='forward',nthreads=8)
+    deltak=np.empty((N,N,N/2+1),dtype=np.complex128)
+    fft=fftw.Plan(inarray=deltax,outarray=deltak,direction='forward',nthreads=nthreads)
     fftw.execute(fft)
     fftw.destroy_plan(fft)
-    print '1'
-    k=(fn[:,None,None]**2.+fn[None,:,None]**2.+fnc[None,None,:]**2)**(1./2.)
-#   k[N/2+1:,:,:]=0
-    window_k= np.sinc(1./N*fn[:,None,None])*np.sinc(1./N*fn[None,:,None])*np.sinc(1./N*fnc[None,None,:])
-    smooth_k=np.empty((N/(size-1)+N,N,N/2+1),dtype=np.complex)
-    print '2'
-comm.Scatterv([deltak,counts,dspls,MPI.DOUBLE_COMPLEX],recvdata_k1,root=0) #deltak
-comm.Scatterv([deltak,counts,dspls,MPI.DOUBLE_COMPLEX],recvdata_k1,root=0) #deltak
-print '2.1'
-comm.Scatterv([k,counts,dspls,MPI.DOUBLE],recvdata_x1,root=0)              #k
-comm.Scatterv([k,counts,dspls,MPI.DOUBLE],recvdata_x1,root=0)              #k
-print '2.2'
-comm.Scatterv([window_k,counts,dspls,MPI.DOUBLE],recvdata_x2,root=0)       #window_k
-comm.Scatterv([window_k,counts,dspls,MPI.DOUBLE],recvdata_x2,root=0)       #window_k
-print '2.3'
-if rank!=0:
-    senddata_k1=recvdata_k1*np.exp(-0.5*Kf*Kf*recvdata_x1*recvdata_x1*Sigma**2)/recvdata_x2    #smooth_k
-comm.Gatherv([senddata_k1,counts[rank]],[smooth_k,counts,dspls,MPI.DOUBLE_COMPLEX],root=0)
-print '2.4'
+#   deltak/=N**3
+    smooth_k=np.empty((N,N,N/2+1),dtype=np.complex128)
+k=(mpi_fn[rank][:,None,None]**2.+fn[None,:,None]**2.+fnc[None,None,:]**2)**(1./2.)
+window_k= np.sinc(1./N*mpi_fn[rank][:,None,None])*np.sinc(1./N*fn[None,:,None])*np.sinc(1./N*fnc[None,None,:])
+comm.Scatter(deltak,recvdata_k1,root=0) #deltak
+#comm.Scatterv(k,recvdata_x1,root=0)              #k
+#comm.Scatterv(window_k,recvdata_x2,root=0)       #window_k
+senddata_k1=recvdata_k1*np.exp(-0.5*Kf*Kf*k*k*Sigma**2)/window_k      #smooth_k
+comm.Gather(senddata_k1,smooth_k,root=0)
 if rank==0:
-    print '3'
-    smooth_k=smooth_k[N/size-1:][:N/2+1]
-    print smooth_k.shape
-    ifft=fftw.Plan(inarray=smooth_k,outarray=deltax,direction='backward',nthreads=4)
+    ifft=fftw.Plan(inarray=smooth_k,outarray=deltax,direction='backward',nthreads=nthreads)
     fftw.execute(ifft)
     fftw.destroy_plan(ifft)
-    deltax/=N**3
-    print '4'
-    Tide.SaveDataHdf5(deltax,Outfile+'smooth_1.25.hdf5')
-
-
+    deltax/=N**3              #   smoothed
+    deltagw1=np.empty_like(smooth_k,dtype=np.complex128)
+    deltagw2=np.empty_like(smooth_k,dtype=np.complex128)
+    deltax1=np.empty_like(deltax,dtype=np.float64) 
+    deltax2=np.empty_like(deltax,dtype=np.float64) 
+    del smooth_k
+#   Tide.SaveDataHdf5(deltax,Outfile+'smooth_1.25.hdf5')
+    deltak=np.empty((N,N,N/2+1),dtype=np.complex128)
+    deltax=np.log(deltax)
+    fft=fftw.Plan(inarray=deltax,outarray=deltak,direction='forward',nthreads=nthreads)
+    fftw.execute(fft)
+    fftw.destroy_plan(fft)
+#   deltak/=N**3
+    k[0,0,0]=10**-4/Kf
+comm.Scatter(deltak,recvdata_k1,root=0) #deltak  smoothed log
+W=wk(k*Kf)
+if rank==0:
+    W[0,0,0]=1
+deltak1=recvdata_k1*W*1j*Kf*(mpi_fn[rank][:,None,None]+np.zeros_like(fn)[None,:,None]+np.zeros_like(fnc)[None,None,:])
+deltak2=recvdata_k1*W*1j*Kf*(np.zeros_like(mpi_fn[rank])[:,None,None]+fn[None,:,None]+np.zeros_like(fnc)[None,None,:])
+comm.Gather(deltak1,deltagw1,root=0)
+comm.Gather(deltak2,deltagw2,root=0)
+if rank==0:
+    k[0,0,0]=0
+    ifft=fftw.Plan(inarray=deltagw1,outarray=deltax1,direction='backward',nthreads=nthreads)
+    fftw.execute(ifft)
+    fftw.destroy_plan(ifft)
+    deltax1/=N**3
+    ifft=fftw.Plan(inarray=deltagw2,outarray=deltax2,direction='backward',nthreads=nthreads)
+    fftw.execute(ifft)
+    fftw.destroy_plan(ifft)
+    deltax2/=N**3
+    Tide.SaveDataHdf5(deltax1,Outfile+'deltax1.25.hdf5')
+    Tide.SaveDataHdf5(deltax2,Outfile+'deltay1.25.hdf5')
