@@ -5,7 +5,8 @@ from Gau import Gau
 from TIDES import *
 import sys
 sigma=1.25
-Inputfilename='/home/zhm/tides20/0.000halo.bin'
+#Inputfilename='/home/zhm/tides20/0.000halo.bin'
+Inputfilename='/home/zhm/tides20/0.000halo_rsd3.bin'
 Outputfilename='/home/mtx/data/tide/halo_new/outdata/'
 print Inputfilename
 print Outputfilename

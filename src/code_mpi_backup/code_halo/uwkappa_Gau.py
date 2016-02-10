@@ -32,6 +32,8 @@ deltagw2=None
 deltak=None
 deltax1=None
 deltax2=None
+sum=0.
+Pk0=None
 Pk1=None
 Pk2=None
 Pk3=None
@@ -39,6 +41,7 @@ k=None
 window_k=None
 recvdata_k1=np.empty((N/(size),N,N/2+1),dtype=np.complex128)
 senddata_k1=np.empty((N/(size),N,N/2+1),dtype=np.complex128)
+SaveHalo=True  #save Pk_halo
 #delta_k=np.empty((N/(size),N,N/2+1),dtype=np.complex128)
 wk=Tide.Get_wk()
 
@@ -49,6 +52,8 @@ if rank==0:
     deltax[:]=change[:]
     deltax=np.array(deltax,dtype=np.float64)
     del change
+    sum=deltax.sum()
+    deltax*=(N**3/sum)   #for halo, the data is n/nbar.
 ###################################smooth#######################################
     print '='*80
     print 'smoothing...'
@@ -61,15 +66,27 @@ if rank==0:
 k=(mpi_fn[rank][:,None,None]**2.+fn[None,:,None]**2.+fnc[None,None,:]**2)**(1./2.)
 window_k= np.sinc(1./N*mpi_fn[rank][:,None,None])*np.sinc(1./N*fn[None,:,None])*np.sinc(1./N*fnc[None,None,:])
 comm.Scatter(deltak,recvdata_k1,root=0) #deltak
+sum=comm.bcast(sum,root=0) #deltak
 senddata_k1=recvdata_k1*np.exp(-0.5*Kf*Kf*k*k*Sigma**2)/window_k      #smooth_k
-delta_k=recvdata_k1/window_k
+Ph=L**3/N**6*np.abs(senddata_k1)**2
+Wiener=Ph/(Ph+(L**3)/sum)   #wiener filter
+senddata_k1*=Wiener
+Pk_halo=np.abs(recvdata_k1/window_k)**2
+Pk_halo*=(L**3/N**6)
+Pk_halo=np.array(Pk_halo,dtype=np.float64)
 comm.Gather(senddata_k1,smooth_k,root=0)
 if rank==0:
+    from Gau import Gau
     ifft=fftw.Plan(inarray=smooth_k,outarray=deltax,direction='backward',nthreads=nthreads)
     fftw.execute(ifft)
     fftw.destroy_plan(ifft)
     deltax/=N**3              #   smoothed
+#   Tide.SaveDataHdf5(deltax,Outfile+'0.000den00_s1.25.hdf5')
     print 'smoothing end, time: %dm %ds'%((time.time()-t0)/60,(time.time()-t0)%60)
+    t0=time.time()
+##################################Gau....########################################
+    deltax=Gau(deltax,Outfile+'Gau.hdf5')
+    print 'Gau... end, time: %dm %ds'%((time.time()-t0)/60,(time.time()-t0)%60)
     t0=time.time()
 ##################################Wdeltag########################################
     print '='*80
@@ -81,7 +98,7 @@ if rank==0:
     del smooth_k
 #   Tide.SaveDataHdf5(deltax,Outfile+'smooth_1.25.hdf5')
     deltak=np.empty((N,N,N/2+1),dtype=np.complex128)
-    deltax=np.log(deltax)
+#   deltax=np.log(deltax)
     fft=fftw.Plan(inarray=deltax,outarray=deltak,direction='forward',nthreads=nthreads)
     fftw.execute(fft)
     fftw.destroy_plan(fft)
@@ -158,9 +175,22 @@ S=k1**2+k2**2
 if rank==0:
     S[0,0,:]=np.ones_like(S[0,0,:])
     kappa3d_k=np.empty((N,N,N/2+1),dtype=np.complex128)
+    Pk0=np.empty((N,N,N/2+1),dtype=np.float64)
     Pk1=np.empty((N,N,N/2+1),dtype=np.float64)
     Pk2=np.empty((N,N,N/2+1),dtype=np.float64)
     Pk3=np.empty((N,N,N/2+1),dtype=np.float64)
+
+    deltax=np.linspace(0,N,N**3).reshape(N,N,N)
+    change=np.array(Tide.LoadData(Input2),dtype=np.float64)
+    deltax[:]=change[:]
+    deltax=np.array(deltax,dtype=np.float64)
+    fft=fftw.Plan(inarray=deltax,outarray=deltak,direction='forward',nthreads=nthreads)
+    fftw.execute(fft)
+    fftw.destroy_plan(fft)
+comm.Scatter(deltak,recvdata_k1,root=0) #deltak
+delta_k=recvdata_k1/window_k  ############## !
+
+
 K_mag2=Kf*Kf*(mpi_fn[rank][:,None,None]**2.+fn[None,:,None]**2.+fnc[None,None,:]**2)
 kappa3dk=2*K_mag2/(S**2)*((k1**2-k2**2)*gamma1k+2*k1*k2*gamma2k)
 kappak_w=kappa3dk/window_k
@@ -176,6 +206,7 @@ Pk_dk*=(L**3/N**6)
 Pk_dk=np.array(Pk_dk,dtype=np.float64)
 
 comm.Gather(kappa3dk,kappa3d_k,root=0)
+comm.Gather(Pk_halo,Pk0,root=0)
 comm.Gather(Pk_dd,Pk1,root=0)
 comm.Gather(Pk_dk,Pk2,root=0)
 comm.Gather(Pk_kk,Pk3,root=0)
@@ -192,3 +223,5 @@ if rank==0:
     Tide.SaveDataHdf5(Pk1,Outfile+'0.000den00_Pk_delta.hdf5')
     Tide.SaveDataHdf5(Pk2,Outfile+'0.000den00_Pk_delta_kappa.hdf5')
     Tide.SaveDataHdf5(Pk3,Outfile+'0.000den00_Pk_kappa.hdf5')
+    if SaveHalo:
+        Tide.SaveDataHdf5(Pk0,Outfile+'0.000den00_Pk_halo.hdf5')

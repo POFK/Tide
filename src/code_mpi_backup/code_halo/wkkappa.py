@@ -8,7 +8,7 @@ import fftw3 as fftw
 
 '''get kappa(kv,kp),b,w, and get kappa(x)'''
 dir=Outfile
-#Input='/home/mtx/data/tide/0.000den00.bin'
+#Input2='/home/mtx/data/tide/0.000den00.bin'
 input1=dir+'0.000den00_Pk_delta.hdf5'
 input2=dir+'0.000den00_Pk_delta_kappa.hdf5'
 input3=dir+'0.000den00_Pk_kappa.hdf5'
@@ -39,7 +39,7 @@ if rank==0:
     print '='*80
     print 'Cal wkkappa'
     deltax=np.linspace(0,N,N**3).reshape(N,N,N)
-    change=np.array(Tide.LoadData(Input),dtype=np.float64)
+    change=np.array(Tide.LoadData(Input2),dtype=np.float64)
     deltax[:]=change[:]
     deltax=np.array(deltax,dtype=np.float64)
     del change

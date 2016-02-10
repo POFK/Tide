@@ -3,8 +3,9 @@
 from TIDES import *
 import scipy.integrate as integrate
 import scipy.interpolate as interpolate
+import time
 import matplotlib.pyplot as plt
-import sys
+#import sys
 ##********************************************************************************#
 #name='halorhobin1024m3z0.000.dat'
 #def Gau(input='',output=''):
@@ -12,6 +13,8 @@ import sys
 #    output=sys.argv[2]
 def Gau(data,output):
     print 'Gau.................................'
+    t0=time.time()
+
     bin=100
 #   data=Tide.LoadDataOfhdf5(input)-1
     shape=data.shape
@@ -21,6 +24,10 @@ def Gau(data,output):
     #data=data[sort_data]
 #   hist=np.histogram(data,bins=bin)
     print 'step 1'
+    print 'time: %dm %ds'%((time.time()-t0)/60,(time.time()-t0)%60)
+    t0=time.time()
+
+
     ###############################gauss...#########################################
     n=1024**3
     x=np.linspace(-3,3,1000)
@@ -33,6 +40,9 @@ def Gau(data,output):
     x=f(a)
     del a
     print 'step 2'
+    print 'time: %dm %ds'%((time.time()-t0)/60,(time.time()-t0)%60)
+    t0=time.time()
+
     ################################################################################
     data[sort_data]=x
     ################################################################################
@@ -43,6 +53,9 @@ def Gau(data,output):
     result=(data*sum1/sum2+1).reshape(shape)
     Tide.SaveDataHdf5(result,output)
     print 'step 3'
+    print 'time: %dm %ds'%((time.time()-t0)/60,(time.time()-t0)%60)
+    t0=time.time()
+
     #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=
 #   plt.subplot(2,1,1)
 #   plt.plot(hist[1][:-1],hist[0],'b-',label='1')
@@ -52,5 +65,6 @@ def Gau(data,output):
 #   plt.legend()
 #   plt.savefig('Gau_test.png')
 #   print 'step 4'
-    print 'ok'
+#   print 'time: %dm %ds'%((time.time()-t0)/60,(time.time()-t0)%60)
+#   t0=time.time()
     return result
