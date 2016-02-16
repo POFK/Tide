@@ -7,7 +7,7 @@ import scipy.interpolate as interpolate
 import h5py
 ####################################################
 N = 1024
-L = 1.2 * 10**3  # Mpc
+L = 0.6 * 10**3  # Mpc
 H = L / 1024.
 ####################################################
 
@@ -17,22 +17,21 @@ class Tide():
     @classmethod
     def LoadData(self, filename='/home/mtx/data/tide/0.000den00.bin'):
         '''read bin data'''
-        print 'Loading data.................'
-        f = open(filename, 'rb')
-        data = f.read()
-        f.close()
-        data = struct.unpack('1073741824f', data)
-        data = np.array(data, dtype=np.float16)
+        print 'Loading data  in  filename'
+#       f = open(filename, 'rb')
+#       data = f.read()
+#       f.close()
+#       data = struct.unpack('1073741824f', data)
+#       data = np.array(data, dtype=np.float)
+        data=np.fromfile(filename,dtype='f4',count=1024**3)
         data = data.reshape((1024, 1024, 1024), order='F')
         return data
 
     @classmethod
     def SaveDataHdf5(self,data,filename):
         print 'Save data....................'
-        dtype=np.dtype([('data','f4')])
-        data=np.array(data,dtype=dtype)
         f=h5py.File(filename,mode='w')
-        f.create_dataset(name='data',data=data)
+        f.create_dataset(name='data',dtype='f4',data=data)
         f.close()
 
     @classmethod
@@ -40,7 +39,7 @@ class Tide():
         print 'Loading hdf5'
         f=h5py.File(filename)
         data=f['data'].value
-        data=np.array(data,dtype=np.float16)
+        data=np.array(data,dtype=np.float)
         f.close()
         return data
 
@@ -81,13 +80,15 @@ class Tide():
         return Pk
 
     @classmethod
-    def CrossPowerSpectrum(self,data1,data2):
+    def CrossPowerSpectrum(self,data1,data2,window=False):
         '''data1:delta,data2:kappa'''
         x = np.fft.fftfreq(N,1./N)  # x: 0,1,2,...,512,-511,...,-2,-1
         delta_k1 = np.fft.fftn(data1)
         window_k = np.sinc(1. / N * x[:,None,None]) * np.sinc(1. / N * x[None,:,None]) * np.sinc(1. / N * x[None,None,:])
         delta_k1=delta_k1/window_k
         delta_k2 = np.fft.fftn(data2)
+        if window==True:
+            delta_k2=delta_k2/window_k
         Pk=(delta_k1.conjugate()*delta_k2+delta_k2.conjugate()*delta_k1)/2
         return Pk.real
 
@@ -116,7 +117,7 @@ class Tide():
         return wk
 
     @classmethod
-    def Smooth(self,data,sigma=1.25,log=True):
+    def Smooth(self,data,sigma=1.25,log=False):
 
         print 'Smoothing....................'
         Kf=2*np.pi/(1.2*10**3)

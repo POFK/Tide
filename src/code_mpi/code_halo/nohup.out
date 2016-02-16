@@ -1,0 +1,380 @@
+------------------------------------------------------------------------------------------
+**************************************2016/02/16_06:21:31******************************************
+outdir: /home/mtx/data/tide/haloes2/outdata/halo_0024_r1/
+Loading data  in  filename
+================================================================================
+smoothing...
+Save data....................
+smoothing end, time: 3m 27s
+Gau.................................
+step 1
+time: 11m 58s
+step 2
+time: 6m 3s
+sum1= 0.999999759067
+sum2= 1.0
+Save data....................
+step 3
+time: 5m 22s
+Gau... end, time: 23m 24s
+================================================================================
+starting cal wdengx wdengy
+/home/mtx/github/Tide/src/TIDES.py:116: RuntimeWarning: invalid value encountered in sqrt
+  return (fk(k)/Pk(k)/Q)**0.5/k
+wdengx wdengy , time: 4m 19s
+================================================================================
+Cal kappa
+Loading data  in  filename
+Cal kappa end, time: 7m 6s
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+================================================================================
+Cal wkkappa
+Loading data  in  filename
+Loading hdf5
+Save data....................
+**************************END IN:    2016/02/16_07:19:42******************************************
+------------------------------------------------------------------------------------------
+**************************************2016/02/16_07:19:42******************************************
+outdir: /home/mtx/data/tide/haloes2/outdata/halo_0024_r2/
+Loading data  in  filename
+================================================================================
+smoothing...
+Save data....................
+smoothing end, time: 3m 30s
+Gau.................................
+step 1
+time: 12m 1s
+step 2
+time: 6m 1s
+sum1= 0.999999759075
+sum2= 0.999999999999
+Save data....................
+step 3
+time: 5m 17s
+Gau... end, time: 23m 21s
+================================================================================
+starting cal wdengx wdengy
+/home/mtx/github/Tide/src/TIDES.py:116: RuntimeWarning: invalid value encountered in sqrt
+  return (fk(k)/Pk(k)/Q)**0.5/k
+wdengx wdengy , time: 4m 19s
+================================================================================
+Cal kappa
+Loading data  in  filename
+Cal kappa end, time: 6m 58s
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+================================================================================
+Cal wkkappa
+Loading data  in  filename
+Loading hdf5
+Save data....................
+**************************END IN:    2016/02/16_08:17:56******************************************
+------------------------------------------------------------------------------------------
+**************************************2016/02/16_08:17:56******************************************
+outdir: /home/mtx/data/tide/haloes2/outdata/halo_0024_r3/
+Loading data  in  filename
+================================================================================
+smoothing...
+Save data....................
+smoothing end, time: 3m 26s
+Gau.................................
+step 1
+time: 12m 2s
+step 2
+time: 6m 2s
+sum1= 0.999999759075
+sum2= 0.999999999999
+Save data....................
+step 3
+time: 5m 16s
+Gau... end, time: 23m 21s
+================================================================================
+starting cal wdengx wdengy
+/home/mtx/github/Tide/src/TIDES.py:116: RuntimeWarning: invalid value encountered in sqrt
+  return (fk(k)/Pk(k)/Q)**0.5/k
+wdengx wdengy , time: 4m 16s
+================================================================================
+Cal kappa
+Loading data  in  filename
+Cal kappa end, time: 6m 55s
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+================================================================================
+Cal wkkappa
+Loading data  in  filename
+Loading hdf5
+Save data....................
+**************************END IN:    2016/02/16_09:15:51******************************************
+------------------------------------------------------------------------------------------
+**************************************2016/02/16_09:15:51******************************************
+outdir: /home/mtx/data/tide/haloes2/outdata/halo_0024_r4/
+Loading data  in  filename
+================================================================================
+smoothing...
+Save data....................
+smoothing end, time: 3m 24s
+Gau.................................
+step 1
+time: 12m 3s
+step 2
+time: 6m 3s
+sum1= 0.999999759053
+sum2= 0.999999999999
+Save data....................
+step 3
+time: 5m 27s
+Gau... end, time: 23m 34s
+================================================================================
+starting cal wdengx wdengy
+/home/mtx/github/Tide/src/TIDES.py:116: RuntimeWarning: invalid value encountered in sqrt
+  return (fk(k)/Pk(k)/Q)**0.5/k
+wdengx wdengy , time: 4m 21s
+================================================================================
+Cal kappa
+Loading data  in  filename
+Cal kappa end, time: 7m 2s
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+================================================================================
+Cal wkkappa
+Loading data  in  filename
+Loading hdf5
+Save data....................
+**************************END IN:    2016/02/16_10:12:52******************************************
+------------------------------------------------------------------------------------------
+**************************************2016/02/16_10:12:52******************************************
+outdir: /home/mtx/data/tide/haloes2/outdata/halo_0024_r5/
+Loading data  in  filename
+================================================================================
+smoothing...
+Save data....................
+smoothing end, time: 3m 27s
+Gau.................................
+step 1
+time: 11m 57s
+step 2
+time: 6m 2s
+sum1= 0.999999759074
+sum2= 1.0
+Save data....................
+step 3
+time: 5m 22s
+Gau... end, time: 23m 21s
+================================================================================
+starting cal wdengx wdengy
+/home/mtx/github/Tide/src/TIDES.py:116: RuntimeWarning: invalid value encountered in sqrt
+  return (fk(k)/Pk(k)/Q)**0.5/k
+wdengx wdengy , time: 4m 18s
+================================================================================
+Cal kappa
+Loading data  in  filename
+Cal kappa end, time: 7m 0s
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+================================================================================
+Cal wkkappa
+Loading data  in  filename
+Loading hdf5
+Save data....................
+**************************END IN:    2016/02/16_11:09:35******************************************
+------------------------------------------------------------------------------------------
+**************************************2016/02/16_11:09:35******************************************
+outdir: /home/mtx/data/tide/haloes2/outdata/halo_0024_r6/
+Loading data  in  filename
+================================================================================
+smoothing...
+Save data....................
+smoothing end, time: 3m 27s
+Gau.................................
+step 1
+time: 12m 0s
+step 2
+time: 6m 0s
+sum1= 0.99999975908
+sum2= 1.0
+Save data....................
+step 3
+time: 5m 25s
+Gau... end, time: 23m 26s
+================================================================================
+starting cal wdengx wdengy
+/home/mtx/github/Tide/src/TIDES.py:116: RuntimeWarning: invalid value encountered in sqrt
+  return (fk(k)/Pk(k)/Q)**0.5/k
+wdengx wdengy , time: 4m 17s
+================================================================================
+Cal kappa
+Loading data  in  filename
+Cal kappa end, time: 6m 57s
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+================================================================================
+Cal wkkappa
+Loading data  in  filename
+Loading hdf5
+Save data....................
+**************************END IN:    2016/02/16_12:06:26******************************************
+------------------------------------------------------------------------------------------
+**************************************2016/02/16_12:06:26******************************************
+outdir: /home/mtx/data/tide/haloes2/outdata/halo_0048rsd/
+Loading data  in  filename
+================================================================================
+smoothing...
+Save data....................
+smoothing end, time: 3m 26s
+Gau.................................
+step 1
+time: 11m 58s
+step 2
+time: 6m 0s
+sum1= 0.99999987953
+sum2= 1.0
+Save data....................
+step 3
+time: 5m 23s
+Gau... end, time: 23m 23s
+================================================================================
+starting cal wdengx wdengy
+/home/mtx/github/Tide/src/TIDES.py:116: RuntimeWarning: invalid value encountered in sqrt
+  return (fk(k)/Pk(k)/Q)**0.5/k
+wdengx wdengy , time: 4m 17s
+================================================================================
+Cal kappa
+Loading data  in  filename
+Cal kappa end, time: 6m 57s
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+================================================================================
+Cal wkkappa
+Loading data  in  filename
+Loading hdf5
+Save data....................
+**************************END IN:    2016/02/16_13:06:15******************************************
+------------------------------------------------------------------------------------------
+**************************************2016/02/16_14:06:14******************************************
+outdir: /home/mtx/data/tide/haloes2/outdata/halo_0024_r7/
+Loading data  in  filename
+================================================================================
+smoothing...
+Save data....................
+smoothing end, time: 3m 25s
+Gau.................................
+step 1
+time: 11m 56s
+step 2
+time: 6m 1s
+sum1= 0.999999759056
+sum2= 1.0
+Save data....................
+step 3
+time: 5m 17s
+Gau... end, time: 23m 15s
+================================================================================
+starting cal wdengx wdengy
+/home/mtx/github/Tide/src/TIDES.py:116: RuntimeWarning: invalid value encountered in sqrt
+  return (fk(k)/Pk(k)/Q)**0.5/k
+wdengx wdengy , time: 4m 16s
+================================================================================
+Cal kappa
+Loading data  in  filename
+Cal kappa end, time: 6m 54s
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+================================================================================
+Cal wkkappa
+Loading data  in  filename
+Loading hdf5
+Save data....................
+**************************END IN:    2016/02/16_15:03:04******************************************
+------------------------------------------------------------------------------------------
+**************************************2016/02/16_15:03:04******************************************
+outdir: /home/mtx/data/tide/haloes2/outdata/halo_0024_r8/
+Loading data  in  filename
+================================================================================
+smoothing...
+Save data....................
+smoothing end, time: 3m 26s
+Gau.................................
+step 1
+time: 11m 58s
+step 2
+time: 6m 0s
+sum1= 0.999999759066
+sum2= 1.0
+Save data....................
+step 3
+time: 5m 18s
+Gau... end, time: 23m 17s
+================================================================================
+starting cal wdengx wdengy
+/home/mtx/github/Tide/src/TIDES.py:116: RuntimeWarning: invalid value encountered in sqrt
+  return (fk(k)/Pk(k)/Q)**0.5/k
+wdengx wdengy , time: 4m 20s
+================================================================================
+Cal kappa
+Loading data  in  filename
+Cal kappa end, time: 6m 58s
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+================================================================================
+Cal wkkappa
+Loading data  in  filename
+Loading hdf5
+Save data....................
+**************************END IN:    2016/02/16_16:00:19******************************************
+------------------------------------------------------------------------------------------
+**************************************2016/02/16_16:00:19******************************************
+outdir: /home/mtx/data/tide/haloes2/outdata/halo_0024_r9/
+Loading data  in  filename
+================================================================================
+smoothing...
+Save data....................
+smoothing end, time: 3m 24s
+Gau.................................
+step 1
+time: 12m 0s
+step 2
+time: 6m 1s
+sum1= 0.999999759065
+sum2= 1.0
+Save data....................
+step 3
+time: 5m 13s
+Gau... end, time: 23m 15s
+================================================================================
+starting cal wdengx wdengy
+/home/mtx/github/Tide/src/TIDES.py:116: RuntimeWarning: invalid value encountered in sqrt
+  return (fk(k)/Pk(k)/Q)**0.5/k
+wdengx wdengy , time: 4m 22s
+================================================================================
+Cal kappa
+Loading data  in  filename
+Cal kappa end, time: 6m 54s
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+================================================================================
+Cal wkkappa
+Loading data  in  filename
+Loading hdf5
+Save data....................
+**************************END IN:    2016/02/16_16:57:34******************************************
