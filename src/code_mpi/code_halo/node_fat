@@ -1,0 +1,2 @@
+#mpirun -hostfile myhostfile python mpi_test.py
+fat   slots=1

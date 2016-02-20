@@ -39,6 +39,9 @@ def Pl(Outfile,line='-.',label=''):
     plt.legend()
     #plt.show()
     #print dk[:,1]/np.sqrt(dd[:,1]*kk[:,1])
+#Pl(Outfile='/home/mtx/data/tide/haloes/outdata/halo_0024/',line='-',label='H0')
+#Pl(Outfile='/home/mtx/data/tide/haloes/outdata/halo_0024_L/',line='-',label='L0')
+
 Pl(Outfile='/home/mtx/data/tide/haloes2/outdata/halo_0024/',line='--',label='H')
 Pl(Outfile='/home/mtx/data/tide/haloes2/outdata/halo_0024_L/',line='--',label='L')
 Pl(Outfile='/home/mtx/data/tide/haloes2/outdata/halo_0024_r1/',line='-.',label='r1')
@@ -56,10 +59,15 @@ Pl(Outfile='/home/mtx/data/tide/haloes2/outdata/halo_0024_r9/',line='-.',label='
 #Pl(Outfile='/home/mtx/data/tide/haloes2/outdata/halo_0048rsd/',line='-.',label='rsd2')
 #Pl(Outfile='/home/mtx/data/tide/haloes2/outdata/halo_0048/',line='-.',label='1.252')
 
+#Pl(Outfile='/project/mtx/data/tide/haloes1/test_halo/',line='-.',label='1.25')
+#Pl(Outfile='/project/mtx/data/tide/haloes1/test_halorsd/',line='-.',label='rsd')
+
 #Pl(Outfile='/home/mtx/data/tide/haloes/outdata/halo_0048_s2.5/',line='-.',label='2.5')
 #Pl(Outfile='/home/mtx/data/tide/haloes/outdata/halo_0048_s5.0/',line='-.',label='5')
 #Pl(Outfile='/home/mtx/data/tide/haloes/outdata/halo_0048_s8.0/',line='-.',label='8')
 #Pl(Outfile='/home/mtx/data/tide/haloes/outdata/halo_0048_s10.0/',line='-.',label='10')
 #Pl(Outfile='/home/mtx/data/tide/haloes/outdata/halo_0048_s12.5/',line='-.',label='12.5')
-
+plt.xlim([10**-2,1])
+plt.grid()
 plt.show()
+#plt.savefig('cc_random.png')

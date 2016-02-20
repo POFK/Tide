@@ -12,11 +12,11 @@ Input=  sys.argv[1]    #'/home/mtx/data/tide/haloes/0.000halo_0.0024.bin'  # hal
 Input2='/home/zhm/tides10/0.000delta.bin'  # dark matter
 Outfile=sys.argv[2]    #'/home/mtx/data/tide/haloes/outdata/halo_0024/'
 N=1024
-#L=1.2*10**3
 L=1.2*10**3
+#L=0.6*10**3
 H=L/N
 Sigma=1.25
-nthreads=16   #fftw threads number
+nthreads=2 #fftw threads number
 bins=10
 #********************************************************************************
 Kf=2*np.pi/L
