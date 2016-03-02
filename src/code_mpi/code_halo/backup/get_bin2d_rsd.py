@@ -12,6 +12,7 @@ dir=Outfile
 input1=dir+'0.000den00_Pk_delta.hdf5'
 input2=dir+'0.000den00_Pk_delta_kappa.hdf5'
 input3=dir+'0.000den00_Pk_kappa.hdf5'
+bias_1024=None
 #Outfile='/home/mtx/data/tide/outdata/test/'
 #################################################################################
 #comm = MPI.COMM_WORLD
@@ -38,6 +39,12 @@ f.close()
 f=h5py.File(input3)
 Pk_kk=f['data'][mpi_index[rank].tolist()]
 f.close()
+
+if rank==0:
+    bias_1024=np.empty((N,N,N/2+1),dtype=np.float64)
+bias=Pk_dk/Pk_dd
+comm.Gather(bias,bias_1024,root=0)
+del bias
 
 binlog=np.linspace(0,np.log10(512),bins,endpoint=False)
 dbinlog=binlog[2]-binlog[1]
@@ -69,14 +76,15 @@ for i in range(bins):
 
 ####################################################################################################
 kn=comm.reduce(kn,root=0)
-pk1=comm.reduce(pk1,op=MPI.SUM,root=0)#Pk_d
-pk2=comm.reduce(pk2,op=MPI.SUM,root=0)#Pk_kd
-pk3=comm.reduce(pk3,op=MPI.SUM,root=0)#Pk_k
+pk1=comm.reduce(pk1,root=0)#Pk_d
+pk2=comm.reduce(pk2,root=0)#Pk_kd
+pk3=comm.reduce(pk3,root=0)#Pk_k
 if rank==0:
     b=pk2/pk1
     Pn=pk3-b**2*pk1
     W=pk1/(pk1+Pn/(b**2))
     Pd=pk1/kn
+    Tide.SaveDataHdf5(bias_1024,Outfile+'bias.hdf5')
     np.savetxt(Outfile+'result_Pd',Pd)
     np.savetxt(Outfile+'result_b',b)
     np.savetxt(Outfile+'result_Pn',Pn)

@@ -18,7 +18,7 @@ from parameter import *
 #L=1.2*10**3
 #H=L/N
 #Kf=2*np.pi/L
-fn=np.fft.fftfreq(N,1./N)  #x: 0,1,2,...,512,-511,-510,...,-2,-1
+#fn=np.fft.fftfreq(N,1./N)  #x: 0,1,2,...,512,-511,-510,...,-2,-1
 #fnc=np.arange(N/2+1)
 #mpi_fn=np.array_split(fn,size)
 #Sigma=1.25
@@ -46,71 +46,27 @@ SaveHalo=True  #save Pk_halo
 wk=Tide.Get_wk()
 
 if rank==0:
-    import os
-    if not os.path.exists(Outfile):
-        os.mkdir(Outfile)
-    print 'outdir:',Outfile
     import time
-    Pk0=np.empty((N,N,N/2+1),dtype=np.float64)
-    deltax=np.linspace(0,N,N**3).reshape(N,N,N)
-    change=np.array(Tide.LoadData(Input),dtype=np.float64)
-    deltax[:]=change[:]
-    deltax=np.array(deltax,dtype=np.float64)
-    del change
-    sum=deltax.sum()
-    deltax*=(N**3/sum)   #for halo, the data is n/nbar.
+    deltax=Tide.LoadDataOfhdf5(Outfile+'Gau.hdf5')
 ###################################smooth#######################################
-    print '='*80
-    print 'smoothing...'
     t0=time.time()
     deltak=np.empty((N,N,N/2+1),dtype=np.complex128)
-    fft=fftw.Plan(inarray=deltax,outarray=deltak,direction='forward',nthreads=nthreads)
-    fftw.execute(fft)
-    fftw.destroy_plan(fft)
     smooth_k=np.empty((N,N,N/2+1),dtype=np.complex128)
 k=(mpi_fn[rank][:,None,None]**2.+fn[None,:,None]**2.+fnc[None,None,:]**2)**(1./2.)
 window_k= np.sinc(1./N*mpi_fn[rank][:,None,None])*np.sinc(1./N*fn[None,:,None])*np.sinc(1./N*fnc[None,None,:])
-comm.Scatter(deltak,recvdata_k1,root=0) #deltak
-sum=comm.bcast(sum,root=0) #deltak
-senddata_k1=recvdata_k1*np.exp(-0.5*Kf*Kf*k*k*Sigma**2)/window_k      #smooth_k
-Ph=L**3/N**6*np.abs(senddata_k1)**2
-Wiener=Ph/(Ph+(L**3)/sum)   #wiener filter
-senddata_k1*=Wiener
-Pk_halo=np.abs(recvdata_k1/window_k)**2
-Pk_halo*=(L**3/N**6)
-Pk_halo=np.array(Pk_halo,dtype=np.float64)
-comm.Gather(senddata_k1,smooth_k,root=0)
-comm.Gather(Pk_halo,Pk0,root=0)
 if rank==0:
-    from Gau import Gau
-    ifft=fftw.Plan(inarray=smooth_k,outarray=deltax,direction='backward',nthreads=nthreads)
-    fftw.execute(ifft)
-    fftw.destroy_plan(ifft)
-    deltax/=N**3              #   smoothed
-    if SaveHalo:
-        Tide.SaveDataHdf5(Pk0,Outfile+'0.000den00_Pk_halo.hdf5')
-#   Tide.SaveDataHdf5(deltax,Outfile+'0.000den00_s1.25.hdf5')
-    print 'smoothing end, time: %dm %ds'%((time.time()-t0)/60,(time.time()-t0)%60)
-    t0=time.time()
-##################################Gau....########################################
-    deltax=Gau(deltax,Outfile+'Gau.hdf5')
-    print 'Gau... end, time: %dm %ds'%((time.time()-t0)/60,(time.time()-t0)%60)
     t0=time.time()
 ##################################Wdeltag########################################
     print '='*80
     print 'starting cal wdengx wdengy'
-    deltagw1=np.empty_like(smooth_k,dtype=np.complex128)
-    deltagw2=np.empty_like(smooth_k,dtype=np.complex128)
+    deltagw1=np.empty((N,N,N/2+1),dtype=np.complex128)
+    deltagw2=np.empty((N,N,N/2+1),dtype=np.complex128)
     deltax1=np.empty_like(deltax,dtype=np.float64) 
     deltax2=np.empty_like(deltax,dtype=np.float64) 
-    del smooth_k
-#   Tide.SaveDataHdf5(deltax,Outfile+'smooth_1.25.hdf5')
     deltak=np.empty((N,N,N/2+1),dtype=np.complex128)
-#   deltax=np.log(deltax)
     fft=fftw.Plan(inarray=deltax,outarray=deltak,direction='forward',nthreads=nthreads)
     fftw.execute(fft)
     fftw.destroy_plan(fft)
-#   deltak/=N**3
     k[0,0,0]=10**-4/Kf
 comm.Scatter(deltak,recvdata_k1,root=0) #deltak  smoothed log
 W=wk(k*Kf)
@@ -132,7 +88,7 @@ if rank==0:
     deltax2/=N**3
     print 'wdengx wdengy , time: %dm %ds'%((time.time()-t0)/60,(time.time()-t0)%60)
     t0=time.time()
-#   Tide.SaveDataHdf5(deltax1,Outfile+'deltax1.25.hdf5')   
+#   Tide.SaveDataHdf5(deltax1,Outfile+'deltax1.25.hdf5')
 #   Tide.SaveDataHdf5(deltax2,Outfile+'deltay1.25.hdf5')
 
 

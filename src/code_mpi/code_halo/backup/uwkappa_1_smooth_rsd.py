@@ -46,17 +46,10 @@ SaveHalo=True  #save Pk_halo
 #wk=Tide.Get_wk()
 
 if rank==0:
-    import os
-    if not os.path.exists(Outfile):
-        os.mkdir(Outfile)
-    print 'outdir:',Outfile
     import time
     Pk0=np.empty((N,N,N/2+1),dtype=np.float64)
-    deltax=np.linspace(0,N,N**3).reshape(N,N,N)
-    change=np.array(Tide.LoadData(Input),dtype=np.float64)
-    deltax[:]=change[:]
+    deltax=Tide.LoadDataOfhdf5(Outfile+'halo_dealrsd.hdf5')
     deltax=np.array(deltax,dtype=np.float64)
-    del change
     sum=deltax.sum()
     deltax*=(N**3/sum)   #for halo, the data is n/nbar.
 ###################################smooth#######################################
@@ -82,7 +75,6 @@ Pk_halo=np.array(Pk_halo,dtype=np.float64)
 comm.Gather(senddata_k1,smooth_k,root=0)
 comm.Gather(Pk_halo,Pk0,root=0)
 if rank==0:
-    from Gau import Gau
     ifft=fftw.Plan(inarray=smooth_k,outarray=deltax,direction='backward',nthreads=nthreads)
     fftw.execute(ifft)
     fftw.destroy_plan(ifft)

@@ -46,10 +46,6 @@ SaveHalo=True  #save Pk_halo
 #wk=Tide.Get_wk()
 
 if rank==0:
-    import os
-    if not os.path.exists(Outfile):
-        os.mkdir(Outfile)
-    print 'outdir:',Outfile
     import time
     Pk0=np.empty((N,N,N/2+1),dtype=np.float64)
     deltax=np.linspace(0,N,N**3).reshape(N,N,N)
