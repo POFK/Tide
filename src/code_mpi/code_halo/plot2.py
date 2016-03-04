@@ -50,6 +50,13 @@ def Pl(Outfile,line='-.',label=''):
 #Pl(Outfile='/home/mtx/data/tide/haloes2/outdata/halo_0024_r8/',line='-.',label='r8')
 #Pl(Outfile='/home/mtx/data/tide/haloes2/outdata/halo_0024_r9/',line='-.',label='r9')
 
+Pl(Outfile='/project/mtx/output/tides10/halo_0.0048/',line='-.',label='r1')
+Pl(Outfile='/project/mtx/output/tides11/halo_0.0048/',line='-.',label='r2')
+Pl(Outfile='/project/mtx/output/tides12/halo_0.0048/',line='-.',label='r3')
+Pl(Outfile='/project/mtx/output/tides13/halo_0.0048/',line='-.',label='r4')
+Pl(Outfile='/project/mtx/output/tides14/halo_0.0048/',line='-.',label='r5')
+Pl(Outfile='/project/mtx/output/tides15/halo_0.0048/',line='-.',label='r6')
+
 #Pl(Outfile='/project/mtx/data/tide/data_halo/data/hm1/',line='--',label='h1')
 #Pl(Outfile='/project/mtx/data/tide/data_halo/data/hm2/',line='--',label='h2')
 #Pl(Outfile='/project/mtx/data/tide/data_halo/data/hm3/',line='--',label='h3')
@@ -63,9 +70,9 @@ def Pl(Outfile,line='-.',label=''):
 #Pl(Outfile='/project/mtx/data/tide/haloes1/test_halo/',line='-.',label='1.25')
 #Pl(Outfile='/project/mtx/data/tide/haloes1/test_halorsd/',line='-.',label='rsd')
 
-Pl(Outfile='/project/mtx/data/tide/haloes2/halo_0048/',line='-.',label='1.25')
-Pl(Outfile='/project/mtx/data/tide/haloes2/halo_0048_rsd/',line='-.',label='rsd')
-Pl(Outfile='/project/mtx/data/tide/haloes2/halo_0048_rsd_dealtest/',line='.--',label='rsd_d')
+#Pl(Outfile='/project/mtx/data/tide/haloes2/halo_0048/',line='-.',label='1.25')
+#Pl(Outfile='/project/mtx/data/tide/haloes2/halo_0048_rsd/',line='-.',label='rsd')
+#Pl(Outfile='/project/mtx/data/tide/haloes2/halo_0048_rsd_dealtest/',line='.--',label='rsd_d')
 
 #Pl(Outfile='/home/mtx/data/tide/haloes/outdata/halo_0048_s2.5/',line='-.',label='2.5')
 #Pl(Outfile='/home/mtx/data/tide/haloes/outdata/halo_0048_s5.0/',line='-.',label='5')
@@ -80,4 +87,4 @@ plt.xlim([10**-2,1])
 plt.grid(axis='y')
 plt.legend()
 plt.show()
-#plt.savefig('compare_rsd')
+#plt.savefig('./png/compare_rsd_CC')

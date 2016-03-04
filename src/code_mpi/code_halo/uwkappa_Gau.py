@@ -76,7 +76,8 @@ senddata_k1=recvdata_k1*np.exp(-0.5*Kf*Kf*k*k*Sigma**2)/window_k      #smooth_k
 Ph=L**3/N**6*np.abs(senddata_k1)**2
 Wiener=Ph/(Ph+(L**3)/sum)   #wiener filter
 senddata_k1*=Wiener
-Pk_halo=np.abs(recvdata_k1/window_k)**2
+#Pk_halo=np.abs(recvdata_k1/window_k)**2
+Pk_halo=np.abs(recvdata_k1)**2
 Pk_halo*=(L**3/N**6)
 Pk_halo=np.array(Pk_halo,dtype=np.float64)
 comm.Gather(senddata_k1,smooth_k,root=0)

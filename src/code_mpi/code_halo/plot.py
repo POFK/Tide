@@ -3,7 +3,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from parameter import Outfile
-name='halo1.25_rsd'
+name='halo1.25_dealrsd'
 noise3=(0.6*10**3)**3/1000000.
 print noise3
 dd=np.loadtxt(Outfile+'PS_DD')
@@ -24,7 +24,7 @@ plt.ylabel('P(k) $(Mpc^{3}/h^{3})$')
 plt.legend()
 plt.ylim(10**1,6*10**4)
 #plt.xlim([9*10**-3,1])
-plt.savefig(name+'PS.eps')
+#plt.savefig('./pnt/'+name+'PS.eps')
 
 plt.figure('correlation coefficient')
 plt.title('correlation coefficient')
@@ -35,6 +35,6 @@ plt.ylabel('r')
 plt.yticks(np.linspace(0,1,11))
 plt.ylim([0,1.0])
 plt.grid(axis='y')
-#plt.savefig(name+'CC.eps')
+#plt.savefig('./png/'+name+'CC.eps')
 plt.show()
 print dk[:,1]/np.sqrt(dd[:,1]*kk[:,1])
