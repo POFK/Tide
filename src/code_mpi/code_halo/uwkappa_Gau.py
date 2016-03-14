@@ -155,6 +155,7 @@ if rank==0:
     print 'Cal kappa'
     gamma1_x=np.empty((N,N,N),dtype=np.float64)
     gamma2_x=np.empty((N,N,N),dtype=np.float64)
+    print 'step1 ok'
 
 
 #================================================================================
@@ -164,8 +165,12 @@ gamma1=wdengx*wdengx-wdengy*wdengy
 gamma2=2*wdengx*wdengy
 gamma1=np.array(gamma1,dtype=np.float64)
 gamma2=np.array(gamma2,dtype=np.float64)
+if rank==0:
+    print 'step2 ok'
 comm.Gather(gamma1,gamma1_x,root=0)
 comm.Gather(gamma2,gamma2_x,root=0)
+if rank==0:
+    print 'step3 ok'
 
 if rank==0:
     gamma1_k=np.empty((N,N,N/2+1),dtype=np.complex128)
@@ -176,12 +181,14 @@ if rank==0:
     fftw.execute(fft2)
     fftw.destroy_plan(fft1)
     fftw.destroy_plan(fft2)
+    print 'step4 ok'
 comm.Scatter(gamma1_k,gamma1k,root=0)
 comm.Scatter(gamma2_k,gamma2k,root=0)
 k1=Kf*(mpi_fn[rank][:,None,None]+np.zeros_like(fn)[None,:,None]+np.zeros_like(fnc)[None,None,:])
 k2=Kf*(np.zeros_like(mpi_fn[rank])[:,None,None]+fn[None,:,None]+np.zeros_like(fnc)[None,None,:])
 S=k1**2+k2**2
 if rank==0:
+    print 'step5 ok'
     S[0,0,:]=np.ones_like(S[0,0,:])
     kappa3d_k=np.empty((N,N,N/2+1),dtype=np.complex128)
     Pk1=np.empty((N,N,N/2+1),dtype=np.float64)
@@ -195,6 +202,7 @@ if rank==0:
     fft=fftw.Plan(inarray=deltax,outarray=deltak,direction='forward',nthreads=nthreads)
     fftw.execute(fft)
     fftw.destroy_plan(fft)
+    print 'step6 ok'
 comm.Scatter(deltak,recvdata_k1,root=0) #deltak
 delta_k=recvdata_k1/window_k  ############## !
 
@@ -219,6 +227,7 @@ comm.Gather(Pk_dk,Pk2,root=0)
 comm.Gather(Pk_kk,Pk3,root=0)
 if rank==0:
 
+    print 'step7 ok'
     kappa3d_x=np.empty((N,N,N),dtype=np.float64)
     ifft=fftw.Plan(inarray=kappa3d_k,outarray=kappa3d_x,direction='backward',nthreads=nthreads)
     fftw.execute(ifft)
@@ -226,8 +235,10 @@ if rank==0:
     kappa3d_x/=N**3
     print 'Cal kappa end, time: %dm %ds'%((time.time()-t0)/60,(time.time()-t0)%60)
     t0=time.time()
-    Tide.SaveDataHdf5(kappa3d_x,Outfile+'kappa3dx1.25.hdf5')
+    print 'step8 ok'
+    Tide.SaveDataHdf5(kappa3d_x,Outfile+'kappa3dx.hdf5')
     Tide.SaveDataHdf5(Pk1,Outfile+'0.000den00_Pk_delta.hdf5')
+    print 'step9 ok'
     Tide.SaveDataHdf5(Pk2,Outfile+'0.000den00_Pk_delta_kappa.hdf5')
     Tide.SaveDataHdf5(Pk3,Outfile+'0.000den00_Pk_kappa.hdf5')
 

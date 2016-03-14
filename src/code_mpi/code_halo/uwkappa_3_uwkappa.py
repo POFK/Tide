@@ -181,7 +181,7 @@ if rank==0:
     kappa3d_x/=N**3
     print 'Cal kappa end, time: %dm %ds'%((time.time()-t0)/60,(time.time()-t0)%60)
     t0=time.time()
-    Tide.SaveDataHdf5(kappa3d_x,Outfile+'kappa3dx1.25.hdf5')
+    Tide.SaveDataHdf5(kappa3d_x,Outfile+'kappa3dx.hdf5')
     Tide.SaveDataHdf5(Pk1,Outfile+'0.000den00_Pk_delta.hdf5')
     Tide.SaveDataHdf5(Pk2,Outfile+'0.000den00_Pk_delta_kappa.hdf5')
     Tide.SaveDataHdf5(Pk3,Outfile+'0.000den00_Pk_kappa.hdf5')

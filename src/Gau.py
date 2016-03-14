@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 #def Gau(input='',output=''):
 #    input=sys.argv[1]
 #    output=sys.argv[2]
-def Gau(data,output):
+def Gau(data,output=''):
     print 'Gau.................................'
     t0=time.time()
 

@@ -13,7 +13,7 @@ Input=  sys.argv[1]    #'/home/mtx/data/tide/haloes/0.000halo_0.0024.bin'  # hal
 if len(sys.argv)>3:
     Input2=sys.argv[3]  # dark matter
 else :
-    Input2='/home/zhm/tides10/0.000delta.bin'  # dark matter
+    print 'delta data input error!'  # dark matter
 
 Outfile=sys.argv[2]    #'/home/mtx/data/tide/haloes/outdata/halo_0024/'
 N=1024

@@ -4,9 +4,9 @@
 com=`date '+%Y/%m/%d_%H:%M:%S'`
 echo '------------------------------------------------------------------------------------------'
 echo '**************************************'$com'******************************************'
-mpirun -hostfile node_hostfile python uwkappa_Gau.py           $@
-#mpirun -hostfile node_hostfile python uwkappa_1_smooth.py      $@
-#mpirun -hostfile node_fat      python uwkappa_2_Gau.py         $@
+#mpirun -hostfile node_hostfile python uwkappa_Gau.py           $@
+mpirun -hostfile node_hostfile python uwkappa_1_smooth.py      $@
+mpirun -hostfile node_fat      python uwkappa_2_Gau.py         $@
 #mpirun -hostfile node_hostfile python uwkappa_3_uwkappa.py     $@
 mpirun -hostfile node_fast python get_bin1d.py 0.000den00_Pk_halo.hdf5 PS_haloDD    $@
 

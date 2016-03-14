@@ -1,34 +1,23 @@
 #!/bin/bash
-#sh run_rsd.sh /home/mtx/data/tide/haloes2/0.000halo_0.0012.bin /home/mtx/data/tide/haloes2/outdata/halo_0012/
-#sh run_rsd.sh /home/mtx/data/tide/haloes2/0.000halo_0.0024.bin /home/mtx/data/tide/haloes2/outdata/halo_0024/
+#================================================================================
+INPUT='/project/mtx/data/'
+OUTPUT='/project/mtx/output/'
+smooth='_1.25_rsd'
 
+sh run_rsd.sh $INPUT'tides10/0.000halo_0.0048_rsd3.bin' $OUTPUT'tides10/halo_0.0048'$smooth'/' $INPUT'tides10/0.000delta.bin'
+sh run_rsd.sh $INPUT'tides11/0.000halo_0.0048_rsd3.bin' $OUTPUT'tides11/halo_0.0048'$smooth'/' $INPUT'tides11/0.000delta.bin'
+sh run_rsd.sh $INPUT'tides12/0.000halo_0.0048_rsd3.bin' $OUTPUT'tides12/halo_0.0048'$smooth'/' $INPUT'tides12/0.000delta.bin'
+sh run_rsd.sh $INPUT'tides13/0.000halo_0.0048_rsd3.bin' $OUTPUT'tides13/halo_0.0048'$smooth'/' $INPUT'tides13/0.000delta.bin'
+sh run_rsd.sh $INPUT'tides14/0.000halo_0.0048_rsd3.bin' $OUTPUT'tides14/halo_0.0048'$smooth'/' $INPUT'tides14/0.000delta.bin'
+sh run_rsd.sh $INPUT'tides15/0.000halo_0.0048_rsd3.bin' $OUTPUT'tides15/halo_0.0048'$smooth'/' $INPUT'tides15/0.000delta.bin'
 
-#sh run_rsd.sh /home/mtx/data/tide/haloes2/0.000halo_0.0048.bin /project/mtx/data/tide/haloes2/halo_0048/
+python  get_bias_wiener.py $OUTPUT'tides10/halo_0.0048'$smooth'/' $OUTPUT'tides11/halo_0.0048'$smooth'/' $OUTPUT'tides12/halo_0.0048'$smooth'/' $OUTPUT'tides13/halo_0.0048'$smooth'/' $OUTPUT'tides14/halo_0.0048'$smooth'/' $OUTPUT'tides15/halo_0.0048'$smooth'/' 
 
-sh run_rsd.sh /home/mtx/data/tide/haloes2/0.000halo_0.0048_red3.bin /project/mtx/data/tide/haloes2/halo_0048_rsd_dealtest/
-#sh run_rsd.sh /home/mtx/data/tide/haloes/0.000halo_0.0048_red3.bin /project/mtx/data/tide/haloes/halo_0048_rsd_dealtest/
+sh run_norsd_2.sh $INPUT'tides10/0.000halo_0.0048_rsd3.bin' $OUTPUT'tides10/halo_0.0048'$smooth'/' $INPUT'tides10/0.000delta.bin'
+sh run_norsd_2.sh $INPUT'tides11/0.000halo_0.0048_rsd3.bin' $OUTPUT'tides11/halo_0.0048'$smooth'/' $INPUT'tides11/0.000delta.bin'
+sh run_norsd_2.sh $INPUT'tides12/0.000halo_0.0048_rsd3.bin' $OUTPUT'tides12/halo_0.0048'$smooth'/' $INPUT'tides12/0.000delta.bin'
+sh run_norsd_2.sh $INPUT'tides13/0.000halo_0.0048_rsd3.bin' $OUTPUT'tides13/halo_0.0048'$smooth'/' $INPUT'tides13/0.000delta.bin'
+sh run_norsd_2.sh $INPUT'tides14/0.000halo_0.0048_rsd3.bin' $OUTPUT'tides14/halo_0.0048'$smooth'/' $INPUT'tides14/0.000delta.bin'
+sh run_norsd_2.sh $INPUT'tides15/0.000halo_0.0048_rsd3.bin' $OUTPUT'tides15/halo_0.0048'$smooth'/' $INPUT'tides15/0.000delta.bin'
 
-#sh run_rsd.sh /home/mtx/data/tide/haloes2/0.000halo_0.0048.bin /project/mtx/data/tide/haloes2/halo_0048_rsd_test/
-
-
-#sh run_rsd.sh /home/mtx/data/tide/haloes2/0.000halo_0.0024_L.bin /home/mtx/data/tide/haloes2/outdata/halo_0024_L/
-#sh run_rsd.sh /home/mtx/data/tide/haloes2/0.000halo_0.0024_random_1.bin /home/mtx/data/tide/haloes2/outdata/halo_0024_r1/
-#sh run_rsd.sh /home/mtx/data/tide/haloes2/0.000halo_0.0024_random_2.bin /home/mtx/data/tide/haloes2/outdata/halo_0024_r2/
-#sh run_rsd.sh /home/mtx/data/tide/haloes2/0.000halo_0.0024_random_3.bin /home/mtx/data/tide/haloes2/outdata/halo_0024_r3/
-#sh run_rsd.sh /home/mtx/data/tide/haloes2/0.000halo_0.0024_random_4.bin /home/mtx/data/tide/haloes2/outdata/halo_0024_r4/
-#sh run_rsd.sh /home/mtx/data/tide/haloes2/0.000halo_0.0024_random_5.bin /home/mtx/data/tide/haloes2/outdata/halo_0024_r5/
-#sh run_rsd.sh /home/mtx/data/tide/haloes2/0.000halo_0.0024_random_6.bin /home/mtx/data/tide/haloes2/outdata/halo_0024_r6/
-#sh run_rsd.sh /home/mtx/data/tide/haloes/0.000halo_0.0024_random_7.bin /home/mtx/data/tide/haloes/outdata/halo_0024_r7/
-#sh run_rsd.sh /home/mtx/data/tide/haloes/0.000halo_0.0024_random_8.bin /home/mtx/data/tide/haloes/outdata/halo_0024_r8/
-#sh run_rsd.sh /home/mtx/data/tide/haloes/0.000halo_0.0024_random_9.bin /home/mtx/data/tide/haloes/outdata/halo_0024_r9/
-############################different smooth####################################
-#sh run_rsd.sh /home/mtx/data/tide/haloes/0.000halo_0.0048.bin /home/mtx/data/tide/haloes/outdata/halo_0048_s12.5/
-#sh run_rsd.sh /home/zhm/tides20/0.000halo.bin /project/mtx/data/tide/haloes1/test_halo/
-#sh run_rsd.sh /home/zhm/tides20/0.000halo_rsd3.bin /project/mtx/data/tide/haloes1/test_halorsd/
-
-################################################################################
-
-#time sh run_rsd.sh /project/mtx/data/tide/data_halo/0.000halo_0.0012.bin /project/mtx/data/tide/data_halo/data/hm1/
-#time sh run_rsd.sh /project/mtx/data/tide/data_halo/highmass2.bin /project/mtx/data/tide/data_halo/data/hm2/
-#time sh run_rsd.sh /project/mtx/data/tide/data_halo/highmass3.bin /project/mtx/data/tide/data_halo/data/hm3/
-#time sh run_rsd.sh /project/mtx/data/tide/data_halo/highmass4.bin /project/mtx/data/tide/data_halo/data/hm4/
+#================================================================================

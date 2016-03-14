@@ -26,8 +26,8 @@ from parameter import *
 
 #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
 #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#  Load data: #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
-POSITION=Input2[:-14]+'0.000halo_0.0048_rsd3_hpos.dat'
-#POSITION='/project/mtx/data/tide/haloes2/0.000halo_0.0048_rsd3_hpos.dat'
+#POSITION=Input2[:-14]+'0.000halo_0.0048_rsd3_hpos.dat'
+POSITION='/project/mtx/data/tide/haloes2/0.000halo_0.0048_rsd3_hpos.dat'
 print 'position dat :', POSITION
 
 smooth_k=None
@@ -49,9 +49,7 @@ SaveHalo=True  #save Pk_halo
 #delta_k=np.empty((N/(size),N,N/2+1),dtype=np.complex128)
 #wk=Tide.Get_wk()
 ################################################################################
-#bias=0.88072226313116786
-#bias=1.196697499448949
-bias=0.86254076
+bias=0.88072226313116786
 factor=0.308**0.55
 beta=factor/bias
 ################################################################################

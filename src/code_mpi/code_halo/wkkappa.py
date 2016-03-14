@@ -47,7 +47,7 @@ if rank==0:
     fft=fftw.Plan(inarray=deltax,outarray=deltak,direction='forward',nthreads=nthreads)
     fftw.execute(fft)
     fftw.destroy_plan(fft)
-    kappax=Tide.LoadDataOfhdf5(dir+'kappa3dx1.25.hdf5')
+    kappax=Tide.LoadDataOfhdf5(dir+'kappa3dx.hdf5')
     kappak=np.empty((N,N,N/2+1),dtype=np.complex128)
     fft=fftw.Plan(inarray=kappax,outarray=kappak,direction='forward',nthreads=nthreads)
     fftw.execute(fft)
