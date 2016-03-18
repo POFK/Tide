@@ -43,12 +43,12 @@ def Pl(Outfile,line='-.',label=''):
 #Pl(Outfile='/home/mtx/data/tide/haloes/outdata/halo_0024/',line='-',label='H0')
 #Pl(Outfile='/home/mtx/data/tide/haloes/outdata/halo_0024_L/',line='-',label='L0')
 
-#Pl(Outfile='/project/mtx/output/tides10/halo_0.0048_1.0/',line='.-.',label='r1')
-#Pl(Outfile='/project/mtx/output/tides11/halo_0.0048_1.0/',line='.-.',label='r2')
-#Pl(Outfile='/project/mtx/output/tides12/halo_0.0048_1.0/',line='.-.',label='r3')
-#Pl(Outfile='/project/mtx/output/tides13/halo_0.0048_1.0/',line='.-.',label='r4')
-#Pl(Outfile='/project/mtx/output/tides14/halo_0.0048_1.0/',line='.-.',label='r5')
-#Pl(Outfile='/project/mtx/output/tides15/halo_0.0048_1.0/',line='.-.',label='r6')
+#Pl(Outfile='/project/mtx/output/tides10/highmass2_0.0012_1.0/',line='.-.',label='r1')
+#Pl(Outfile='/project/mtx/output/tides11/highmass2_0.0012_1.0/',line='.-.',label='r2')
+#Pl(Outfile='/project/mtx/output/tides12/highmass2_0.0012_1.0/',line='.-.',label='r3')
+#Pl(Outfile='/project/mtx/output/tides13/highmass2_0.0012_1.0/',line='.-.',label='r4')
+#Pl(Outfile='/project/mtx/output/tides14/highmass2_0.0012_1.0/',line='.-.',label='r5')
+#Pl(Outfile='/project/mtx/output/tides15/highmass2_0.0012_1.0/',line='.-.',label='r6')
 #================================================================================
 def result(f1,f2,f3,f4,f5,f6,fmt):
     dd1,dk1,kk1,r1=loaddata(filename=f1)
@@ -83,7 +83,7 @@ def result(f1,f2,f3,f4,f5,f6,fmt):
     plt.title('correlation coefficient')
     #plt.semilogx(k,r,'.-.',label='1')
     print delta_r
-    plt.errorbar(k,r,yerr=delta_r,fmt=fmt)
+    plt.errorbar(k,r,yerr=delta_r,fmt=fmt,alpha=0.6)
     plt.xlabel('k $(h/Mpc)$')
     plt.ylabel('r')
     plt.xscale('log')
@@ -93,33 +93,42 @@ def result(f1,f2,f3,f4,f5,f6,fmt):
     #plt.ylim([0,1.0])
     #plt.xlim([0.004,1])
     #plt.legend()
-f1='/project/mtx/output/tides10/halo_0.0048_rsd_ori_1.25/'
-f2='/project/mtx/output/tides11/halo_0.0048_rsd_ori_1.25/'
-f3='/project/mtx/output/tides12/halo_0.0048_rsd_ori_1.25/'
-f4='/project/mtx/output/tides13/halo_0.0048_rsd_ori_1.25/'
-f5='/project/mtx/output/tides14/halo_0.0048_rsd_ori_1.25/'
-f6='/project/mtx/output/tides15/halo_0.0048_rsd_ori_1.25/'
-result(f1,f2,f3,f4,f5,f6,'--.')
+f1='/project/mtx/output/tides10/halo_0.0012_1.25/'
+f2='/project/mtx/output/tides11/halo_0.0012_1.25/'
+f3='/project/mtx/output/tides12/halo_0.0012_1.25/'
+f4='/project/mtx/output/tides13/halo_0.0012_1.25/'
+f5='/project/mtx/output/tides14/halo_0.0012_1.25/'
+f6='/project/mtx/output/tides15/halo_0.0012_1.25/'
+result(f1,f2,f3,f4,f5,f6,'r.-')
 #
-f1='/project/mtx/output/tides10/halo_0.0048_1.25_rsd/'
-f2='/project/mtx/output/tides11/halo_0.0048_1.25_rsd/'
-f3='/project/mtx/output/tides12/halo_0.0048_1.25_rsd/'
-f4='/project/mtx/output/tides13/halo_0.0048_1.25_rsd/'
-f5='/project/mtx/output/tides14/halo_0.0048_1.25_rsd/'
-f6='/project/mtx/output/tides15/halo_0.0048_1.25_rsd/'
-result(f1,f2,f3,f4,f5,f6,'.-')
-
-f1='/project/mtx/output/tides10/halo_0.0048/'
-f2='/project/mtx/output/tides11/halo_0.0048/'
-f3='/project/mtx/output/tides12/halo_0.0048/'
-f4='/project/mtx/output/tides13/halo_0.0048/'
-f5='/project/mtx/output/tides14/halo_0.0048/'
-f6='/project/mtx/output/tides15/halo_0.0048/'
-result(f1,f2,f3,f4,f5,f6,'.-.')
-
+#f1='/project/mtx/output/tides10/highmass3_0.0012_1.25/'
+#f2='/project/mtx/output/tides11/highmass3_0.0012_1.25/'
+#f3='/project/mtx/output/tides12/highmass3_0.0012_1.25/'
+#f4='/project/mtx/output/tides13/highmass3_0.0012_1.25/'
+#f5='/project/mtx/output/tides14/highmass3_0.0012_1.25/'
+#f6='/project/mtx/output/tides15/highmass3_0.0012_1.25/'
+#result(f1,f2,f3,f4,f5,f6,'b.-')
+#
+#f1='/project/mtx/output/tides10/highmass2_0.0012_1.25/'
+#f2='/project/mtx/output/tides11/highmass2_0.0012_1.25/'
+#f3='/project/mtx/output/tides12/highmass2_0.0012_1.25/'
+#f4='/project/mtx/output/tides13/highmass2_0.0012_1.25/'
+#f5='/project/mtx/output/tides14/highmass2_0.0012_1.25/'
+#f6='/project/mtx/output/tides15/highmass2_0.0012_1.25/'
+#result(f1,f2,f3,f4,f5,f6,'g.-')
+#
+#
+#f1='/project/mtx/output/tides10/halo_0.0012_1.25/'
+#f2='/project/mtx/output/tides11/halo_0.0012_1.25/'
+#f3='/project/mtx/output/tides12/halo_0.0012_1.25/'
+#f4='/project/mtx/output/tides13/halo_0.0012_1.25/'
+#f5='/project/mtx/output/tides14/halo_0.0012_1.25/'
+#f6='/project/mtx/output/tides15/halo_0.0012_1.25/'
+#result(f1,f2,f3,f4,f5,f6,'y.-')
+#
 plt.ylim([0,1.1])
 plt.xlim([0.0045,1])
 plt.grid(axis='y')
 plt.show()
-#plt.savefig('./png/6sim_CC')
-
+##plt.savefig('./png/6sim_CC')
+#
