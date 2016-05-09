@@ -1,7 +1,0 @@
-#pirun -hostfile myhostfile python mpi_test.py
-fat   slots=1
-#node2 slots= 16
-#node3 slots=4 
-#node4 slots=4 
-#node5 slots=1 
-#node6 slots=4 
