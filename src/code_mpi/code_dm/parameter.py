@@ -11,7 +11,7 @@ rank=comm.Get_rank()
 
 #================================================================================
 Input='/home/mtx/data/tide/0.000den00.bin'
-Outfile='/home/mtx/data/tide/outdata/test/'
+Outfile='/home/mtx/data/tide/outdata/dm_test_Gau/'
 N=1024
 L=1.2*10**3
 H=L/N

@@ -9,8 +9,11 @@ size=comm.Get_size()
 rank=comm.Get_rank()
 
 #par:
-Input='/home/mtx/data/tide/0.000den00.bin'
-Outfile='/home/mtx/data/tide/outdata/test/'
+#Input='/project/mtx/output/tides10/halo_0.0048/wfkappa.hdf5'
+#Outfile='/project/mtx/data/tides10/kappa_1.25_s8.0.hdf5'
+Input='/project/mtx/data/tides10/0.000delta.bin'
+Outfile='/project/mtx/data/tides10/0.000delta_s10.0.hdf5'
+
 N=1024
 L=1.2*10**3
 H=L/N
@@ -18,7 +21,7 @@ Kf=2*np.pi/L
 fn=np.fft.fftfreq(N,1./N)  #x: 0,1,2,...,512,-511,-510,...,-2,-1
 fnc=np.arange(N/2+1)
 mpi_fn=np.array_split(fn,size)
-Sigma=1.25
+Sigma=10.0
 nthreads=16   #fftw threads number
 
 #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
@@ -31,15 +34,17 @@ k=None
 window_k=None
 recvdata_k1=np.empty((N/(size),N,N/2+1),dtype=np.complex128)
 senddata_k1=np.empty((N/(size),N,N/2+1),dtype=np.complex128)
-wk=Tide.Get_wk()
+#wk=Tide.Get_wk()
 
 if rank==0:
     import time
     deltax=np.linspace(0,N,N**3).reshape(N,N,N)
     change=np.array(Tide.LoadData(Input),dtype=np.float64)
     deltax[:]=change[:]
-    deltax=np.array(deltax,dtype=np.float64)
-    del change
+#   deltax=Tide.LoadDataOfhdf5(Input)
+#   deltax=1+np.array(deltax,dtype=np.float64)
+    print 'kappa mean',deltax.mean()
+#   del change
 ###################################smooth#######################################
     print '='*80
     print 'smoothing...'
@@ -55,10 +60,12 @@ comm.Scatter(deltak,recvdata_k1,root=0) #deltak
 senddata_k1=recvdata_k1*np.exp(-0.5*Kf*Kf*k*k*Sigma**2)/window_k      #smooth_k
 comm.Gather(senddata_k1,smooth_k,root=0)
 if rank==0:
+    print senddata_k1 
     ifft=fftw.Plan(inarray=smooth_k,outarray=deltax,direction='backward',nthreads=nthreads)
     fftw.execute(ifft)
     fftw.destroy_plan(ifft)
     deltax/=N**3              #   smoothed
+    print 'smoothed', deltax
     print 'smoothing end, time: %dm %ds'%((time.time()-t0)/60,(time.time()-t0)%60)
     t0=time.time()
 ##################################Wdeltag########################################
@@ -68,7 +75,7 @@ if rank==0:
     deltax1=np.empty_like(deltax,dtype=np.float64) 
     deltax2=np.empty_like(deltax,dtype=np.float64) 
     del smooth_k
-    Tide.SaveDataHdf5(deltax,Outfile+'smooth_1.25.hdf5')
+    Tide.SaveDataHdf5(deltax,Outfile)
 #    deltak=np.empty((N,N,N/2+1),dtype=np.complex128)
 #    deltax=np.log(deltax)
 #    fft=fftw.Plan(inarray=deltax,outarray=deltak,direction='forward',nthreads=nthreads)

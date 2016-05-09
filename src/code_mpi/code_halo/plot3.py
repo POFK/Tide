@@ -10,7 +10,7 @@ def Pl(Outfile,line='-.',label=''):
     dd=np.loadtxt(Outfile+'PS_DD')
     dk=np.loadtxt(Outfile+'PS_DK')
     kk=np.loadtxt(Outfile+'PS_KK')
-    halo=np.loadtxt('/home/mtx/data/tide/outdata/test/PS_haloDD')
+#   halo=np.loadtxt('/home/mtx/data/tide/outdata/test/PS_haloDD')
 #   plt.figure('Power Spectrum')
 #   n=np.ones_like(kk[:,1])
 #   plt.loglog(dd[:,0],dd[:,1],'b.-',label='P_DD')
@@ -57,18 +57,24 @@ def Pl(Outfile,line='-.',label=''):
 #Pl(Outfile='/project/mtx/output/tides14/halo_0.0048_1.25_rsd/',line='--',label='r5')
 #Pl(Outfile='/project/mtx/output/tides15/halo_0.0048_1.25_rsd/',line='--',label='r6')
 #
-#Pl(Outfile='/project/mtx/output/tides10/halo_0.0048/',line='.-.',label='h1')
+Pl(Outfile='/project/mtx/output/tides10/halo_0.0048/',line='.-.',label='h1')
 #Pl(Outfile='/project/mtx/output/tides11/halo_0.0048/',line='.-.',label='h2')
 #Pl(Outfile='/project/mtx/output/tides12/halo_0.0048/',line='.-.',label='h3')
 #Pl(Outfile='/project/mtx/output/tides13/halo_0.0048/',line='.-.',label='h4')
 #Pl(Outfile='/project/mtx/output/tides14/halo_0.0048/',line='.-.',label='h5')
 #Pl(Outfile='/project/mtx/output/tides15/halo_0.0048/',line='.-.',label='h6')
+#Pl(Outfile='/project/mtx/output/tides10/halo_0.0048_test_noGau/',line='.-.',label='nogau')
+#Pl(Outfile='/project/mtx/output/tides10/halo_0.0048_test_log/',line='.-.',label='log')
+Pl(Outfile='/project/mtx/output/tides10/halo_0.0048_test_Gau2/',line='.-.',label='gau2')
+
+
+
 
 #Pl(Outfile='/home/mtx/data/tide/haloes/outdata/halo_0048rsd/',line='-.',label='rsd')
 #Pl(Outfile='/home/mtx/data/tide/haloes/outdata/halo_0048/',line='-.',label='1.25')
-Pl(Outfile='/project/mtx/data/tide/haloes2/halo_0048_rsd_dealtest/',line='-.',label='deal')
-Pl(Outfile='/project/mtx/data/tide/haloes2/halo_0048_rsd/',line='-.',label='rsd')
-Pl(Outfile='/project/mtx/data/tide/haloes2/halo_0048/',line='-.',label='1.252')
+#Pl(Outfile='/project/mtx/data/tide/haloes2/halo_0048_rsd_dealtest/',line='-.',label='deal')
+#Pl(Outfile='/project/mtx/data/tide/haloes2/halo_0048_rsd/',line='-.',label='rsd')
+#Pl(Outfile='/project/mtx/data/tide/haloes2/halo_0048/',line='-.',label='1.252')
 
 #Pl(Outfile='/project/mtx/data/tide/haloes1/test_halo/',line='-.',label='1.25')
 #Pl(Outfile='/project/mtx/data/tide/haloes1/test_halorsd/',line='-.',label='rsd')

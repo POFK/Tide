@@ -4,7 +4,7 @@ from TIDES import *
 import scipy.integrate as integrate
 import scipy.interpolate as interpolate
 import time
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 #import sys
 ##********************************************************************************#
 #name='halorhobin1024m3z0.000.dat'
@@ -18,7 +18,7 @@ def Gau(data,output=''):
     bin=100
 #   data=Tide.LoadDataOfhdf5(input)-1
     shape=data.shape
-    data=data.reshape(-1)
+    data=np.array(data.reshape(-1),dtype=np.float64)
     sum1=data.mean()
     sort_data=data.argsort()
     #data=data[sort_data]
@@ -37,20 +37,22 @@ def Gau(data,output=''):
     y=[integrate.quad(gau,0,i)[0] for i in x]
     f=interpolate.interp1d(y,x)
     a=np.linspace(y[0],y[-1],n)
-    x=f(a)
+    x=np.array(f(a),dtype=np.float64)
     del a
     print 'step 2'
     print 'time: %dm %ds'%((time.time()-t0)/60,(time.time()-t0)%60)
     t0=time.time()
 
     ################################################################################
-    data[sort_data]=x
+    data[sort_data]=x[:]
     ################################################################################
     sum2=(data+1).mean()
-    print 'sum1=',sum1
-    print 'sum2=',sum2
+    print 'mean1=',sum1
+    print 'mean2=',sum2
 
-    result=(data*sum1/sum2+1).reshape(shape)
+    result=((data+1)*sum1/sum2).reshape(shape)
+    print 'result:',result.mean()
+    result=np.array(result,dtype=np.float32)
     Tide.SaveDataHdf5(result,output)
     print 'step 3'
     print 'time: %dm %ds'%((time.time()-t0)/60,(time.time()-t0)%60)

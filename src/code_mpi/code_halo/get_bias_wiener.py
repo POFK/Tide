@@ -15,8 +15,8 @@ bias/=n
 W/=n
 bias[m:,:]=1.
 bias[:,m:]=1.
-W[m:,:]=1.
-W[:,m:]=1.
+#W[m:,:]=1.
+#W[:,m:]=1.
 print 'bias',bias
 print 'wiener',W
 np.savetxt('result_b',bias)

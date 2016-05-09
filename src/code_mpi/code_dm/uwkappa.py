@@ -79,9 +79,20 @@ if rank==0:
     deltax1=np.empty_like(deltax,dtype=np.float64) 
     deltax2=np.empty_like(deltax,dtype=np.float64) 
     del smooth_k
-#   Tide.SaveDataHdf5(deltax,Outfile+'smooth_1.25.hdf5')
+#==========
+#save smoothed data
+    Tide.SaveDataHdf5(deltax,Outfile+'smooth_1.25.hdf5')
+#==========
     deltak=np.empty((N,N,N/2+1),dtype=np.complex128)
-    deltax=np.log(deltax)
+#==========
+#log or Gaussianize
+#log:
+#   deltax=np.log(deltax)
+#Gau:
+    from Gau import Gau
+    deltax=Gau(deltax,Outfile+'Gau.hdf5')
+    deltax=np.array(deltax,dtype=np.float64)
+#==========
     fft=fftw.Plan(inarray=deltax,outarray=deltak,direction='forward',nthreads=nthreads)
     fftw.execute(fft)
     fftw.destroy_plan(fft)

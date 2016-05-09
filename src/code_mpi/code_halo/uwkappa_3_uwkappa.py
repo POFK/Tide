@@ -47,7 +47,8 @@ wk=Tide.Get_wk()
 
 if rank==0:
     import time
-    deltax=Tide.LoadDataOfhdf5(Outfile+'Gau.hdf5')
+    deltax=Tide.LoadDataOfhdf5(Outfile+'Gau.hdf5')   #for gau
+#   deltax=Tide.LoadDataOfhdf5(Outfile+'0.000den00_s1.25.hdf5')   #for no gau
 ###################################smooth#######################################
     t0=time.time()
     deltak=np.empty((N,N,N/2+1),dtype=np.complex128)

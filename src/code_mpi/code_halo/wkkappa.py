@@ -55,7 +55,7 @@ if rank==0:
 
 comm.Scatter(deltak,delta_k,root=0) #deltak
 comm.Scatter(kappak,kappa_k,root=0) #deltak
-delta_k/=window_k
+#delta_k/=window_k
 binlog=np.linspace(0,np.log10(512),bins,endpoint=False)
 dbinlog=binlog[2]-binlog[1]
 binlog=np.hstack((binlog,binlog[-1]+dbinlog))

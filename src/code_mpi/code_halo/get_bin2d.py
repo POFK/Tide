@@ -77,8 +77,15 @@ if rank==0:
     Pn=pk3-b**2*pk1
     W=pk1/(pk1+Pn/(b**2))
     Pd=pk1/kn
+    Pk=pk3/kn
+    Pdk=pk2/kn
+    CC=pk2/np.sqrt(pk1*pk3)
     np.savetxt(Outfile+'result_Pd',Pd)
+    np.savetxt(Outfile+'result_Pk',Pk)
+    np.savetxt(Outfile+'result_Pdk',Pdk)
+    np.savetxt(Outfile+'result_CC',CC)
+    np.savetxt(Outfile+'k_bin',bin)
     np.savetxt(Outfile+'result_b',b)
-    np.savetxt(Outfile+'result_Pn',Pn)
+    np.savetxt(Outfile+'result_Pn',Pn/kn)
     np.savetxt(Outfile+'result_W',W)
     np.savetxt(Outfile+'result_n',kn)

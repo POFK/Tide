@@ -89,5 +89,6 @@ if rank==0:
     deltax/=N**3              #   smoothed
     if SaveHalo:
         Tide.SaveDataHdf5(Pk0,Outfile+'0.000den00_Pk_halo.hdf5')
+   ################################################################################ 
     Tide.SaveDataHdf5(deltax,Outfile+'0.000den00_s1.25.hdf5')
     print 'smoothing end, time: %dm %ds'%((time.time()-t0)/60,(time.time()-t0)%60)
