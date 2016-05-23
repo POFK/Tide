@@ -17,7 +17,7 @@ InputDelta='/project/mtx/data/tides'+DirNum+'/0.000delta.hdf5'
 dir='/project/mtx/output/tides'+DirNum+'/'+DIRNAME+'/'
 ResultDir='./result/'+dir[20:]
 NAME='halo'
-Gaussian=1
+Gaussian=0
 ############################
 N=1024
 L=1.2*10**3

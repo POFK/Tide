@@ -11,6 +11,8 @@ HK=np.loadtxt(PathPlot1+'HK')
 r=DK[:,1]/np.sqrt(DD[:,1]*KK[:,1])
 print 'CC',r
 kbin=DD[:,0]
+np.savetxt(ResultDir+'kbin.txt',kbin)
+np.savetxt(ResultDir+'r.txt',r)
 #========================================
 plt.figure('correlation coefficient')
 plt.title('correlation coefficient')
@@ -30,11 +32,11 @@ plt.cla()
 plt.figure('Power spectrum')
 plt.title('PS')
 plt.loglog(kbin,DD[:,1],'.-',label='$P_{\delta \delta}$')
-plt.loglog(kbin,DK[:,1],'.--',label='$P_{\delta \kappa}$')
-plt.loglog(kbin,KK[:,1],'.--',label='$P_{\kappa \kappa}$')
+plt.loglog(kbin,DK[:,1],'.-.',label='$P_{\delta \kappa}$')
+plt.loglog(kbin,KK[:,1],'.-.',label='$P_{\kappa \kappa}$')
 plt.loglog(kbin,DH[:,1],'.-',label='$P_{\delta h}$')
 plt.loglog(kbin,HH[:,1],'.-',label='$P_{hh}$')
-plt.loglog(kbin,HK[:,1],'.--',label='$P_{h\kappa}$')
+plt.loglog(kbin,HK[:,1],'.-.',label='$P_{h\kappa}$')
 plt.xlabel('$\mathrm{k}\ (h/\mathrm{Mpc})$')
 plt.ylabel('P(k) $(\mathrm{Mpc}^{3}/h^{3})$')
 ymax=np.max([np.max(DD[:,1]),np.max(DK[:,1]),np.max(KK[:,1]),np.max(DH[:,1]),np.max(HH[:,1]),np.max(HK[:,1])])*1.1
