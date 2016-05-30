@@ -17,13 +17,17 @@ InputDelta='/project/mtx/data/tides'+DirNum+'/0.000delta.hdf5'
 dir='/project/mtx/output/tides'+DirNum+'/'+DIRNAME+'/'
 ResultDir='./result/'+dir[20:]
 NAME='halo'
-Gaussian=0
+#Shotnoise=208.172029124
+Shotnoise=None
+#CutOff=5.0
+CutOff=None
+Gaussian=1
 ############################
 N=1024
 L=1.2*10**3
 H=L/N
-Sigma=1.25
-nthreads=8 #fftw threads number
+Sigma=1.0
+nthreads=16 #fftw threads number
 bins=10
 #================
 Kf=2*np.pi/L
@@ -31,8 +35,15 @@ fn=np.fft.fftfreq(N,1./N)  #x: 0,1,2,...,512,-511,-510,...,-2,-1
 fnc=np.arange(N/2+1)
 mpi_fn=np.array_split(fn,size)
 mpi_index=np.array_split(np.arange(N),size)
+#======================== cut-off par ===========================================
+if CutOff!=None:
+    PathCutoff=Input
+    PathCutoffOut=dir+NAME+'_cut%f.hdf5'%CutOff
 #======================== smooth par ============================================
-PathSinput=Input
+if CutOff!=None:
+    PathSinput=PathCutoffOut
+else:
+    PathSinput=Input
 PathSoutput=dir+NAME+'S%.2f'%Sigma
 SmoothHaloNbar=True      # if data is halo, set True
 SmoothWienerOfShotnoise=True

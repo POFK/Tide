@@ -1,0 +1,3 @@
+#mpirun -hostfile myhostfile python mpi_test.py
+#fat   slots=1
+node6  slots=1

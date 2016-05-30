@@ -7,9 +7,9 @@ from TIDES import Tide
 from par import *
 def WshotN(deltax,pk,n):
     '''n is shot noise '''
-    deltak=Tide.fft3d(deltax,nthreads=nthreads)
+    deltak=Tide.fft3d(deltax,n=nthreads)
     window=pk/(pk+n)
     deltak*=window
-    deltax=Tide.ifft3d(deltak,nthreads=nthreads)
+    deltax=Tide.ifft3d(deltak,n=nthreads)
     deltax/=N**3
     return deltax

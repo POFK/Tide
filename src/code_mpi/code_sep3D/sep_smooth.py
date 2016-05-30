@@ -36,6 +36,7 @@ k=(mpi_fn[rank][:,None,None]**2.+fn[None,:,None]**2.+fnc[None,None,:]**2)**(1./2
 window_k= np.sinc(1./N*mpi_fn[rank][:,None,None])*np.sinc(1./N*fn[None,:,None])*np.sinc(1./N*fnc[None,None,:])
 comm.Scatter(deltak,mpi_recvdata_k1,root=0) #deltak
 mpi_senddata_k1=mpi_recvdata_k1*np.exp(-0.5*Kf*Kf*k*k*Sigma**2)     #smooth_k
+#mpi_senddata_k1=mpi_recvdata_k1     #for test
 #========window of top hat=========
 if SmoothWindowOfTophat:
     mpi_senddata_k1/=window_k 
@@ -43,8 +44,8 @@ if SmoothWindowOfTophat:
 if SmoothHaloNbar:
     sum=comm.bcast(sum,root=0) 
 if SmoothWienerOfShotnoise:
-    Ph=L**3/N**6*np.abs(mpi_senddata_k1)**2  #it's wrong, just for test!!!
-#   Ph=L**3/N**6*np.abs(mpi_recvdata_k1)**2/window_k #it's the right one
+    Ph=L**3/N**6*np.abs(mpi_senddata_k1)**2  
+#   Ph=L**3/N**6*np.abs(mpi_senddata_k1)**2/window_k #for test
     Wiener=Ph/(Ph+(L**3)/sum)  # wiener filter
     mpi_senddata_k1*=Wiener
 ##========================================
@@ -57,7 +58,7 @@ if SmoothWienerOfShotnoise:
             fftw.execute(ifft)
             fftw.destroy_plan(ifft)
             deltax/=N**3              #   smoothed
-            Tide.SaveDataHdf5(deltax,PathSoutput+'W.hdf5')
+            Tide.SaveDataHdf5(deltax,PathSoutput+'_W.hdf5')
         del DHW
 ##========== save data ===================
 comm.Gather(mpi_senddata_k1,smooth_k,root=0)

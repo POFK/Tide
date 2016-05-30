@@ -5,9 +5,10 @@ import numpy as np
 import scipy.integrate as integrate
 import scipy.interpolate as interpolate
 import h5py
+import fftw3 as fftw
 ####################################################
 N = 1024
-L = 0.6 * 10**3  # Mpc
+L = 1.2 * 10**3  # Mpc
 H = L / 1024.
 ####################################################
 
@@ -38,7 +39,7 @@ class Tide():
     def LoadDataOfhdf5(self,filename):
         print 'Loading hdf5'
         f=h5py.File(filename)
-        data=f['data'].value
+        data=f['data'][:]
         data=np.array(data,dtype=np.float)
         f.close()
         return data
@@ -93,7 +94,7 @@ class Tide():
         return Pk.real
 
     @classmethod
-    def Get_wk(self):
+    def Get_wk(self,shotnoise=None):
         '''par:
         H0 = 67.8 # km/s/MPc
         Omgm = 0.049+0.259
@@ -114,7 +115,12 @@ class Tide():
         def wk(k):
 #           return (fk(k)/Pk(k))**0.5/k
             return (fk(k)/Pk(k)/Q)**0.5/k
-        return wk
+        if shotnoise!=None:
+            def wk_noise(k):
+                return (Pk(k)*fk(k)/(Q*(Pk(k)+shotnoise)**2.))**0.5/k
+            return wk_noise
+        else :
+            return wk
 
     @classmethod
     def Smooth(self,data,sigma=1.25,log=False):
@@ -187,4 +193,17 @@ class Tide():
         kappa_3dx=np.fft.ifftn(kappa_3dk).real
         print 'calculating kappa_3dx......OK'
         return kappa_3dx
-        
+    @classmethod    
+    def fft3d(self,deltax=None,n=16):
+        deltak=np.empty((N,N,N/2+1),dtype=np.complex128)
+        fft=fftw.Plan(inarray=deltax,outarray=deltak,direction='forward',nthreads=n)
+        fftw.execute(fft)
+        fftw.destroy_plan(fft)
+        return deltak
+    @classmethod
+    def ifft3d(self,deltak=None,n=16):
+        deltax=np.empty((N,N,N),dtype=np.float64)
+        ifft=fftw.Plan(inarray=deltak,outarray=deltax,direction='backward',nthreads=n)
+        fftw.execute(ifft)
+        fftw.destroy_plan(ifft)
+        return deltax

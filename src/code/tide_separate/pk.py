@@ -6,9 +6,9 @@ calculate power spectrum
 from TIDES import Tide
 from par import *
 
-def pk(deltax1,deltax2,window==None):
-    deltak1=Tide.fft3d(deltax1,nthreads=nthreads)
-    deltak2=Tide.fft3d(deltax2,nthreads=nthreads)
+def pk(deltax1,deltax2,window=None):
+    deltak1=Tide.fft3d(deltax1,nthreads)
+    deltak2=Tide.fft3d(deltax2,nthreads)
     if window!=None:
         deltak1/=window
         deltak2/=window

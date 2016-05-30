@@ -18,7 +18,7 @@ mpi_recvdata_k1=np.empty((N/(size),N,N/2+1),dtype=np.complex128)
 mpi_senddata_k1=np.empty((N/(size),N,N/2+1),dtype=np.complex128)
 ########################  Load data  ###########################################
 k=(mpi_fn[rank][:,None,None]**2.+fn[None,:,None]**2.+fnc[None,None,:]**2)**(1./2.)
-wk=Tide.Get_wk()
+wk=Tide.Get_wk(shotnoise=Shotnoise)
 if rank==0:
     deltax=Tide.LoadDataOfhdf5(PathGwinput)   # input smoothed halo field
     deltak=np.empty((N,N,N/2+1),dtype=np.complex128)

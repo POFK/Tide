@@ -6,16 +6,18 @@ from par import *
 '''
 calulate derivative of delta in x, y, z axis
 '''
-wk=Tide.Get_wk()
 def gw(deltax,k):
+    wk=Tide.Get_wk()
+    k[0,0,0]=1
     W=wk(k*Kf)
+    W[0,0,0]=1
     deltak=Tide.fft3d(deltax,nthreads=nthreads)
     deltakw1=deltak*W*1j*Kf*(fn[:,None,None]+np.zeros_like(fn)[None,:,None]+np.zeros_like(fnc)[None,None,:])
     deltakw2=deltak*W*1j*Kf*(np.zeros_like(fn)[:,None,None]+fn[None,:,None]+np.zeros_like(fnc)[None,None,:])
     deltakw3=deltak*W*1j*Kf*(np.zeros_like(fn)[:,None,None]+np.zeros_like(fn)[None,:,None]+fnc[None,None,:])
-    deltaxw1=Tide.ifft3d(deltakw1,nthreads=nthreads)
-    deltaxw2=Tide.ifft3d(deltakw2,nthreads=nthreads)
-    deltaxw3=Tide.ifft3d(deltakw3,nthreads=nthreads)
+    deltaxw1=Tide.ifft3d(deltakw1,n=nthreads)
+    deltaxw2=Tide.ifft3d(deltakw2,n=nthreads)
+    deltaxw3=Tide.ifft3d(deltakw3,n=nthreads)
     deltaxw1/=N**3
     deltaxw2/=N**3
     deltaxw3/=N**3
