@@ -24,6 +24,19 @@ if rank==0:
         deltax*=(N**3/sum)   #for halo, the data is n/nbar.
         print 'n bar:', sum/L**3
         print 'shot noise',L**3/sum
+#========save information of data=========
+        INF=open(PathOfINF,'w')
+        INF.writelines('# Information of data\n')
+        INF.writelines('# PATH of data: %s\n'%Input)
+        INF.writelines('# PATH of output: %s\n'%dir)
+        INF.writelines('#===============================================================================\n')
+        INF.writelines('NOISE=%f\n'% (L**3/sum))
+        INF.writelines('nbar=%f\n'% (sum/L**3))
+        INF.writelines('Sigma=%f\n'% (Sigma))
+        INF.writelines('CutOff=%s\n'% str(CutOff))
+        INF.writelines('Gaussian=%s\n'% str(Gaussian))
+        INF.writelines('SmoothWienerOfShotnoise=%s\n'% str(SmoothWienerOfShotnoise))
+        INF.close()
 ###################################smooth#######################################
     print '='*80
     print 'smoothing...'
@@ -33,7 +46,7 @@ if rank==0:
     fftw.destroy_plan(fft)
     smooth_k=np.empty((N,N,N/2+1),dtype=np.complex128)
 k=(mpi_fn[rank][:,None,None]**2.+fn[None,:,None]**2.+fnc[None,None,:]**2)**(1./2.)
-window_k= np.sinc(1./N*mpi_fn[rank][:,None,None])*np.sinc(1./N*fn[None,:,None])*np.sinc(1./N*fnc[None,None,:])
+window_k= (np.sinc(1./N*mpi_fn[rank][:,None,None])*np.sinc(1./N*fn[None,:,None])*np.sinc(1./N*fnc[None,None,:]))
 comm.Scatter(deltak,mpi_recvdata_k1,root=0) #deltak
 mpi_senddata_k1=mpi_recvdata_k1*np.exp(-0.5*Kf*Kf*k*k*Sigma**2)     #smooth_k
 #mpi_senddata_k1=mpi_recvdata_k1     #for test
@@ -46,7 +59,10 @@ if SmoothHaloNbar:
 if SmoothWienerOfShotnoise:
     Ph=L**3/N**6*np.abs(mpi_senddata_k1)**2  
 #   Ph=L**3/N**6*np.abs(mpi_senddata_k1)**2/window_k #for test
-    Wiener=Ph/(Ph+(L**3)/sum)  # wiener filter
+    Wiener=(Ph-(L**3)/sum)/Ph  # wiener filter
+#   Wiener=Ph/(Ph+(L**3)/sum)  # wiener filter
+    if rank==0:
+        print Wiener
     mpi_senddata_k1*=Wiener
 ##========================================
 ## To save halo field which convolved Wiener.

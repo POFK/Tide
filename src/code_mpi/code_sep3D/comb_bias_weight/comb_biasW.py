@@ -21,5 +21,6 @@ data4=Tide.LoadDataOfhdf5(path4)
 #datak2=Tide.fft3d(data2,16)
 #datak3=Tide.fft3d(data3,16)
 #datak4=Tide.fft3d(data4,16)
-data=(b1**2*data1+b2**2*data2+b3**2*data3+b4**2*data4)/(b1**2+b2**2+b3**2+b4**2)
-Tide.SaveDataHdf5(data,'/project/mtx/data/tides10/halo_combina_bias_4bin.hdf5')
+#data=(b1**2*data1+b2**2*data2+b3**2*data3+b4**2*data4)/(b1**2+b2**2+b3**2+b4**2)   #combian with bias weight
+data=(b1**-2*data1+b2**-2*data2+b3**-2*data3+b4**-2*data4)/(b1**-2+b2**-2+b3**-2+b4**-2)   #combian with bias inverse weight
+Tide.SaveDataHdf5(data,'/project/mtx/data/tides10/halo_combina_inverseBias_4bin.hdf5')
