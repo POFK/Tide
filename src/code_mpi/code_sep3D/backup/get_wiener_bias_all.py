@@ -6,10 +6,10 @@ from parameter import *
 if not os.path.exists(ResultDir):
     os.mkdir(ResultDir)
 m=7
-n=10
+n=6
 bias=np.zeros((10,10))
 W=np.zeros((10,10),dtype=np.float64)
-for i in [10,11,12,13,14,15,16,17,18,19]:
+for i in [10,11,12,13,14,15]:
     bias+=np.loadtxt('/project/mtx/output/tides'+str(i)+'/'+DIRNAME+'/result_b')
     W+=np.loadtxt('/project/mtx/output/tides'+str(i)+'/'+DIRNAME+'/result_W')
 bias/=n

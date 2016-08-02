@@ -3,16 +3,16 @@
 from sep_Pk import *
 
 window_k= (np.sinc(1./N*fn[:,None,None])*np.sinc(1./N*fn[None,:,None])*np.sinc(1./N*fnc[None,None,:]))
-for i in np.arange(RunPk2Num):
-#   print 'Path In :',Path_Pk2_Input[i][0],Path_Pk2_Input[i][2]
-#   print 'Path out:',Path_Pk2_Output[i]
-    IsHalo1=int(Path_Pk2_Input[i][1])
-    IsHalo2=int(Path_Pk2_Input[i][3])
-    delta1=Tide.LoadDataOfhdf5(Path_Pk2_Input[i][0])
+for i in np.arange(RunPk1Num):
+    print 'Path In :',Path_Pk1_Input[i][0],Path_Pk1_Input[i][2]
+    print 'Path out:',Path_Pk1_Output[i]
+    IsHalo1=int(Path_Pk1_Input[i][1])
+    IsHalo2=int(Path_Pk1_Input[i][3])
+    delta1=Tide.LoadDataOfhdf5(Path_Pk1_Input[i][0])
     if IsHalo1:
         sum=delta1.sum()
         delta1*=(N**3/sum)
-    delta2=Tide.LoadDataOfhdf5(Path_Pk2_Input[i][2])
+    delta2=Tide.LoadDataOfhdf5(Path_Pk1_Input[i][2])
     if IsHalo2:
         sum=delta2.sum()
         delta2*=(N**3/sum)
@@ -28,4 +28,4 @@ for i in np.arange(RunPk2Num):
         deltak2/=window_k**2
     result_pk=((deltak1.conjugate()*deltak2+deltak2.conjugate()*deltak1)/2.).real
     result_pk*=(L**3/N**6)
-    Tide.SaveDataHdf5(result_pk,Path_Pk2_Output[i])
+    Tide.SaveDataHdf5(result_pk,Path_Pk1_Output[i])

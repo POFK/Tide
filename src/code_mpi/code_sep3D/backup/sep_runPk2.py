@@ -4,8 +4,8 @@ from sep_Pk import *
 
 window_k= (np.sinc(1./N*fn[:,None,None])*np.sinc(1./N*fn[None,:,None])*np.sinc(1./N*fnc[None,None,:]))
 for i in np.arange(RunPk2Num):
-#   print 'Path In :',Path_Pk2_Input[i][0],Path_Pk2_Input[i][2]
-#   print 'Path out:',Path_Pk2_Output[i]
+    print 'Path In :',Path_Pk2_Input[i][0],Path_Pk2_Input[i][2]
+    print 'Path out:',Path_Pk2_Output[i]
     IsHalo1=int(Path_Pk2_Input[i][1])
     IsHalo2=int(Path_Pk2_Input[i][3])
     delta1=Tide.LoadDataOfhdf5(Path_Pk2_Input[i][0])

@@ -1,11 +1,9 @@
 #!/usr/bin/env python
 # coding=utf-8
 from parameter import *
-from subprocess import call
 import time
 if not os.path.exists(dir):
     os.mkdir(dir)
-call('cp ./parameter.py %s'%dir,shell=True)
 #========save information of data=========
 INF=open(PathOfINF,'w')
 INF.writelines('# Information of data\n')

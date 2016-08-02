@@ -61,9 +61,7 @@ if SmoothWienerOfShotnoise:
 #   Wiener=(Ph-(L**3)/sum)/Ph  # wiener filter
 #   Wiener=Ph/(Ph+(L**3)/sum)  # wiener filter
 # new wiener
-
-    from sep_wienerPh_with_Pd import WienerF
-#   from sep_wienerPh import WienerF
+    from sep_wienerPh import WienerF
     Wienerf,bias,k_min,k_max=WienerF(dir,noise=L**3/sum)
 #   Wienerf,bias,k_min,k_max=WienerF(dir,noise=4.8*10**-3)   # to test 0709
     if rank == 0:
@@ -98,6 +96,7 @@ if SmoothWienerOfShotnoise:
             WIENER=np.empty((N,N,N/2+1),dtype=np.float64)
         comm.Gather(Wiener,WIENER,root=0)
         if rank==0:
+#           print WIENER.min(),WIENER.max()
             WIENER=np.array(WIENER,dtype=np.float32)
             Tide.SaveDataHdf5(WIENER,PathSoutput+'_Wiener.hdf5')
 #========== save data ===================

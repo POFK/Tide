@@ -4,7 +4,8 @@
 import numpy as np
 import fftw3 as fftw
 from parameter import *
-from read_par import readPar
+
+
 #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
 #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#  INIT       #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
 deltagw1=None
@@ -16,10 +17,8 @@ window_k=None
 mpi_recvdata_k1=np.empty((N/(size),N,N/2+1),dtype=np.complex128)
 mpi_senddata_k1=np.empty((N/(size),N,N/2+1),dtype=np.complex128)
 ########################  Load data  ###########################################
-INF=readPar(PathOfINF)
-bias=np.float(INF['bias'])
 k=(mpi_fn[rank][:,None,None]**2.+fn[None,:,None]**2.+fnc[None,None,:]**2)**(1./2.)
-wk=Tide.Get_wk(bias=bias)
+wk=Tide.Get_wk(shotnoise=Shotnoise)
 #wk=Tide.Get_wk(bias=bias,shotnoise=Shotnoise)
 if rank==0:
     deltax=Tide.LoadDataOfhdf5(PathGwinput)   # input smoothed halo field
