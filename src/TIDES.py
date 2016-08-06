@@ -93,14 +93,47 @@ class Tide():
         Pk=(delta_k1.conjugate()*delta_k2+delta_k2.conjugate()*delta_k1)/2
         return Pk.real
 
+#    @classmethod
+#    def Get_wk(self,Q=0.1681732,bias=None,shotnoise=None):
+#        '''par:
+#        bias is P_cros/P_k
+#        H0 = 67.8 # km/s/MPc
+#        Omgm = 0.049+0.259
+#        Omgla = 0.692'''
+#        H0=67.8
+#        alpha=0.000211210262094*H0**2
+#        beta=0.000470867426204*H0**2
+#        data=np.loadtxt('/home/mtx/github/Tide/src/lcdm_pk.dat')
+#        x=np.linspace(np.log10(data[:,0].min()),np.log10(data[:,0].max()),1000)
+#        Pk=interpolate.interp1d(data[:,0],data[:,1],kind=3)
+#        Pkg=interpolate.interp1d(np.log10(data[:,0]),np.log10(data[:,1]),kind=3)
+#        dPkg=np.gradient(Pkg(x),x[1]-x[0])
+#        fdPkg=interpolate.interp1d(x,dPkg,kind=3)
+#        def fk(k):
+#            s=2*alpha-beta*fdPkg(np.log10(k))
+#            return s
+#        def wk(k):
+##           return (fk(k)/Pk(k))**0.5/k
+#            return (fk(k)/Pk(k)/Q)**0.5/k
+#        if shotnoise!=None:
+#            def wk_noise(k):
+##               return (Pk(k)*fk(k)/(Q*(Pk(k)/bias**2+shotnoise)**2.))**0.5/k  #mode1
+##               return (Pk(k)*fk(k)/(Q*(bias**2*Pk(k)+shotnoise)**2.))**0.5/k  #mode2
+#                return (bias**2*Pk(k)*fk(k)/(Q*(bias**2*Pk(k)+shotnoise)**2.))**0.5/k  #mode3
+#            return wk_noise
+#        else :
+#            return wk
+
+
     @classmethod
-    def Get_wk(self,shotnoise=None):
+    def Get_wk(self):
         '''par:
         H0 = 67.8 # km/s/MPc
         Omgm = 0.049+0.259
         Omgla = 0.692'''
         H0=67.8
-        Q=0.1681732
+#       Q=0.1681732
+        Q=1.
         alpha=0.000211210262094*H0**2
         beta=0.000470867426204*H0**2
         data=np.loadtxt('/home/mtx/github/Tide/src/lcdm_pk.dat')
@@ -114,13 +147,9 @@ class Tide():
             return s
         def wk(k):
 #           return (fk(k)/Pk(k))**0.5/k
+#           return (fk(k)/Pk(k)/Q)**0.5/k
             return (fk(k)/Pk(k)/Q)**0.5/k
-        if shotnoise!=None:
-            def wk_noise(k):
-                return (Pk(k)*fk(k)/(Q*(Pk(k)+shotnoise)**2.))**0.5/k
-            return wk_noise
-        else :
-            return wk
+        return wk
 
     @classmethod
     def Smooth(self,data,sigma=1.25,log=False):

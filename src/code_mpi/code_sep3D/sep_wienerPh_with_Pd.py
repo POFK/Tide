@@ -5,7 +5,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import scipy.interpolate as interpolate
-def WienerF(dirPath,noise,bias_cut=9):
+def WienerF(dirPath,noise,bias_cut=6):
     '''dirPath is dir in parameter.py'''
     Pdd=np.loadtxt(dirPath+'Pk_DD')
     Phh=np.loadtxt(dirPath+'Pk_HH')
@@ -14,7 +14,8 @@ def WienerF(dirPath,noise,bias_cut=9):
 
     n=Pdh[:,2]
     bias=Pdh[:,1]/Pdd[:,1]
-    b=(bias*n)[:bias_cut].sum()/n[:bias_cut].sum()
+#   b=(bias*n)[:bias_cut].sum()/n[:bias_cut].sum()
+    b=1.
     k=Pdd[:,0]
     Pk=Phh[:,1]
 #   window=Pk/(Pk+noise)                    # Wiener with Ph
