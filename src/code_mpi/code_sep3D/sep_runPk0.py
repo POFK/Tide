@@ -14,7 +14,9 @@ for i in np.arange(RunPk0Num):
     if IsHalo2:
         sum=delta2.sum()
         delta2*=(N**3/sum)
+    print 'step 1' 
     deltak1=Tide.fft3d(delta1,nthreads)
+    print 'step 2' 
     deltak2=Tide.fft3d(delta2,nthreads)
     if Path_Pk0_Input[i][4] == 'ngp':
         deltak1/=window_k

@@ -7,7 +7,7 @@ python sep_checkDir.py   $num $dir $halo_input
 #========================================================
 python sep_cutoff.py  $num $dir $halo_input 
 python sep_runPk0.py                                   $num $dir $halo_input 
-python sep_run_bin1d0.py                               $num $dir $halo_input 
+#python sep_run_bin1d0.py                               $num $dir $halo_input 
 #time mpirun -hostfile node_hostfile python sep_smooth.py    $num $dir $halo_input 
 #python gau.py                                          $num $dir $halo_input 
 #mpirun -hostfile node_fat      python sep_wden.py      $num $dir $halo_input 

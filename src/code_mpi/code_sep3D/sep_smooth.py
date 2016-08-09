@@ -63,9 +63,7 @@ if SmoothWienerOfShotnoise:
 # new wiener
 
     from sep_wienerPh_with_Pd import WienerF
-#   from sep_wienerPh import WienerF
-    Wienerf,bias,k_min,k_max=WienerF(dir,noise=L**3/sum)
-#   Wienerf,bias,k_min,k_max=WienerF(dir,noise=4.8*10**-3)   # to test 0709
+    Wienerf,bias,k_min,k_max=WienerF(dir,noise=L**3/sum,mode=WienerMode)
     if rank == 0:
         INF=open(PathOfINF,'a')
         INF.writelines('bias=%f\n'% (bias))
@@ -79,27 +77,27 @@ if SmoothWienerOfShotnoise:
     Wiener[(Kf*k)>k_max]=Wienerf(np.log10(k_max))
     mpi_senddata_k1*=Wiener
 ##========================================
-## To save halo field which convolved Wiener.
-#   if SmoothSaveWienerHalo:
-#       DHW=mpi_recvdata_k1*Wiener
-#       comm.Gather(DHW,smooth_k,root=0)
-#       if rank==0:
-#           ifft=fftw.Plan(inarray=smooth_k,outarray=deltax,direction='backward',nthreads=nthreads)
-#           fftw.execute(ifft)
-#           fftw.destroy_plan(ifft)
-#           deltax/=N**3              #   smoothed
-#           Tide.SaveDataHdf5(deltax,PathSoutput+'_W.hdf5')
-#       del DHW
-# a new method to save wiener
+ # To save halo field which convolved Wiener. Here is no smoothing kernal!
     if SmoothSaveWienerHalo:
-        WIENER=None
-        Wiener=np.array(Wiener,dtype=np.float64)
+        DHW=mpi_recvdata_k1*Wiener
+        comm.Gather(DHW,smooth_k,root=0)
         if rank==0:
-            WIENER=np.empty((N,N,N/2+1),dtype=np.float64)
-        comm.Gather(Wiener,WIENER,root=0)
-        if rank==0:
-            WIENER=np.array(WIENER,dtype=np.float32)
-            Tide.SaveDataHdf5(WIENER,PathSoutput+'_Wiener.hdf5')
+            ifft=fftw.Plan(inarray=smooth_k,outarray=deltax,direction='backward',nthreads=nthreads)
+            fftw.execute(ifft)
+            fftw.destroy_plan(ifft)
+            deltax/=N**3              #   smoothed
+            Tide.SaveDataHdf5(deltax,PathSoutput+'_W.hdf5')
+        del DHW
+# a new method to save wiener
+#   if SmoothSaveWienerHalo:
+#       WIENER=None
+#       Wiener=np.array(Wiener,dtype=np.float64)
+#       if rank==0:
+#           WIENER=np.empty((N,N,N/2+1),dtype=np.float64)
+#       comm.Gather(Wiener,WIENER,root=0)
+#       if rank==0:
+#           WIENER=np.array(WIENER,dtype=np.float32)
+#           Tide.SaveDataHdf5(WIENER,PathSoutput+'_Wiener.hdf5')
 #========== save data ===================
 comm.Gather(mpi_senddata_k1,smooth_k,root=0)
 if rank==0:
