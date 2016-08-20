@@ -21,7 +21,7 @@ for i in np.arange(N):
     plt.ylabel('$\mathrm{r}$')
 plt.legend(loc='lower left')
 #plt.xlim([0.005,0.37])
-plt.xlim([0.005,0.50])
+#plt.xlim([0.005,0.50])
 plt.ylim([0.0,1.0])
 plt.grid(axis='y')
 plt.yticks(np.linspace(0,1.0,11))

@@ -12,9 +12,13 @@ NAME='CIC_0.0012_3D_NoGau_s1.0_Wiener/'
 #file1='Pk_HH'
 #file2='Pk_DH'
 #file3='Pk_DD'
-file1='Pk_KK'
-file2='Pk_DK'
+#file1='Pk_KK'
+#file2='Pk_DK'
+#file3='Pk_DD'
+file1='Pk_KKnoWf.txt'
+file2='Pk_DKnoWf.txt'
 file3='Pk_DD'
+
 #============================================================
 noise=1./(4.8*10**-3)
 #============================================================
@@ -45,14 +49,27 @@ def plot_error_one(noise=noise,color=color,label='$P_{\delta}$'):
     plt.plot(k,CC_mean,color,label=label,linewidth=1.3)
     return CC_mean.min(),CC_mean.max()
 #===================== plot =================================
-NAME='CIC_0.0012_3D_NoGau_s1.0_Wiener/'
-min,max=plot_error_one(noise=noise,color='b.-',label='$r_{h\delta}$_1.2')
+#NAME='CIC_0.0012_3D_NoGau_s1.0_Wiener/'
+#min,max=plot_error_one(noise=noise,color='b.-',label='$r_{h\delta}$_1.2')
 NAME='CIC_0.0024_3D_NoGau_s1.0_Wiener/'
 min,max=plot_error_one(noise=noise,color='g.-',label='$r_{h\delta}$_2.4')
-NAME='CIC_0.0036_3D_NoGau_s1.0_Wiener/'
-min,max=plot_error_one(noise=noise,color='r.-',label='$r_{h\delta}$_3.6')
-NAME='CIC_0.0048_3D_NoGau_s1.0_Wiener/'
-min,max=plot_error_one(noise=noise,color='k.-',label='$r_{h\delta}$_4.8')
+
+#NAME='CIC_0.0036_3D_NoGau_s1.0_Wiener/'
+#min,max=plot_error_one(noise=noise,color='r.-',label='$r_{h\delta}$_3.6')
+#NAME='CIC_0.0048_3D_NoGau_s1.0_Wiener/'
+#min,max=plot_error_one(noise=noise,color='k.-',label='$r_{h\delta}$_4.8')
+
+NAME='massbin4_0.0024_combine_bE1/'
+min,max=plot_error_one(noise=noise,color='b.-',label='massbin4_0.0024_combine_bE1')
+
+#NAME='massbin4_0.0024_m1/'
+#min,max=plot_error_one(noise=noise,color='b.-',label='$m1$')
+#NAME='massbin4_0.0024_m2/'
+#min,max=plot_error_one(noise=noise,color='g.-',label='$m2$')
+#NAME='massbin4_0.0024_m3/'
+#min,max=plot_error_one(noise=noise,color='r.-',label='$m3$')
+#NAME='massbin4_0.0024_m4/'
+#min,max=plot_error_one(noise=noise,color='k.-',label='$m4$')
 #===================== set ==================================
 plt.title('$r_{\mathrm{h}\delta}$')
 plt.xlabel('$\mathrm{k}\ [h/\mathrm{Mpc}]$',fontsize='large')
@@ -64,6 +81,9 @@ plt.xlim([k.min()*0.9,k.max()*1.1])
 plt.yticks(np.linspace(0,1.0,11))
 plt.grid(axis='y')
 plt.legend()
-plt.show()
-#plt.savefig('result_useful/CC_dh_withShotnoise.eps')
+#plt.show()
+#plt.savefig('result_useful/CC.eps')
+OUTDIR='/home/mtx/github/Tide/src/code_mpi/code_sep3D/result/eps/'
+#plt.savefig(OUTDIR+'bw_recon_CC_0.0024_4mbin.eps')
+#plt.savefig(OUTDIR+'wnow.eps')
 #============================================================

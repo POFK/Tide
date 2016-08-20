@@ -4,16 +4,16 @@ import sys
 import numpy as np
 import matplotlib.pyplot as plt
 bias_cut=9
-path=['tides10/CIC_0.0024_3D_NoGau_s1.25_NoWiener/',
-    'tides10/combineMassbin_0.0024_test/',
-    'tides10/combineMassbin_0.0024/',
-    'tides10/CIC_0.0048_3D_NoGau_s1.25_NoWiener/']
+#path=['tides10/CIC_0.0024_3D_NoGau_s1.25_NoWiener/',
+#    'tides10/combineMassbin_0.0024_test/',
+#    'tides10/combineMassbin_0.0024/',
+#    'tides10/CIC_0.0048_3D_NoGau_s1.25_NoWiener/']
 
 
-#path=['tides10/CIC_0.0048_3D_NoGau_s1.25_NoWiener/',
-#    'tides10/CIC_0.0036_3D_NoGau_s1.25_NoWiener/',
-#    'tides10/CIC_0.0024_3D_NoGau_s1.25_NoWiener/',
-#    'tides10/CIC_0.0012_3D_NoGau_s1.25_NoWiener/']
+path=['tides10/CIC_0.0048_3D_NoGau_s1.0_Wiener/',
+    'tides10/CIC_0.0036_3D_NoGau_s1.0_Wiener/',
+    'tides10/CIC_0.0024_3D_NoGau_s1.0_Wiener/',
+    'tides10/CIC_0.0012_3D_NoGau_s1.0_Wiener/']
 num_den=['massbin_1','massbin2','combine','origin']
 def f(file_path,label):
     PATH='/project/mtx/output/'+file_path

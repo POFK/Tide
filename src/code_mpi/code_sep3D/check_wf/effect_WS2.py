@@ -25,13 +25,13 @@ def smooth_PH(sigma):
 
 plt.figure('WS')
 #plt.semilogx(k,smooth(sigma=1.25),'k-',linewidth=3,label='smooth 1.25')
-#plt.semilogx(k,smooth(sigma=1.0),'k-',linewidth=3,label='smooth 1.0')
-plt.semilogx(PH[:,0],wiener(noise),'m-',linewidth=3,label='only wiener')
-for i in np.linspace(0.80,1.30,(1.30-0.80)/0.05,endpoint=False):
-    print i
+plt.semilogx(k,smooth(sigma=1.0),'k-',linewidth=3,label='smooth 1.0')
+#plt.semilogx(PH[:,0],wiener(noise),'m-',linewidth=3,label='only wiener')
+#for i in np.linspace(0.80,1.30,(1.30-0.80)/0.05,endpoint=False):
+#    print i
 #   plt.semilogx(PH[:,0],wiener(noise)*smooth_PH(sigma=i)/smooth_PH(sigma=1.25),'-',label='wiener & smooth_%3.2f'%i)
-    plt.semilogx(PH[:,0],smooth_PH(sigma=1.25)/(wiener(noise)*smooth_PH(sigma=i)),'-',label='wiener & smooth_%3.2f'%i)
-plt.ylim(10**-3,2)
+#   plt.semilogx(PH[:,0],smooth_PH(sigma=1.25)/(wiener(noise)*smooth_PH(sigma=i)),'-',label='wiener & smooth_%3.2f'%i)
+plt.ylim(10**-3,1)
 plt.xlim(0.005,2.5)
 plt.legend(loc='lower left')
 plt.show()

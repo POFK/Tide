@@ -6,6 +6,8 @@ import time
 if not os.path.exists(dir):
     os.mkdir(dir)
 call('cp ./parameter.py %s'%dir,shell=True)
+print '='*100
+print '%s'%dir
 #========save information of data=========
 INF=open(PathOfINF,'w')
 INF.writelines('# Information of data\n')

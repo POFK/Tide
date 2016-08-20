@@ -5,11 +5,11 @@ compare correlation cofficient in different directory
 '''
 import matplotlib.pyplot as plt
 import numpy as np
+OUTDIR='/home/mtx/github/Tide/src/code_mpi/code_sep3D/result/all_simulation/'
+
 DIRPATH='/project/mtx/output/tides10/'
-path=['CIC_0.0048_3D_NoGau_s1.25_NoWiener',
-    'CIC_0.0036_3D_NoGau_s1.25_NoWiener',
-    'CIC_0.0024_3D_NoGau_s1.25_NoWiener',
-    'CIC_0.0012_3D_NoGau_s1.25_NoWiener'
+path=[
+        ''
         ]
 color=['r',
         'b',

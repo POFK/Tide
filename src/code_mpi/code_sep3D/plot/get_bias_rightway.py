@@ -4,16 +4,14 @@
 #============================================================
 import numpy as np
 import matplotlib.pyplot as plt
-OUTDIR='/home/mtx/github/Tide/src/code_mpi/code_sep3D/result/all_simulation/'
+OUTDIR='/home/mtx/github/Tide/src/code_mpi/code_sep3D/result/eps/'
 PATH='/project/mtx/output/'
 DIR=['tides10/','tides11/','tides12/','tides13/','tides14/','tides15/','tides16/','tides17/','tides18/','tides19/']
-#NAME1='New_CIC_0.0048_3D_NoGau_s1.25_NoWiener/'
-#NAME2='New_CIC_0.0036_3D_NoGau_s1.25_NoWiener/'
-#NAME3='New_CIC_0.0024_3D_NoGau_s1.25_NoWiener/'
-#NAME4='New_CIC_0.0012_3D_NoGau_s1.25_NoWiener/'
-NAME1='massbin4biasWeight_halo_cic_0.0012_1/'
-NAME2='massbin4biasWeight_halo_cic_0.0012_2/'
-NAME3='New_CIC_0.0024_3D_NoGau_s1.25_NoWiener/'
+NAME0='CIC_0.0024_3D_NoGau_s1.0_Wiener/'
+NAME1='massbin4_0.0024_m1/'
+NAME2='massbin4_0.0024_m2/'
+NAME3='massbin4_0.0024_m3/'
+NAME4='massbin4_0.0024_m4/'
 
 file1='Pk_DH'
 file2='Pk_DD'
@@ -57,15 +55,17 @@ def f(NAME='',color='',label='',disP=1.):
 #min,max=f(NAME=NAME3,color='b.-',label='$0.0024\ (h/\mathrm{MPc})^{3}$',disP=0.98)
 #min,max=f(NAME=NAME4,color='m.-',label='$0.0012\ (h/\mathrm{MPc})^{3}$',disP=1.00)
 
-min,max=f(NAME=NAME1,color='r.-',label='$0.0012\ bin1$',disP=1.00)
-min,max=f(NAME=NAME2,color='g.-',label='$0.0012\ bin2$',disP=1.02)
-min,max=f(NAME=NAME3,color='b.-',label='$0.0024$',disP=0.98)
+min,max=f(NAME=NAME0,color='m.--',label='$0.0024$',disP=1.04)
+min,max=f(NAME=NAME1,color='k.-',label='$m1$',disP=1.00)
+min,max=f(NAME=NAME2,color='g.-',label='$m2$',disP=1.02)
+min,max=f(NAME=NAME3,color='r.-',label='$m3$',disP=0.98)
+min,max=f(NAME=NAME4,color='b.-',label='$m4$',disP=0.96)
 
 #========== set =============================================
 plt.xlim([k[0]*0.9,k[-1]*1.1])
 plt.xscale('log')
 plt.xlabel('$k\ [h/\mathrm{Mpc}]$',fontsize=18)
 plt.ylabel('$\mathrm{bias}$',fontsize=18)
-plt.legend(loc='lower left',frameon=False)
-#plt.savefig(OUTDIR+'bias_weight/bias.eps')
-plt.show()
+plt.legend(loc='upper left',frameon=False)
+plt.savefig(OUTDIR+'bw_Sim_bias_0.0024_4mbin.eps')
+#plt.show()
