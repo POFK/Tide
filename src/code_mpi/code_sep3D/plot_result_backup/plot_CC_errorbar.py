@@ -65,7 +65,7 @@ min,max=plot_error_one(noise=noise,color='k.-',label='$0.0003\ (h/\mathrm{Mpc})^
 #===================== set ==================================
 #plt.title('$r_{\mathrm{h}\delta}$')
 plt.xlabel('$\mathrm{k}\ [h/\mathrm{Mpc}]$',fontsize=20)
-plt.ylabel('$\mathrm{Correlation\ coefficient}$',fontsize=20)
+plt.ylabel('$\mathrm{Correlation\ Coefficient}$',fontsize=20)
 plt.xscale('log')
 #plt.yscale('log')
 plt.ylim([0.1,1.])
@@ -79,6 +79,6 @@ plt.yticks(np.linspace(0.1,1.0,10),
 
 plt.grid(axis='y')
 plt.legend(loc='lower left',ncol=2,frameon=False)#,fontsize=14)
-#plt.show()
-plt.savefig(OUTDIR+'CCNDS1.0.eps')
+plt.show()
+#plt.savefig(OUTDIR+'CC_ND_S1.0.eps')
 #============================================================

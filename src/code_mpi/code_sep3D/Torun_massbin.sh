@@ -80,14 +80,22 @@ stime=1.5m
 #./sep_run.sh 19 massbin4_0.0024_m3   massbin_0.0024_m4/massbin4_0.000halo_0.0024_cic_3.hdf5
 #./sep_run.sh 19 massbin4_0.0024_m4   massbin_0.0024_m4/massbin4_0.000halo_0.0024_cic_4.hdf5
 #
-
+#================================================================================
 #./sep_run.sh 10 CIC_0.0003_3D_NoGau_s1.0_Wiener 0.000halo_cic_0.0003.hdf5
 #./sep_run.sh 11 CIC_0.0003_3D_NoGau_s1.0_Wiener 0.000halo_cic_0.0003.hdf5
-./sep_run.sh 12 CIC_0.0003_3D_NoGau_s1.0_Wiener 0.000halo_cic_0.0003.hdf5
-./sep_run.sh 13 CIC_0.0003_3D_NoGau_s1.0_Wiener 0.000halo_cic_0.0003.hdf5
-./sep_run.sh 14 CIC_0.0003_3D_NoGau_s1.0_Wiener 0.000halo_cic_0.0003.hdf5
-./sep_run.sh 15 CIC_0.0003_3D_NoGau_s1.0_Wiener 0.000halo_cic_0.0003.hdf5
-./sep_run.sh 16 CIC_0.0003_3D_NoGau_s1.0_Wiener 0.000halo_cic_0.0003.hdf5
-./sep_run.sh 17 CIC_0.0003_3D_NoGau_s1.0_Wiener 0.000halo_cic_0.0003.hdf5
-./sep_run.sh 18 CIC_0.0003_3D_NoGau_s1.0_Wiener 0.000halo_cic_0.0003.hdf5
-./sep_run.sh 19 CIC_0.0003_3D_NoGau_s1.0_Wiener 0.000halo_cic_0.0003.hdf5
+#./sep_run.sh 12 CIC_0.0003_3D_NoGau_s1.0_Wiener 0.000halo_cic_0.0003.hdf5
+#./sep_run.sh 13 CIC_0.0003_3D_NoGau_s1.0_Wiener 0.000halo_cic_0.0003.hdf5
+#./sep_run.sh 14 CIC_0.0003_3D_NoGau_s1.0_Wiener 0.000halo_cic_0.0003.hdf5
+#./sep_run.sh 15 CIC_0.0003_3D_NoGau_s1.0_Wiener 0.000halo_cic_0.0003.hdf5
+#./sep_run.sh 16 CIC_0.0003_3D_NoGau_s1.0_Wiener 0.000halo_cic_0.0003.hdf5
+#./sep_run.sh 17 CIC_0.0003_3D_NoGau_s1.0_Wiener 0.000halo_cic_0.0003.hdf5
+#./sep_run.sh 18 CIC_0.0003_3D_NoGau_s1.0_Wiener 0.000halo_cic_0.0003.hdf5
+#./sep_run.sh 19 CIC_0.0003_3D_NoGau_s1.0_Wiener 0.000halo_cic_0.0003.hdf5
+#================================================================================
+
+
+./sep_run.sh 10 massbin2_0.0003_combine_diffW 0.000halo_cic_0.0003.hdf5
+./sep_run.sh 10 massbin2_0.0003_combine_cross     0
+./sep_run.sh 10 massbin2_0.0003_m1   massbin_0.0003_m2/massbin2_0.000halo_0.0003_cic_1.hdf5
+./sep_run.sh 10 massbin2_0.0003_m2   massbin_0.0003_m2/massbin2_0.000halo_0.0003_cic_2.hdf5
+

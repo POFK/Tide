@@ -4,17 +4,13 @@
 #============================================================
 import numpy as np
 import matplotlib.pyplot as plt
-OUTDIR='/home/mtx/github/Tide/src/code_mpi/code_sep3D/result/all_simulation/'
+OUTDIR='/home/mtx/github/Tide/src/code_mpi/code_sep3D/result/eps/'
 PATH='/project/mtx/output/'
 DIR=['tides10/','tides11/','tides12/','tides13/','tides14/','tides15/','tides16/','tides17/','tides18/','tides19/']
-#NAME1='New_CIC_0.0048_3D_NoGau_s1.25_NoWiener/'
-#NAME2='New_CIC_0.0036_3D_NoGau_s1.25_NoWiener/'
-#NAME3='New_CIC_0.0024_3D_NoGau_s1.25_NoWiener/'
-#NAME4='New_CIC_0.0012_3D_NoGau_s1.25_NoWiener/'
-NAME1='massbin4biasWeight_halo_cic_0.0012_1.hdf5/'
-NAME2='massbin4biasWeight_halo_cic_0.0012_2.hdf5/'
-NAME3='New_CIC_0.0024_3D_NoGau_s1.25_NoWiener/'
-
+NAME1='CIC_0.0012_3D_NoGau_s1.0_Wiener/'
+NAME2='CIC_0.0024_3D_NoGau_s1.0_Wiener/'
+NAME3='CIC_0.0036_3D_NoGau_s1.0_Wiener/'
+NAME4='CIC_0.0048_3D_NoGau_s1.0_Wiener/'
 file1='Pk_DH'
 file2='Pk_DD'
 file3='Pk_HH'
@@ -34,7 +30,7 @@ def f(NAME='',mode=0,color='',label='',disP=1.):
         Pdd=np.loadtxt(PATH+i+NAME+file2)[:,1]
         Phh=np.loadtxt(PATH+i+NAME+file3)[:,1]
         bias=Pdh/Pdd
-        b=bias[:bias_cut].mean()
+        b=(bias*n)[:bias_cut].sum()/n[:bias_cut].sum()
 
         if mode==1:
             Pn=(Phh-b**2*Pdd)/(b**2*Pdd)
@@ -64,43 +60,37 @@ def f(NAME='',mode=0,color='',label='',disP=1.):
     return Pn_mean.min(),Pn_mean.max()
 #========== plot ============================================
 plt.figure('noise')
-#min,max=f(NAME=NAME1,mode=2,color='r.-',label='$0.0048\ (h/\mathrm{MPc})^{3}$',disP=1.00)
-#min,max=f(NAME=NAME2,mode=2,color='g.-',label='$0.0036\ (h/\mathrm{MPc})^{3}$',disP=1.02)
-#min,max=f(NAME=NAME3,mode=2,color='b.-',label='$0.0024\ (h/\mathrm{MPc})^{3}$',disP=0.98)
-#min,max=f(NAME=NAME4,mode=2,color='m.-',label='$0.0012\ (h/\mathrm{MPc})^{3}$',disP=1.00)
-
-min,max=f(NAME=NAME1,mode=2,color='r.-',label='$0.0012\ bin1$',disP=1.00)
-min,max=f(NAME=NAME2,mode=2,color='g.-',label='$0.0012\ bin2$',disP=1.02)
-min,max=f(NAME=NAME3,mode=2,color='b.-',label='$0.0024$',disP=0.98)
+min,max=f(NAME=NAME4,mode=2,color='rv-',label='$0.0048\ (h/\mathrm{Mpc})^{3}$',disP=1.00)
+min,max=f(NAME=NAME3,mode=2,color='g>-',label='$0.0036\ (h/\mathrm{Mpc})^{3}$',disP=1.02)
+min,max=f(NAME=NAME2,mode=2,color='b<-',label='$0.0024\ (h/\mathrm{Mpc})^{3}$',disP=0.98)
+min,max=f(NAME=NAME1,mode=2,color='m^-',label='$0.0012\ (h/\mathrm{Mpc})^{3}$',disP=1.00)
 #========== set =============================================
-plt.xlabel('$k\ [h/\mathrm{Mpc}]$',fontsize=18)
-plt.ylabel('$\mathrm{noise}$',fontsize=18)
-#plt.ylim([-0.1,0.5])
-plt.ylim([-0.5,6.5])
+plt.xlabel('$k\ [h/\mathrm{Mpc}]$')#,fontsize=18)
+plt.ylabel('$(P_h-b^2P_{\delta})/b^2P_{\delta}$')#,fontsize=18)
+plt.ylim([10**-2,10])
+#plt.ylim([-0.5,6.5])
 plt.xlim([k[0]*0.9,k[-1]*1.1])
+#plt.xlim([k[0]*0.9,1.1])
 plt.xscale('log')
+plt.yscale('log')
 plt.legend(loc='upper left',frameon=False)
 #plt.savefig(OUTDIR+'noise_errorbar.eps')
-plt.show()
 
 
 
 #plt.figure('noise_const')
-##min,max=f(NAME=NAME1,mode=1,color='r.-',label='$0.0048\ (h/\mathrm{MPc})^{3}$',disP=1.00)
-##min,max=f(NAME=NAME2,mode=1,color='g.-',label='$0.0036\ (h/\mathrm{MPc})^{3}$',disP=1.02)
-##min,max=f(NAME=NAME3,mode=1,color='b.-',label='$0.0024\ (h/\mathrm{MPc})^{3}$',disP=0.98)
-##min,max=f(NAME=NAME4,mode=1,color='m.-',label='$0.0012\ (h/\mathrm{MPc})^{3}$',disP=1.00)
-#min,max=f(NAME=NAME1,mode=1,color='r.-',label='$0.0012\ bin1$',disP=1.00)
-#min,max=f(NAME=NAME2,mode=1,color='g.-',label='$0.0012\ bin2$',disP=1.02)
-#min,max=f(NAME=NAME3,mode=1,color='b.-',label='$0.0024$',disP=0.98)
-#
-##========== set =============================================
+#min,max=f(NAME=NAME4,mode=1,color='r.-',label='$0.0048\ (h/\mathrm{MPc})^{3}$',disP=1.00)
+#min,max=f(NAME=NAME3,mode=1,color='g.-',label='$0.0036\ (h/\mathrm{MPc})^{3}$',disP=1.02)
+#min,max=f(NAME=NAME2,mode=1,color='b.-',label='$0.0024\ (h/\mathrm{MPc})^{3}$',disP=0.98)
+#min,max=f(NAME=NAME1,mode=1,color='m.-',label='$0.0012\ (h/\mathrm{MPc})^{3}$',disP=1.00)
+#========== set =============================================
 #plt.xlabel('$k\ [h/\mathrm{Mpc}]$',fontsize=18)
 #plt.ylabel('$\mathrm{noise}$',fontsize=18)
 #plt.xlim([k[0]*0.9,k[-1]*1.1])
-##plt.ylim([-0.1,0.5])
-#plt.ylim([-0.5,6.5])
+#plt.ylim([-0.1,0.5])
+##plt.ylim([-0.5,6.5])
 #plt.xscale('log')
+#plt.yscale('log')
 #plt.legend(loc='upper left',frameon=False)
-##plt.savefig(OUTDIR+'noise_errorbar_con.eps')
-#plt.show()
+#plt.savefig(OUTDIR+'Sim_noise_errorbar.eps')
+plt.show()

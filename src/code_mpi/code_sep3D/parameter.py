@@ -102,13 +102,13 @@ Path_Pk0_Output=np.array([
     ])
 #======================== runPk1 par ============================================
 #usage:  Path_pk1_run:  [data1 path, is data1 halo, data2 path, is data2 halo]
-RunPk1Num=3      #  The Pk number to calculate 
+RunPk1Num=2      #  The Pk number to calculate 
 Path_Pk1_Input=np.array([
 #   [InputDelta,0,InputDelta,0,'cic','cic'],                        # Pk_dd
 #   [InputDelta,0,Input,1,'cic','cic'],                              # Pk_dh 
     [InputDelta,0,PathKappaoutput+'3D.hdf5',0,'cic',0],         # Pk_dk 
 #   [Input,1,Input,1,'cic','cic'],                                    # Pk_hh 
-    [Input,1,PathKappaoutput+'3D.hdf5',0,'cic',0],               # Pk_hk 
+#   [Input,1,PathKappaoutput+'3D.hdf5',0,'cic',0],               # Pk_hk 
     [PathKappaoutput+'3D.hdf5',0,PathKappaoutput+'3D.hdf5',0,0,0]# Pk_kk 
     ])
 Path_Pk1_Output=np.array([
@@ -116,7 +116,7 @@ Path_Pk1_Output=np.array([
 #   dir+'Pk'+'_DH.hdf5', 
     dir+'Pk'+'_DK.hdf5', 
 #   dir+'Pk'+'_HH.hdf5', 
-    dir+'Pk'+'_HK.hdf5', 
+#   dir+'Pk'+'_HK.hdf5', 
     dir+'Pk'+'_KK.hdf5'
     ])
 
@@ -149,16 +149,16 @@ PathBin1dOutput6=dir+'Pk'+'_HH'
 PathPlot1=dir+'Pk_'
 #======================== runPk2 par ============================================
 #usage:  Path_pk1_run:  [data1 path, is data1 halo,  data2 path, is data2 halo, window]
-RunPk2Num=3      #  The Pk number to calculate 
+RunPk2Num=2      #  The Pk number to calculate 
 Path_Pk2_Input=np.array([
 #   [InputDelta,0,InputDelta,0,'cic','cic'],                        # Pk_dd
     [InputDelta,0,PathWkkappaOutput,0,'cic',0],         # Pk_dk 
-    [Input,1,PathWkkappaOutput,0,'cic',0],               # Pk_hk 
+#   [Input,1,PathWkkappaOutput,0,'cic',0],               # Pk_hk 
     [PathWkkappaOutput,0,PathWkkappaOutput,0,0,0]# Pk_kk 
     ])
 Path_Pk2_Output=np.array([   # pk of wkkappa and delta, halo ...
 #   dir+'Pk'+'_DD.hdf5',
     dir+'Pk'+'_DK.hdf5', 
-    dir+'Pk'+'_HK.hdf5', 
+#   dir+'Pk'+'_HK.hdf5', 
     dir+'Pk'+'_KK.hdf5'
     ])

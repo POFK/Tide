@@ -1,77 +1,32 @@
 ====================================================================================================
-/project/mtx/output/tides12/CIC_0.0003_3D_NoGau_s1.0_Wiener/
+/project/mtx/output/tides10/massbin2_0.0003_combine_diffW/
 Loading hdf5
 Loading hdf5
 Save data....................
 Loading hdf5
 Loading hdf5
 Save data....................
-Loading hdf5
-Loading hdf5
-Save data....................
-Loading hdf5
-n bar: 0.000300026620418
-shot noise 3333.03757715
-================================================================================
-smoothing...
-wiener with Pd, where bias is k-independent, here we set bias=1
-wiener with Pd, where bias is k-independent, here we set bias=1
-wiener with Pd, where bias is k-independent, here we set bias=1
-wiener with Pd, where bias is k-independent, here we set bias=1
-wiener with Pd, where bias is k-independent, here we set bias=1
-wiener with Pd, where bias is k-independent, here we set bias=1
-wiener with Pd, where bias is k-independent, here we set bias=1
-wiener with Pd, where bias is k-independent, here we set bias=1
-wiener with Pd, where bias is k-independent, here we set bias=1
-wiener with Pd, where bias is k-independent, here we set bias=1
-wiener with Pd, where bias is k-independent, here we set bias=1
-wiener with Pd, where bias is k-independent, here we set bias=1
-wiener with Pd, where bias is k-independent, here we set bias=1
-wiener with Pd, where bias is k-independent, here we set bias=1
-wiener with Pd, where bias is k-independent, here we set bias=1
-wiener with Pd, where bias is k-independent, here we set bias=1
-sep_smooth.py:71: RuntimeWarning: divide by zero encountered in log10
-  logk=np.log10(Kf*k)
-Save data....................
-Loading hdf5
-================================================================================
-starting cal wdengx wdengy wdengz
-/home/mtx/github/Tide/src/TIDES.py:151: RuntimeWarning: invalid value encountered in sqrt
-  return (fk(k)/Pk(k)/Q)**0.5/k
-Save data....................
-Save data....................
-Save data....................
-Save data....................
-Save data....................
-Save data....................
-Save data....................
-Save data....................
-================================================================================
-starting cal kappa 3D
-Loading hdf5
-Loading hdf5
-Loading hdf5
-Loading hdf5
-Loading hdf5
-Save data....................
-Loading hdf5
-Loading hdf5
-Save data....................
-Loading hdf5
-Loading hdf5
-Save data....................
-Loading hdf5
-Loading hdf5
-Save data....................
-/project/mtx/output/tides12/CIC_0.0003_3D_NoGau_s1.0_Wiener/halo_gm1.hdf5
-/project/mtx/output/tides12/CIC_0.0003_3D_NoGau_s1.0_Wiener/halo_gm2.hdf5
-/project/mtx/output/tides12/CIC_0.0003_3D_NoGau_s1.0_Wiener/halo_gmx.hdf5
-/project/mtx/output/tides12/CIC_0.0003_3D_NoGau_s1.0_Wiener/halo_gmy.hdf5
-/project/mtx/output/tides12/CIC_0.0003_3D_NoGau_s1.0_Wiener/halo_gmz.hdf5
-/project/mtx/output/tides12/CIC_0.0003_3D_NoGau_s1.0_Wiener/halo_wdeng1.hdf5
-/project/mtx/output/tides12/CIC_0.0003_3D_NoGau_s1.0_Wiener/halo_wdeng2.hdf5
-/project/mtx/output/tides12/CIC_0.0003_3D_NoGau_s1.0_Wiener/halo_wdeng3.hdf5
-rm: 无法删除"/project/mtx/output/tides12/CIC_0.0003_3D_NoGau_s1.0_Wiener/haloGau.bin": 没有那个文件或目录
-rm: 无法删除"/project/mtx/output/tides12/CIC_0.0003_3D_NoGau_s1.0_Wiener/haloS1.00.bin": 没有那个文件或目录
 ====================================================================================================
-/project/mtx/output/tides13/CIC_0.0003_3D_NoGau_s1.0_Wiener/
+/project/mtx/output/tides10/massbin2_0.0003_combine_cross/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+====================================================================================================
+/project/mtx/output/tides10/massbin2_0.0003_m1/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+====================================================================================================
+/project/mtx/output/tides10/massbin2_0.0003_m2/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................

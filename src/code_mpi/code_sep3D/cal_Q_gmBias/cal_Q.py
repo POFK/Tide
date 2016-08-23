@@ -29,8 +29,13 @@ kmin=2.*np.pi/1200.
 #Q1=np.sum(2*k*k/(15*np.pi**2)*dk*fk(k)**2)
 #print 'Q1:',Q1
 #==mode2=================================
+def smooth(k):
+    sigma=1.25
+    smooth_K=np.exp(-k**2*sigma**2/2.)
+    return smooth_K
+
 def Q(x):
-    return 2*x**2/(15*np.pi**2)*fk(x)**2
+    return 2*x**2/(15*np.pi**2)*fk(x)**2*smooth(x)**2
 #   return 2*x**2/(15*np.pi**2)*fk(x)**2*Pk(x)**2/(Pk(x)+806.314231603)**2
 Q2, err = integrate.quad(Q, kmin,kmax)
 print 'Q2:',Q2
