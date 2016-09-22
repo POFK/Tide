@@ -1,0 +1,97 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname bibnamefont\endcsname\relax
+  \def\bibnamefont#1{#1}\fi
+\expandafter\ifx\csname bibfnamefont\endcsname\relax
+  \def\bibfnamefont#1{#1}\fi
+\expandafter\ifx\csname citenamefont\endcsname\relax
+  \def\citenamefont#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{\citenamefont{{Pen} et~al.}(2012)\citenamefont{{Pen}, {Sheth},
+  {Harnois-Deraps}, {Chen}, and {Li}}}]{2012:pen}
+\bibinfo{author}{\bibfnamefont{U.-L.} \bibnamefont{{Pen}}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{{Sheth}}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{{Harnois-Deraps}}},
+  \bibinfo{author}{\bibfnamefont{X.}~\bibnamefont{{Chen}}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{{Li}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2012}),
+  \eprint{1202.5804}.
+
+\bibitem[{\citenamefont{{Zhu} et~al.}(2015)\citenamefont{{Zhu}, {Pen}, {Yu},
+  {Er}, and {Chen}}}]{2015:zhu}
+\bibinfo{author}{\bibfnamefont{H.-M.} \bibnamefont{{Zhu}}},
+  \bibinfo{author}{\bibfnamefont{U.-L.} \bibnamefont{{Pen}}},
+  \bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{{Yu}}},
+  \bibinfo{author}{\bibfnamefont{X.}~\bibnamefont{{Er}}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{X.}~\bibnamefont{{Chen}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2015}),
+  \eprint{1511.04680}.
+
+\bibitem[{\citenamefont{{Scoccimarro} et~al.}(2001)\citenamefont{{Scoccimarro},
+  {Sheth}, {Hui}, and {Jain}}}]{Halo_model1:2001ApJ}
+\bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{{Scoccimarro}}},
+  \bibinfo{author}{\bibfnamefont{R.~K.} \bibnamefont{{Sheth}}},
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{{Hui}}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{{Jain}}},
+  \bibinfo{journal}{\apj} \textbf{\bibinfo{volume}{546}}, \bibinfo{pages}{20}
+  (\bibinfo{year}{2001}), \eprint{astro-ph/0006319}.
+
+\bibitem[{\citenamefont{{Peacock} and {Smith}}(2000)}]{Halo_model2:2000MNRAS}
+\bibinfo{author}{\bibfnamefont{J.~A.} \bibnamefont{{Peacock}}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{R.~E.}
+  \bibnamefont{{Smith}}}, \bibinfo{journal}{\mnras}
+  \textbf{\bibinfo{volume}{318}}, \bibinfo{pages}{1144} (\bibinfo{year}{2000}),
+  \eprint{astro-ph/0005010}.
+
+\bibitem[{\citenamefont{{Seljak}}(2000)}]{Halo_model3:2000MNRAS}
+\bibinfo{author}{\bibfnamefont{U.}~\bibnamefont{{Seljak}}},
+  \bibinfo{journal}{\mnras} \textbf{\bibinfo{volume}{318}},
+  \bibinfo{pages}{203} (\bibinfo{year}{2000}), \eprint{astro-ph/0001493}.
+
+\bibitem[{\citenamefont{{Percival} et~al.}(2004)\citenamefont{{Percival},
+  {Verde}, and {Peacock}}}]{OW1}
+\bibinfo{author}{\bibfnamefont{W.~J.} \bibnamefont{{Percival}}},
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{{Verde}}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.~A.} \bibnamefont{{Peacock}}},
+  \bibinfo{journal}{\mnras} \textbf{\bibinfo{volume}{347}},
+  \bibinfo{pages}{645} (\bibinfo{year}{2004}), \eprint{astro-ph/0306511}.
+
+\bibitem[{\citenamefont{{Seljak} et~al.}(2009)\citenamefont{{Seljak}, {Hamaus},
+  and {Desjacques}}}]{OW2}
+\bibinfo{author}{\bibfnamefont{U.}~\bibnamefont{{Seljak}}},
+  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{{Hamaus}}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{{Desjacques}}},
+  \bibinfo{journal}{Physical Review Letters} \textbf{\bibinfo{volume}{103}},
+  \bibinfo{eid}{091303} (\bibinfo{year}{2009}), \eprint{0904.2963}.
+
+\bibitem[{\citenamefont{{Hamaus} et~al.}(2010)\citenamefont{{Hamaus}, {Seljak},
+  {Desjacques}, {Smith}, and {Baldauf}}}]{OW3}
+\bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{{Hamaus}}},
+  \bibinfo{author}{\bibfnamefont{U.}~\bibnamefont{{Seljak}}},
+  \bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{{Desjacques}}},
+  \bibinfo{author}{\bibfnamefont{R.~E.} \bibnamefont{{Smith}}},
+  \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{{Baldauf}}},
+  \bibinfo{journal}{\prd} \textbf{\bibinfo{volume}{82}}, \bibinfo{eid}{043515}
+  (\bibinfo{year}{2010}), \eprint{1004.5377}.
+
+\bibitem[{\citenamefont{{Hamaus} et~al.}(2012)\citenamefont{{Hamaus}, {Seljak},
+  and {Desjacques}}}]{OW4}
+\bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{{Hamaus}}},
+  \bibinfo{author}{\bibfnamefont{U.}~\bibnamefont{{Seljak}}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{{Desjacques}}},
+  \bibinfo{journal}{\prd} \textbf{\bibinfo{volume}{86}}, \bibinfo{eid}{103513}
+  (\bibinfo{year}{2012}), \eprint{1207.1102}.
+
+\bibitem[{\citenamefont{{Smith} and {Marian}}(2015)}]{OW5}
+\bibinfo{author}{\bibfnamefont{R.~E.} \bibnamefont{{Smith}}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{{Marian}}},
+  \bibinfo{journal}{\mnras} \textbf{\bibinfo{volume}{454}},
+  \bibinfo{pages}{1266} (\bibinfo{year}{2015}), \eprint{1503.06830}.
+
+\end{thebibliography}

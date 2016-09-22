@@ -1,0 +1,54 @@
+%\section{The cross term of $\gamma$}
+We can estimate the $\gamma$ shear from Eq. \eqref{equ:gamma}. If we separate
+halo field $\delta$ into two mass bins, such as
+\begin{equation}
+\delta=\delta_a + \delta_b,
+\label{equ:h_d}
+\end{equation}
+where subscript $a$ and $b$ indicate two mass bins with the same number density.
+Obviously, we can obtain $\gamma_{i}^{a}$ and $\gamma_{i}^{b}$ by 
+Eq. \eqref{equ:gamma}. Here index $i$ indicates 
+'$1$', '$2$', '$x$', '$y$', '$z$'.  In addition, 
+we can also estimate the $\gamma$ field cross $\delta_{a}$ and $\delta_{b}$.\\
+ The cross term of $\gamma$ can is
+\begin{equation}
+\label{equ:gamma_high}
+\begin{split}
+&\hat{\gamma}_{1}=\left[\delta^{w_{1}}_{a}(x)\delta^{w_{1}}_{b}(x)-\delta^{w_{2}}_{a}(x)\delta^{w_{2}}_{b}(x) \right],\\
+&\hat{\gamma}_{2}=[\delta^{w_{1}}_{a}(x)\delta^{w_{2}}_{b}(x)
++\delta^{w_{1}}_{b}(x)\delta^{w_{2}}_{a}(x)],\\
+&\hat{\gamma}_{x}=[\delta^{w_{1}}_{a}(x)\delta^{w_{3}}_{b}(x)
++\delta^{w_{1}}_{b}(x)\delta^{w_{3}}_{a}(x)],\\
+&\hat{\gamma}_{y}=[\delta^{w_{2}}_{a}(x)\delta^{w_{3}}_{b}(x)
++\delta^{w_{2}}_{b}(x)\delta^{w_{3}}_{a}(x)],\\
+&\hat{\gamma}_{z}=[(2\delta^{w_{3}}_{a}(x)\delta^{w_{3}}_{b}(x)
+-\delta^{w_{1}}_{a}(x)\delta^{w_{1}}_{b}(x)
+-\delta^{w_{2}}_{a}(x)\delta^{w_{2}}_{b}(x)]/3,
+\end{split}
+\end{equation}
+and the final reconstructed $\kappa$ field is 
+\begin{equation}
+\kappa=\kappa_{a}+\kappa_{b}+2\kappa_{ab}
+\label{equ:kappa_d}
+\end{equation}
+%=============================================================================
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=0.48\textwidth]{../../eps/high_order.eps}
+\end{center}
+\vspace{-0.7cm}
+\caption{Reconstruction by Eq. \eqref{equ:kappa_d}. We separate 
+the $\bar{n}=0.0003\ h^{3}\mathrm{Mpc}^{-3}$ halos field into two mass bins $\delta_a$
+and $\delta_{b}$ and reconstruct the $\kappa$ field.}
+\label{fig:H_CC}
+%=============================================================================
+\end{figure}
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=0.48\textwidth]{../../eps/high_order_24.eps}
+\end{center}
+\vspace{-0.7cm}
+\caption{Identical to Fig. \ref{fig:H_CC}, but the number density of separated
+halo field is $0.0024\ h^{3}\mathrm{Mpc}^{-3}$.}
+\label{fig:H_CC_24}
+\end{figure}

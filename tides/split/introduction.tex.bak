@@ -1,0 +1,80 @@
+The large-scale structure contains a wealth of information 
+about our Universe, including cosmic acceleration, neutrino masses
+and inflation. By measuring large-scale structure we can attempt to
+find the answers to such fundamental questions as what the initial
+conditions for the Universe are and what the future of the Universe will be.
+% The cosmic acceleration, neutrino masses, early universe models
+%and other properties of the Universe can be inferred with current or 
+%upcoming surveys. 
+However, the nonlinear evolution and many observational
+problems make it difficult to extract cosmological information. In our 
+previous studies \citep{2012:pen,2015:zhu}, the gravitational coupling
+between the long wavelength tidal field and small scale density fluctuations
+is used to reconstruct the large-scale density field, which provides a new
+method (cosmic tidal reconstruction) to extract the large-scale information from local observation.\\
+%Cosmic tidal
+%reconstruction allows us to use small-scale filamentary structures to 
+%solve the large-scale tidal shear and gravitational potential.\\
+
+The basic idea of the cosmic tidal reconstruction is that the local
+anisotropic structure includes the large scale information because of the
+tidal interactions in different scale modes. Each independent measurement 
+of the small scale power spectrum gives some information about the power
+spectrum on large scales. So we can use cheaper local observation to 
+estimate the long wavelength tidal field by cosmic tidal reconstruction,
+ which can be used to recover lost 21cm modes and reduce sample 
+ variance \citep{2012:pen}. We have tested the reconstruction with simulated 
+dark matter density fields \citep{2015:zhu} and have developed a 
+three-dimensional (3D) method which obtains even better result (in
+preparation). However, the reconstruction with dark matter density field
+can not help us to extend this method to actual data in surveys and more 
+effects should be done.\\
+
+Galaxy survey is one of the leading methods to measure the clustering
+of dark matter and has been
+
+Dark matter halos, which host observable galaxies and galaxy clusters, are
+biased tracers of the underlying dark matter density field. The relation
+between the galaxy and dark matter halos be described by the halo model
+\citep{Halo_model1:2001ApJ,Halo_model2:2000MNRAS,Halo_model3:2000MNRAS}.
+Therefore, understanding tidal reconstruction in view of halo field is
+important for us to extract information from galaxy surveys, which we will
+ study in our next work. In this
+paper, we extend 3D tidal reconstruction in view of halos and try to
+reconstruction with a bias-weighting halos field to get a higher correlation
+between reconstructed and original density field.(*)\\
+
+In our previous studies \citep{2012:pen,2015:zhu}, we applied a
+ Gaussianization technique to suppress the large weight of the high density
+ regions because of the quadratic estimator. However, for the halos fields, 
+ there is not such a high fluctuation. So we have a good reconstruction even
+ without Gaussianization and which gives us a simpler and clearer physical
+ images. Furthermore, without Gaussianization, we can estimator the bias of
+ tidal reconstruction easily and correct it, which is import for our 
+ reconstruction. \\
+  
+The shot noise, which due to the discrete sampling of halos, is another
+ problem that should be solved. Generally speaking, we assume the shot
+ noise is the inverse of the number density $\bar{n}$. So for the dark matter
+ density field, the shot noise is too small to ignore. However, the 
+ influence of the shot noise limits the result of reconstruction in view of 
+ hales. Here, we apply a wiener filter to suppress the shot noise, which
+ we will introduce later.\\
+ 
+Galaxy survey has been one of the leading methods to measure the clustering
+of dark matter. There have been a lot of efforts in developing optimal 
+weighting in galaxy survey \citep{OW1,OW2,OW3,OW4,OW5}. It is difficult to 
+get the mass information in galaxy survey. However we can apply a biased
+weighting, that bias can be given by galaxy luminosity, to improve the 
+signal to noise ratio of the halo fields. In this paper, we are not try to
+find a optimal bias weighting, but the optimal weighting may be needed in
+some case.\\
+
+(*)This paper is organized as follows. In Section \ref{sec:review}, 
+we review the
+ reconstruction technique. In Section \ref{sec:performance},
+  we study the performance of
+  reconstruction in halo density fields from $N$-body simulations. 
+ In Section \ref{sec:cross_term}, we study how much improvement can 
+ get from bias weighted halo fields.\\
+ 

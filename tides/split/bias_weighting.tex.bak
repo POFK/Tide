@@ -1,0 +1,73 @@
+\section{Bias-weighting reconstruction}
+We can combine the different mass bins of halos field 
+with bias weighting by the following equation:
+\begin{equation}
+\delta_{w}=\frac{\sum b_{i}\delta_{i}}{\sum b_{i}/n},
+\label{equ:bw}
+\end{equation}
+where $\delta_{i}$ is the $i$-th mass bin of halo fields, $b_{i}$ is the 
+bias factor of the $i$-th mass bin and $n$ is the number of mass bins.
+ By Eq. \eqref{equ:bw}, we are trying to
+obtain a weighted halo field $\delta_{w}$ which can be a better tracer of 
+dark matter density field.\\
+To obtain a weighted field $\delta_{w}$, we sebsample the halo field by halos
+mass. Here we separate the halos field into $4$ mass bins which have the same
+number density.\\
+%=============================================================================
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=0.48\textwidth]{../../eps/bwSimCC0024M4bin.eps}
+\end{center}
+\vspace{-0.7cm}
+\caption{The correlation coefficient of simulated halo mass bins 
+and dark matter density
+field. We separate the $0.0024\ (h/\mathrm{Mpc})^3$ halos fields into $4$ 
+mass bins. From the highest to lowest mass we obtain mass bins: 
+$m1$, $m2$, $m3$ and $m4$ and all of them with a same number density
+$0.0006\ (h/\mathrm{Mpc})^3$. The blue solid line is the heaviest mass bin
+ $m1$ and the green dashed line is the origin halo fields with number density
+ $0.0024\ (h/\mathrm{Mpc})^3$}
+\label{fig:bw_CC}
+\end{figure}
+%=============================================================================
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=0.48\textwidth]{../../eps/bwSimNoiseE2Pd0024M4bin.eps}
+\end{center}
+\vspace{-0.7cm}
+\caption{Same as Fig. \ref{fig:bw_CC} but we plot 
+the inverse signal to noise ratio (N/S) of different mass bins. 
+The colored lines are the (N/S) of different mass bins and the black solid 
+line  indicates the origin halo fields with number density
+ $0.0024\ (h/\mathrm{Mpc})^3$.
+}
+\label{fig:bw_noise}
+\end{figure}
+%=============================================================================
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=0.48\textwidth]{../../eps/bwSimNoisePn0024M4bin.eps}
+\includegraphics[width=0.48\textwidth]{../../eps/bwSimNoisePn0003M10bin.eps}
+\end{center}
+\vspace{-0.7cm}
+\caption{The noise of halos mass bins and original halos fields.
+In the top and the bottom panel, we separate $0.0024\ (h/\mathrm{Mpc})^3$ 
+and $0.0003\ (h/\mathrm{Mpc})^3$ halos fields into $4$ and $10$ mass bins, 
+respectively. The colored lines indicate different mass bins from the 
+heaviest to the lightest mass bin (from $m1$ to $m4$ or from $\mathrm{bin1}$
+ to $\mathrm{bin10}$) and the black solid line 
+ indicates the original halos field 
+($0.0024\ (h/\mathrm{Mpc})^3$ and $0.0003\ (h/\mathrm{Mpc})^3$).}
+\label{fig:bw_Pnoise}
+\end{figure}
+%=============================================================================
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=0.48\textwidth]{../../eps/bwReconCC0024M4bin.eps}
+\end{center}
+\vspace{-0.7cm}
+\caption{Correlation coefficient of reconstruction from bias-weighted halos 
+field and matter density field. Here we choose the number density of 
+$0.0024\ (h/\mathrm{Mpc})^3$ and combine with $4$ mass bins.}
+\label{fig:bw_recon_CC}
+\end{figure}

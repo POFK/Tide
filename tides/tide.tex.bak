@@ -1,0 +1,249 @@
+\documentclass[aps,prd,twocolumn,showpacs,superscriptaddress,groupedaddress,nofootinbib]{revtex4}  % for review and submission
+%\documentclass[aps,preprint,showpacs,superscriptaddress,groupedaddress]{revtex4}  % for double-spaced preprint
+\usepackage{graphicx}  % needed for figures
+\usepackage{dcolumn}   % needed for some tables
+\usepackage{bm}        % for math
+\usepackage{amsmath,amssymb}   % for math
+\usepackage{color}
+\usepackage{multirow}
+%\usepackage{aas_macros}
+\hyphenation{ALPGEN}
+\hyphenation{EVTGEN}
+\hyphenation{PYTHIA}
+\newcommand{\mr}{\mathrm}
+\newcommand{\mb}{\mathbf}
+\renewcommand{\d}{\mathrm{d}}
+\newcommand{\e}{\mathrm{e}}
+\newcommand{\ii}{\mathrm{i}}
+\newcommand{\bea}{\begin{eqnarray}}
+\newcommand{\eea}{\end{eqnarray}}
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\rund}[1]{\left(#1\right)}
+\newcommand{\eck}[1]{\left[ #1 \right]}
+\newcommand{\bigrund}[1]{\left{#1\right}}
+\newcommand{\vc}[1]{\mbox{\boldmath $#1$}}
+\newcommand{\dc}{\partial}
+\newcommand{\msun}{h^{-1}M_{\odot}}
+
+\def\llabel#1{\label{sc:#1}  {#1}\hspace{0.5cm}}
+\def\elabel#1{\label{eq:#1}\fbox{#1}}
+%\def\llabel#1{\label{sc:#1}}
+%\def\elabel#1{\label{eq:#1}}
+
+% avoids incorrect hyphenation, added Nov/08 by SSR
+\hyphenation{ALPGEN}
+\hyphenation{EVTGEN}
+\hyphenation{PYTHIA}
+
+%=========================================================================
+\begin{document}
+% The following information is for internal review, please remove them for submission
+\widetext
+% the following line is for submission, including submission to the arXiv!!
+%\hspace{5.2in} \mbox{Fermilab-Pub-04/xxx-E}
+%=========================================================================
+\title{Cosmic tides in view of halos}
+\input{./split/author.tex}
+\date{\today}
+%=========================================================================
+\begin{abstract}
+The distribution of halo is a biased tracer of the underlying dark matter density which we can not observe directly. In this paper, we try to reconstruct large scale density field from the distribution of halos. We also study the influence of RSD on the reconstruction.
+\end{abstract}
+
+\pacs{}
+\maketitle
+%\section{\label{sec:level1}First-level heading}
+% sections are not used for PRL papers
+%=========================================================================
+\section{Introduction}
+\input{./split/introduction.tex}
+
+\section{Review of Tidal Reconstruction}
+\input{./split/review.tex}
+
+%Add here the basic
+%physical idea about reconstruction large scale density field from small scale
+%tidal deformations, the tidal shear estimators, and the reconstruction 
+%algorithm. 
+
+
+%Discuss why we try to use halos in this paper: we can only observe
+%galaxies instead of dark matter density fields, halos are unperfect tracers
+%of the underlying dark matter density field. also add some figures containing
+%both the distribution of the dark matter density field and the halos here.
+%
+%Remainder: most content in this section can be directly copy+paste from my
+%original paper. Don't be silly trying to type all those equations again !!!
+%=======================================
+
+\section{Performance of reconstruction}
+we have discussed the tidal reconstruction with local dark matter density field \citep{2015:zhu}. In practice, however, we can only observe galaxies instead of dark matter density fields. And the distribution of halo is an unperfect tracer of the underlying dark matter density. Therefore, the reconstruction in view of halo is even more relevant to the observation.
+
+In this section we perform reconstruction in halos from $N$-body simualtions,
+following the same process in the previous paper. Use cross correlation 
+coefficient to quantify the reconstruction results and also discuss the 
+anisotropic noise.
+
+%=======================================
+\subsection{Simulation}
+We run N-body simulations using the $\mathrm{CUBEP^3M}$ code with $2048^3$ dark matter particles in a box of side length $L=1.2\ \mr{Gpc}/h$. We have adopted the following set of cosmological parameter values: $\Omega_{b}=0.049$, $\Omega_{c}=0.259$, $h=0.678$, $A_s=2.139\times 10^{-9}$ and $n_s=0.968$. Six runs with independent initial conditions were performed to provide better statistics. In the following calculations we use outputs at $z=0$. 
+\\copyed from zhu,maybe add something by YuYu.
+\input{./split/halo.tex}
+%
+%\subsection{Reconstruction}
+%The performance of reconstruction we follow our previous work \citep{2012:pen,2015:zhu}. \\
+%(i). Convolving the halo density field with a filter $W$ defined as 
+%\begin{equation}
+%W(\mb{k})=\frac{P_{h}(\mb{k})}{P_{h}(\mb{k})+1/\bar{n}},
+%\label{eq: nbar_filter}
+%\end{equation}
+%where $P_{h}$ and $\bar{n}$ is the power spectrum and the number density of the halo filed. Then we obtain the filtered halo density field. \\
+%%$\tilde{\delta}$.\\% Because \\
+%(ii). Using a Gaussian window function as a smooth kernel to smooth $\delta_{h}$,
+%\begin{equation}
+%\bar{\delta}(\mb{x})=\int d^{3}x'\mb{S}(\mb{x}-\mb{x}')\delta	(\mb{x}'),
+%\label{eq: smooth kernal}
+%\end{equation}
+%where $\mb{S}(r)=\e^{-r^{2}/2R^{2}}$. The smoothing scale we select as $R=1.25Mpc/h$, which is the same as in the reconstruction of dark matter \cite{2015:zhu}. Then we Gaussianize the density field like %$G(1+\bar{\delta}_{h})$ like. %\cite{1992:weinberg_Gau}.
+%\\(iii). We convolve the smoothed and Gaussianized density field with $w_{i}(\mb{x})$ (Eq. (\ref{eq:w})). Then we obtain the three dimensional tidal shear $\gamma_{1}(x)$ and $\gamma_{2}(x)$. Calculating $\gamma_{1}$ and $\gamma_{2}$ as Eq.(\ref{eq: k_3d}), we obtain 3D convergence field $\kappa_{3D}(\mb{k})$. 
+%\\(iv). To calculate $b(k_{\perp},k_{\parallel})$ and $W(k_{\perp},k_{\parallel})$ to correct the estimated $\kappa_{3D}$, we estimate the power spectrum $P_{\kappa_{3D}}$ and $P_{\kappa_{3D}\delta}$ use these six simulations. Then we obtain the reconstructed clean $\hat{\kappa(\mb{k})}$ from Eq. (\ref{eq: kappa}).
+%
+%%==========result=======================
+%\subsection{Results}
+%%1. show the slice of kappa field
+%%\input{./eps/slice.tex}
+%
+%%2. show the PS and CC
+%\input{./eps/PS.tex}
+%\input{./eps/CC.tex}
+%In Fig. \ref{fig:PS}, we show both the auto power spectrum of the simulated original 
+%dark matter density field $\delta$ and corresponding halo density field 
+%$\delta_{h}$. Also, the result of reconstructed field $\kappa$ and the cross power 
+%spectrum between $\kappa$ and $\delta$ is demonstrated. We move the data points in 
+%the same $k$-bin slightly to show lines clearly. In this paper, we use haloes to 
+%trace the underlying dark matter density field of the large scale structure. 
+%However, it is a biased tracer \citep{2016:halo_bias} which we can find from Fig. 
+%\ref{fig:PS}. From Eq. (\ref{eq: kappa}), the bias can be included in 
+%$b(k_{\perp},k_{\parallel})$ so we needn't extra processing for this effect in our 
+%reconstruction. We find there is a large error in small $k$ which is because of the 
+%finite modes in large scale. And fortunately, we get a good correlation coefficient 
+%$r > 0.7$ in almost all $k$ up to $0.05Mpc/h$, and a correlation coefficient more 
+%than $0.5$ even in $k<0.1Mpc/h$. We have discussed in the previous paper that the 
+%reconstruction does not work well at $k>0.1Mpc/h$ \citep{2015:zhu}. Here we define 
+%correlation coefficient as $r\equiv P_{\delta\kappa}/ \sqrt{P_{\delta}P_{\kappa}}$.
+%
+%In Fig. \ref{fig:cc}, we show the correlation coefficient $r$ in different smoothing scale. The error bars are estimated by the bootstrap resampling method. We have discussed the effect of smoothing and Gaussianization in previous work \citep{2015:zhu}. Here we obtain the same conclusion and use the optimal smoothing scale $1.25\ \mr{Mpc}/h$ in the following discuss.
+%
+%%defferent number density of halo
+%\input{./eps/number_density.tex}
+%\input{./eps/mass.tex}
+%Until now, the number densities of halos fields we used are $4.8\times 10^{-3}\ h^{3}/\mr{Mpc}^{3}$. However, different from dark matter density field, haloes field is sensitive to shot noise. So the effect of the shot noise must be considered in reconstruction, see Fig. \ref{fig:ND}. Obviously, higher number density corresponds to better correlation coefficient. Fortunately, we can obtain the data of galaxies with even higher number density than $4.8\times 10^{-3}\ h^{3}/\mr{Mpc}^{3}$ from current or upcoming surveys. add cite. Therefore, it is worth looking forward to the reconstruction by the data of galaxy survey.
+%
+%In Fig. \ref{fig:mass}, we resample the haloes field according to halo mass and reconstruct in the same way. All subsamples have the same number density $\bar{n}=1.2 \times 10^{-3}\ h^{3}\mr{Mpc}^{-3}$. The result shows that the high-mass haloes subsample has better  reconstruction performance.
+%%add something.
+%
+%\subsection{The Anisotropic Noise}
+%%3. show the 2d correlation coefficient and noise and bias.
+%The following content we default the reconstruction is optimal, with $1.25\ \mr{Mpc}/h$ smoothing scale, $4.8 \times 10^{-3}\ h^3\mr{Mpc}^{3}$ number density and Gaussianize.
+%\input{./eps/Pn.tex}
+%\input{./eps/2D_CC.tex}
+%The error in the reconstructed field $\kappa_{3D}(\mb{k})$ is anisotropic and
+% $\sigma^{2}_{3D}\propto (k^{2}/k^{2}_{\perp})^{2}$ \citep{2015:zhu}. In Fig.  \ref{fig:2d_Pn},  we show the 2D noise power spectrum. we find there are large noise in modes 
+% with large $k_{\parallel}$ and small $k_{\perp}$, which is consistent with our prediction.
+%
+%In Fig. \ref{fig:2D_cc}, we show the 2D correlation coefficient which defined as 
+%\begin{equation}
+%r_{\kappa \delta}(k_{\parallel},k_{\perp})=P_{\kappa \delta}(k_{\parallel},k_{\perp})\sqrt{P_{\delta}(k_{\parallel},k_{\perp})P_{\kappa}(k_{\parallel},k_{\perp})}.
+%\end{equation}
+%We find the correlation coefficient decreases quickly with the increase of $k_{\parallel}$. As previously mentioned, we only use the 2-D tidal shear fields in estimator. Therefore, the reconstruction is more sensitive to noise and has less correlation coefficient in the large $k_{\parallel}$ mode. 
+%
+%%=======================================
+%%4. show 2d bias
+%\subsection{bias factor}
+%\input{./eps/bias.tex}
+% If we look back the entire process of reconstruction, the possible bias may comes from the following aspects. (i) We use halo field as a biased trace of dark matter density field. (ii) We thought the integral of $Q$ in \eqref{equ:Q} would diverge at large $k$ if there were no noise in the power spectrum $P(k)$ in our previous paper \citep{2015:zhu}. But in simulation, we can calculate it actually. (iii) At last, the tidal shear estimators are biased and it is what we want to quantified. 
+%
+%In Fig. \ref{fig:2d_bias}, we show the 2-D bias factor $b(k_{\parallel},k_{\perp})$ which contains all of the three terms.
+%\section{Dependence on redshift space distortion}
+%%First discuss why we want to study the RSD halos, like what we observe is
+%%the RSD halos, etc....
+%%
+%%In this section we perform reconstruction in halos which positions has been
+%%shifted according to the $z$ component of pecular velocities. Use the some
+%%quantites to quantify the anisotropic features in reconstruction due RSD, 
+%%like the bias factor.
+%%=======================================
+%In reality, our observation is the density field in redshift space. Until now, everything we have done is in real space, ignoring the redshift space distortions (RSD) that arise from peculiar velocities. In this section, we will perform reconstruction in haloes which positions has been shifted according to the $z$ component of pecular velocities. After this, we discuss the effect of RSD for reconstruction and attempt to remove the RSD signal during the reconstruction like %\citep{rsd:saito,rsd:Anderson}.
+%\subsection{Effect of RSD}
+%\input{./eps/PS_rsd.tex}
+%\input{./eps/CC_rsd.tex}
+%
+%
+%We add RSD effect in simulation and reconstruct large scale density field. %add something, such as how to add RSD effect.
+%In Fig. \ref{fig:PS_rsd}, we show the auto and cross power spectra of the original
+%dark matter fields and reconstructed density fields from RSD halo field. Compared with Fig. \ref{fig:PS}, the auto power spectra of halo fields $P_{h}$ become higher, which is because the RSD effect improves the fluctuation of halo density field.
+%
+%In Fig. \ref{fig:cc_rsd}, we plot cross correlation coefficients of reconstructed tidal field from RSD halo field and dark matter density field. green, blue and red denote with, without and removing RSD effect, respectively. And the process of removing the effect of RSD we will describe later. We find difference between the correlation coefficient of reconstruction by halo field with and without RSD effect is about $0.05$. After we remove the effect of RSD, the correlation coefficient is almost back the same order with no RSD halo fields.
+%
+%\begin{figure}[tbp]
+%\begin{center}
+%\includegraphics[width=0.48\textwidth]{./eps/rsd_2d_bias.eps}
+%\end{center}
+%\vspace{-0.7cm}
+%\caption{RSD: 2D bias factor $b(k_{\parallel},k_{\perp})$.}
+%%\label{fig:2d_bias}
+%\end{figure}
+%
+%\begin{figure}[tbp]
+%\begin{center}
+%\includegraphics[width=0.48\textwidth]{./eps/rsd_2d_Pn_withbias.eps}
+%\end{center}
+%\vspace{-0.7cm}
+%\caption{RSD: The anisotropic noise power spectrum $P_{n}(k_{\parallel},k_{\perp})$.}
+%%\label{fig:2d_bias}
+%\end{figure}
+%
+%
+%\subsection{Removing the RSD effect}as previously discussed
+%The RSD effect causes a bad influence to reconstruction, as we previously discussed. Here, we follow the method of isotropic BAO reconstruction
+%% \citep{rsd:saito,rsd:Anderson} 
+% to remove the effect of RSD.
+% 
+%If we write the halo density field as $\delta(x)$, then we can estimate the displacement field $\tilde{s(k)}$ in Fourier space as:
+%\begin{equation}
+%\tilde{s}(k) \approx -\frac{i\mathbf{k}}{k^2}\tilde{\delta}_{s}(k),
+%\end{equation}
+%Where $\tilde{\delta}_{s}(k)$ is the smoothed density field use Eq. (\ref{eq: smooth kernal}). Different from BAO reconstruction, the smoothing scale here we just use $1.25\ \mr{Mpc}/h$.
+%
+%On linear scales, RSD effect enhance the halo density field as:
+%\begin{equation}
+%\tilde{\delta^{s}_{h}}=b(1+\beta\mu^{2})\tilde{\delta^{r}_{m}},
+%\end{equation}
+%where b is the linear halo bias, $\tilde{\delta^{r}_{m}}$ is the real space dark matter density field, $\tilde{\delta^{s}_{h}}$ is the redshift space halo density field, $\beta=f/b$ and $\mu$ is the cosine of the angle between the line of sight and save vector.
+%
+%So, the real space displacement field $\tilde{s}^{r}(k)$ can be estimated as:
+%\begin{equation}
+%\tilde{s}^{r}(\mb{k})=-\frac{i\mb{k}}{k^2}\frac{\tilde{\delta}_{s}(\mb{k})}{b(1+\beta \mu^{2})}.
+%\end{equation}
+
+
+\section{Discussion}
+Discuss these reconstruction results and its future applications....
+%=======================================
+
+
+\section{Acknowledgement}
+We acknowledge the support of the Chinese MoST 863 program under Grant 
+No. 2012AA121701, the CAS Science Strategic Priority Research Program 
+XDB09000000, the NSFC under Grant No. 11373030, Tsinghua University, 
+CHEP at Peking University, and NSERC.
+%=======================================
+
+\input{./eps/slice.tex}
+\bibliographystyle{apsrev}
+%\bibliographystyle{apj}
+%\bibliographystyle{mnras}
+\bibliography{tide}
+
+\end{document}

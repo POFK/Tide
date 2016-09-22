@@ -1,0 +1,53 @@
+\begin{thebibliography}{4}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname bibnamefont\endcsname\relax
+  \def\bibnamefont#1{#1}\fi
+\expandafter\ifx\csname bibfnamefont\endcsname\relax
+  \def\bibfnamefont#1{#1}\fi
+\expandafter\ifx\csname citenamefont\endcsname\relax
+  \def\citenamefont#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{\citenamefont{{Pen} et~al.}(2012)\citenamefont{{Pen}, {Sheth},
+  {Harnois-Deraps}, {Chen}, and {Li}}}]{2012:pen}
+\bibinfo{author}{\bibfnamefont{U.-L.} \bibnamefont{{Pen}}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{{Sheth}}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{{Harnois-Deraps}}},
+  \bibinfo{author}{\bibfnamefont{X.}~\bibnamefont{{Chen}}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{{Li}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2012}),
+  \eprint{1202.5804}.
+
+\bibitem[{\citenamefont{{Zhu} et~al.}(2015)\citenamefont{{Zhu}, {Pen}, {Yu},
+  {Er}, and {Chen}}}]{2015:zhu}
+\bibinfo{author}{\bibfnamefont{H.-M.} \bibnamefont{{Zhu}}},
+  \bibinfo{author}{\bibfnamefont{U.-L.} \bibnamefont{{Pen}}},
+  \bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{{Yu}}},
+  \bibinfo{author}{\bibfnamefont{X.}~\bibnamefont{{Er}}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{X.}~\bibnamefont{{Chen}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2015}),
+  \eprint{1511.04680}.
+
+\bibitem[{\citenamefont{{Lu} et~al.}(2010)\citenamefont{{Lu}, {Pen}, and
+  {Dor{\'e}}}}]{2010lu}
+\bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{{Lu}}},
+  \bibinfo{author}{\bibfnamefont{U.-L.} \bibnamefont{{Pen}}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{{Dor{\'e}}}},
+  \bibinfo{journal}{\prd} \textbf{\bibinfo{volume}{81}}, \bibinfo{eid}{123015}
+  (\bibinfo{year}{2010}), \eprint{0905.0499}.
+
+\bibitem[{\citenamefont{{Bucher} et~al.}(2012)\citenamefont{{Bucher},
+  {Carvalho}, {Moodley}, and {Remazeilles}}}]{2012bucher}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Bucher}}},
+  \bibinfo{author}{\bibfnamefont{C.~S.} \bibnamefont{{Carvalho}}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{{Moodley}}},
+  \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Remazeilles}}},
+  \bibinfo{journal}{\prd} \textbf{\bibinfo{volume}{85}}, \bibinfo{eid}{043016}
+  (\bibinfo{year}{2012}), \eprint{1004.3285}.
+
+\end{thebibliography}
