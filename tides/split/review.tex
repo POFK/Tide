@@ -3,35 +3,39 @@
 %\label{equ:eq.2}
 %\end{equation}
 %cite as Eq.(\ref{equ:eq.2})
-The basic idea of cosmic tidal reconstruction is presented originally in 
-Ref. \citep{2012:pen} and detailed description can be found in 
-Ref. \citep{2015:zhu}.
+The basic idea of cosmic tidal reconstruction is introduced originally in 
+Ref. \citep{2012arXiv1202.5804P} and detailed description can be found in 
+Ref. \citep{2016PhRvD..93j3504Z}.
 In this section we will briefly review it.\\
 
 %=============================================================================
 Not only the small-scale density fluctuation but also the long-wavelength
- tidal field influence the evolution of local small-scale density field. So
- we can use small scale observations to solve the large scale tidal shear 
- and gravitational potential. If we just assume the leading-order coupling
+ tidal field influence the evolution of local small-scale density field.
+The local anisotropic distortion, which derived from the long-wavelength 
+traceless tidal field $t_{ij}=\Phi_{L,ij}-\delta_{ij}\nabla^{2}\Phi_{L}/3$,
+where $\Phi_{L}$ is the long-wavelength gravitational potential,
+ can be used
+to reconstruct the large-scale density field.
+ If we just assume the leading-order coupling
  between the long-wavelength tidal field and small-scale density field, 
   the tidal distortion of the local small-scale power spectra can be 
   written as
 \begin{equation}
-P(\mathbf{k},\tau)|_{t_{ij}}=P_{1s}(k,\tau)+\hat{k}^{i}\hat{k}^{j}t_{ij}^{(0)}P_{1s}(k,\tau)f(k,\tau),
+P(\bm{k},\tau)|_{t_{ij}}=P_{1s}(k,\tau)+\hat{k}^{i}\hat{k}^{j}t_{ij}^{(0)}P_{1s}(k,\tau)f(k,\tau),
 \label{equ:Pk_s}
 \end{equation}
-where $\hat{k}$ is the unit vector in the direction of $\mathbf{k}$, 
-$P_{1s}$ is the small-scale power spectrum, the long-wavelength 
-tidal field is $t_{ij}=\Phi_{L,ij}-\delta_{ij}\nabla^{2}\Phi_{L}/3$ and 
-$f(k,\tau)$ are used to describe the coupling of the 
+where $\hat{k}$ is the unit vector in the direction of $\bm{k}$, 
+$P_{1s}$ is the isotropic linear power spectrum
+%the long-wavelength 
+%tidal field is $t_{ij}=\Phi_{L,ij}-\delta_{ij}\nabla^{2}\Phi_{L}/3$ 
+and $f(k,\tau)$ are used to describe the coupling of the 
 long-wavelength
-tidal field and small-scale density field. In this paper, we use superscript
-$(0)$ and $\tau$ to denotes the "initial" time and conformal time,
+tidal field and small-scale density field. Here, the superscript
+$(0)$ and $\tau$ are denote the "initial" time and conformal time,
 respectively. \\
-
-The filter $f(\mathbf{k},\tau)$ is defined as
+Here, the filter $f(\bm{k},\tau)$ is defined as
 \begin{equation}
-f(\mathbf{k},\tau)=2\alpha -\beta \frac{d\ln P_{1s}(k,\tau) }{d\ln k},
+f(k,\tau)=2\alpha -\beta \frac{d\ln P_{1s}(k,\tau) }{d\ln k},
 \label{equ:f}
 \end{equation}
 where 
@@ -43,19 +47,23 @@ where
 \end{equation}
 with 
 \begin{equation}
-D_{\sigma 1}(\tau)=\int^{\tau}_{0}d\tau'\frac{H(\tau)D(\tau')-H{\tau'}D{\tau}}{\dot{H}(\tau')D(\tau')-H(\tau')\dot{D}(\tau')}\frac{T(\tau')D(\tau')}{D(\tau)},
+D_{\sigma 1}(\tau)=\int^{\tau}_{0}d\tau'\frac{H(\tau)D(\tau')-H(\tau')D(\tau)}{\dot{H}(\tau')D(\tau')-H(\tau')\dot{D}(\tau')}\frac{T(\tau')D(\tau')}{D(\tau)},
 \end{equation}
 \begin{equation}
 F(\tau)=\int^{\tau}_{0}d\tau''a(\tau'')T(\tau'')\int^{\tau}_{\tau''}d\tau'/a(\tau').
 \end{equation}
-Here, $D(\tau)$ is the linear growth function, $T(\tau)=D(\tau)/a(\tau)$ is the linear transfer function and $H(\tau)=d\ln a/d\tau$ is the comoving Hubble parameter.\\
+Here, $D(\tau)$ is the linear growth factor, $T(\tau)=D(\tau)/a(\tau)$ is the linear transfer function and $H(\tau)=d\ln a/d\tau$ is the comoving Hubble parameter.\\
 
-From Eq. \eqref{equ:Pk_s}, we express small-scale density fluctuations
-with the long-wavelength tidal field $t_{ij}$ and local small-scale
-density field $\delta_{1s}$. Then a tidal shear estimator can be constructed
-as following.\\
-
-The tidal tensor $t_{ij}$ can be decomposed as
+%From Eq. \eqref{equ:Pk_s}, we express small-scale density fluctuations
+%with the long-wavelength tidal field $t_{ij}$ and local small-scale
+%density field $\delta_{1s}$. Then a tidal shear estimator can be constructed
+%as following.\\
+The tensor $\Phi_{L,ij}$ can be written as 
+\begin{equation}
+\Phi_{L,ij}= \delta_{ij}\kappa +t_{ij},
+\end{equation}
+where the convergence field $\kappa = \nabla^{2}\Phi_{L}/3$.\\
+The traceless tidal tensor $t_{ij}$ can be decomposed as in weak lensing:
 \begin{equation}
 t_{ij}=
 \begin{pmatrix}
@@ -72,7 +80,9 @@ $\gamma_{x}=\Phi_{L,13}$,
 $\gamma_{y}=\Phi_{L,23}$,
 $\gamma_{z}=(2\Phi_{L,23}-\Phi_{L,11}-\Phi_{L,22})/6$.\\
 
-In 3D reconstruction,
+And under the Gaussian assumption and in the long-wavelength limit,
+the optimal tidal shear estimators can be given as
+(more details can found in Ref. \citep{2016PhRvD..93j3504Z})
 %==================================================================
 %\subsection{Tidal Shear Estimators And Density Reconstruction Algorithm}
 %The Jacobian matrix can be described the density contrast (Eq. (\ref{equ:Jacobian})) as
@@ -82,10 +92,10 @@ In 3D reconstruction,
 %In the long wavelength limit and under the Gaussian assumption, quadratic estimators can be constructed either by using the maximum likelihood method %\citep{2008lu}
 %or the inverse variance weighting \citep{2010lu,2012bucher}:
 %\begin{equation}
-%\hat{\gamma}_1=\frac{1}{Q}\int \frac{d^3k}{(2\pi)^3} \frac{|\delta_g(\mathbf{k})|^2}{L^3}\frac{P(k)}{P^2_{tot}(k)}f(k)(\hat{k}_{1}^{2}-\hat{k}^{2}_{2}),
+%\hat{\gamma}_1=\frac{1}{Q}\int \frac{d^3k}{(2\pi)^3} \frac{|\delta_g(\bm{k})|^2}{L^3}\frac{P(k)}{P^2_{tot}(k)}f(k)(\hat{k}_{1}^{2}-\hat{k}^{2}_{2}),
 %\end{equation}
 %\begin{equation}
-%\hat{\gamma}_2=\frac{1}{Q}\int \frac{d^3k}{(2\pi)^3} \frac{|\delta_g(\mathbf{k})|^2}{L^3}\frac{P(k)}{P^2_{tot}(k)}f(k)(2\hat{k}_{1}\hat{k}_{2}).
+%\hat{\gamma}_2=\frac{1}{Q}\int \frac{d^3k}{(2\pi)^3} \frac{|\delta_g(\bm{k})|^2}{L^3}\frac{P(k)}{P^2_{tot}(k)}f(k)(2\hat{k}_{1}\hat{k}_{2}).
 %\end{equation}
 
 %If we assume that the long wavelength tidal shear fields vary more slowly than the small scale density field and the tidal shear field is constant in space, the unbiased minimum variance estimates of the spatial varying tidal field in the long wavelength limit is given by
@@ -93,67 +103,75 @@ In 3D reconstruction,
 \begin{equation}
 \label{equ:gamma}
 \begin{split}
-&\hat{\gamma}_{1}=\left[\delta^{w_{1}}_{g}(x)\delta^{w_{1}}_{g}(x)-\delta^{w_{2}}_{g}(x)\delta^{w_{2}}_{g}(x) \right],\\
-&\hat{\gamma}_{2}=[2\delta^{w_{1}}_{g}(x)\delta^{w_{2}}_{g}(x)],\\
-&\hat{\gamma}_{x}=[2\delta^{w_{1}}_{g}(x)\delta^{w_{3}}_{g}(x)],\\
-&\hat{\gamma}_{y}=[2\delta^{w_{2}}_{g}(x)\delta^{w_{3}}_{g}(x)],\\
-&\hat{\gamma}_{z}=[2\delta^{w_{3}}_{g}(x)\delta^{w_{3}}_{g}(x)
--\delta^{w_{1}}_{g}(x)\delta^{w_{1}}_{g}(x)
--\delta^{w_{2}}_{g}(x)\delta^{w_{2}}_{g}(x)]/3,
+&\hat{\gamma}_{1}=\left[\delta^{w_{1}}(x)\delta^{w_{1}}(x)-\delta^{w_{2}}(x)\delta^{w_{2}}(x) \right],\\
+&\hat{\gamma}_{2}=[2\delta^{w_{1}}(x)\delta^{w_{2}}(x)],\\
+&\hat{\gamma}_{x}=[2\delta^{w_{1}}(x)\delta^{w_{3}}(x)],\\
+&\hat{\gamma}_{y}=[2\delta^{w_{2}}(x)\delta^{w_{3}}(x)],\\
+&\hat{\gamma}_{z}=[2\delta^{w_{3}}(x)\delta^{w_{3}}(x)
+-\delta^{w_{1}}(x)\delta^{w_{1}}(x)
+-\delta^{w_{2}}(x)\delta^{w_{2}}(x)]/3,
 \end{split}
 \end{equation}
-where $\delta^{w_{i}}_{g}(x)$ is a filtered density fields,and $i$ indicates $\hat{x},\hat{y},\hat{z}$ directions. In Fourier space $w_{i}$ is given by
+where $\delta^{w_{i}}(x)$ are filtered density fields
 \begin{equation}
-\delta^{w_{i}}_{g}(\mathbf{k})=\delta_{g}(\mathbf{k})w_{i}(\mathbf{k}).
+\delta^{w_{i}}(\bm{k})=\delta(\bm{k})w_{i}(\bm{k}).
 \end{equation}
-Here $\delta_{g}$ is the Gaussianized density field and $w_{i}(\mathbf{k})$ is a optimal filter, defined as 
+ and $i=1,2,3$ indicates $\hat{x}$, $\hat{y}$ and $\hat{z}$ directions.
+In the dark matter case, a Gaussianization method is needed because the 
+Gaussian assumption. However, for halo reconstruction, the Gaussianization
+is not performed for some reasons, which we will discuss in Sec. \ref{sec:performance}.
+ In Fourier space, $w_{i}(\bm{k})$ is given by
 \begin{equation}
-w_{i}(\mathbf{k})=\ii \hat{k}_{i} \left[\frac{P(k)f(k)}{QP^{2}_{tot}(k)}\right]^{1/2},
+w_{i}(\bm{k})=\ii \hat{k}_{i} \left[\frac{P(k)f(k)}{QP^{2}_{tot}(k)}\right]^{1/2},
 \label{equ:w}
 \end{equation}
 with 
 \begin{equation}
-Q=\int \frac{2k^{2}dk}{15\pi^{2}}\frac{P^{2}(k)}{P^{2}_{tot}(k)}f^{2}(k)
+Q=\int \frac{2k^{2}dk}{15\pi^{2}}\frac{P^{2}(k)}{P^{2}_{tot}(k)}f^{2}(k).
 \label{equ:Q}
 \end{equation}
-and
-\begin{equation}
-P_{tot}(k)=P(k)+P_{N}(k)
- \end{equation}
- is the observed power spectrum which includes both signal and noise. The filter $f(k)$ is from Eq. \eqref{equ:f}.\\
- 
- Then the reconstructed 3D convergence field is
+Here, $f(k)$ is from Eq. \eqref{equ:f} and more details will also discussed in
+Sec. \ref{sec:performance}.
+
+%\begin{equation}
+%P_{tot}(k)=P(k)+P_{N}(k)
+% \end{equation}
+% is the observed power spectrum which includes both signal and noise. The filter $f(k)$ is from Eq. \eqref{equ:f}.\\
+Then, the convergence term $\kappa$ can be estimated from shear terms 
+$\gamma_{i}$ 
  \begin{equation}
  \label{equ:kappa3D}
  \begin{split}
- \kappa_{3\mathrm{D}}(\mathbf{k})=
+ \kappa(\bm{k})=
  \frac{1}{k^{2}}
  [
-&(k_{1}^{2}-k_{2}^{2})\gamma_{1}(\mathbf{k})
- +2k_{1}k_{2}\gamma_{2}(\mathbf{k}) 
- +2k_{1}k_{3}\gamma_{x}(\mathbf{k})\\
-&+2k_{2}k_{3}\gamma_{y}(\mathbf{k})
- +(2k_{3}^2-k_1^2-k_2^2)\gamma_{z}(\mathbf{k})
- ].
+&(k_{1}^{2}-k_{2}^{2})\gamma_{1}(\bm{k})
+ +2k_{1}k_{2}\gamma_{2}(\bm{k}) 
+ +2k_{1}k_{3}\gamma_{x}(\bm{k})\\
+&+2k_{2}k_{3}\gamma_{y}(\bm{k})
+ +(2k_{3}^2-k_1^2-k_2^2)\gamma_{z}(\bm{k})
+ ],
  \end{split}
  \end{equation}
+and the large-scale density field can be given by the convergence field
+because of the Poisson equation.\\
 %========wiener of kappa================================================
 To correct the bias and reduce the noise in reconstructed field,
  we write the reconstructed clean field $\hat{\kappa}$ as 
 \begin{equation}
 \label{eq: kappa}
-\hat{\kappa}(k_{\perp},k_{\parallel})=\frac{\kappa_{3\mathrm{D}}(k_{\perp},k_{\parallel})}{b(k_{\perp},k_{\parallel})} W(k_{\perp},k_{\parallel}),
+\hat{\kappa}(k_{\perp},k_{\parallel})=\frac{\kappa(k_{\perp},k_{\parallel})}{b(k_{\perp},k_{\parallel})} W(k_{\perp},k_{\parallel}),
 \end{equation}
 where bias factor 
 \begin{equation}
-b(k_{\perp},k_{\parallel})=\frac{P_{\kappa_{3\mathrm{D}}\delta}(k_{\perp},k_{\parallel})}{P_{\delta}(k_{\perp},k_{\parallel})}
+b(k_{\perp},k_{\parallel})=\frac{P_{\kappa\delta}(k_{\perp},k_{\parallel})}{P_{\delta\delta}(k_{\perp},k_{\parallel})}
 \label{equ:bias}
 \end{equation}
  and Wiener filter 
 \begin{equation}
-W(k_{\perp},k_{\parallel})=\frac{P_{\delta}(k_{\perp},k_{\parallel})}{P_{\kappa_{3\mathrm{D}}}(k_{\perp},k_{\parallel})/b^{2}(k_{\perp},k_{\parallel})}.
+W(k_{\perp},k_{\parallel})=\frac{P_{\delta\delta}(k_{\perp},k_{\parallel})}{P_{\kappa\kappa}(k_{\perp},k_{\parallel})/b^{2}(k_{\perp},k_{\parallel})}.
 \end{equation}
 Here, the noise power spectrum is 
 \begin{equation}
-P_{n}(k_{\perp},k_{\parallel})=P_{\kappa 3\mathrm{D}}(k_{\perp},k_{\parallel})-b^2(k_{\perp},k_{\parallel})P_{\delta}(k_{\perp},k_{\parallel}).
+P_{n}(k_{\perp},k_{\parallel})=P_{\kappa 3\mathrm{D}}(k_{\perp},k_{\parallel})-b^2(k_{\perp},k_{\parallel})P_{\delta\delta}(k_{\perp},k_{\parallel}).
 \end{equation}
