@@ -1,0 +1,10 @@
+*.npy
+*.pyc
+*.png
+*.eps
+*.meta
+*.dat
+nohup.out
+result*
+#*result_*
+*.log

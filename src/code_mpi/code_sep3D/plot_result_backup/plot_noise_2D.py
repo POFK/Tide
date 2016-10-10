@@ -36,10 +36,11 @@ plt.xscale('log')
 plt.yscale('log')
 plt.xlabel(r'$\mathbf{k}_{\perp}\ [h/\mathrm{Mpc}]$')#,fontsize='large')
 plt.ylabel('$\mathbf{k}_{\parallel}\ [h/\mathrm{Mpc}]$')#,fontsize='large')
+plt.title('$\mathrm{Noise}$',fontsize=20)
 #plt.grid(True)
 #plt.title('bias',fontsize='large')
 OUTDIR='/home/mtx/github/Tide/src/code_mpi/code_sep3D/result/eps/'
-#plt.savefig(OUTDIR+'recon_noise_b2Pd_2D.eps')
+plt.savefig(OUTDIR+'recon_noise_b2Pd_2D.eps')
 #plt.savefig(OUTDIR+'recon_noise_b2_2D.eps')
-plt.show()
+#plt.show()
 

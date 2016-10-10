@@ -1,33 +1,42 @@
 #!/bin/bash
 # tides10; outputDir; halo field
 stime=1.5m
-#======= 3D tides =======================
-#time ./sep_run.sh 10 test_3D_Gau 0.000halo_0.0048.hdf5
-#time ./sep_run.sh 10 test_3D_Gau_ori 0.000halo_0.0048.hdf5
-#time ./sep_run.sh 9 test_3D_No_Gau 0.000halo_0.0048.hdf5
-#time ./sep_run.sh 13 test_3D_No_Gau 0.000halo_0.0048.hdf5  
-##sleep 5m
-#time ./sep_run.sh 14 test_3D_No_Gau 0.000halo_0.0048.hdf5 
-##sleep 5m
-#time ./sep_run.sh 15 test_3D_No_Gau 0.000halo_0.0048.hdf5 
+#================================================================================
 
-#time ./sep_run.sh 10 combina_4bin_biasW_3D_Gau halo_combina_bias_4bin.hdf5 &
-#sleep 5s
-#time ./sep_run.sh 10 0.0048_3D_Gau 0.000halo_0.0048.hdf5
-#time ./sep_run.sh 10 0.0048_S2.5_3D_Gau 0.000halo_0.0048.hdf5
+##============= cut off ==========================================================
+#./sep_run.sh 10 CIC_0.0024_3D_NoGau_s1.0_Wiener_cut0.1 0.000halo_cic_0.0024.hdf5
+#./sep_run.sh 11 CIC_0.0024_3D_NoGau_s1.0_Wiener_cut0.1 0.000halo_cic_0.0024.hdf5
+#./sep_run.sh 12 CIC_0.0024_3D_NoGau_s1.0_Wiener_cut0.1 0.000halo_cic_0.0024.hdf5
+#./sep_run.sh 13 CIC_0.0024_3D_NoGau_s1.0_Wiener_cut0.1 0.000halo_cic_0.0024.hdf5
+#./sep_run.sh 14 CIC_0.0024_3D_NoGau_s1.0_Wiener_cut0.1 0.000halo_cic_0.0024.hdf5
+#./sep_run.sh 15 CIC_0.0024_3D_NoGau_s1.0_Wiener_cut0.1 0.000halo_cic_0.0024.hdf5
+#./sep_run.sh 16 CIC_0.0024_3D_NoGau_s1.0_Wiener_cut0.1 0.000halo_cic_0.0024.hdf5
+#./sep_run.sh 17 CIC_0.0024_3D_NoGau_s1.0_Wiener_cut0.1 0.000halo_cic_0.0024.hdf5
+#./sep_run.sh 18 CIC_0.0024_3D_NoGau_s1.0_Wiener_cut0.1 0.000halo_cic_0.0024.hdf5
+#./sep_run.sh 19 CIC_0.0024_3D_NoGau_s1.0_Wiener_cut0.1 0.000halo_cic_0.0024.hdf5
+##================================================================================
 
-#======= 3D tides cut-off ===============
-# step 1
-#time ./sep_run1.sh 10 0.0048_3D_NoGau_s1.25 0.000halo_0.0048.hdf5 
-#time ./sep_run1.sh 11 0.0048_3D_NoGau_s1.25 0.000halo_0.0048.hdf5 
-#time ./sep_run1.sh 12 0.0048_3D_NoGau_s1.25 0.000halo_0.0048.hdf5 
-#time ./sep_run1.sh 13 0.0048_3D_NoGau_s1.25 0.000halo_0.0048.hdf5 
-#time ./sep_run1.sh 14 0.0048_3D_NoGau_s1.25 0.000halo_0.0048.hdf5 
-#time ./sep_run1.sh 15 0.0048_3D_NoGau_s1.25 0.000halo_0.0048.hdf5 
-# step 2
-#time ./sep_run2.sh 10 0.0048_3D_NoGau_s1.25 0.000halo_0.0048.hdf5 
-#time ./sep_run2.sh 11 0.0048_3D_NoGau_s1.25 0.000halo_0.0048.hdf5 
-#time ./sep_run2.sh 12 0.0048_3D_NoGau_s1.25 0.000halo_0.0048.hdf5 
-#time ./sep_run2.sh 13 0.0048_3D_NoGau_s1.25 0.000halo_0.0048.hdf5 
-#time ./sep_run2.sh 14 0.0048_3D_NoGau_s1.25 0.000halo_0.0048.hdf5 
-#time ./sep_run2.sh 15 0.0048_3D_NoGau_s1.25 0.000halo_0.0048.hdf5 
+##============= random 1 =========================================================
+#./sep_run.sh 10 random_CIC_0.0024_1_3D_NoGau_s1.0_Wiener random_0.0024_cic/0.000halo_random1.hdf5
+#./sep_run.sh 11 random_CIC_0.0024_1_3D_NoGau_s1.0_Wiener random_0.0024_cic/0.000halo_random1.hdf5
+#./sep_run.sh 12 random_CIC_0.0024_1_3D_NoGau_s1.0_Wiener random_0.0024_cic/0.000halo_random1.hdf5
+#./sep_run.sh 13 random_CIC_0.0024_1_3D_NoGau_s1.0_Wiener random_0.0024_cic/0.000halo_random1.hdf5
+#./sep_run.sh 14 random_CIC_0.0024_1_3D_NoGau_s1.0_Wiener random_0.0024_cic/0.000halo_random1.hdf5
+#./sep_run.sh 15 random_CIC_0.0024_1_3D_NoGau_s1.0_Wiener random_0.0024_cic/0.000halo_random1.hdf5
+#./sep_run.sh 16 random_CIC_0.0024_1_3D_NoGau_s1.0_Wiener random_0.0024_cic/0.000halo_random1.hdf5
+#./sep_run.sh 17 random_CIC_0.0024_1_3D_NoGau_s1.0_Wiener random_0.0024_cic/0.000halo_random1.hdf5
+#./sep_run.sh 18 random_CIC_0.0024_1_3D_NoGau_s1.0_Wiener random_0.0024_cic/0.000halo_random1.hdf5
+#./sep_run.sh 19 random_CIC_0.0024_1_3D_NoGau_s1.0_Wiener random_0.0024_cic/0.000halo_random1.hdf5
+##================================================================================
+##============= random 2 =========================================================
+#./sep_run.sh 10 random_CIC_0.0024_2_3D_NoGau_s1.0_Wiener random_0.0024_cic/0.000halo_random2.hdf5
+#./sep_run.sh 11 random_CIC_0.0024_2_3D_NoGau_s1.0_Wiener random_0.0024_cic/0.000halo_random2.hdf5
+#./sep_run.sh 12 random_CIC_0.0024_2_3D_NoGau_s1.0_Wiener random_0.0024_cic/0.000halo_random2.hdf5
+#./sep_run.sh 13 random_CIC_0.0024_2_3D_NoGau_s1.0_Wiener random_0.0024_cic/0.000halo_random2.hdf5
+#./sep_run.sh 14 random_CIC_0.0024_2_3D_NoGau_s1.0_Wiener random_0.0024_cic/0.000halo_random2.hdf5
+#./sep_run.sh 15 random_CIC_0.0024_2_3D_NoGau_s1.0_Wiener random_0.0024_cic/0.000halo_random2.hdf5
+#./sep_run.sh 16 random_CIC_0.0024_2_3D_NoGau_s1.0_Wiener random_0.0024_cic/0.000halo_random2.hdf5
+#./sep_run.sh 17 random_CIC_0.0024_2_3D_NoGau_s1.0_Wiener random_0.0024_cic/0.000halo_random2.hdf5
+#./sep_run.sh 18 random_CIC_0.0024_2_3D_NoGau_s1.0_Wiener random_0.0024_cic/0.000halo_random2.hdf5
+#./sep_run.sh 19 random_CIC_0.0024_2_3D_NoGau_s1.0_Wiener random_0.0024_cic/0.000halo_random2.hdf5
+##================================================================================

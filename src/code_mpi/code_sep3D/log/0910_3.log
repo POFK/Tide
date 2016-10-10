@@ -1,0 +1,796 @@
+====================================================================================================
+/project/mtx/output/tides10/massbin2_0.0003_m1/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "plot_result.py", line 24, in <module>
+    HK=np.loadtxt(PathPlot1+'HK')
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 715, in loadtxt
+    fh = iter(open(fname, 'U'))
+IOError: [Errno 2] No such file or directory: '/project/mtx/output/tides10/massbin2_0.0003_m1/Pk_HK'
+ls: 无法访问/project/mtx/output/tides10/massbin2_0.0003_m1/halo_gm*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides10/massbin2_0.0003_m1/halo_gm*.hdf5": 没有那个文件或目录
+/project/mtx/output/tides10/massbin2_0.0003_m1/halo_wdeng1.hdf5
+/project/mtx/output/tides10/massbin2_0.0003_m1/halo_wdeng2.hdf5
+/project/mtx/output/tides10/massbin2_0.0003_m1/halo_wdeng3.hdf5
+rm: 无法删除"/project/mtx/output/tides10/massbin2_0.0003_m1/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides10/massbin2_0.0003_m1/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides11/massbin2_0.0003_m1/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.6553548   0.34051282  0.33020711  0.46726979  0.56694266  0.48725771
+  0.44481329  0.44018013  0.37007088  0.28122421  0.19688472  0.10361588
+  0.02175177  0.1723665   0.18562424 -0.18095173 -0.58571567 -0.62977316
+ -0.65269178 -0.6460997 ]
+Traceback (most recent call last):
+  File "plot_result.py", line 58, in <module>
+    ymax=np.max([np.max(DD[:,1]),np.max(DK[:,1]),np.max(KK[:,1]),np.max(DH[:,1]),np.max(HH[:,1]),np.max(HK[:,1])])*1.1
+NameError: name 'DH' is not defined
+ls: 无法访问/project/mtx/output/tides11/massbin2_0.0003_m1/halo_gm*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides11/massbin2_0.0003_m1/halo_gm*.hdf5": 没有那个文件或目录
+/project/mtx/output/tides11/massbin2_0.0003_m1/halo_wdeng1.hdf5
+/project/mtx/output/tides11/massbin2_0.0003_m1/halo_wdeng2.hdf5
+/project/mtx/output/tides11/massbin2_0.0003_m1/halo_wdeng3.hdf5
+rm: 无法删除"/project/mtx/output/tides11/massbin2_0.0003_m1/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides11/massbin2_0.0003_m1/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides12/massbin2_0.0003_m1/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.55652727  0.6402902   0.36980596  0.70861024  0.55298691  0.55211897
+  0.46534852  0.39532694  0.35946587  0.27806483  0.19389951  0.10366699
+  0.02182479  0.17713643  0.1875237  -0.17998257 -0.58476897 -0.628857
+ -0.65125857 -0.64452516]
+Traceback (most recent call last):
+  File "plot_result.py", line 58, in <module>
+    ymax=np.max([np.max(DD[:,1]),np.max(DK[:,1]),np.max(KK[:,1]),np.max(DH[:,1]),np.max(HH[:,1]),np.max(HK[:,1])])*1.1
+NameError: name 'DH' is not defined
+ls: 无法访问/project/mtx/output/tides12/massbin2_0.0003_m1/halo_gm*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides12/massbin2_0.0003_m1/halo_gm*.hdf5": 没有那个文件或目录
+/project/mtx/output/tides12/massbin2_0.0003_m1/halo_wdeng1.hdf5
+/project/mtx/output/tides12/massbin2_0.0003_m1/halo_wdeng2.hdf5
+/project/mtx/output/tides12/massbin2_0.0003_m1/halo_wdeng3.hdf5
+rm: 无法删除"/project/mtx/output/tides12/massbin2_0.0003_m1/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides12/massbin2_0.0003_m1/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides13/massbin2_0.0003_m1/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [-0.21967107  0.58941121  0.50460489  0.48084496  0.58073792  0.49239161
+  0.46642995  0.40759922  0.36246851  0.27435517  0.19073418  0.09954226
+  0.02386197  0.17421651  0.18581375 -0.18214369 -0.58556852 -0.62890064
+ -0.65155539 -0.64480596]
+Traceback (most recent call last):
+  File "plot_result.py", line 58, in <module>
+    ymax=np.max([np.max(DD[:,1]),np.max(DK[:,1]),np.max(KK[:,1]),np.max(DH[:,1]),np.max(HH[:,1]),np.max(HK[:,1])])*1.1
+NameError: name 'DH' is not defined
+ls: 无法访问/project/mtx/output/tides13/massbin2_0.0003_m1/halo_gm*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides13/massbin2_0.0003_m1/halo_gm*.hdf5": 没有那个文件或目录
+/project/mtx/output/tides13/massbin2_0.0003_m1/halo_wdeng1.hdf5
+/project/mtx/output/tides13/massbin2_0.0003_m1/halo_wdeng2.hdf5
+/project/mtx/output/tides13/massbin2_0.0003_m1/halo_wdeng3.hdf5
+rm: 无法删除"/project/mtx/output/tides13/massbin2_0.0003_m1/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides13/massbin2_0.0003_m1/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides14/massbin2_0.0003_m1/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.83886423  0.53381811  0.4634222   0.54707964  0.55053464  0.51102174
+  0.46267655  0.3890849   0.35149755  0.27362895  0.18977184  0.10522726
+  0.02057567  0.17365631  0.18518415 -0.17647724 -0.582154   -0.62583901
+ -0.64948949 -0.64333706]
+Traceback (most recent call last):
+  File "plot_result.py", line 58, in <module>
+    ymax=np.max([np.max(DD[:,1]),np.max(DK[:,1]),np.max(KK[:,1]),np.max(DH[:,1]),np.max(HH[:,1]),np.max(HK[:,1])])*1.1
+NameError: name 'DH' is not defined
+ls: 无法访问/project/mtx/output/tides14/massbin2_0.0003_m1/halo_gm*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides14/massbin2_0.0003_m1/halo_gm*.hdf5": 没有那个文件或目录
+/project/mtx/output/tides14/massbin2_0.0003_m1/halo_wdeng1.hdf5
+/project/mtx/output/tides14/massbin2_0.0003_m1/halo_wdeng2.hdf5
+/project/mtx/output/tides14/massbin2_0.0003_m1/halo_wdeng3.hdf5
+rm: 无法删除"/project/mtx/output/tides14/massbin2_0.0003_m1/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides14/massbin2_0.0003_m1/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides15/massbin2_0.0003_m1/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [-0.25234733  0.69891101  0.55109376  0.45288634  0.46999117  0.47197771
+  0.41738718  0.4279517   0.36082713  0.28379871  0.18950388  0.1060775
+  0.02103229  0.17383985  0.1834749  -0.18037673 -0.58423773 -0.62843476
+ -0.65060778 -0.64382522]
+Traceback (most recent call last):
+  File "plot_result.py", line 58, in <module>
+    ymax=np.max([np.max(DD[:,1]),np.max(DK[:,1]),np.max(KK[:,1]),np.max(DH[:,1]),np.max(HH[:,1]),np.max(HK[:,1])])*1.1
+NameError: name 'DH' is not defined
+ls: 无法访问/project/mtx/output/tides15/massbin2_0.0003_m1/halo_gm*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides15/massbin2_0.0003_m1/halo_gm*.hdf5": 没有那个文件或目录
+/project/mtx/output/tides15/massbin2_0.0003_m1/halo_wdeng1.hdf5
+/project/mtx/output/tides15/massbin2_0.0003_m1/halo_wdeng2.hdf5
+/project/mtx/output/tides15/massbin2_0.0003_m1/halo_wdeng3.hdf5
+rm: 无法删除"/project/mtx/output/tides15/massbin2_0.0003_m1/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides15/massbin2_0.0003_m1/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides16/massbin2_0.0003_m1/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.65578478  0.43191373  0.5919539   0.57114235  0.52550886  0.46110445
+  0.47334464  0.39716735  0.36554377  0.28622597  0.19439624  0.10117313
+  0.02116593  0.17665158  0.18553108 -0.1784134  -0.58615933 -0.62987631
+ -0.65242986 -0.64530245]
+Traceback (most recent call last):
+  File "plot_result.py", line 58, in <module>
+    ymax=np.max([np.max(DD[:,1]),np.max(DK[:,1]),np.max(KK[:,1]),np.max(DH[:,1]),np.max(HH[:,1]),np.max(HK[:,1])])*1.1
+NameError: name 'DH' is not defined
+ls: 无法访问/project/mtx/output/tides16/massbin2_0.0003_m1/halo_gm*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides16/massbin2_0.0003_m1/halo_gm*.hdf5": 没有那个文件或目录
+/project/mtx/output/tides16/massbin2_0.0003_m1/halo_wdeng1.hdf5
+/project/mtx/output/tides16/massbin2_0.0003_m1/halo_wdeng2.hdf5
+/project/mtx/output/tides16/massbin2_0.0003_m1/halo_wdeng3.hdf5
+rm: 无法删除"/project/mtx/output/tides16/massbin2_0.0003_m1/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides16/massbin2_0.0003_m1/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides17/massbin2_0.0003_m1/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [-0.36432291  0.5840001   0.35945915  0.57292667  0.57004399  0.53060144
+  0.43811492  0.39111561  0.34649475  0.28147488  0.19035118  0.09915094
+  0.02361132  0.17416567  0.18612708 -0.18070079 -0.584363   -0.62850981
+ -0.65073328 -0.64422334]
+Traceback (most recent call last):
+  File "plot_result.py", line 58, in <module>
+    ymax=np.max([np.max(DD[:,1]),np.max(DK[:,1]),np.max(KK[:,1]),np.max(DH[:,1]),np.max(HH[:,1]),np.max(HK[:,1])])*1.1
+NameError: name 'DH' is not defined
+ls: 无法访问/project/mtx/output/tides17/massbin2_0.0003_m1/halo_gm*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides17/massbin2_0.0003_m1/halo_gm*.hdf5": 没有那个文件或目录
+/project/mtx/output/tides17/massbin2_0.0003_m1/halo_wdeng1.hdf5
+/project/mtx/output/tides17/massbin2_0.0003_m1/halo_wdeng2.hdf5
+/project/mtx/output/tides17/massbin2_0.0003_m1/halo_wdeng3.hdf5
+rm: 无法删除"/project/mtx/output/tides17/massbin2_0.0003_m1/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides17/massbin2_0.0003_m1/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides18/massbin2_0.0003_m1/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.76364921  0.5725729   0.68246007  0.56477434  0.5553067   0.45997948
+  0.44579886  0.40969101  0.35137048  0.28046156  0.18894219  0.10413351
+  0.01913031  0.17353131  0.18574989 -0.17890971 -0.5843684  -0.62870185
+ -0.65128445 -0.64495608]
+Traceback (most recent call last):
+  File "plot_result.py", line 58, in <module>
+    ymax=np.max([np.max(DD[:,1]),np.max(DK[:,1]),np.max(KK[:,1]),np.max(DH[:,1]),np.max(HH[:,1]),np.max(HK[:,1])])*1.1
+NameError: name 'DH' is not defined
+ls: 无法访问/project/mtx/output/tides18/massbin2_0.0003_m1/halo_gm*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides18/massbin2_0.0003_m1/halo_gm*.hdf5": 没有那个文件或目录
+/project/mtx/output/tides18/massbin2_0.0003_m1/halo_wdeng1.hdf5
+/project/mtx/output/tides18/massbin2_0.0003_m1/halo_wdeng2.hdf5
+/project/mtx/output/tides18/massbin2_0.0003_m1/halo_wdeng3.hdf5
+rm: 无法删除"/project/mtx/output/tides18/massbin2_0.0003_m1/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides18/massbin2_0.0003_m1/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides19/massbin2_0.0003_m1/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.93094518  0.3942506   0.6145063   0.58052003  0.55482205  0.49554328
+  0.46764915  0.41054816  0.36317386  0.28632417  0.18406988  0.10116211
+  0.02126585  0.17454155  0.18591997 -0.18001619 -0.58401182 -0.62792416
+ -0.65043348 -0.64383469]
+Traceback (most recent call last):
+  File "plot_result.py", line 58, in <module>
+    ymax=np.max([np.max(DD[:,1]),np.max(DK[:,1]),np.max(KK[:,1]),np.max(DH[:,1]),np.max(HH[:,1]),np.max(HK[:,1])])*1.1
+NameError: name 'DH' is not defined
+ls: 无法访问/project/mtx/output/tides19/massbin2_0.0003_m1/halo_gm*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides19/massbin2_0.0003_m1/halo_gm*.hdf5": 没有那个文件或目录
+/project/mtx/output/tides19/massbin2_0.0003_m1/halo_wdeng1.hdf5
+/project/mtx/output/tides19/massbin2_0.0003_m1/halo_wdeng2.hdf5
+/project/mtx/output/tides19/massbin2_0.0003_m1/halo_wdeng3.hdf5
+rm: 无法删除"/project/mtx/output/tides19/massbin2_0.0003_m1/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides19/massbin2_0.0003_m1/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides10/massbin2_0.0003_m2/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.04460912 -0.03477144  0.44205189  0.25011492  0.41913901  0.37911116
+  0.28614573  0.28863894  0.23828732  0.1712763   0.11262495  0.03508225
+  0.04091482  0.12303234  0.10127529 -0.01506052 -0.21156222 -0.21593567
+ -0.22847882 -0.25002383]
+Traceback (most recent call last):
+  File "plot_result.py", line 58, in <module>
+    ymax=np.max([np.max(DD[:,1]),np.max(DK[:,1]),np.max(KK[:,1]),np.max(DH[:,1]),np.max(HH[:,1]),np.max(HK[:,1])])*1.1
+NameError: name 'DH' is not defined
+ls: 无法访问/project/mtx/output/tides10/massbin2_0.0003_m2/halo_gm*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides10/massbin2_0.0003_m2/halo_gm*.hdf5": 没有那个文件或目录
+/project/mtx/output/tides10/massbin2_0.0003_m2/halo_wdeng1.hdf5
+/project/mtx/output/tides10/massbin2_0.0003_m2/halo_wdeng2.hdf5
+/project/mtx/output/tides10/massbin2_0.0003_m2/halo_wdeng3.hdf5
+rm: 无法删除"/project/mtx/output/tides10/massbin2_0.0003_m2/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides10/massbin2_0.0003_m2/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides11/massbin2_0.0003_m2/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.64945976  0.27980997  0.49187348  0.49692134  0.46800308  0.36948295
+  0.31288413  0.28683198  0.25650319  0.17650168  0.10754265  0.0347177
+  0.04108855  0.12478464  0.10224947 -0.01540453 -0.21375197 -0.21656837
+ -0.22919257 -0.2506279 ]
+Traceback (most recent call last):
+  File "plot_result.py", line 58, in <module>
+    ymax=np.max([np.max(DD[:,1]),np.max(DK[:,1]),np.max(KK[:,1]),np.max(DH[:,1]),np.max(HH[:,1]),np.max(HK[:,1])])*1.1
+NameError: name 'DH' is not defined
+ls: 无法访问/project/mtx/output/tides11/massbin2_0.0003_m2/halo_gm*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides11/massbin2_0.0003_m2/halo_gm*.hdf5": 没有那个文件或目录
+/project/mtx/output/tides11/massbin2_0.0003_m2/halo_wdeng1.hdf5
+/project/mtx/output/tides11/massbin2_0.0003_m2/halo_wdeng2.hdf5
+/project/mtx/output/tides11/massbin2_0.0003_m2/halo_wdeng3.hdf5
+rm: 无法删除"/project/mtx/output/tides11/massbin2_0.0003_m2/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides11/massbin2_0.0003_m2/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides12/massbin2_0.0003_m2/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.0739534   0.3106367   0.42578793  0.54265399  0.46598009  0.36256175
+  0.32490257  0.29823969  0.24993455  0.18541413  0.11308904  0.03519553
+  0.0408805   0.12296022  0.10192207 -0.01487358 -0.21261988 -0.2161561
+ -0.22878455 -0.25040323]
+Traceback (most recent call last):
+  File "plot_result.py", line 58, in <module>
+    ymax=np.max([np.max(DD[:,1]),np.max(DK[:,1]),np.max(KK[:,1]),np.max(DH[:,1]),np.max(HH[:,1]),np.max(HK[:,1])])*1.1
+NameError: name 'DH' is not defined
+ls: 无法访问/project/mtx/output/tides12/massbin2_0.0003_m2/halo_gm*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides12/massbin2_0.0003_m2/halo_gm*.hdf5": 没有那个文件或目录
+/project/mtx/output/tides12/massbin2_0.0003_m2/halo_wdeng1.hdf5
+/project/mtx/output/tides12/massbin2_0.0003_m2/halo_wdeng2.hdf5
+/project/mtx/output/tides12/massbin2_0.0003_m2/halo_wdeng3.hdf5
+rm: 无法删除"/project/mtx/output/tides12/massbin2_0.0003_m2/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides12/massbin2_0.0003_m2/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides13/massbin2_0.0003_m2/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.69177938  0.5076131   0.18833027  0.446125    0.38947457  0.41461962
+  0.32064284  0.30368588  0.25997581  0.1938385   0.10861873  0.03346238
+  0.03984267  0.12520498  0.10245946 -0.01587913 -0.21362349 -0.21656525
+ -0.22906051 -0.25090779]
+Traceback (most recent call last):
+  File "plot_result.py", line 58, in <module>
+    ymax=np.max([np.max(DD[:,1]),np.max(DK[:,1]),np.max(KK[:,1]),np.max(DH[:,1]),np.max(HH[:,1]),np.max(HK[:,1])])*1.1
+NameError: name 'DH' is not defined
+ls: 无法访问/project/mtx/output/tides13/massbin2_0.0003_m2/halo_gm*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides13/massbin2_0.0003_m2/halo_gm*.hdf5": 没有那个文件或目录
+/project/mtx/output/tides13/massbin2_0.0003_m2/halo_wdeng1.hdf5
+/project/mtx/output/tides13/massbin2_0.0003_m2/halo_wdeng2.hdf5
+/project/mtx/output/tides13/massbin2_0.0003_m2/halo_wdeng3.hdf5
+rm: 无法删除"/project/mtx/output/tides13/massbin2_0.0003_m2/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides13/massbin2_0.0003_m2/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides14/massbin2_0.0003_m2/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.42122789  0.25371616  0.35027546  0.36518131  0.40460486  0.35960373
+  0.35069487  0.27548004  0.23294874  0.17560534  0.11171768  0.03501696
+  0.04731494  0.12629871  0.10228505 -0.01511219 -0.21262661 -0.21617528
+ -0.22894634 -0.25058794]
+Traceback (most recent call last):
+  File "plot_result.py", line 58, in <module>
+    ymax=np.max([np.max(DD[:,1]),np.max(DK[:,1]),np.max(KK[:,1]),np.max(DH[:,1]),np.max(HH[:,1]),np.max(HK[:,1])])*1.1
+NameError: name 'DH' is not defined
+ls: 无法访问/project/mtx/output/tides14/massbin2_0.0003_m2/halo_gm*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides14/massbin2_0.0003_m2/halo_gm*.hdf5": 没有那个文件或目录
+/project/mtx/output/tides14/massbin2_0.0003_m2/halo_wdeng1.hdf5
+/project/mtx/output/tides14/massbin2_0.0003_m2/halo_wdeng2.hdf5
+/project/mtx/output/tides14/massbin2_0.0003_m2/halo_wdeng3.hdf5
+rm: 无法删除"/project/mtx/output/tides14/massbin2_0.0003_m2/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides14/massbin2_0.0003_m2/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides15/massbin2_0.0003_m2/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.4948945   0.6165333   0.38588948  0.41623678  0.34484648  0.35970511
+  0.30189523  0.29355501  0.24950887  0.18148259  0.11163845  0.03534776
+  0.04083645  0.12711512  0.10364323 -0.01496636 -0.21355939 -0.21646492
+ -0.22932794 -0.25083788]
+Traceback (most recent call last):
+  File "plot_result.py", line 58, in <module>
+    ymax=np.max([np.max(DD[:,1]),np.max(DK[:,1]),np.max(KK[:,1]),np.max(DH[:,1]),np.max(HH[:,1]),np.max(HK[:,1])])*1.1
+NameError: name 'DH' is not defined
+ls: 无法访问/project/mtx/output/tides15/massbin2_0.0003_m2/halo_gm*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides15/massbin2_0.0003_m2/halo_gm*.hdf5": 没有那个文件或目录
+/project/mtx/output/tides15/massbin2_0.0003_m2/halo_wdeng1.hdf5
+/project/mtx/output/tides15/massbin2_0.0003_m2/halo_wdeng2.hdf5
+/project/mtx/output/tides15/massbin2_0.0003_m2/halo_wdeng3.hdf5
+rm: 无法删除"/project/mtx/output/tides15/massbin2_0.0003_m2/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides15/massbin2_0.0003_m2/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides16/massbin2_0.0003_m2/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.14052472  0.55794628  0.49764404  0.42991334  0.46437562  0.42251399
+  0.32659292  0.27983067  0.2486754   0.18198697  0.11069861  0.03761162
+  0.04062261  0.12433051  0.10269933 -0.01528872 -0.21332347 -0.21630714
+ -0.22910118 -0.25059793]
+Traceback (most recent call last):
+  File "plot_result.py", line 58, in <module>
+    ymax=np.max([np.max(DD[:,1]),np.max(DK[:,1]),np.max(KK[:,1]),np.max(DH[:,1]),np.max(HH[:,1]),np.max(HK[:,1])])*1.1
+NameError: name 'DH' is not defined
+ls: 无法访问/project/mtx/output/tides16/massbin2_0.0003_m2/halo_gm*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides16/massbin2_0.0003_m2/halo_gm*.hdf5": 没有那个文件或目录
+/project/mtx/output/tides16/massbin2_0.0003_m2/halo_wdeng1.hdf5
+/project/mtx/output/tides16/massbin2_0.0003_m2/halo_wdeng2.hdf5
+/project/mtx/output/tides16/massbin2_0.0003_m2/halo_wdeng3.hdf5
+rm: 无法删除"/project/mtx/output/tides16/massbin2_0.0003_m2/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides16/massbin2_0.0003_m2/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides17/massbin2_0.0003_m2/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [-0.05914739  0.58003922  0.44439666  0.45594443  0.48306561  0.37648604
+  0.28816367  0.29744873  0.24088628  0.17803979  0.1145584   0.03569018
+  0.04163698  0.12571342  0.10321561 -0.01497978 -0.21299566 -0.21652433
+ -0.22937501 -0.25058632]
+Traceback (most recent call last):
+  File "plot_result.py", line 58, in <module>
+    ymax=np.max([np.max(DD[:,1]),np.max(DK[:,1]),np.max(KK[:,1]),np.max(DH[:,1]),np.max(HH[:,1]),np.max(HK[:,1])])*1.1
+NameError: name 'DH' is not defined
+ls: 无法访问/project/mtx/output/tides17/massbin2_0.0003_m2/halo_gm*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides17/massbin2_0.0003_m2/halo_gm*.hdf5": 没有那个文件或目录
+/project/mtx/output/tides17/massbin2_0.0003_m2/halo_wdeng1.hdf5
+/project/mtx/output/tides17/massbin2_0.0003_m2/halo_wdeng2.hdf5
+/project/mtx/output/tides17/massbin2_0.0003_m2/halo_wdeng3.hdf5
+rm: 无法删除"/project/mtx/output/tides17/massbin2_0.0003_m2/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides17/massbin2_0.0003_m2/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides18/massbin2_0.0003_m2/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.01060328  0.45576783  0.31247754  0.45802283  0.353372    0.41745163
+  0.3393393   0.28299859  0.24298542  0.18004523  0.11721871  0.03698117
+  0.04124352  0.12486235  0.10285455 -0.01520333 -0.21308266 -0.21620236
+ -0.22895765 -0.25031235]
+Traceback (most recent call last):
+  File "plot_result.py", line 58, in <module>
+    ymax=np.max([np.max(DD[:,1]),np.max(DK[:,1]),np.max(KK[:,1]),np.max(DH[:,1]),np.max(HH[:,1]),np.max(HK[:,1])])*1.1
+NameError: name 'DH' is not defined
+ls: 无法访问/project/mtx/output/tides18/massbin2_0.0003_m2/halo_gm*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides18/massbin2_0.0003_m2/halo_gm*.hdf5": 没有那个文件或目录
+/project/mtx/output/tides18/massbin2_0.0003_m2/halo_wdeng1.hdf5
+/project/mtx/output/tides18/massbin2_0.0003_m2/halo_wdeng2.hdf5
+/project/mtx/output/tides18/massbin2_0.0003_m2/halo_wdeng3.hdf5
+rm: 无法删除"/project/mtx/output/tides18/massbin2_0.0003_m2/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides18/massbin2_0.0003_m2/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides19/massbin2_0.0003_m2/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.80772693 -0.17646899  0.62975604  0.36629215  0.3856147   0.37904285
+  0.33484482  0.23978321  0.24962476  0.17709475  0.11074089  0.0372522
+  0.03780095  0.12178374  0.10225228 -0.01504565 -0.21300817 -0.21579297
+ -0.22854908 -0.24985521]
+Traceback (most recent call last):
+  File "plot_result.py", line 58, in <module>
+    ymax=np.max([np.max(DD[:,1]),np.max(DK[:,1]),np.max(KK[:,1]),np.max(DH[:,1]),np.max(HH[:,1]),np.max(HK[:,1])])*1.1
+NameError: name 'DH' is not defined
+ls: 无法访问/project/mtx/output/tides19/massbin2_0.0003_m2/halo_gm*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides19/massbin2_0.0003_m2/halo_gm*.hdf5": 没有那个文件或目录
+/project/mtx/output/tides19/massbin2_0.0003_m2/halo_wdeng1.hdf5
+/project/mtx/output/tides19/massbin2_0.0003_m2/halo_wdeng2.hdf5
+/project/mtx/output/tides19/massbin2_0.0003_m2/halo_wdeng3.hdf5
+rm: 无法删除"/project/mtx/output/tides19/massbin2_0.0003_m2/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides19/massbin2_0.0003_m2/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides10/massbin2_0.0003_combine_cross/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.41073814  0.57397919  0.680285    0.64212306  0.613219    0.60040536
+  0.5147076   0.46581583  0.45111831  0.37299185  0.30670614  0.25635096
+  0.20161604  0.1473277   0.05465836  0.00235626 -0.04100625 -0.06730944
+ -0.05608979 -0.02984372]
+Traceback (most recent call last):
+  File "plot_result.py", line 58, in <module>
+    ymax=np.max([np.max(DD[:,1]),np.max(DK[:,1]),np.max(KK[:,1]),np.max(DH[:,1]),np.max(HH[:,1]),np.max(HK[:,1])])*1.1
+NameError: name 'DH' is not defined
+ls: 无法访问/project/mtx/output/tides10/massbin2_0.0003_combine_cross/halo_gm*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides10/massbin2_0.0003_combine_cross/halo_gm*.hdf5": 没有那个文件或目录
+ls: 无法访问/project/mtx/output/tides10/massbin2_0.0003_combine_cross/halo_wdeng*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides10/massbin2_0.0003_combine_cross/halo_wdeng*.hdf5": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides10/massbin2_0.0003_combine_cross/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides10/massbin2_0.0003_combine_cross/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides11/massbin2_0.0003_combine_cross/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.57655232  0.56298719  0.67388289  0.59500917  0.66005894  0.59462624
+  0.49025423  0.50761022  0.46506325  0.38408281  0.31933235  0.26610277
+  0.20383909  0.14847748  0.05631875  0.00190258 -0.04159477 -0.06988897
+ -0.05741364 -0.03087417]
+Traceback (most recent call last):
+  File "plot_result.py", line 58, in <module>
+    ymax=np.max([np.max(DD[:,1]),np.max(DK[:,1]),np.max(KK[:,1]),np.max(DH[:,1]),np.max(HH[:,1]),np.max(HK[:,1])])*1.1
+NameError: name 'DH' is not defined
+ls: 无法访问/project/mtx/output/tides11/massbin2_0.0003_combine_cross/halo_gm*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides11/massbin2_0.0003_combine_cross/halo_gm*.hdf5": 没有那个文件或目录
+ls: 无法访问/project/mtx/output/tides11/massbin2_0.0003_combine_cross/halo_wdeng*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides11/massbin2_0.0003_combine_cross/halo_wdeng*.hdf5": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides11/massbin2_0.0003_combine_cross/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides11/massbin2_0.0003_combine_cross/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides12/massbin2_0.0003_combine_cross/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "plot_result.py", line 19, in <module>
+    DD=np.loadtxt(PathPlot1+'DD')
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 715, in loadtxt
+    fh = iter(open(fname, 'U'))
+IOError: [Errno 13] Permission denied: '/project/mtx/output/tides12/massbin2_0.0003_combine_cross/Pk_DD'
+ls: 无法访问/project/mtx/output/tides12/massbin2_0.0003_combine_cross/halo_gm*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides12/massbin2_0.0003_combine_cross/halo_gm*.hdf5": 没有那个文件或目录
+ls: 无法访问/project/mtx/output/tides12/massbin2_0.0003_combine_cross/halo_wdeng*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides12/massbin2_0.0003_combine_cross/halo_wdeng*.hdf5": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides12/massbin2_0.0003_combine_cross/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides12/massbin2_0.0003_combine_cross/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides13/massbin2_0.0003_combine_cross/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.49691654  0.48558507  0.59265599  0.57584055  0.64781465  0.66664918
+  0.54116646  0.47954461  0.46275753  0.37403339  0.31182823  0.26740668
+  0.20550262  0.15063499  0.05591414  0.00126384 -0.04270753 -0.06935252
+ -0.05694105 -0.03087552]
+Traceback (most recent call last):
+  File "plot_result.py", line 58, in <module>
+    ymax=np.max([np.max(DD[:,1]),np.max(DK[:,1]),np.max(KK[:,1]),np.max(DH[:,1]),np.max(HH[:,1]),np.max(HK[:,1])])*1.1
+NameError: name 'DH' is not defined
+ls: 无法访问/project/mtx/output/tides13/massbin2_0.0003_combine_cross/halo_gm*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides13/massbin2_0.0003_combine_cross/halo_gm*.hdf5": 没有那个文件或目录
+ls: 无法访问/project/mtx/output/tides13/massbin2_0.0003_combine_cross/halo_wdeng*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides13/massbin2_0.0003_combine_cross/halo_wdeng*.hdf5": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides13/massbin2_0.0003_combine_cross/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides13/massbin2_0.0003_combine_cross/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides14/massbin2_0.0003_combine_cross/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [-0.33150537  0.11605947  0.60709677  0.57525568  0.62895667  0.59965486
+  0.53584483  0.47988246  0.45179844  0.37618356  0.31394637  0.26213876
+  0.20320955  0.14916512  0.05504694  0.00183835 -0.04360167 -0.07005127
+ -0.05790401 -0.03154592]
+Traceback (most recent call last):
+  File "plot_result.py", line 58, in <module>
+    ymax=np.max([np.max(DD[:,1]),np.max(DK[:,1]),np.max(KK[:,1]),np.max(DH[:,1]),np.max(HH[:,1]),np.max(HK[:,1])])*1.1
+NameError: name 'DH' is not defined
+ls: 无法访问/project/mtx/output/tides14/massbin2_0.0003_combine_cross/halo_gm*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides14/massbin2_0.0003_combine_cross/halo_gm*.hdf5": 没有那个文件或目录
+ls: 无法访问/project/mtx/output/tides14/massbin2_0.0003_combine_cross/halo_wdeng*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides14/massbin2_0.0003_combine_cross/halo_wdeng*.hdf5": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides14/massbin2_0.0003_combine_cross/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides14/massbin2_0.0003_combine_cross/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides15/massbin2_0.0003_combine_cross/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.29709105  0.79329604  0.52722486  0.62185645  0.63075829  0.58016436
+  0.46914396  0.5030068   0.45642238  0.38241408  0.31214432  0.26333988
+  0.2049881   0.14719304  0.05520941  0.00221083 -0.04212993 -0.06955524
+ -0.05709468 -0.03114402]
+Traceback (most recent call last):
+  File "plot_result.py", line 58, in <module>
+    ymax=np.max([np.max(DD[:,1]),np.max(DK[:,1]),np.max(KK[:,1]),np.max(DH[:,1]),np.max(HH[:,1]),np.max(HK[:,1])])*1.1
+NameError: name 'DH' is not defined
+ls: 无法访问/project/mtx/output/tides15/massbin2_0.0003_combine_cross/halo_gm*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides15/massbin2_0.0003_combine_cross/halo_gm*.hdf5": 没有那个文件或目录
+ls: 无法访问/project/mtx/output/tides15/massbin2_0.0003_combine_cross/halo_wdeng*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides15/massbin2_0.0003_combine_cross/halo_wdeng*.hdf5": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides15/massbin2_0.0003_combine_cross/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides15/massbin2_0.0003_combine_cross/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides16/massbin2_0.0003_combine_cross/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.65863458  0.67787565  0.62694463  0.68999629  0.57362798  0.5517161
+  0.54058245  0.48605617  0.45316095  0.3718723   0.31635459  0.26172963
+  0.2048077   0.14654861  0.05526088  0.00264634 -0.04166806 -0.06835923
+ -0.05608572 -0.02982242]
+Traceback (most recent call last):
+  File "plot_result.py", line 58, in <module>
+    ymax=np.max([np.max(DD[:,1]),np.max(DK[:,1]),np.max(KK[:,1]),np.max(DH[:,1]),np.max(HH[:,1]),np.max(HK[:,1])])*1.1
+NameError: name 'DH' is not defined
+ls: 无法访问/project/mtx/output/tides16/massbin2_0.0003_combine_cross/halo_gm*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides16/massbin2_0.0003_combine_cross/halo_gm*.hdf5": 没有那个文件或目录
+ls: 无法访问/project/mtx/output/tides16/massbin2_0.0003_combine_cross/halo_wdeng*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides16/massbin2_0.0003_combine_cross/halo_wdeng*.hdf5": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides16/massbin2_0.0003_combine_cross/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides16/massbin2_0.0003_combine_cross/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides17/massbin2_0.0003_combine_cross/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [-0.10300661  0.68218047  0.69858582  0.64446787  0.59439353  0.60437341
+  0.49340009  0.49685232  0.44363578  0.38020881  0.31637427  0.25821829
+  0.20589524  0.14785228  0.05605274  0.0021475  -0.04142189 -0.0690569
+ -0.05700462 -0.03137288]
+Traceback (most recent call last):
+  File "plot_result.py", line 58, in <module>
+    ymax=np.max([np.max(DD[:,1]),np.max(DK[:,1]),np.max(KK[:,1]),np.max(DH[:,1]),np.max(HH[:,1]),np.max(HK[:,1])])*1.1
+NameError: name 'DH' is not defined
+ls: 无法访问/project/mtx/output/tides17/massbin2_0.0003_combine_cross/halo_gm*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides17/massbin2_0.0003_combine_cross/halo_gm*.hdf5": 没有那个文件或目录
+ls: 无法访问/project/mtx/output/tides17/massbin2_0.0003_combine_cross/halo_wdeng*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides17/massbin2_0.0003_combine_cross/halo_wdeng*.hdf5": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides17/massbin2_0.0003_combine_cross/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides17/massbin2_0.0003_combine_cross/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides18/massbin2_0.0003_combine_cross/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.60061405  0.84561942  0.61535648  0.72847061  0.59025542  0.5871661
+  0.51853077  0.47307448  0.44934817  0.36966149  0.31633011  0.26281239
+  0.20253969  0.14905574  0.05626576  0.00211601 -0.04286298 -0.07004322
+ -0.05755775 -0.03184459]
+Traceback (most recent call last):
+  File "plot_result.py", line 58, in <module>
+    ymax=np.max([np.max(DD[:,1]),np.max(DK[:,1]),np.max(KK[:,1]),np.max(DH[:,1]),np.max(HH[:,1]),np.max(HK[:,1])])*1.1
+NameError: name 'DH' is not defined
+ls: 无法访问/project/mtx/output/tides18/massbin2_0.0003_combine_cross/halo_gm*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides18/massbin2_0.0003_combine_cross/halo_gm*.hdf5": 没有那个文件或目录
+ls: 无法访问/project/mtx/output/tides18/massbin2_0.0003_combine_cross/halo_wdeng*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides18/massbin2_0.0003_combine_cross/halo_wdeng*.hdf5": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides18/massbin2_0.0003_combine_cross/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides18/massbin2_0.0003_combine_cross/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides19/massbin2_0.0003_combine_cross/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.9181962   0.38504962  0.61036192  0.47836921  0.67301946  0.56004358
+  0.54644634  0.47713342  0.46025988  0.37234309  0.31268207  0.25665592
+  0.20189884  0.14768067  0.05534211  0.00215012 -0.04215803 -0.06867562
+ -0.05691057 -0.03136217]
+Traceback (most recent call last):
+  File "plot_result.py", line 58, in <module>
+    ymax=np.max([np.max(DD[:,1]),np.max(DK[:,1]),np.max(KK[:,1]),np.max(DH[:,1]),np.max(HH[:,1]),np.max(HK[:,1])])*1.1
+NameError: name 'DH' is not defined
+ls: 无法访问/project/mtx/output/tides19/massbin2_0.0003_combine_cross/halo_gm*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides19/massbin2_0.0003_combine_cross/halo_gm*.hdf5": 没有那个文件或目录
+ls: 无法访问/project/mtx/output/tides19/massbin2_0.0003_combine_cross/halo_wdeng*.hdf5: 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides19/massbin2_0.0003_combine_cross/halo_wdeng*.hdf5": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides19/massbin2_0.0003_combine_cross/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides19/massbin2_0.0003_combine_cross/haloS1.00.bin": 没有那个文件或目录

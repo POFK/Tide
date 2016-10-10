@@ -22,8 +22,8 @@ NAME='halo'
 #Shotnoise=415.314231603
 #bias=0.965146
 Shotnoise=None
-#CutOff=0.8
-CutOff=None
+#CutOff=0.1
+CutOff=None      
 Gaussian=0
 SmoothWienerOfShotnoise=True
 ############################
@@ -34,6 +34,7 @@ Sigma=1.0
 nthreads=16 #fftw threads number
 bins=10
 WienerMode=2  # mode1: Ph, mode2: Pd, k-independent bias, mode3: pd, k-dependent bias
+#WienerMode=4  # new
 #================
 Kf=2*np.pi/L
 fn=np.fft.fftfreq(N,1./N)  #x: 0,1,2,...,512,-511,-510,...,-2,-1
@@ -162,3 +163,19 @@ Path_Pk2_Output=np.array([   # pk of wkkappa and delta, halo ...
 #   dir+'Pk'+'_HK.hdf5', 
     dir+'Pk'+'_KK.hdf5'
     ])
+#======================== combine wden ==== for sep_combineWden.py ==============
+NUM_massbin=2
+Combine_wden=True
+Path_ComWden=[
+        '/project/mtx/output/tides'+DirNum+'/'+'massbin2_0.0003_m1'+'/',
+        '/project/mtx/output/tides'+DirNum+'/'+'massbin2_0.0003_m2'+'/'
+        ]
+Path_comWden_out='/project/mtx/output/tides'+DirNum+'/'+'massbin2_0.0003_combine_cross'+'/'
+#======================== combine wden ==== for sep_combineWkappa.py ============
+Combine_wkappa=True
+Path_ComWkappa=[
+        '/project/mtx/output/tides'+DirNum+'/'+'massbin2_0.0003_m1'+'/',
+        '/project/mtx/output/tides'+DirNum+'/'+'massbin2_0.0003_m2'+'/',
+        '/project/mtx/output/tides'+DirNum+'/'+'massbin2_0.0003_combine_cross'+'/'
+        ]
+Path_comWkappa_out='/project/mtx/output/tides'+DirNum+'/'+'massbin2_0.0003_combine_diffW_test4wienerOnebyone'+'/'

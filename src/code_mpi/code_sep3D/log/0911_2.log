@@ -1,0 +1,260 @@
+====================================================================================================
+/project/mtx/output/tides10/massbin2_0.0003_m1/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+====================================================================================================
+/project/mtx/output/tides11/massbin2_0.0003_m1/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+====================================================================================================
+/project/mtx/output/tides12/massbin2_0.0003_m1/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+====================================================================================================
+/project/mtx/output/tides13/massbin2_0.0003_m1/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+====================================================================================================
+/project/mtx/output/tides14/massbin2_0.0003_m1/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+====================================================================================================
+/project/mtx/output/tides15/massbin2_0.0003_m1/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+====================================================================================================
+/project/mtx/output/tides16/massbin2_0.0003_m1/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+====================================================================================================
+/project/mtx/output/tides17/massbin2_0.0003_m1/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+====================================================================================================
+/project/mtx/output/tides18/massbin2_0.0003_m1/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+====================================================================================================
+/project/mtx/output/tides19/massbin2_0.0003_m1/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+====================================================================================================
+/project/mtx/output/tides10/massbin2_0.0003_m2/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+====================================================================================================
+/project/mtx/output/tides11/massbin2_0.0003_m2/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+====================================================================================================
+/project/mtx/output/tides12/massbin2_0.0003_m2/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+====================================================================================================
+/project/mtx/output/tides13/massbin2_0.0003_m2/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+====================================================================================================
+/project/mtx/output/tides14/massbin2_0.0003_m2/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+====================================================================================================
+/project/mtx/output/tides15/massbin2_0.0003_m2/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+====================================================================================================
+/project/mtx/output/tides16/massbin2_0.0003_m2/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+====================================================================================================
+/project/mtx/output/tides17/massbin2_0.0003_m2/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+====================================================================================================
+/project/mtx/output/tides18/massbin2_0.0003_m2/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+====================================================================================================
+/project/mtx/output/tides19/massbin2_0.0003_m2/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+====================================================================================================
+/project/mtx/output/tides10/massbin2_0.0003_combine_cross/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+====================================================================================================
+/project/mtx/output/tides11/massbin2_0.0003_combine_cross/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+====================================================================================================
+/project/mtx/output/tides12/massbin2_0.0003_combine_cross/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+====================================================================================================
+/project/mtx/output/tides13/massbin2_0.0003_combine_cross/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+====================================================================================================
+/project/mtx/output/tides14/massbin2_0.0003_combine_cross/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+====================================================================================================
+/project/mtx/output/tides15/massbin2_0.0003_combine_cross/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+====================================================================================================
+/project/mtx/output/tides16/massbin2_0.0003_combine_cross/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+====================================================================================================
+/project/mtx/output/tides17/massbin2_0.0003_combine_cross/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+====================================================================================================
+/project/mtx/output/tides18/massbin2_0.0003_combine_cross/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+====================================================================================================
+/project/mtx/output/tides19/massbin2_0.0003_combine_cross/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+input:
+/project/mtx/output/tides10/massbin2_0.0003_m1/ /project/mtx/output/tides10/massbin2_0.0003_m2/ /project/mtx/output/tides10/massbin2_0.0003_combine_cross/
+output:
+/project/mtx/output/tides10/massbin2_0.0003_combine_diffW_test4wienerOnebyone/
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+input:
+/project/mtx/output/tides11/massbin2_0.0003_m1/ /project/mtx/output/tides11/massbin2_0.0003_m2/ /project/mtx/output/tides11/massbin2_0.0003_combine_cross/
+output:
+/project/mtx/output/tides11/massbin2_0.0003_combine_diffW_test4wienerOnebyone/
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+input:
+/project/mtx/output/tides12/massbin2_0.0003_m1/ /project/mtx/output/tides12/massbin2_0.0003_m2/ /project/mtx/output/tides12/massbin2_0.0003_combine_cross/
+output:
+/project/mtx/output/tides12/massbin2_0.0003_combine_diffW_test4wienerOnebyone/
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+input:
+/project/mtx/output/tides13/massbin2_0.0003_m1/ /project/mtx/output/tides13/massbin2_0.0003_m2/ /project/mtx/output/tides13/massbin2_0.0003_combine_cross/
+output:
+/project/mtx/output/tides13/massbin2_0.0003_combine_diffW_test4wienerOnebyone/
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+input:
+/project/mtx/output/tides14/massbin2_0.0003_m1/ /project/mtx/output/tides14/massbin2_0.0003_m2/ /project/mtx/output/tides14/massbin2_0.0003_combine_cross/
+output:
+/project/mtx/output/tides14/massbin2_0.0003_combine_diffW_test4wienerOnebyone/
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+input:
+/project/mtx/output/tides15/massbin2_0.0003_m1/ /project/mtx/output/tides15/massbin2_0.0003_m2/ /project/mtx/output/tides15/massbin2_0.0003_combine_cross/
+output:
+/project/mtx/output/tides15/massbin2_0.0003_combine_diffW_test4wienerOnebyone/
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+input:
+/project/mtx/output/tides16/massbin2_0.0003_m1/ /project/mtx/output/tides16/massbin2_0.0003_m2/ /project/mtx/output/tides16/massbin2_0.0003_combine_cross/
+output:
+/project/mtx/output/tides16/massbin2_0.0003_combine_diffW_test4wienerOnebyone/
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+input:
+/project/mtx/output/tides17/massbin2_0.0003_m1/ /project/mtx/output/tides17/massbin2_0.0003_m2/ /project/mtx/output/tides17/massbin2_0.0003_combine_cross/
+output:
+/project/mtx/output/tides17/massbin2_0.0003_combine_diffW_test4wienerOnebyone/
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+input:
+/project/mtx/output/tides18/massbin2_0.0003_m1/ /project/mtx/output/tides18/massbin2_0.0003_m2/ /project/mtx/output/tides18/massbin2_0.0003_combine_cross/
+output:
+/project/mtx/output/tides18/massbin2_0.0003_combine_diffW_test4wienerOnebyone/
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+input:
+/project/mtx/output/tides19/massbin2_0.0003_m1/ /project/mtx/output/tides19/massbin2_0.0003_m2/ /project/mtx/output/tides19/massbin2_0.0003_combine_cross/
+output:
+/project/mtx/output/tides19/massbin2_0.0003_combine_diffW_test4wienerOnebyone/
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................

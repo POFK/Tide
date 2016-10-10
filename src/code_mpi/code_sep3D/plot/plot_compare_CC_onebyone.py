@@ -8,29 +8,28 @@ import numpy as np
 import sys
 
 #========================================
-PATH='/project/mtx/output/tides10/'
+PATH='/project/mtx/output/tides19/'
 #DIRPATH=['massbin4_0.0003_m1/',
 #        'massbin4_0.0003_m2/',
 #        'massbin4_0.0003_m3/',
 #        'massbin4_0.0003_m4/']
-#DIRPATH=[
-#        'massbin10_0.0003_combine_wienerKindependent_bE1_noWiener/',
-#        'test_0.000halo_0.0003_cic_wienerConst_s1.0/',
-#        'massbin4_0.0024_combine_bE1/',
-#        'CIC_0.0024_3D_NoGau_s1.0_Wiener/',
-#        'massbin4_0.0003_combine_wienerKindependent_bE1_noWiener/'
-#        ]
 DIRPATH=[
-        'test_0.000halo_0.0003_cic_wienerConst_s1.0/',
-#       'massbin10_0.0003_combine_wienerKindependent_bE1_noWiener/',
-#       'massbin4_0.0024_combine_bE1/',
-#       'CIC_0.0024_3D_NoGau_s1.0_Wiener/',
-#       'massbin4_0.0003_combine_wienerKindependent_bE1_noWiener/'
+#       'CIC_0.0024_3D_NoGau_s1.0_Wiener_cut5.0/',
+        'CIC_0.0003_3D_NoGau_s1.0_Wiener/',
         'massbin2_0.0003_combine_diffW/',
-        'massbin2_0.0003_combine_cross/',
-        'massbin2_0.0003_m1/',
-        'massbin2_0.0003_m2/'
         ]
+#DIRPATH=[
+##       'test_0.000halo_0.0003_cic_wienerConst_s1.0/',
+##       'massbin10_0.0003_combine_wienerKindependent_bE1_noWiener/',
+##       'massbin4_0.0024_combine_bE1/',
+##       'CIC_0.0024_3D_NoGau_s1.0_Wiener/',
+##       'massbin4_0.0003_combine_wienerKindependent_bE1_noWiener/'
+#        'CIC_0.0024_3D_NoGau_s1.0_Wiener/',
+#        'massbin2_0.0024_combine_diffW/',
+#        'massbin2_0.0024_combine_cross/',
+#        'massbin2_0.0024_m1/',
+#        'massbin2_0.0024_m2/'
+#        ]
 
 
 
@@ -47,16 +46,19 @@ def Plot_CC_Onebyone(path='',color='',linestyle='',label=''):
     #========================================
     plt.figure('correlation coefficient')
     plt.plot(k,r,'%s%s'%(color,linestyle),label=label)
+    print r
 
 #======== plot ==========================
-Plot_CC_Onebyone(path=PATH+DIRPATH[0],color='r',linestyle='.-',label='$0.0003$')
-Plot_CC_Onebyone(path=PATH+DIRPATH[1],color='k',linestyle='.-',label='$\kappa_a+\kappa_b+2\kappa_{ab}$')
-Plot_CC_Onebyone(path=PATH+DIRPATH[2],color='b',linestyle='*--',label='$\kappa_{ab}$')
-Plot_CC_Onebyone(path=PATH+DIRPATH[3],color='m',linestyle='.--',label='$\kappa_a$')
-Plot_CC_Onebyone(path=PATH+DIRPATH[4],color='g',linestyle='.--',label='$\kappa_b$')
+#Plot_CC_Onebyone(path=PATH+DIRPATH[0],color='r',linestyle='.-',label='$0.0024$')
+#Plot_CC_Onebyone(path=PATH+DIRPATH[1],color='k',linestyle='.-',label='$\kappa_a+\kappa_b+2\kappa_{ab}$')
+#Plot_CC_Onebyone(path=PATH+DIRPATH[2],color='b',linestyle='*--',label='$\kappa_{ab}$')
+#Plot_CC_Onebyone(path=PATH+DIRPATH[3],color='m',linestyle='.--',label='$\kappa_a$')
+#Plot_CC_Onebyone(path=PATH+DIRPATH[4],color='g',linestyle='.--',label='$\kappa_b$')
 
+Plot_CC_Onebyone(path=PATH+DIRPATH[0],color='g',linestyle='.-',label='$0.0003\_\mathrm{cut}$')
+Plot_CC_Onebyone(path=PATH+DIRPATH[1],color='r',linestyle='.--',label='$diffW$')
 #======== set ===========================
-plt.legend(loc='upper right')
+plt.legend(loc='lower left',frameon=True)
 plt.xlabel('$k\ [h/\mathrm{Mpc}]$')
 plt.ylabel('$\mathrm{correlation\ coefficient}$')
 #plt.xlim([k.min()*0.9,k.max()*1.1])
@@ -65,7 +67,8 @@ plt.ylim([0.0,1.0])
 plt.grid(axis='y')
 plt.xscale('log')
 plt.yticks(np.linspace(0,1.0,11))
-#plt.show()
+plt.show()
 OUTDIR='/home/mtx/github/Tide/src/code_mpi/code_sep3D/result/eps/'
-plt.savefig(OUTDIR+'high_order.eps')
+#plt.savefig(OUTDIR+'high_order.eps')
+#plt.savefig(OUTDIR+'high_order_24.eps')
 

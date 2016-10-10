@@ -35,9 +35,10 @@ plt.xscale('log')
 plt.yscale('log')
 plt.xlabel(r'$\mathbf{k}_{\perp}\ [h/\mathrm{Mpc}]$')
 plt.ylabel('$\mathbf{k}_{\parallel}\ [h/\mathrm{Mpc}]$')
+plt.title('$\mathrm{Bias}$',fontsize=20)
 #plt.grid(True)
 #plt.title('bias',fontsize='large')
 OUTDIR='/home/mtx/github/Tide/src/code_mpi/code_sep3D/result/eps/'
-#plt.savefig(OUTDIR+'recon_bias_2D.eps')
+plt.savefig(OUTDIR+'recon_bias_2D.eps')
 #plt.show()
 

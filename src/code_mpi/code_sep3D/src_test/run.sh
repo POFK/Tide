@@ -11,5 +11,5 @@ stime=1.5m
 #
 
 python sep_Pk.py  test_4.8_s1.25_Wph_biasConstant
-python sep_Pk.py  test_4.8_s1.25_Wpd_biasVariable
-python sep_Pk.py  test_4.8_s1.25_Wpd_biasConstant
+#python sep_Pk.py  test_4.8_s1.25_Wpd_biasVariable
+#python sep_Pk.py  test_4.8_s1.25_Wpd_biasConstant

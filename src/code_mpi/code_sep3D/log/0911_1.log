@@ -1,0 +1,360 @@
+====================================================================================================
+/project/mtx/output/tides10/massbin2_0.0024_combine_diffW/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.84681588  0.92137775  0.95393627  0.91544839  0.92672412  0.91522843
+  0.88808691  0.86612154  0.83955126  0.77692084  0.70087864  0.61397521
+  0.48955192  0.36251915  0.1415578  -0.02964423 -0.343279   -0.41572588
+ -0.44776277 -0.47578261]
+Traceback (most recent call last):
+  File "plot_result.py", line 28, in <module>
+    np.savetxt(ResultDir+'kbin.txt',kbin)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 990, in savetxt
+    fh = open(fname, 'w')
+IOError: [Errno 2] No such file or directory: './result/tides10/massbin2_0.0024_combine_diffW/kbin.txt'
+====================================================================================================
+/project/mtx/output/tides11/massbin2_0.0024_combine_diffW/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.96247601  0.92238232  0.90506282  0.91531667  0.93321609  0.91495788
+  0.88108529  0.86912972  0.84381999  0.77865904  0.70498064  0.61432931
+  0.48934738  0.36256134  0.1417979  -0.03003684 -0.34410358 -0.41671874
+ -0.44885853 -0.47698185]
+Traceback (most recent call last):
+  File "plot_result.py", line 28, in <module>
+    np.savetxt(ResultDir+'kbin.txt',kbin)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 990, in savetxt
+    fh = open(fname, 'w')
+IOError: [Errno 2] No such file or directory: './result/tides11/massbin2_0.0024_combine_diffW/kbin.txt'
+====================================================================================================
+/project/mtx/output/tides12/massbin2_0.0024_combine_diffW/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.96982783  0.89349117  0.93985729  0.9376759   0.93725167  0.92030794
+  0.8949444   0.86442525  0.83896667  0.77162637  0.70204586  0.61446261
+  0.49119903  0.3630603   0.14219025 -0.02903947 -0.34307095 -0.41617583
+ -0.44855227 -0.47640039]
+Traceback (most recent call last):
+  File "plot_result.py", line 28, in <module>
+    np.savetxt(ResultDir+'kbin.txt',kbin)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 990, in savetxt
+    fh = open(fname, 'w')
+IOError: [Errno 2] No such file or directory: './result/tides12/massbin2_0.0024_combine_diffW/kbin.txt'
+====================================================================================================
+/project/mtx/output/tides13/massbin2_0.0024_combine_diffW/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.8657766   0.83070513  0.91670693  0.90638246  0.93696844  0.90858607
+  0.89862236  0.86676646  0.84410861  0.77759301  0.70251687  0.61237898
+  0.49092704  0.36117289  0.14221862 -0.03016304 -0.34450305 -0.41648837
+ -0.44864455 -0.47664887]
+Traceback (most recent call last):
+  File "plot_result.py", line 28, in <module>
+    np.savetxt(ResultDir+'kbin.txt',kbin)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 990, in savetxt
+    fh = open(fname, 'w')
+IOError: [Errno 2] No such file or directory: './result/tides13/massbin2_0.0024_combine_diffW/kbin.txt'
+====================================================================================================
+/project/mtx/output/tides14/massbin2_0.0024_combine_diffW/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.88933378  0.87665262  0.92786312  0.91788182  0.91898713  0.91661636
+  0.89276263  0.86578456  0.83890479  0.77506717  0.70051274  0.61527301
+  0.48936042  0.36467668  0.14153725 -0.02922013 -0.34292822 -0.41585441
+ -0.44816049 -0.4764032 ]
+Traceback (most recent call last):
+  File "plot_result.py", line 28, in <module>
+    np.savetxt(ResultDir+'kbin.txt',kbin)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 990, in savetxt
+    fh = open(fname, 'w')
+IOError: [Errno 2] No such file or directory: './result/tides14/massbin2_0.0024_combine_diffW/kbin.txt'
+====================================================================================================
+/project/mtx/output/tides15/massbin2_0.0024_combine_diffW/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.90379573  0.95955595  0.95190303  0.9327395   0.91848994  0.91320993
+  0.89105514  0.87160597  0.8352252   0.77668259  0.70328441  0.61743479
+  0.49304698  0.36260398  0.14126456 -0.02924957 -0.34396465 -0.41595009
+ -0.44813701 -0.47606556]
+Traceback (most recent call last):
+  File "plot_result.py", line 28, in <module>
+    np.savetxt(ResultDir+'kbin.txt',kbin)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 990, in savetxt
+    fh = open(fname, 'w')
+IOError: [Errno 2] No such file or directory: './result/tides15/massbin2_0.0024_combine_diffW/kbin.txt'
+====================================================================================================
+/project/mtx/output/tides16/massbin2_0.0024_combine_diffW/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.87278245  0.94793759  0.93940156  0.95478745  0.93035269  0.91441319
+  0.88802078  0.86849026  0.8444226   0.78119264  0.70396484  0.61317459
+  0.48923397  0.36171346  0.14085086 -0.02929915 -0.34358645 -0.41596264
+ -0.44825161 -0.4758837 ]
+Traceback (most recent call last):
+  File "plot_result.py", line 28, in <module>
+    np.savetxt(ResultDir+'kbin.txt',kbin)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 990, in savetxt
+    fh = open(fname, 'w')
+IOError: [Errno 2] No such file or directory: './result/tides16/massbin2_0.0024_combine_diffW/kbin.txt'
+====================================================================================================
+/project/mtx/output/tides17/massbin2_0.0024_combine_diffW/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.94831389  0.88004257  0.92488731  0.93686806  0.93004803  0.91580342
+  0.87832919  0.86812406  0.83850723  0.77391884  0.69954506  0.61205272
+  0.49064152  0.36067895  0.14130828 -0.02935849 -0.34406096 -0.41619741
+ -0.44842378 -0.47614359]
+Traceback (most recent call last):
+  File "plot_result.py", line 28, in <module>
+    np.savetxt(ResultDir+'kbin.txt',kbin)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 990, in savetxt
+    fh = open(fname, 'w')
+IOError: [Errno 2] No such file or directory: './result/tides17/massbin2_0.0024_combine_diffW/kbin.txt'
+====================================================================================================
+/project/mtx/output/tides18/massbin2_0.0024_combine_diffW/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.89932212  0.95089628  0.94210852  0.95169063  0.91887572  0.91566458
+  0.88676626  0.8708025   0.83937109  0.77697593  0.70184707  0.61557089
+  0.49343013  0.36400216  0.14122061 -0.02846488 -0.34359197 -0.41578768
+ -0.448267   -0.47600252]
+Traceback (most recent call last):
+  File "plot_result.py", line 28, in <module>
+    np.savetxt(ResultDir+'kbin.txt',kbin)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 990, in savetxt
+    fh = open(fname, 'w')
+IOError: [Errno 2] No such file or directory: './result/tides18/massbin2_0.0024_combine_diffW/kbin.txt'
+====================================================================================================
+/project/mtx/output/tides19/massbin2_0.0024_combine_diffW/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.97381933  0.78244092  0.94077362  0.91258917  0.93948517  0.90135842
+  0.89784235  0.86630478  0.84517645  0.77454649  0.70210742  0.61376373
+  0.49084034  0.36314022  0.14190689 -0.02892058 -0.34346324 -0.41548364
+ -0.44789624 -0.47596238]
+Traceback (most recent call last):
+  File "plot_result.py", line 28, in <module>
+    np.savetxt(ResultDir+'kbin.txt',kbin)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 990, in savetxt
+    fh = open(fname, 'w')
+IOError: [Errno 2] No such file or directory: './result/tides19/massbin2_0.0024_combine_diffW/kbin.txt'
+====================================================================================================
+/project/mtx/output/tides10/massbin2_0.0003_combine_diffW/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.39920379  0.56046231  0.67920727  0.65710118  0.71578714  0.67521039
+  0.59042997  0.54547865  0.51380525  0.42442485  0.33534083  0.26346632
+  0.20850257  0.25564813  0.21354132 -0.15253955 -0.60441979 -0.64869668
+ -0.6750345  -0.6722324 ]
+Traceback (most recent call last):
+  File "plot_result.py", line 28, in <module>
+    np.savetxt(ResultDir+'kbin.txt',kbin)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 990, in savetxt
+    fh = open(fname, 'w')
+IOError: [Errno 2] No such file or directory: './result/tides10/massbin2_0.0003_combine_diffW/kbin.txt'
+====================================================================================================
+/project/mtx/output/tides11/massbin2_0.0003_combine_diffW/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.6478257   0.5280959   0.71382026  0.68893813  0.73311441  0.66831956
+  0.5812004   0.58190604  0.52944257  0.43384586  0.34648952  0.27199921
+  0.2103527   0.25611887  0.21376755 -0.15605902 -0.60702295 -0.65124963
+ -0.67793421 -0.67519295]
+Traceback (most recent call last):
+  File "plot_result.py", line 28, in <module>
+    np.savetxt(ResultDir+'kbin.txt',kbin)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 990, in savetxt
+    fh = open(fname, 'w')
+IOError: [Errno 2] No such file or directory: './result/tides11/massbin2_0.0003_combine_diffW/kbin.txt'
+====================================================================================================
+/project/mtx/output/tides12/massbin2_0.0003_combine_diffW/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.29087535  0.7058331   0.58870309  0.79899873  0.74613051  0.67433182
+  0.61750562  0.56978143  0.514883    0.4309061   0.34115168  0.26437464
+  0.21212302  0.26010499  0.21509318 -0.15491087 -0.60595342 -0.65020597
+ -0.67638727 -0.67351344]
+Traceback (most recent call last):
+  File "plot_result.py", line 28, in <module>
+    np.savetxt(ResultDir+'kbin.txt',kbin)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 990, in savetxt
+    fh = open(fname, 'w')
+IOError: [Errno 2] No such file or directory: './result/tides12/massbin2_0.0003_combine_diffW/kbin.txt'
+====================================================================================================
+/project/mtx/output/tides13/massbin2_0.0003_combine_diffW/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.59114903  0.61772234  0.62138098  0.63515594  0.72059231  0.71065812
+  0.60968296  0.55336687  0.52462916  0.42628578  0.33867741  0.27178922
+  0.21285285  0.25892945  0.21413938 -0.1569697  -0.6068235  -0.65034558
+ -0.67677934 -0.67393748]
+Traceback (most recent call last):
+  File "plot_result.py", line 28, in <module>
+    np.savetxt(ResultDir+'kbin.txt',kbin)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 990, in savetxt
+    fh = open(fname, 'w')
+IOError: [Errno 2] No such file or directory: './result/tides13/massbin2_0.0003_combine_diffW/kbin.txt'
+====================================================================================================
+/project/mtx/output/tides14/massbin2_0.0003_combine_diffW/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.28245653  0.40317904  0.67957433  0.64363322  0.70125557  0.66321904
+  0.61686685  0.55263556  0.51282176  0.42503597  0.34216687  0.26841091
+  0.21086853  0.25747768  0.21320836 -0.15180207 -0.6032715  -0.647216
+ -0.67465735 -0.67234003]
+Traceback (most recent call last):
+  File "plot_result.py", line 28, in <module>
+    np.savetxt(ResultDir+'kbin.txt',kbin)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 990, in savetxt
+    fh = open(fname, 'w')
+IOError: [Errno 2] No such file or directory: './result/tides14/massbin2_0.0003_combine_diffW/kbin.txt'
+====================================================================================================
+/project/mtx/output/tides15/massbin2_0.0003_combine_diffW/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.24409209  0.86310335  0.63769234  0.68527527  0.68444229  0.65457996
+  0.55090893  0.58002342  0.52047638  0.43397294  0.33961924  0.26964824
+  0.2113308   0.25655015  0.21257324 -0.15356016 -0.60553606 -0.64984048
+ -0.6758361  -0.67289301]
+Traceback (most recent call last):
+  File "plot_result.py", line 28, in <module>
+    np.savetxt(ResultDir+'kbin.txt',kbin)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 990, in savetxt
+    fh = open(fname, 'w')
+IOError: [Errno 2] No such file or directory: './result/tides15/massbin2_0.0003_combine_diffW/kbin.txt'
+====================================================================================================
+/project/mtx/output/tides16/massbin2_0.0003_combine_diffW/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.83366028  0.80599659  0.74483399  0.76066246  0.68178175  0.62999166
+  0.62063654  0.55840698  0.52240765  0.42655152  0.34477591  0.26754487
+  0.21116678  0.25580111  0.21324198 -0.15177581 -0.60746716 -0.65132886
+ -0.67763556 -0.67429155]
+Traceback (most recent call last):
+  File "plot_result.py", line 28, in <module>
+    np.savetxt(ResultDir+'kbin.txt',kbin)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 990, in savetxt
+    fh = open(fname, 'w')
+IOError: [Errno 2] No such file or directory: './result/tides16/massbin2_0.0003_combine_diffW/kbin.txt'
+====================================================================================================
+/project/mtx/output/tides17/massbin2_0.0003_combine_diffW/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [-0.35685887  0.80551987  0.73386554  0.72963533  0.68497161  0.68992823
+  0.57579     0.56336215  0.50498896  0.42900932  0.34363541  0.26373935
+  0.21316314  0.25653459  0.21452096 -0.15428251 -0.60562774 -0.6499452
+ -0.67596586 -0.6732755 ]
+Traceback (most recent call last):
+  File "plot_result.py", line 28, in <module>
+    np.savetxt(ResultDir+'kbin.txt',kbin)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 990, in savetxt
+    fh = open(fname, 'w')
+IOError: [Errno 2] No such file or directory: './result/tides17/massbin2_0.0003_combine_diffW/kbin.txt'
+====================================================================================================
+/project/mtx/output/tides18/massbin2_0.0003_combine_diffW/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.64485293  0.86064119  0.68357106  0.75822866  0.67454155  0.65998504
+  0.59641797  0.55440165  0.51199509  0.42241838  0.34303231  0.26903496
+  0.20854198  0.25726044  0.21433407 -0.15449794 -0.60558003 -0.65008201
+ -0.67648856 -0.67393723]
+Traceback (most recent call last):
+  File "plot_result.py", line 28, in <module>
+    np.savetxt(ResultDir+'kbin.txt',kbin)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 990, in savetxt
+    fh = open(fname, 'w')
+IOError: [Errno 2] No such file or directory: './result/tides18/massbin2_0.0003_combine_diffW/kbin.txt'
+====================================================================================================
+/project/mtx/output/tides19/massbin2_0.0003_combine_diffW/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+CC [ 0.96968328  0.39398364  0.75353606  0.60525176  0.73392671  0.64145735
+  0.6261444   0.54533948  0.52266748  0.4261534   0.33829103  0.2629263
+  0.20792353  0.25524422  0.21340013 -0.15470781 -0.60529514 -0.64929684
+ -0.67558952 -0.67280043]
+Traceback (most recent call last):
+  File "plot_result.py", line 28, in <module>
+    np.savetxt(ResultDir+'kbin.txt',kbin)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 990, in savetxt
+    fh = open(fname, 'w')
+IOError: [Errno 2] No such file or directory: './result/tides19/massbin2_0.0003_combine_diffW/kbin.txt'

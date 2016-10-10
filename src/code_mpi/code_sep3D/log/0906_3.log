@@ -1,0 +1,540 @@
+====================================================================================================
+/project/mtx/output/tides10/massbin2_0.0024_m1/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "plot_result.py", line 24, in <module>
+    HK=np.loadtxt(PathPlot1+'HK')
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 715, in loadtxt
+    fh = iter(open(fname, 'U'))
+IOError: [Errno 2] No such file or directory: '/project/mtx/output/tides10/massbin2_0.0024_m1/Pk_HK'
+====================================================================================================
+/project/mtx/output/tides11/massbin2_0.0024_m1/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "plot_result.py", line 24, in <module>
+    HK=np.loadtxt(PathPlot1+'HK')
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 715, in loadtxt
+    fh = iter(open(fname, 'U'))
+IOError: [Errno 2] No such file or directory: '/project/mtx/output/tides11/massbin2_0.0024_m1/Pk_HK'
+====================================================================================================
+/project/mtx/output/tides12/massbin2_0.0024_m1/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "plot_result.py", line 24, in <module>
+    HK=np.loadtxt(PathPlot1+'HK')
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 715, in loadtxt
+    fh = iter(open(fname, 'U'))
+IOError: [Errno 2] No such file or directory: '/project/mtx/output/tides12/massbin2_0.0024_m1/Pk_HK'
+====================================================================================================
+/project/mtx/output/tides13/massbin2_0.0024_m1/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "plot_result.py", line 24, in <module>
+    HK=np.loadtxt(PathPlot1+'HK')
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 715, in loadtxt
+    fh = iter(open(fname, 'U'))
+IOError: [Errno 2] No such file or directory: '/project/mtx/output/tides13/massbin2_0.0024_m1/Pk_HK'
+====================================================================================================
+/project/mtx/output/tides14/massbin2_0.0024_m1/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "plot_result.py", line 24, in <module>
+    HK=np.loadtxt(PathPlot1+'HK')
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 715, in loadtxt
+    fh = iter(open(fname, 'U'))
+IOError: [Errno 2] No such file or directory: '/project/mtx/output/tides14/massbin2_0.0024_m1/Pk_HK'
+====================================================================================================
+/project/mtx/output/tides15/massbin2_0.0024_m1/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "plot_result.py", line 24, in <module>
+    HK=np.loadtxt(PathPlot1+'HK')
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 715, in loadtxt
+    fh = iter(open(fname, 'U'))
+IOError: [Errno 2] No such file or directory: '/project/mtx/output/tides15/massbin2_0.0024_m1/Pk_HK'
+====================================================================================================
+/project/mtx/output/tides16/massbin2_0.0024_m1/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "plot_result.py", line 24, in <module>
+    HK=np.loadtxt(PathPlot1+'HK')
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 715, in loadtxt
+    fh = iter(open(fname, 'U'))
+IOError: [Errno 2] No such file or directory: '/project/mtx/output/tides16/massbin2_0.0024_m1/Pk_HK'
+====================================================================================================
+/project/mtx/output/tides17/massbin2_0.0024_m1/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "plot_result.py", line 24, in <module>
+    HK=np.loadtxt(PathPlot1+'HK')
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 715, in loadtxt
+    fh = iter(open(fname, 'U'))
+IOError: [Errno 2] No such file or directory: '/project/mtx/output/tides17/massbin2_0.0024_m1/Pk_HK'
+====================================================================================================
+/project/mtx/output/tides18/massbin2_0.0024_m1/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "plot_result.py", line 24, in <module>
+    HK=np.loadtxt(PathPlot1+'HK')
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 715, in loadtxt
+    fh = iter(open(fname, 'U'))
+IOError: [Errno 2] No such file or directory: '/project/mtx/output/tides18/massbin2_0.0024_m1/Pk_HK'
+====================================================================================================
+/project/mtx/output/tides19/massbin2_0.0024_m1/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "plot_result.py", line 24, in <module>
+    HK=np.loadtxt(PathPlot1+'HK')
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 715, in loadtxt
+    fh = iter(open(fname, 'U'))
+IOError: [Errno 2] No such file or directory: '/project/mtx/output/tides19/massbin2_0.0024_m1/Pk_HK'
+====================================================================================================
+/project/mtx/output/tides10/massbin2_0.0024_m2/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "plot_result.py", line 24, in <module>
+    HK=np.loadtxt(PathPlot1+'HK')
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 715, in loadtxt
+    fh = iter(open(fname, 'U'))
+IOError: [Errno 2] No such file or directory: '/project/mtx/output/tides10/massbin2_0.0024_m2/Pk_HK'
+====================================================================================================
+/project/mtx/output/tides11/massbin2_0.0024_m2/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "plot_result.py", line 24, in <module>
+    HK=np.loadtxt(PathPlot1+'HK')
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 715, in loadtxt
+    fh = iter(open(fname, 'U'))
+IOError: [Errno 2] No such file or directory: '/project/mtx/output/tides11/massbin2_0.0024_m2/Pk_HK'
+====================================================================================================
+/project/mtx/output/tides12/massbin2_0.0024_m2/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "plot_result.py", line 24, in <module>
+    HK=np.loadtxt(PathPlot1+'HK')
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 715, in loadtxt
+    fh = iter(open(fname, 'U'))
+IOError: [Errno 2] No such file or directory: '/project/mtx/output/tides12/massbin2_0.0024_m2/Pk_HK'
+====================================================================================================
+/project/mtx/output/tides13/massbin2_0.0024_m2/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "plot_result.py", line 24, in <module>
+    HK=np.loadtxt(PathPlot1+'HK')
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 715, in loadtxt
+    fh = iter(open(fname, 'U'))
+IOError: [Errno 2] No such file or directory: '/project/mtx/output/tides13/massbin2_0.0024_m2/Pk_HK'
+====================================================================================================
+/project/mtx/output/tides14/massbin2_0.0024_m2/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "plot_result.py", line 24, in <module>
+    HK=np.loadtxt(PathPlot1+'HK')
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 715, in loadtxt
+    fh = iter(open(fname, 'U'))
+IOError: [Errno 2] No such file or directory: '/project/mtx/output/tides14/massbin2_0.0024_m2/Pk_HK'
+====================================================================================================
+/project/mtx/output/tides15/massbin2_0.0024_m2/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "plot_result.py", line 24, in <module>
+    HK=np.loadtxt(PathPlot1+'HK')
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 715, in loadtxt
+    fh = iter(open(fname, 'U'))
+IOError: [Errno 2] No such file or directory: '/project/mtx/output/tides15/massbin2_0.0024_m2/Pk_HK'
+====================================================================================================
+/project/mtx/output/tides16/massbin2_0.0024_m2/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "plot_result.py", line 24, in <module>
+    HK=np.loadtxt(PathPlot1+'HK')
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 715, in loadtxt
+    fh = iter(open(fname, 'U'))
+IOError: [Errno 2] No such file or directory: '/project/mtx/output/tides16/massbin2_0.0024_m2/Pk_HK'
+====================================================================================================
+/project/mtx/output/tides17/massbin2_0.0024_m2/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "plot_result.py", line 24, in <module>
+    HK=np.loadtxt(PathPlot1+'HK')
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 715, in loadtxt
+    fh = iter(open(fname, 'U'))
+IOError: [Errno 2] No such file or directory: '/project/mtx/output/tides17/massbin2_0.0024_m2/Pk_HK'
+====================================================================================================
+/project/mtx/output/tides18/massbin2_0.0024_m2/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "plot_result.py", line 24, in <module>
+    HK=np.loadtxt(PathPlot1+'HK')
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 715, in loadtxt
+    fh = iter(open(fname, 'U'))
+IOError: [Errno 2] No such file or directory: '/project/mtx/output/tides18/massbin2_0.0024_m2/Pk_HK'
+====================================================================================================
+/project/mtx/output/tides19/massbin2_0.0024_m2/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "plot_result.py", line 24, in <module>
+    HK=np.loadtxt(PathPlot1+'HK')
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 715, in loadtxt
+    fh = iter(open(fname, 'U'))
+IOError: [Errno 2] No such file or directory: '/project/mtx/output/tides19/massbin2_0.0024_m2/Pk_HK'
+====================================================================================================
+/project/mtx/output/tides10/massbin2_0.0024_combine_cross/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "plot_result.py", line 22, in <module>
+    DH=np.loadtxt(PathPlot1+'DH')
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 715, in loadtxt
+    fh = iter(open(fname, 'U'))
+IOError: [Errno 2] No such file or directory: '/project/mtx/output/tides10/massbin2_0.0024_combine_cross/Pk_DH'
+====================================================================================================
+/project/mtx/output/tides11/massbin2_0.0024_combine_cross/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "plot_result.py", line 22, in <module>
+    DH=np.loadtxt(PathPlot1+'DH')
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 715, in loadtxt
+    fh = iter(open(fname, 'U'))
+IOError: [Errno 2] No such file or directory: '/project/mtx/output/tides11/massbin2_0.0024_combine_cross/Pk_DH'
+====================================================================================================
+/project/mtx/output/tides12/massbin2_0.0024_combine_cross/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "plot_result.py", line 22, in <module>
+    DH=np.loadtxt(PathPlot1+'DH')
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 715, in loadtxt
+    fh = iter(open(fname, 'U'))
+IOError: [Errno 2] No such file or directory: '/project/mtx/output/tides12/massbin2_0.0024_combine_cross/Pk_DH'
+====================================================================================================
+/project/mtx/output/tides13/massbin2_0.0024_combine_cross/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "plot_result.py", line 22, in <module>
+    DH=np.loadtxt(PathPlot1+'DH')
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 715, in loadtxt
+    fh = iter(open(fname, 'U'))
+IOError: [Errno 2] No such file or directory: '/project/mtx/output/tides13/massbin2_0.0024_combine_cross/Pk_DH'
+====================================================================================================
+/project/mtx/output/tides14/massbin2_0.0024_combine_cross/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "plot_result.py", line 22, in <module>
+    DH=np.loadtxt(PathPlot1+'DH')
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 715, in loadtxt
+    fh = iter(open(fname, 'U'))
+IOError: [Errno 2] No such file or directory: '/project/mtx/output/tides14/massbin2_0.0024_combine_cross/Pk_DH'
+====================================================================================================
+/project/mtx/output/tides15/massbin2_0.0024_combine_cross/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "plot_result.py", line 22, in <module>
+    DH=np.loadtxt(PathPlot1+'DH')
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 715, in loadtxt
+    fh = iter(open(fname, 'U'))
+IOError: [Errno 2] No such file or directory: '/project/mtx/output/tides15/massbin2_0.0024_combine_cross/Pk_DH'
+====================================================================================================
+/project/mtx/output/tides16/massbin2_0.0024_combine_cross/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "plot_result.py", line 22, in <module>
+    DH=np.loadtxt(PathPlot1+'DH')
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 715, in loadtxt
+    fh = iter(open(fname, 'U'))
+IOError: [Errno 2] No such file or directory: '/project/mtx/output/tides16/massbin2_0.0024_combine_cross/Pk_DH'
+====================================================================================================
+/project/mtx/output/tides17/massbin2_0.0024_combine_cross/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "plot_result.py", line 22, in <module>
+    DH=np.loadtxt(PathPlot1+'DH')
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 715, in loadtxt
+    fh = iter(open(fname, 'U'))
+IOError: [Errno 2] No such file or directory: '/project/mtx/output/tides17/massbin2_0.0024_combine_cross/Pk_DH'
+====================================================================================================
+/project/mtx/output/tides18/massbin2_0.0024_combine_cross/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "plot_result.py", line 22, in <module>
+    DH=np.loadtxt(PathPlot1+'DH')
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 715, in loadtxt
+    fh = iter(open(fname, 'U'))
+IOError: [Errno 2] No such file or directory: '/project/mtx/output/tides18/massbin2_0.0024_combine_cross/Pk_DH'
+====================================================================================================
+/project/mtx/output/tides19/massbin2_0.0024_combine_cross/
+================================================================================
+Cal wkkappa
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "plot_result.py", line 22, in <module>
+    DH=np.loadtxt(PathPlot1+'DH')
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/numpy/lib/npyio.py", line 715, in loadtxt
+    fh = iter(open(fname, 'U'))
+IOError: [Errno 2] No such file or directory: '/project/mtx/output/tides19/massbin2_0.0024_combine_cross/Pk_DH'

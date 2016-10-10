@@ -16,7 +16,7 @@ data=np.loadtxt('/home/mtx/github/Tide/src/lcdm_pk.dat')
 dir = ['tides10','tides11','tides12','tides13','tides14','tides15','tides16','tides17','tides18','tides19']
 Pd=[]
 Ph=[]
-NumberD=0.0048
+NumberD=0.0024
 print NumberD
 bias={'0.0012':1.110380,
         '0.0024':0.964854,
@@ -47,7 +47,7 @@ Pkg=interpolate.interp1d(np.log10(data[:,0]),np.log10(data[:,1]),kind=3)
 dPkg=np.gradient(Pkg(x),x[1]-x[0])
 fdPkg=interpolate.interp1d(x,dPkg,kind=3)
 def smooth(k):
-    sigma=1.0
+    sigma=5.0
     smooth_K=np.exp(-k**2*sigma**2/2.)
     return smooth_K
 def fk(k):

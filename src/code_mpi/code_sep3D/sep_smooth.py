@@ -19,6 +19,9 @@ mpi_senddata_k1=np.empty((N/(size),N,N/2+1),dtype=np.complex128)
 
 if rank==0:
     deltax=Tide.LoadDataOfhdf5(PathSinput)   # input halo field
+    if CutOff!=None:
+        SmoothHaloNbar=False
+        sum=0
     if SmoothHaloNbar:
         sum=deltax.sum()
         deltax*=(N**3/sum)   #for halo, the data is n/nbar.
@@ -52,18 +55,13 @@ mpi_senddata_k1=mpi_recvdata_k1*np.exp(-0.5*Kf*Kf*k*k*Sigma**2)     #smooth_k
 if SmoothWindowOfTophat:
     mpi_senddata_k1/=window_k**2  #cic  
 #======== for shot noise  =========
-if SmoothHaloNbar:
-    sum=comm.bcast(sum,root=0) 
+sum=comm.bcast(sum,root=0) 
 if SmoothWienerOfShotnoise:
-# old wiener
-#   Ph=L**3/N**6*np.abs(mpi_senddata_k1)**2  
-#   Ph=L**3/N**6*np.abs(mpi_senddata_k1)**2/window_k #for test
-#   Wiener=(Ph-(L**3)/sum)/Ph  # wiener filter
-#   Wiener=Ph/(Ph+(L**3)/sum)  # wiener filter
-# new wiener
-
     from sep_wienerPh_with_Pd import WienerF
-    Wienerf,bias,k_min,k_max=WienerF(dir,noise=L**3/sum,mode=WienerMode)
+    if CutOff!=None:
+        Wienerf,bias,k_min,k_max=WienerF(dir,noise=0.,mode=WienerMode)
+    elif CutOff==None:
+        Wienerf,bias,k_min,k_max=WienerF(dir,noise=L**3/sum,mode=WienerMode)
     if rank == 0:
         INF=open(PathOfINF,'a')
         INF.writelines('bias=%f\n'% (bias))

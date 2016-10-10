@@ -1,0 +1,1427 @@
+====================================================================================================
+/project/mtx/output/tides10/massbin2_0.0003_combine_cross/
+================================================================================
+starting cal kappa 3D
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+/project/mtx/output/tides10/massbin2_0.0003_combine_cross/halo_gm1.hdf5
+/project/mtx/output/tides10/massbin2_0.0003_combine_cross/halo_gm2.hdf5
+/project/mtx/output/tides10/massbin2_0.0003_combine_cross/halo_gmx.hdf5
+/project/mtx/output/tides10/massbin2_0.0003_combine_cross/halo_gmy.hdf5
+/project/mtx/output/tides10/massbin2_0.0003_combine_cross/halo_gmz.hdf5
+rm: 无法删除"/project/mtx/output/tides10/massbin2_0.0003_combine_cross/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides10/massbin2_0.0003_combine_cross/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides11/massbin2_0.0003_combine_cross/
+================================================================================
+starting cal kappa 3D
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+KeyError: "unable to open object (Symbol table: Can't open object)"
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+IOError: unable to create file (File accessibilty: Unable to open file)
+IOError: unable to create file (File accessibilty: Unable to open file)
+IOError: unable to create file (File accessibilty: Unable to open file)
+IOError: unable to create file (File accessibilty: Unable to open file)
+IOError: unable to create file (File accessibilty: Unable to open file)
+IOError: unable to create file (File accessibilty: Unable to open file)
+IOError: unable to create file (File accessibilty: Unable to open file)
+IOError: unable to create file (File accessibilty: Unable to open file)
+IOError: unable to create file (File accessibilty: Unable to open file)
+IOError: unable to create file (File accessibilty: Unable to open file)
+IOError: unable to create file (File accessibilty: Unable to open file)
+IOError: unable to create file (File accessibilty: Unable to open file)
+IOError: unable to create file (File accessibilty: Unable to open file)
+IOError: unable to create file (File accessibilty: Unable to open file)
+IOError: unable to create file (File accessibilty: Unable to open file)
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[65297,1],0]
+  Exit code:    1
+--------------------------------------------------------------------------
+/project/mtx/output/tides11/massbin2_0.0003_combine_cross/halo_gm1.hdf5
+/project/mtx/output/tides11/massbin2_0.0003_combine_cross/halo_gm2.hdf5
+/project/mtx/output/tides11/massbin2_0.0003_combine_cross/halo_gmx.hdf5
+/project/mtx/output/tides11/massbin2_0.0003_combine_cross/halo_gmy.hdf5
+/project/mtx/output/tides11/massbin2_0.0003_combine_cross/halo_gmz.hdf5
+rm: 无法删除"/project/mtx/output/tides11/massbin2_0.0003_combine_cross/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides11/massbin2_0.0003_combine_cross/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides12/massbin2_0.0003_combine_cross/
+================================================================================
+starting cal kappa 3D
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+IOError: unable to create file (File accessibilty: Unable to open file)
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+IOError: unable to create file (File accessibilty: Unable to open file)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+KeyError: "unable to open object (Symbol table: Can't open object)"
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[65220,1],7]
+  Exit code:    1
+--------------------------------------------------------------------------
+/project/mtx/output/tides12/massbin2_0.0003_combine_cross/halo_gm1.hdf5
+/project/mtx/output/tides12/massbin2_0.0003_combine_cross/halo_gm2.hdf5
+/project/mtx/output/tides12/massbin2_0.0003_combine_cross/halo_gmx.hdf5
+/project/mtx/output/tides12/massbin2_0.0003_combine_cross/halo_gmy.hdf5
+/project/mtx/output/tides12/massbin2_0.0003_combine_cross/halo_gmz.hdf5
+rm: 无法删除"/project/mtx/output/tides12/massbin2_0.0003_combine_cross/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides12/massbin2_0.0003_combine_cross/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides13/massbin2_0.0003_combine_cross/
+================================================================================
+starting cal kappa 3D
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+IOError: unable to create file (File accessibilty: Unable to open file)
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+IOError: unable to create file (File accessibilty: Unable to open file)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+KeyError: "unable to open object (Symbol table: Can't open object)"
+    f=h5py.File(input1)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+IOError: unable to create file (File accessibilty: Unable to open file)
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+KeyError: "unable to open object (Symbol table: Can't open object)"
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+IOError: unable to create file (File accessibilty: Unable to open file)
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl)
+IOError: unable to create file (File accessibilty: Unable to open file)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+IOError: unable to create file (File accessibilty: Unable to open file)
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+IOError: unable to create file (File accessibilty: Unable to open file)
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+IOError: unable to create file (File accessibilty: Unable to open file)
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+IOError: unable to create file (File accessibilty: Unable to open file)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[49373,1],15]
+  Exit code:    1
+--------------------------------------------------------------------------
+/project/mtx/output/tides13/massbin2_0.0003_combine_cross/halo_gm1.hdf5
+/project/mtx/output/tides13/massbin2_0.0003_combine_cross/halo_gm2.hdf5
+/project/mtx/output/tides13/massbin2_0.0003_combine_cross/halo_gmx.hdf5
+/project/mtx/output/tides13/massbin2_0.0003_combine_cross/halo_gmy.hdf5
+/project/mtx/output/tides13/massbin2_0.0003_combine_cross/halo_gmz.hdf5
+rm: 无法删除"/project/mtx/output/tides13/massbin2_0.0003_combine_cross/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides13/massbin2_0.0003_combine_cross/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides14/massbin2_0.0003_combine_cross/
+================================================================================
+starting cal kappa 3D
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    f=h5py.File(input1)
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+IOError: unable to create file (File accessibilty: Unable to open file)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+IOError: unable to create file (File accessibilty: Unable to open file)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+KeyError: "unable to open object (Symbol table: Can't open object)"
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+IOError: unable to create file (File accessibilty: Unable to open file)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+IOError: unable to create file (File accessibilty: Unable to open file)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[49863,1],10]
+  Exit code:    1
+--------------------------------------------------------------------------
+/project/mtx/output/tides14/massbin2_0.0003_combine_cross/halo_gm1.hdf5
+/project/mtx/output/tides14/massbin2_0.0003_combine_cross/halo_gm2.hdf5
+/project/mtx/output/tides14/massbin2_0.0003_combine_cross/halo_gmx.hdf5
+/project/mtx/output/tides14/massbin2_0.0003_combine_cross/halo_gmy.hdf5
+/project/mtx/output/tides14/massbin2_0.0003_combine_cross/halo_gmz.hdf5
+rm: 无法删除"/project/mtx/output/tides14/massbin2_0.0003_combine_cross/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides14/massbin2_0.0003_combine_cross/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides15/massbin2_0.0003_combine_cross/
+================================================================================
+starting cal kappa 3D
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+IOError: unable to create file (File accessibilty: Unable to open file)
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+IOError: unable to create file (File accessibilty: Unable to open file)
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+IOError: unable to create file (File accessibilty: Unable to open file)
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+IOError: unable to create file (File accessibilty: Unable to open file)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+KeyError: "unable to open object (Symbol table: Can't open object)"
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[50368,1],1]
+  Exit code:    1
+--------------------------------------------------------------------------
+/project/mtx/output/tides15/massbin2_0.0003_combine_cross/halo_gm1.hdf5
+/project/mtx/output/tides15/massbin2_0.0003_combine_cross/halo_gm2.hdf5
+/project/mtx/output/tides15/massbin2_0.0003_combine_cross/halo_gmx.hdf5
+/project/mtx/output/tides15/massbin2_0.0003_combine_cross/halo_gmy.hdf5
+/project/mtx/output/tides15/massbin2_0.0003_combine_cross/halo_gmz.hdf5
+rm: 无法删除"/project/mtx/output/tides15/massbin2_0.0003_combine_cross/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides15/massbin2_0.0003_combine_cross/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides16/massbin2_0.0003_combine_cross/
+================================================================================
+starting cal kappa 3D
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    f=h5py.File(input1)
+IOError: unable to create file (File accessibilty: Unable to open file)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+IOError: unable to create file (File accessibilty: Unable to open file)
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+IOError: unable to create file (File accessibilty: Unable to open file)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+IOError: unable to create file (File accessibilty: Unable to open file)
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+IOError: unable to create file (File accessibilty: Unable to open file)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[50897,1],0]
+  Exit code:    1
+--------------------------------------------------------------------------
+/project/mtx/output/tides16/massbin2_0.0003_combine_cross/halo_gm1.hdf5
+/project/mtx/output/tides16/massbin2_0.0003_combine_cross/halo_gm2.hdf5
+/project/mtx/output/tides16/massbin2_0.0003_combine_cross/halo_gmx.hdf5
+/project/mtx/output/tides16/massbin2_0.0003_combine_cross/halo_gmy.hdf5
+/project/mtx/output/tides16/massbin2_0.0003_combine_cross/halo_gmz.hdf5
+rm: 无法删除"/project/mtx/output/tides16/massbin2_0.0003_combine_cross/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides16/massbin2_0.0003_combine_cross/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides17/massbin2_0.0003_combine_cross/
+================================================================================
+starting cal kappa 3D
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[51334,1],2]
+  Exit code:    1
+--------------------------------------------------------------------------
+/project/mtx/output/tides17/massbin2_0.0003_combine_cross/halo_gm1.hdf5
+/project/mtx/output/tides17/massbin2_0.0003_combine_cross/halo_gm2.hdf5
+/project/mtx/output/tides17/massbin2_0.0003_combine_cross/halo_gmx.hdf5
+/project/mtx/output/tides17/massbin2_0.0003_combine_cross/halo_gmy.hdf5
+/project/mtx/output/tides17/massbin2_0.0003_combine_cross/halo_gmz.hdf5
+rm: 无法删除"/project/mtx/output/tides17/massbin2_0.0003_combine_cross/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides17/massbin2_0.0003_combine_cross/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides18/massbin2_0.0003_combine_cross/
+================================================================================
+starting cal kappa 3D
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+KeyError: "unable to open object (Symbol table: Can't open object)"
+IOError: unable to create file (File accessibilty: Unable to open file)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+KeyError: "unable to open object (Symbol table: Can't open object)"
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+KeyError: "unable to open object (Symbol table: Can't open object)"
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+KeyError: "unable to open object (Symbol table: Can't open object)"
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+IOError: unable to create file (File accessibilty: Unable to open file)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[51944,1],9]
+  Exit code:    1
+--------------------------------------------------------------------------
+/project/mtx/output/tides18/massbin2_0.0003_combine_cross/halo_gm1.hdf5
+/project/mtx/output/tides18/massbin2_0.0003_combine_cross/halo_gm2.hdf5
+/project/mtx/output/tides18/massbin2_0.0003_combine_cross/halo_gmx.hdf5
+/project/mtx/output/tides18/massbin2_0.0003_combine_cross/halo_gmy.hdf5
+/project/mtx/output/tides18/massbin2_0.0003_combine_cross/halo_gmz.hdf5
+rm: 无法删除"/project/mtx/output/tides18/massbin2_0.0003_combine_cross/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides18/massbin2_0.0003_combine_cross/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides19/massbin2_0.0003_combine_cross/
+================================================================================
+starting cal kappa 3D
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+    f=h5py.File(input1)
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+IOError: unable to create file (File accessibilty: Unable to open file)
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    f=h5py.File(input1)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 14, in <module>
+    f=h5py.File(input1)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 207, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl)
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_EXCL, fapl=fapl, fcpl=fcpl)
+  File "h5f.pyx", line 90, in h5py.h5f.create (h5py/h5f.c:2210)
+IOError: unable to create file (File accessibilty: Unable to open file)
+IOError: unable to create file (File accessibilty: Unable to open file)
+IOError: unable to create file (File accessibilty: Unable to open file)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+KeyError: "unable to open object (Symbol table: Can't open object)"
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+KeyError: "unable to open object (Symbol table: Can't open object)"
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+Traceback (most recent call last):
+  File "sep_get_bin2d.py", line 15, in <module>
+    Pk_dd=f['data'][mpi_index[rank].tolist()]
+  File "/opt/python-2.7.5-mkl/lib/python2.7/site-packages/h5py/_hl/group.py", line 153, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5o.pyx", line 173, in h5py.h5o.open (h5py/h5o.c:3427)
+KeyError: "unable to open object (Symbol table: Can't open object)"
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[52356,1],2]
+  Exit code:    1
+--------------------------------------------------------------------------
+/project/mtx/output/tides19/massbin2_0.0003_combine_cross/halo_gm1.hdf5
+/project/mtx/output/tides19/massbin2_0.0003_combine_cross/halo_gm2.hdf5
+/project/mtx/output/tides19/massbin2_0.0003_combine_cross/halo_gmx.hdf5
+/project/mtx/output/tides19/massbin2_0.0003_combine_cross/halo_gmy.hdf5
+/project/mtx/output/tides19/massbin2_0.0003_combine_cross/halo_gmz.hdf5
+rm: 无法删除"/project/mtx/output/tides19/massbin2_0.0003_combine_cross/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides19/massbin2_0.0003_combine_cross/haloS1.00.bin": 没有那个文件或目录

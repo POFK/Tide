@@ -7,24 +7,21 @@ import numpy as np
 import matplotlib.pyplot as plt
 #============================================================
 PATH='/project/mtx/output/'
+OUTDIR='/home/mtx/github/Tide/src/code_mpi/code_sep3D/result/eps/'
 DIR=['tides10/','tides11/','tides12/','tides13/','tides14/','tides15/','tides16/','tides17/','tides18/','tides19/']
 NAME='CIC_0.0012_3D_NoGau_s1.0_Wiener/'
-#file1='Pk_HH'
-#file2='Pk_DH'
+#file1='Pk_KKnoWf.txt'
+#file2='Pk_DKnoWf.txt'
 #file3='Pk_DD'
-#file1='Pk_KK'
-#file2='Pk_DK'
-#file3='Pk_DD'
-file1='Pk_KKnoWf.txt'
-file2='Pk_DKnoWf.txt'
+file1='Pk_KK'
+file2='Pk_DK'
 file3='Pk_DD'
-
 #============================================================
 noise=1./(4.8*10**-3)
 #============================================================
 k=np.loadtxt(PATH+DIR[0]+NAME+file1)[:,0]
 color='g'
-def plot_error_one(noise=noise,color=color,label='$P_{\delta}$'):
+def plot_error_one(noise=noise,color=color,label='$P_{\delta}$',disP=1,cut=None):
     data_hh=[]
     data_dh=[]
     data_dd=[]
@@ -44,46 +41,70 @@ def plot_error_one(noise=noise,color=color,label='$P_{\delta}$'):
     random_CC=np.array(random_CC)
     CC_std=random_CC.std(axis=0)
     #====================
+    if cut!=None:
+        k_cut=k[:cut]
+        CC_mean=CC_mean[:cut]
+        CC_std=CC_std[:cut]
+    elif cut== None:
+        k_cut=k
     plt.figure('CC')
-    plt.errorbar(k,CC_mean,yerr=CC_std,ecolor=color[0],fmt=None)
-    plt.plot(k,CC_mean,color,label=label,linewidth=1.3)
+    plt.errorbar(k_cut*disP,CC_mean,yerr=CC_std,ecolor=color[0],fmt=None)
+    plt.plot(k_cut*disP,CC_mean,color,label=label,linewidth=1.3)
+    print NAME,':',CC_mean
     return CC_mean.min(),CC_mean.max()
 #===================== plot =================================
-#NAME='CIC_0.0012_3D_NoGau_s1.0_Wiener/'
-#min,max=plot_error_one(noise=noise,color='b.-',label='$r_{h\delta}$_1.2')
-NAME='CIC_0.0024_3D_NoGau_s1.0_Wiener/'
-min,max=plot_error_one(noise=noise,color='g.-',label='$r_{h\delta}$_2.4')
-
-#NAME='CIC_0.0036_3D_NoGau_s1.0_Wiener/'
-#min,max=plot_error_one(noise=noise,color='r.-',label='$r_{h\delta}$_3.6')
 #NAME='CIC_0.0048_3D_NoGau_s1.0_Wiener/'
-#min,max=plot_error_one(noise=noise,color='k.-',label='$r_{h\delta}$_4.8')
+#min,max=plot_error_one(noise=noise,color='rv-',label='$0.0048\ (h/\mathrm{Mpc})^{3}$',disP=1.00)
+#NAME='CIC_0.0036_3D_NoGau_s1.0_Wiener/'
+#min,max=plot_error_one(noise=noise,color='g>-',label='$0.0036\ (h/\mathrm{Mpc})^{3}$',disP=1.02)
+#NAME='CIC_0.0024_3D_NoGau_s1.0_Wiener/'
+#min,max=plot_error_one(noise=noise,color='bs-',label='$b\mathrm{-constant}$',disP=1.00)
+#NAME='CIC_0.0012_3D_NoGau_s1.0_Wiener/'
+#min,max=plot_error_one(noise=noise,color='m^-',label='$0.0012\ (h/\mathrm{Mpc})^{3}$',disP=1.00)
+#NAME='CIC_0.0003_3D_NoGau_s1.0_Wiener/'
+#min,max=plot_error_one(noise=noise,color='k.-',label='$0.0003\ (h/\mathrm{Mpc})^{3}$',disP=1.02,cut=14)
 
-NAME='massbin4_0.0024_combine_bE1/'
-min,max=plot_error_one(noise=noise,color='b.-',label='massbin4_0.0024_combine_bE1')
+#NAME='CIC_0.0024_3D_NoGau_s1.0_Wiener/'
+#min,max=plot_error_one(noise=noise,color='rs-',label='$no\ cut$',disP=1.00)
+#NAME='CIC_0.0024_3D_NoGau_s1.0_Wiener_cut0.1/'
+#min,max=plot_error_one(noise=noise,color='b.--',label='$cut$',disP=1.00)
 
-#NAME='massbin4_0.0024_m1/'
-#min,max=plot_error_one(noise=noise,color='b.-',label='$m1$')
-#NAME='massbin4_0.0024_m2/'
-#min,max=plot_error_one(noise=noise,color='g.-',label='$m2$')
-#NAME='massbin4_0.0024_m3/'
-#min,max=plot_error_one(noise=noise,color='r.-',label='$m3$')
-#NAME='massbin4_0.0024_m4/'
-#min,max=plot_error_one(noise=noise,color='k.-',label='$m4$')
+NAME='massbin2_0.0024_m1/'
+min,max=plot_error_one(noise=noise,color='k:',label='$m1$',disP=1.00)
+NAME='massbin2_0.0024_m2/'
+min,max=plot_error_one(noise=noise,color='k--',label='$m2$',disP=1.00)
+NAME='massbin2_0.0024_combine_cross/'
+min,max=plot_error_one(noise=noise,color='r-.',label='$cro$',disP=1.00)
+NAME='CIC_0.0024_3D_NoGau_s1.0_Wiener/'
+min,max=plot_error_one(noise=noise,color='r-',label='$2.4$',disP=1.00)
+NAME='massbin2_0.0024_combine_diffW/'
+min,max=plot_error_one(noise=noise,color='k-',label='$com$',disP=1.00)
+#NAME='massbin2_0.0003_combine_diffW_test4wienerOnebyone/'
+#min,max=plot_error_one(noise=noise,color='y-',label='$com2$',disP=1.00)
+NAME='random_CIC_0.0024_1_3D_NoGau_s1.0_Wiener/'
+min,max=plot_error_one(noise=noise,color='b-',label='$ran1$',disP=1.00)
+NAME='random_CIC_0.0024_2_3D_NoGau_s1.0_Wiener/'
+min,max=plot_error_one(noise=noise,color='g-',label='$ran2$',disP=1.00)
+
+
 #===================== set ==================================
-plt.title('$r_{\mathrm{h}\delta}$')
-plt.xlabel('$\mathrm{k}\ [h/\mathrm{Mpc}]$',fontsize='large')
-plt.ylabel('$\mathrm{r}$',fontsize='large')
+#plt.title('$r_{\mathrm{h}\delta}$')
+plt.xlabel('$\mathrm{k}\ [h/\mathrm{Mpc}]$',fontsize=20)
+plt.ylabel('$\mathrm{Correlation\ Coefficient}$',fontsize=20)
 plt.xscale('log')
 #plt.yscale('log')
-plt.ylim([0,1.])
-plt.xlim([k.min()*0.9,k.max()*1.1])
-plt.yticks(np.linspace(0,1.0,11))
+plt.ylim([0.0,1.])
+#plt.xlim([k.min()*0.9,k.max()*1.1])
+plt.xlim([k.min()*0.9,0.6])
+#==============set ticks =================
+#plt.title('$r_{\mathrm{h}\delta}$')
+plt.xticks([10**-2,10**-1],[r'$10^{-2}$',r'$10^{-1}$'])
+plt.yticks(np.linspace(0.1,1.0,10),
+['$0.1$','$0.2$','$0.3$','$0.4$','$0.5$','$0.6$','$0.7$','$0.8$','$0.9$','$1.0$'])
+
 plt.grid(axis='y')
-plt.legend()
-#plt.show()
-#plt.savefig('result_useful/CC.eps')
-OUTDIR='/home/mtx/github/Tide/src/code_mpi/code_sep3D/result/eps/'
-#plt.savefig(OUTDIR+'bw_recon_CC_0.0024_4mbin.eps')
-#plt.savefig(OUTDIR+'wnow.eps')
+plt.legend(loc='lower left',ncol=2,frameon=False)#,fontsize=14)
+plt.show()
+#plt.savefig(OUTDIR+'CC_ND_S1.0.eps')
+#plt.savefig(OUTDIR+'compare_wiener_k.eps')
 #============================================================

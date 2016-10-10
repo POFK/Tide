@@ -1,0 +1,1380 @@
+====================================================================================================
+/project/mtx/output/tides10/massbin2_0.0003_m1/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+n bar: 0.000150044560202
+shot noise 6664.68680141
+================================================================================
+smoothing...
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+sep_smooth.py:69: RuntimeWarning: divide by zero encountered in log10
+  logk=np.log10(Kf*k)
+Save data....................
+Loading hdf5
+================================================================================
+starting cal wdengx wdengy wdengz
+/home/mtx/github/Tide/src/TIDES.py:150: RuntimeWarning: invalid value encountered in sqrt
+  return (fk(k)/Pk(k)/Q)**0.5/k
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+================================================================================
+starting cal kappa 3D
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+/project/mtx/output/tides10/massbin2_0.0003_m1/halo_gm1.hdf5
+/project/mtx/output/tides10/massbin2_0.0003_m1/halo_gm2.hdf5
+/project/mtx/output/tides10/massbin2_0.0003_m1/halo_gmx.hdf5
+/project/mtx/output/tides10/massbin2_0.0003_m1/halo_gmy.hdf5
+/project/mtx/output/tides10/massbin2_0.0003_m1/halo_gmz.hdf5
+rm: 无法删除"/project/mtx/output/tides10/massbin2_0.0003_m1/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides10/massbin2_0.0003_m1/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides11/massbin2_0.0003_m1/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+n bar: 0.000150078125027
+shot noise 6663.19625078
+================================================================================
+smoothing...
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+sep_smooth.py:69: RuntimeWarning: divide by zero encountered in log10
+  logk=np.log10(Kf*k)
+Save data....................
+Loading hdf5
+================================================================================
+starting cal wdengx wdengy wdengz
+/home/mtx/github/Tide/src/TIDES.py:150: RuntimeWarning: invalid value encountered in sqrt
+  return (fk(k)/Pk(k)/Q)**0.5/k
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+================================================================================
+starting cal kappa 3D
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+/project/mtx/output/tides11/massbin2_0.0003_m1/halo_gm1.hdf5
+/project/mtx/output/tides11/massbin2_0.0003_m1/halo_gm2.hdf5
+/project/mtx/output/tides11/massbin2_0.0003_m1/halo_gmx.hdf5
+/project/mtx/output/tides11/massbin2_0.0003_m1/halo_gmy.hdf5
+/project/mtx/output/tides11/massbin2_0.0003_m1/halo_gmz.hdf5
+rm: 无法删除"/project/mtx/output/tides11/massbin2_0.0003_m1/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides11/massbin2_0.0003_m1/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides12/massbin2_0.0003_m1/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+n bar: 0.000150065972254
+shot noise 6663.73585552
+================================================================================
+smoothing...
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+sep_smooth.py:69: RuntimeWarning: divide by zero encountered in log10
+  logk=np.log10(Kf*k)
+Save data....................
+Loading hdf5
+================================================================================
+starting cal wdengx wdengy wdengz
+/home/mtx/github/Tide/src/TIDES.py:150: RuntimeWarning: invalid value encountered in sqrt
+  return (fk(k)/Pk(k)/Q)**0.5/k
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+================================================================================
+starting cal kappa 3D
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+/project/mtx/output/tides12/massbin2_0.0003_m1/halo_gm1.hdf5
+/project/mtx/output/tides12/massbin2_0.0003_m1/halo_gm2.hdf5
+/project/mtx/output/tides12/massbin2_0.0003_m1/halo_gmx.hdf5
+/project/mtx/output/tides12/massbin2_0.0003_m1/halo_gmy.hdf5
+/project/mtx/output/tides12/massbin2_0.0003_m1/halo_gmz.hdf5
+rm: 无法删除"/project/mtx/output/tides12/massbin2_0.0003_m1/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides12/massbin2_0.0003_m1/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides13/massbin2_0.0003_m1/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+n bar: 0.000150039930575
+shot noise 6664.89244676
+================================================================================
+smoothing...
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+sep_smooth.py:69: RuntimeWarning: divide by zero encountered in log10
+  logk=np.log10(Kf*k)
+Save data....................
+Loading hdf5
+================================================================================
+starting cal wdengx wdengy wdengz
+/home/mtx/github/Tide/src/TIDES.py:150: RuntimeWarning: invalid value encountered in sqrt
+  return (fk(k)/Pk(k)/Q)**0.5/k
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+================================================================================
+starting cal kappa 3D
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+/project/mtx/output/tides13/massbin2_0.0003_m1/halo_gm1.hdf5
+/project/mtx/output/tides13/massbin2_0.0003_m1/halo_gm2.hdf5
+/project/mtx/output/tides13/massbin2_0.0003_m1/halo_gmx.hdf5
+/project/mtx/output/tides13/massbin2_0.0003_m1/halo_gmy.hdf5
+/project/mtx/output/tides13/massbin2_0.0003_m1/halo_gmz.hdf5
+rm: 无法删除"/project/mtx/output/tides13/massbin2_0.0003_m1/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides13/massbin2_0.0003_m1/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides14/massbin2_0.0003_m1/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+n bar: 0.000150008680577
+shot noise 6666.28088558
+================================================================================
+smoothing...
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+sep_smooth.py:69: RuntimeWarning: divide by zero encountered in log10
+  logk=np.log10(Kf*k)
+Save data....................
+Loading hdf5
+================================================================================
+starting cal wdengx wdengy wdengz
+/home/mtx/github/Tide/src/TIDES.py:150: RuntimeWarning: invalid value encountered in sqrt
+  return (fk(k)/Pk(k)/Q)**0.5/k
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+================================================================================
+starting cal kappa 3D
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+/project/mtx/output/tides14/massbin2_0.0003_m1/halo_gm1.hdf5
+/project/mtx/output/tides14/massbin2_0.0003_m1/halo_gm2.hdf5
+/project/mtx/output/tides14/massbin2_0.0003_m1/halo_gmx.hdf5
+/project/mtx/output/tides14/massbin2_0.0003_m1/halo_gmy.hdf5
+/project/mtx/output/tides14/massbin2_0.0003_m1/halo_gmz.hdf5
+rm: 无法删除"/project/mtx/output/tides14/massbin2_0.0003_m1/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides14/massbin2_0.0003_m1/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides15/massbin2_0.0003_m1/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+n bar: 0.000150049768537
+shot noise 6664.45546535
+================================================================================
+smoothing...
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+sep_smooth.py:69: RuntimeWarning: divide by zero encountered in log10
+  logk=np.log10(Kf*k)
+Save data....................
+Loading hdf5
+================================================================================
+starting cal wdengx wdengy wdengz
+/home/mtx/github/Tide/src/TIDES.py:150: RuntimeWarning: invalid value encountered in sqrt
+  return (fk(k)/Pk(k)/Q)**0.5/k
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+================================================================================
+starting cal kappa 3D
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+/project/mtx/output/tides15/massbin2_0.0003_m1/halo_gm1.hdf5
+/project/mtx/output/tides15/massbin2_0.0003_m1/halo_gm2.hdf5
+/project/mtx/output/tides15/massbin2_0.0003_m1/halo_gmx.hdf5
+/project/mtx/output/tides15/massbin2_0.0003_m1/halo_gmy.hdf5
+/project/mtx/output/tides15/massbin2_0.0003_m1/halo_gmz.hdf5
+rm: 无法删除"/project/mtx/output/tides15/massbin2_0.0003_m1/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides15/massbin2_0.0003_m1/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides16/massbin2_0.0003_m1/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+n bar: 0.000150035879651
+shot noise 6665.07239687
+================================================================================
+smoothing...
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+sep_smooth.py:69: RuntimeWarning: divide by zero encountered in log10
+  logk=np.log10(Kf*k)
+Save data....................
+Loading hdf5
+================================================================================
+starting cal wdengx wdengy wdengz
+/home/mtx/github/Tide/src/TIDES.py:150: RuntimeWarning: invalid value encountered in sqrt
+  return (fk(k)/Pk(k)/Q)**0.5/k
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+================================================================================
+starting cal kappa 3D
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+/project/mtx/output/tides16/massbin2_0.0003_m1/halo_gm1.hdf5
+/project/mtx/output/tides16/massbin2_0.0003_m1/halo_gm2.hdf5
+/project/mtx/output/tides16/massbin2_0.0003_m1/halo_gmx.hdf5
+/project/mtx/output/tides16/massbin2_0.0003_m1/halo_gmy.hdf5
+/project/mtx/output/tides16/massbin2_0.0003_m1/halo_gmz.hdf5
+rm: 无法删除"/project/mtx/output/tides16/massbin2_0.0003_m1/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides16/massbin2_0.0003_m1/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides17/massbin2_0.0003_m1/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+n bar: 0.000150019675951
+shot noise 6665.79229466
+================================================================================
+smoothing...
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+sep_smooth.py:69: RuntimeWarning: divide by zero encountered in log10
+  logk=np.log10(Kf*k)
+Save data....................
+Loading hdf5
+================================================================================
+starting cal wdengx wdengy wdengz
+/home/mtx/github/Tide/src/TIDES.py:150: RuntimeWarning: invalid value encountered in sqrt
+  return (fk(k)/Pk(k)/Q)**0.5/k
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+================================================================================
+starting cal kappa 3D
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+/project/mtx/output/tides17/massbin2_0.0003_m1/halo_gm1.hdf5
+/project/mtx/output/tides17/massbin2_0.0003_m1/halo_gm2.hdf5
+/project/mtx/output/tides17/massbin2_0.0003_m1/halo_gmx.hdf5
+/project/mtx/output/tides17/massbin2_0.0003_m1/halo_gmy.hdf5
+/project/mtx/output/tides17/massbin2_0.0003_m1/halo_gmz.hdf5
+rm: 无法删除"/project/mtx/output/tides17/massbin2_0.0003_m1/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides17/massbin2_0.0003_m1/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides18/massbin2_0.0003_m1/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+n bar: 0.000150048032414
+shot noise 6664.53257606
+================================================================================
+smoothing...
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+sep_smooth.py:69: RuntimeWarning: divide by zero encountered in log10
+  logk=np.log10(Kf*k)
+Save data....................
+Loading hdf5
+================================================================================
+starting cal wdengx wdengy wdengz
+/home/mtx/github/Tide/src/TIDES.py:150: RuntimeWarning: invalid value encountered in sqrt
+  return (fk(k)/Pk(k)/Q)**0.5/k
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+================================================================================
+starting cal kappa 3D
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+/project/mtx/output/tides18/massbin2_0.0003_m1/halo_gm1.hdf5
+/project/mtx/output/tides18/massbin2_0.0003_m1/halo_gm2.hdf5
+/project/mtx/output/tides18/massbin2_0.0003_m1/halo_gmx.hdf5
+/project/mtx/output/tides18/massbin2_0.0003_m1/halo_gmy.hdf5
+/project/mtx/output/tides18/massbin2_0.0003_m1/halo_gmz.hdf5
+rm: 无法删除"/project/mtx/output/tides18/massbin2_0.0003_m1/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides18/massbin2_0.0003_m1/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides19/massbin2_0.0003_m1/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+n bar: 0.000150050925946
+shot noise 6664.40405944
+================================================================================
+smoothing...
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+sep_smooth.py:69: RuntimeWarning: divide by zero encountered in log10
+  logk=np.log10(Kf*k)
+Save data....................
+Loading hdf5
+================================================================================
+starting cal wdengx wdengy wdengz
+/home/mtx/github/Tide/src/TIDES.py:150: RuntimeWarning: invalid value encountered in sqrt
+  return (fk(k)/Pk(k)/Q)**0.5/k
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+================================================================================
+starting cal kappa 3D
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+/project/mtx/output/tides19/massbin2_0.0003_m1/halo_gm1.hdf5
+/project/mtx/output/tides19/massbin2_0.0003_m1/halo_gm2.hdf5
+/project/mtx/output/tides19/massbin2_0.0003_m1/halo_gmx.hdf5
+/project/mtx/output/tides19/massbin2_0.0003_m1/halo_gmy.hdf5
+/project/mtx/output/tides19/massbin2_0.0003_m1/halo_gmz.hdf5
+rm: 无法删除"/project/mtx/output/tides19/massbin2_0.0003_m1/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides19/massbin2_0.0003_m1/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides10/massbin2_0.0003_m2/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+n bar: 0.000150199652801
+shot noise 6657.80500386
+================================================================================
+smoothing...
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+sep_smooth.py:69: RuntimeWarning: divide by zero encountered in log10
+  logk=np.log10(Kf*k)
+Save data....................
+Loading hdf5
+================================================================================
+starting cal wdengx wdengy wdengz
+/home/mtx/github/Tide/src/TIDES.py:150: RuntimeWarning: invalid value encountered in sqrt
+  return (fk(k)/Pk(k)/Q)**0.5/k
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+================================================================================
+starting cal kappa 3D
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+/project/mtx/output/tides10/massbin2_0.0003_m2/halo_gm1.hdf5
+/project/mtx/output/tides10/massbin2_0.0003_m2/halo_gm2.hdf5
+/project/mtx/output/tides10/massbin2_0.0003_m2/halo_gmx.hdf5
+/project/mtx/output/tides10/massbin2_0.0003_m2/halo_gmy.hdf5
+/project/mtx/output/tides10/massbin2_0.0003_m2/halo_gmz.hdf5
+rm: 无法删除"/project/mtx/output/tides10/massbin2_0.0003_m2/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides10/massbin2_0.0003_m2/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides11/massbin2_0.0003_m2/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+n bar: 0.00014995659725
+shot noise 6668.59623611
+================================================================================
+smoothing...
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+sep_smooth.py:69: RuntimeWarning: divide by zero encountered in log10
+  logk=np.log10(Kf*k)
+Save data....................
+Loading hdf5
+================================================================================
+starting cal wdengx wdengy wdengz
+/home/mtx/github/Tide/src/TIDES.py:150: RuntimeWarning: invalid value encountered in sqrt
+  return (fk(k)/Pk(k)/Q)**0.5/k
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+================================================================================
+starting cal kappa 3D
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+/project/mtx/output/tides11/massbin2_0.0003_m2/halo_gm1.hdf5
+/project/mtx/output/tides11/massbin2_0.0003_m2/halo_gm2.hdf5
+/project/mtx/output/tides11/massbin2_0.0003_m2/halo_gmx.hdf5
+/project/mtx/output/tides11/massbin2_0.0003_m2/halo_gmy.hdf5
+/project/mtx/output/tides11/massbin2_0.0003_m2/halo_gmz.hdf5
+rm: 无法删除"/project/mtx/output/tides11/massbin2_0.0003_m2/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides11/massbin2_0.0003_m2/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides12/massbin2_0.0003_m2/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+n bar: 0.000149960648165
+shot noise 6668.41609606
+================================================================================
+smoothing...
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+sep_smooth.py:69: RuntimeWarning: divide by zero encountered in log10
+  logk=np.log10(Kf*k)
+Save data....................
+Loading hdf5
+================================================================================
+starting cal wdengx wdengy wdengz
+/home/mtx/github/Tide/src/TIDES.py:150: RuntimeWarning: invalid value encountered in sqrt
+  return (fk(k)/Pk(k)/Q)**0.5/k
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+================================================================================
+starting cal kappa 3D
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+/project/mtx/output/tides12/massbin2_0.0003_m2/halo_gm1.hdf5
+/project/mtx/output/tides12/massbin2_0.0003_m2/halo_gm2.hdf5
+/project/mtx/output/tides12/massbin2_0.0003_m2/halo_gmx.hdf5
+/project/mtx/output/tides12/massbin2_0.0003_m2/halo_gmy.hdf5
+/project/mtx/output/tides12/massbin2_0.0003_m2/halo_gmz.hdf5
+rm: 无法删除"/project/mtx/output/tides12/massbin2_0.0003_m2/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides12/massbin2_0.0003_m2/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides13/massbin2_0.0003_m2/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+n bar: 0.000150182291685
+shot noise 6658.57464806
+================================================================================
+smoothing...
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+sep_smooth.py:69: RuntimeWarning: divide by zero encountered in log10
+  logk=np.log10(Kf*k)
+Save data....................
+Loading hdf5
+================================================================================
+starting cal wdengx wdengy wdengz
+/home/mtx/github/Tide/src/TIDES.py:150: RuntimeWarning: invalid value encountered in sqrt
+  return (fk(k)/Pk(k)/Q)**0.5/k
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+================================================================================
+starting cal kappa 3D
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+/project/mtx/output/tides13/massbin2_0.0003_m2/halo_gm1.hdf5
+/project/mtx/output/tides13/massbin2_0.0003_m2/halo_gm2.hdf5
+/project/mtx/output/tides13/massbin2_0.0003_m2/halo_gmx.hdf5
+/project/mtx/output/tides13/massbin2_0.0003_m2/halo_gmy.hdf5
+/project/mtx/output/tides13/massbin2_0.0003_m2/halo_gmz.hdf5
+rm: 无法删除"/project/mtx/output/tides13/massbin2_0.0003_m2/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides13/massbin2_0.0003_m2/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides14/massbin2_0.0003_m2/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+n bar: 0.00015016666669
+shot noise 6659.26747955
+================================================================================
+smoothing...
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+sep_smooth.py:69: RuntimeWarning: divide by zero encountered in log10
+  logk=np.log10(Kf*k)
+Save data....................
+Loading hdf5
+================================================================================
+starting cal wdengx wdengy wdengz
+/home/mtx/github/Tide/src/TIDES.py:150: RuntimeWarning: invalid value encountered in sqrt
+  return (fk(k)/Pk(k)/Q)**0.5/k
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+================================================================================
+starting cal kappa 3D
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+/project/mtx/output/tides14/massbin2_0.0003_m2/halo_gm1.hdf5
+/project/mtx/output/tides14/massbin2_0.0003_m2/halo_gm2.hdf5
+/project/mtx/output/tides14/massbin2_0.0003_m2/halo_gmx.hdf5
+/project/mtx/output/tides14/massbin2_0.0003_m2/halo_gmy.hdf5
+/project/mtx/output/tides14/massbin2_0.0003_m2/halo_gmz.hdf5
+rm: 无法删除"/project/mtx/output/tides14/massbin2_0.0003_m2/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides14/massbin2_0.0003_m2/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides15/massbin2_0.0003_m2/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+n bar: 0.000149971064837
+shot noise 6667.95292202
+================================================================================
+smoothing...
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+sep_smooth.py:69: RuntimeWarning: divide by zero encountered in log10
+  logk=np.log10(Kf*k)
+Save data....................
+Loading hdf5
+================================================================================
+starting cal wdengx wdengy wdengz
+/home/mtx/github/Tide/src/TIDES.py:150: RuntimeWarning: invalid value encountered in sqrt
+  return (fk(k)/Pk(k)/Q)**0.5/k
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+================================================================================
+starting cal kappa 3D
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+/project/mtx/output/tides15/massbin2_0.0003_m2/halo_gm1.hdf5
+/project/mtx/output/tides15/massbin2_0.0003_m2/halo_gm2.hdf5
+/project/mtx/output/tides15/massbin2_0.0003_m2/halo_gmx.hdf5
+/project/mtx/output/tides15/massbin2_0.0003_m2/halo_gmy.hdf5
+/project/mtx/output/tides15/massbin2_0.0003_m2/halo_gmz.hdf5
+rm: 无法删除"/project/mtx/output/tides15/massbin2_0.0003_m2/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides15/massbin2_0.0003_m2/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides16/massbin2_0.0003_m2/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+n bar: 0.000150116319461
+shot noise 6661.50091868
+================================================================================
+smoothing...
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+sep_smooth.py:69: RuntimeWarning: divide by zero encountered in log10
+  logk=np.log10(Kf*k)
+Save data....................
+Loading hdf5
+================================================================================
+starting cal wdengx wdengy wdengz
+/home/mtx/github/Tide/src/TIDES.py:150: RuntimeWarning: invalid value encountered in sqrt
+  return (fk(k)/Pk(k)/Q)**0.5/k
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+================================================================================
+starting cal kappa 3D
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+/project/mtx/output/tides16/massbin2_0.0003_m2/halo_gm1.hdf5
+/project/mtx/output/tides16/massbin2_0.0003_m2/halo_gm2.hdf5
+/project/mtx/output/tides16/massbin2_0.0003_m2/halo_gmx.hdf5
+/project/mtx/output/tides16/massbin2_0.0003_m2/halo_gmy.hdf5
+/project/mtx/output/tides16/massbin2_0.0003_m2/halo_gmz.hdf5
+rm: 无法删除"/project/mtx/output/tides16/massbin2_0.0003_m2/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides16/massbin2_0.0003_m2/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides17/massbin2_0.0003_m2/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+n bar: 0.000150102430574
+shot noise 6662.11730334
+================================================================================
+smoothing...
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+sep_smooth.py:69: RuntimeWarning: divide by zero encountered in log10
+  logk=np.log10(Kf*k)
+Save data....................
+Loading hdf5
+================================================================================
+starting cal wdengx wdengy wdengz
+/home/mtx/github/Tide/src/TIDES.py:150: RuntimeWarning: invalid value encountered in sqrt
+  return (fk(k)/Pk(k)/Q)**0.5/k
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+================================================================================
+starting cal kappa 3D
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+/project/mtx/output/tides17/massbin2_0.0003_m2/halo_gm1.hdf5
+/project/mtx/output/tides17/massbin2_0.0003_m2/halo_gm2.hdf5
+/project/mtx/output/tides17/massbin2_0.0003_m2/halo_gmx.hdf5
+/project/mtx/output/tides17/massbin2_0.0003_m2/halo_gmy.hdf5
+/project/mtx/output/tides17/massbin2_0.0003_m2/halo_gmz.hdf5
+rm: 无法删除"/project/mtx/output/tides17/massbin2_0.0003_m2/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides17/massbin2_0.0003_m2/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides18/massbin2_0.0003_m2/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+n bar: 0.000150176504653
+shot noise 6658.83123536
+================================================================================
+smoothing...
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+sep_smooth.py:69: RuntimeWarning: divide by zero encountered in log10
+  logk=np.log10(Kf*k)
+Save data....................
+Loading hdf5
+================================================================================
+starting cal wdengx wdengy wdengz
+/home/mtx/github/Tide/src/TIDES.py:150: RuntimeWarning: invalid value encountered in sqrt
+  return (fk(k)/Pk(k)/Q)**0.5/k
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+================================================================================
+starting cal kappa 3D
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+/project/mtx/output/tides18/massbin2_0.0003_m2/halo_gm1.hdf5
+/project/mtx/output/tides18/massbin2_0.0003_m2/halo_gm2.hdf5
+/project/mtx/output/tides18/massbin2_0.0003_m2/halo_gmx.hdf5
+/project/mtx/output/tides18/massbin2_0.0003_m2/halo_gmy.hdf5
+/project/mtx/output/tides18/massbin2_0.0003_m2/halo_gmz.hdf5
+rm: 无法删除"/project/mtx/output/tides18/massbin2_0.0003_m2/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides18/massbin2_0.0003_m2/haloS1.00.bin": 没有那个文件或目录
+====================================================================================================
+/project/mtx/output/tides19/massbin2_0.0003_m2/
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+n bar: 0.000150216435203
+shot noise 6657.06118408
+================================================================================
+smoothing...
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+wiener with Pd, where bias is k-independent, here we set bias=1
+sep_smooth.py:69: RuntimeWarning: divide by zero encountered in log10
+  logk=np.log10(Kf*k)
+Save data....................
+Loading hdf5
+================================================================================
+starting cal wdengx wdengy wdengz
+/home/mtx/github/Tide/src/TIDES.py:150: RuntimeWarning: invalid value encountered in sqrt
+  return (fk(k)/Pk(k)/Q)**0.5/k
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+Save data....................
+================================================================================
+starting cal kappa 3D
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+Loading hdf5
+Loading hdf5
+Save data....................
+/project/mtx/output/tides19/massbin2_0.0003_m2/halo_gm1.hdf5
+/project/mtx/output/tides19/massbin2_0.0003_m2/halo_gm2.hdf5
+/project/mtx/output/tides19/massbin2_0.0003_m2/halo_gmx.hdf5
+/project/mtx/output/tides19/massbin2_0.0003_m2/halo_gmy.hdf5
+/project/mtx/output/tides19/massbin2_0.0003_m2/halo_gmz.hdf5
+rm: 无法删除"/project/mtx/output/tides19/massbin2_0.0003_m2/haloGau.bin": 没有那个文件或目录
+rm: 无法删除"/project/mtx/output/tides19/massbin2_0.0003_m2/haloS1.00.bin": 没有那个文件或目录
