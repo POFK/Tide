@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2015.5.9)  21 SEP 2016 14:17
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2015.5.9)  14 OCT 2016 16:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -200,214 +200,402 @@ File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen115
 )
-(./apstemplate.aux
+(./aas_macros.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-LaTeX Warning: Label `equ:bias' multiply defined.
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
 
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is not detected.
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen116
+\Hy@linkcounter=\count105
+\Hy@pagecounter=\count106
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count107
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count108
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen117
+\Fld@menulength=\count109
+\Field@Width=\dimen118
+\Fld@charsize=\dimen119
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count110
+\c@Item=\count111
+\c@Hfootnote=\count112
+)
+
+Package hyperref Message: Driver (default): hdvips.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hdvips.def
+File: hdvips.def 2012/11/06 v6.83m Hyperref driver for dvips
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pdfmark.def
+File: pdfmark.def 2012/11/06 v6.83m Hyperref definitions for pdfmark specials
+\pdf@docset=\toks23
+\pdf@box=\box36
+\pdf@toks=\toks24
+\pdf@defaulttoks=\toks25
+\HyField@AnnotCount=\count113
+\Fld@listcount=\count114
+\c@bookmark@seq@number=\count115
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip50
+))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks26
+\verbatim@line=\toks27
+\verbatim@in@stream=\read1
+) (./apstemplate.aux)
 \openout1 = `apstemplate.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-Class revtex4 Info: Patching array package. on input line 61.
-Class revtex4 Info: cite was not loaded (OK!) on input line 61.
-Class revtex4 Info: multicol was not loaded (OK!) on input line 61.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+Class revtex4 Info: Patching array package. on input line 60.
+Class revtex4 Info: cite was not loaded (OK!) on input line 60.
+Class revtex4 Info: multicol was not loaded (OK!) on input line 60.
+\AtBeginShipoutBox=\box37
+
+
+Package hyperref Warning: Height of page (\paperheight) is invalid (0.0pt),
+(hyperref)                using 11in.
+
+Package hyperref Info: Link coloring OFF on input line 60.
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count116
+)
+LaTeX Info: Redefining \ref on input line 60.
+LaTeX Info: Redefining \pageref on input line 60.
+LaTeX Info: Redefining \nameref on input line 60.
+
+(./apstemplate.out) (./apstemplate.out)
+\@outlinefile=\write3
+\openout3 = `apstemplate.out'.
+
  (./split/author.tex)
-LaTeX Font Info:    Try loading font information for U+msa on input line 109.
+LaTeX Font Info:    Try loading font information for U+msa on input line 108.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 109.
+LaTeX Font Info:    Try loading font information for U+msb on input line 108.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 (./split/introduction.tex
-Underfull \hbox (badness 1824) in paragraph at lines 1--18
-\OT1/cmr/m/n/10 ob-ser-va-tional prob-lems make it dif-fi-cult to ex-tract
- []
+
+Package natbib Warning: Citation `tides3d:Hu' on page 1 undefined on input line
+ 38.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1--18
-
- []
-
-
-Underfull \hbox (badness 2772) in paragraph at lines 19--32
-\OT1/cmr/m/n/10 de-vel-oped a three-dimensional (3D) method which
- []
+Package natbib Warning: Citation `tides3d:Hu' on page 1 undefined on input line
+ 50.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--32
+Underfull \hbox (badness 10000) in paragraph at lines 62--75
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--46
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--55
-
- []
+LaTeX Warning: Reference `sec:cross_term' on page 1 undefined on input line 138
+.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--63
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--72
-
- []
-
-[1]
-Underfull \hbox (badness 10000) in paragraph at lines 73--80
+Underfull \hbox (badness 10000) in paragraph at lines 133--140
 
  []
 
 ) (./split/review.tex
-Underfull \hbox (badness 1675) in paragraph at lines 6--10
-[]\OT1/cmr/m/n/10 The ba-sic idea of cos-mic tidal re-con-struc-tion is
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 6--10
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 22--31
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--52
-\OT1/cmr/m/n/10 Here, $\OML/cmm/m/it/10 D\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^\\
-OT1/cmr/m/n/10 )$ is the lin-ear growth func-tion,
- []
-
-
-Underfull \hbox (badness 1655) in paragraph at lines 50--52
-\OML/cmm/m/it/10 T\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^\\OT1/cmr/m/n/10 ) = \OML
-/cmm/m/it/10 D\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^\\OT1/cmr/m/n/10 )\OML/cmm/m/
-it/10 =a\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^\\OT1/cmr/m/n/10 )$ is the lin-ear 
-trans-fer func-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--52
+[1]
+Underfull \hbox (badness 10000) in paragraph at lines 54--56
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--57
+Underfull \hbox (badness 10000) in paragraph at lines 75--82
+
+ []
+
+) (./split/performance.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--15
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 18--27
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--74
+Underfull \hbox (badness 10000) in paragraph at lines 28--34
+\OT1/cmr/m/n/10 density ($0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0048 \OML/cmm/m/it
+/10 h[][][]$\OT1/cmr/m/n/10 , $0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0024 \OML/cmm
+/m/it/10 h[][][]$ \OT1/cmr/m/n/10 and
+ []
+
+
+Underfull \hbox (badness 1661) in paragraph at lines 28--34
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0012 \OML/cmm/m/it/10 h[][][
+]$\OT1/cmr/m/n/10 ) ha-los fields to show the prop-er-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--34
+
+ []
+
+File: ../../eps/Sim_halo_property_bias.eps Graphic file (type eps)
+<../../eps/Sim_halo_property_bias.eps>
+File: ../../eps/Sim_halo_property_PS.eps Graphic file (type eps)
+ <../../eps/Sim_halo_property_PS.eps>
+Underfull \hbox (badness 1019) in paragraph at lines 73--73
+[]\OT1/cmr/m/n/9 FIG. 2: [][][]  Top panel: the auto-power spec-trum of halo
+ []
+
+File: ../../eps/Sim_halo_property_Pn.eps Graphic file (type eps)
+<../../eps/Sim_halo_property_Pn.eps>
+Underfull \hbox (badness 1019) in paragraph at lines 95--95
+[]\OT1/cmr/m/n/9 FIG. 3: [][][]  Top panel: the auto-power spec-trum of halo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--116
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--124
-
- []
-
-[2]) (./split/performance.tex
-Underfull \hbox (badness 10000) in paragraph at lines 1--7
-
+Underfull \hbox (badness 1430) in paragraph at lines 117--148
+\OT1/cmr/m/n/10 shot-noise sub-tracted auto-correlation power spec-tra
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--12
-
+Underfull \hbox (badness 2762) in paragraph at lines 117--148
+\OT1/cmr/m/n/10 auto-correlation power spec-tra of dif-fer-ent num-ber
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15--24
+Underfull \hbox (badness 10000) in paragraph at lines 117--148
 
- []
-
-File: ../../eps/Sim_PS_HH_errorbar.eps Graphic file (type eps)
-<../../eps/Sim_PS_HH_errorbar.eps>
-File: ../../eps/Sim_PS_DH_errorbar.eps Graphic file (type eps)
- <../../eps/Sim_PS_DH_errorbar.eps>
-Underfull \hbox (badness 1019) in paragraph at lines 47--47
-[]\OT1/cmr/m/n/9 FIG. 1: Top panel: the auto-power spec-trum of halo
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 112--134
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 135--142
-
- []
+LaTeX Warning: A float is stuck (cannot be placed) on input line 148.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--145
-
- []
-
-File: ../../eps/recon_PS_errorbar.eps Graphic file (type eps)
-<../../eps/recon_PS_errorbar.eps>
-File: ../../eps/CC_ND_S1.0.eps Graphic file (type eps)
- <../../eps/CC_ND_S1.0.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 192--196
-
- []
+LaTeX Warning: A float is stuck (cannot be placed) on input line 148.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--214
+Class revtex4 Warning: Deferred float stuck during \clearpage processing.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--181
 
  []
 
 [4]
-File: ../../eps/recon_bias_errorbar.eps Graphic file (type eps)
- <../../eps/recon_bias_errorbar.eps>
-File: ../../eps/recon_Pn_b2-1D.eps Graphic file (type eps)
- <../../eps/recon_Pn_b2-1D.eps>
-File: ../../eps/recon_CC_2D.eps Graphic file (type eps)
+Underfull \hbox (badness 1895) in paragraph at lines 254--296
+\OT1/cmr/m/n/10 where $\OML/cmm/m/it/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 k\
+OT1/cmr/m/n/10 )$ is the with-out shot-noise sub-tracted
+ []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--296
+
+ []
+
+) (./split/result.tex
+Underfull \hbox (badness 10000) in paragraph at lines 297--1
+
+ []
+
+
+Underfull \hbox (badness 1067) in paragraph at lines 2--5
+\OT1/cmr/m/n/10 co-ef-fi-cient, the bias and the noise of re-con-structed
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--5
+
+ []
+
+File: ../../eps/recon_PS_err.eps Graphic file (type eps)
+<../../eps/recon_PS_err.eps>
+File: ../../eps/recon_CC_err.eps Graphic file (type eps)
+ <../../eps/recon_CC_err.eps> [5]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 99.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 99.
+
+
+Class revtex4 Warning: Deferred float stuck during \clearpage processing.
+
+File: ../../eps/recon_cut0.1_PS_err.eps Graphic file (type eps)
+<../../eps/recon_cut0.1_PS_err.eps>
+File: ../../eps/recon_cut0.1_CC_err.eps Graphic file (type eps)
+ <../../eps/recon_cut0.1_CC_err.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 111--138
+
+ []
+
+File: ../../eps/recon_bias_err.eps Graphic file (type eps)
+<../../eps/recon_bias_err.eps>
+File: ../../eps/recon_Pn_err.eps Graphic file (type eps)
+ <../../eps/recon_Pn_err.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 174--177
+
+ []
+
+[6]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 185.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 185.
+
+
+Class revtex4 Warning: Deferred float stuck during \clearpage processing.
+
+File: ../../eps/recon_CC_2D.eps Graphic file (type eps)
 <../../eps/recon_CC_2D.eps>
 File: ../../eps/recon_bias_2D.eps Graphic file (type eps)
  <../../eps/recon_bias_2D.eps>
-File: ../../eps/recon_noise_b2Pd_2D.eps Graphic file (type eps)
+File: ../../eps/recon_noise_2D.eps Graphic file (type eps)
 
-<../../eps/recon_noise_b2Pd_2D.eps>) (./split/last.tex [5]
-File: ../../eps/high_order.eps Graphic file (type eps)
+<../../eps/recon_noise_2D.eps>) (./apstemplate.bbl [7]
 
-<../../eps/high_order.eps>
-File: ../../eps/high_order_24.eps Graphic file (type eps)
- <../../eps/high_order_24.eps>) (./apstemplate.bbl)
-[6] (./apstemplate.aux)
+LaTeX Warning: A float is stuck (cannot be placed) on input line 109.
 
-LaTeX Warning: There were multiply-defined labels.
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 109.
+
+
+Class revtex4 Warning: Deferred float stuck during \clearpage processing.
+
+)
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 219.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 219.
+[8] (./apstemplate.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 219.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 219.
+Package rerunfilecheck Info: File `apstemplate.out' has not changed.
+(rerunfilecheck)             Checksum: 2165206EE3E6FD1092699DEC3917DA8A;589.
+
+
+LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 3426 strings out of 494725
- 42566 string characters out of 6174724
- 117143 words of memory out of 5000000
- 6712 multiletter control sequences out of 15000+600000
+ 7488 strings out of 494725
+ 105459 string characters out of 6174724
+ 215768 words of memory out of 5000000
+ 10719 multiletter control sequences out of 15000+600000
  14642 words of font info for 54 fonts, out of 8000000 for 9000
- 102 hyphenation exceptions out of 8191
- 29i,17n,26p,892b,320s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 105 hyphenation exceptions out of 8191
+ 32i,17n,28p,884b,494s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on apstemplate.dvi (6 pages, 36024 bytes).
+Output written on apstemplate.dvi (8 pages, 82168 bytes).

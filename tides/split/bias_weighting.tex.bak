@@ -48,6 +48,8 @@ line  indicates the origin halo fields with number density
 \begin{center}
 \includegraphics[width=0.48\textwidth]{../../eps/bwSimNoisePn0024M4bin.eps}
 \includegraphics[width=0.48\textwidth]{../../eps/bwSimNoisePn0003M10bin.eps}
+\includegraphics[width=0.48\textwidth]{../../eps/mb_rand_CC_err.eps}
+\includegraphics[width=0.48\textwidth]{../../eps/mb_SV_CC_err.eps}
 \end{center}
 \vspace{-0.7cm}
 \caption{The noise of halos mass bins and original halos fields.

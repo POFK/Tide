@@ -1,0 +1,516 @@
+Query Results from the ADS Database
+
+
+Retrieved 30 abstracts, starting with number 1.  Total number selected: 30.
+
+@ARTICLE{tides3d:Hu,
+   author = {{Hu}, Wen-Kai. and {Zhu}, Hong-Ming. and {Yu}, Yu. and {...}.
+	},
+    title = "{Linear response to long wavelength fluctuations using curvature simulations}",
+  journal = {\jcap},
+archivePrefix = "arXiv",
+   eprint = {1511.01465},
+     year = 2016,
+    month = sep,
+   volume = 9,
+      eid = {007},
+    pages = {007},
+      doi = {10.1088/1475-7516/2016/09/007},
+   adsurl = {http://adsabs.harvard.edu/abs/2016JCAP...09..007B},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2016JCAP...09..007B,
+   author = {{Baldauf}, T. and {Seljak}, U. and {Senatore}, L. and {Zaldarriaga}, M.
+	},
+    title = "{Linear response to long wavelength fluctuations using curvature simulations}",
+  journal = {\jcap},
+archivePrefix = "arXiv",
+   eprint = {1511.01465},
+     year = 2016,
+    month = sep,
+   volume = 9,
+      eid = {007},
+    pages = {007},
+      doi = {10.1088/1475-7516/2016/09/007},
+   adsurl = {http://adsabs.harvard.edu/abs/2016JCAP...09..007B},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2016arXiv160901701C,
+   author = {{Chiang}, C.-T. and {Li}, Y. and {Hu}, W. and {LoVerde}, M.},
+    title = "{Quintessential Scale Dependence from Separate Universe Simulations}",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {1609.01701},
+ keywords = {Astrophysics - Cosmology and Nongalactic Astrophysics},
+     year = 2016,
+    month = sep,
+   adsurl = {http://adsabs.harvard.edu/abs/2016arXiv160901701C},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2016ApJ...825...49C,
+   author = {{Chen}, S. and {Wang}, H. and {Mo}, H.~J. and {Shi}, J.},
+    title = "{Alignments of Dark Matter Halos with Large-scale Tidal Fields: Mass and Redshift Dependence}",
+  journal = {\apj},
+archivePrefix = "arXiv",
+   eprint = {1603.04152},
+ keywords = {dark matter, galaxies: halos, large-scale structure of universe, methods: statistical},
+     year = 2016,
+    month = jul,
+   volume = 825,
+      eid = {49},
+    pages = {49},
+      doi = {10.3847/0004-637X/825/1/49},
+   adsurl = {http://adsabs.harvard.edu/abs/2016ApJ...825...49C},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2016PhRvD..93j3504Z,
+   author = {{Zhu}, H.-M. and {Pen}, U.-L. and {Yu}, Y. and {Er}, X. and 
+	{Chen}, X.},
+    title = "{Cosmic tidal reconstruction}",
+  journal = {\prd},
+archivePrefix = "arXiv",
+   eprint = {1511.04680},
+     year = 2016,
+    month = may,
+   volume = 93,
+   number = 10,
+      eid = {103504},
+    pages = {103504},
+      doi = {10.1103/PhysRevD.93.103504},
+   adsurl = {http://adsabs.harvard.edu/abs/2016PhRvD..93j3504Z},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2016MNRAS.458.1510S,
+   author = {{Sunayama}, T. and {Hearin}, A.~P. and {Padmanabhan}, N. and 
+	{Leauthaud}, A.},
+    title = "{The scale-dependence of halo assembly bias}",
+  journal = {\mnras},
+archivePrefix = "arXiv",
+   eprint = {1509.06417},
+ keywords = {galaxies: haloes, cosmology: theory, dark matter, large-scale structure of Universe},
+     year = 2016,
+    month = may,
+   volume = 458,
+    pages = {1510-1516},
+      doi = {10.1093/mnras/stw332},
+   adsurl = {http://adsabs.harvard.edu/abs/2016MNRAS.458.1510S},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2016PhRvD..93f3507L,
+   author = {{Li}, Y. and {Hu}, W. and {Takada}, M.},
+    title = "{Separate universe consistency relation and calibration of halo bias}",
+  journal = {\prd},
+archivePrefix = "arXiv",
+   eprint = {1511.01454},
+     year = 2016,
+    month = mar,
+   volume = 93,
+   number = 6,
+      eid = {063507},
+    pages = {063507},
+      doi = {10.1103/PhysRevD.93.063507},
+   adsurl = {http://adsabs.harvard.edu/abs/2016PhRvD..93f3507L},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2016JCAP...03..016C,
+   author = {{Cieplak}, A.~M. and {Slosar}, A.},
+    title = "{Towards physics responsible for large-scale Lyman-{$\alpha$} forest bias parameters}",
+  journal = {\jcap},
+archivePrefix = "arXiv",
+   eprint = {1509.07875},
+     year = 2016,
+    month = mar,
+   volume = 3,
+      eid = {016},
+    pages = {016},
+      doi = {10.1088/1475-7516/2016/03/016},
+   adsurl = {http://adsabs.harvard.edu/abs/2016JCAP...03..016C},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2016JCAP...02..018L,
+   author = {{Lazeyras}, T. and {Wagner}, C. and {Baldauf}, T. and {Schmidt}, F.
+	},
+    title = "{Precision measurement of the local bias of dark matter halos}",
+  journal = {\jcap},
+archivePrefix = "arXiv",
+   eprint = {1511.01096},
+     year = 2016,
+    month = feb,
+   volume = 2,
+      eid = {018},
+    pages = {018},
+      doi = {10.1088/1475-7516/2016/02/018},
+   adsurl = {http://adsabs.harvard.edu/abs/2016JCAP...02..018L},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2015JCAP...09..028C,
+   author = {{Chiang}, C.-T. and {Wagner}, C. and {S{\'a}nchez}, A.~G. and 
+	{Schmidt}, F. and {Komatsu}, E.},
+    title = "{Position-dependent correlation function from the SDSS-III Baryon Oscillation Spectroscopic Survey Data Release 10 CMASS sample}",
+  journal = {\jcap},
+archivePrefix = "arXiv",
+   eprint = {1504.03322},
+     year = 2015,
+    month = sep,
+   volume = 9,
+      eid = {028},
+    pages = {028},
+      doi = {10.1088/1475-7516/2015/09/028},
+   adsurl = {http://adsabs.harvard.edu/abs/2015JCAP...09..028C},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2015JCAP...08..042W,
+   author = {{Wagner}, C. and {Schmidt}, F. and {Chiang}, C.-T. and {Komatsu}, E.
+	},
+    title = "{The angle-averaged squeezed limit of nonlinear matter N-point functions}",
+  journal = {\jcap},
+archivePrefix = "arXiv",
+   eprint = {1503.03487},
+     year = 2015,
+    month = aug,
+   volume = 8,
+      eid = {042},
+    pages = {042},
+      doi = {10.1088/1475-7516/2015/08/042},
+   adsurl = {http://adsabs.harvard.edu/abs/2015JCAP...08..042W},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2015ApJ...807...37S,
+   author = {{Shi}, J. and {Wang}, H. and {Mo}, H.~J.},
+    title = "{Flow Patterns around Dark Matter Halos: The Link between Halo Dynamical Properties and Large-scale Tidal Field}",
+  journal = {\apj},
+archivePrefix = "arXiv",
+   eprint = {1501.07764},
+ keywords = {dark matter, galaxies: halos, large-scale structure of universe, methods: statistical},
+     year = 2015,
+    month = jul,
+   volume = 807,
+      eid = {37},
+    pages = {37},
+      doi = {10.1088/0004-637X/807/1/37},
+   adsurl = {http://adsabs.harvard.edu/abs/2015ApJ...807...37S},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2014PhRvD..90j3530L,
+   author = {{Li}, Y. and {Hu}, W. and {Takada}, M.},
+    title = "{Super-sample signal}",
+  journal = {\prd},
+archivePrefix = "arXiv",
+   eprint = {1408.1081},
+ keywords = {Cosmology, Dark energy, Observation and data reduction techniques, computer modeling and simulation, Superclusters, large-scale structure of the Universe},
+     year = 2014,
+    month = nov,
+   volume = 90,
+   number = 10,
+      eid = {103530},
+    pages = {103530},
+      doi = {10.1103/PhysRevD.90.103530},
+   adsurl = {http://adsabs.harvard.edu/abs/2014PhRvD..90j3530L},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2014JCAP...05..048C,
+   author = {{Chiang}, C.-T. and {Wagner}, C. and {Schmidt}, F. and {Komatsu}, E.
+	},
+    title = "{Position-dependent power spectrum of the large-scale structure: a novel method to measure the squeezed-limit bispectrum}",
+  journal = {\jcap},
+archivePrefix = "arXiv",
+   eprint = {1403.3411},
+     year = 2014,
+    month = may,
+   volume = 5,
+      eid = {048},
+    pages = {048},
+      doi = {10.1088/1475-7516/2014/05/048},
+   adsurl = {http://adsabs.harvard.edu/abs/2014JCAP...05..048C},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2013MNRAS.436..540H,
+   author = {{Harnois-D{\'e}raps}, J. and {Pen}, U.-L. and {Iliev}, I.~T. and 
+	{Merz}, H. and {Emberson}, J.~D. and {Desjacques}, V.},
+    title = "{High-performance P$^{3}$M N-body code: CUBEP$^{3}$M}",
+  journal = {\mnras},
+archivePrefix = "arXiv",
+   eprint = {1208.5098},
+ keywords = {Dark matter, large-scale structure of Universe},
+     year = 2013,
+    month = nov,
+   volume = 436,
+    pages = {540-559},
+      doi = {10.1093/mnras/stt1591},
+   adsurl = {http://adsabs.harvard.edu/abs/2013MNRAS.436..540H},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2013PhRvD..87l3504T,
+   author = {{Takada}, M. and {Hu}, W.},
+    title = "{Power spectrum super-sample covariance}",
+  journal = {\prd},
+archivePrefix = "arXiv",
+   eprint = {1302.6994},
+ primaryClass = "astro-ph.CO",
+ keywords = {Cosmology, Dark energy, Superclusters, large-scale structure of the Universe},
+     year = 2013,
+    month = jun,
+   volume = 87,
+   number = 12,
+      eid = {123504},
+    pages = {123504},
+      doi = {10.1103/PhysRevD.87.123504},
+   adsurl = {http://adsabs.harvard.edu/abs/2013PhRvD..87l3504T},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2012PhRvL.108y1301J,
+   author = {{Jeong}, D. and {Kamionkowski}, M.},
+    title = "{Clustering Fossils from the Early Universe}",
+  journal = {Physical Review Letters},
+archivePrefix = "arXiv",
+   eprint = {1203.0302},
+ keywords = {Observational cosmology, Astronomical catalogs atlases sky surveys databases retrieval systems archives etc., Galaxy clusters},
+     year = 2012,
+    month = jun,
+   volume = 108,
+   number = 25,
+      eid = {251301},
+    pages = {251301},
+      doi = {10.1103/PhysRevLett.108.251301},
+   adsurl = {http://adsabs.harvard.edu/abs/2012PhRvL.108y1301J},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2012JCAP...03..004S,
+   author = {{Seljak}, U.},
+    title = "{Bias, redshift space distortions and primordial nongaussianity of nonlinear transformations: application to Ly-{$\alpha$} forest}",
+  journal = {\jcap},
+archivePrefix = "arXiv",
+   eprint = {1201.0594},
+     year = 2012,
+    month = mar,
+   volume = 3,
+      eid = {004},
+    pages = {004},
+      doi = {10.1088/1475-7516/2012/03/004},
+   adsurl = {http://adsabs.harvard.edu/abs/2012JCAP...03..004S},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2012PhRvD..85d3016B,
+   author = {{Bucher}, M. and {Carvalho}, C.~S. and {Moodley}, K. and {Remazeilles}, M.
+	},
+    title = "{CMB lensing reconstruction in real space}",
+  journal = {\prd},
+archivePrefix = "arXiv",
+   eprint = {1004.3285},
+ primaryClass = "astro-ph.CO",
+ keywords = {Background radiations},
+     year = 2012,
+    month = feb,
+   volume = 85,
+   number = 4,
+      eid = {043016},
+    pages = {043016},
+      doi = {10.1103/PhysRevD.85.043016},
+   adsurl = {http://adsabs.harvard.edu/abs/2012PhRvD..85d3016B},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2012arXiv1202.5804P,
+   author = {{Pen}, U.-L. and {Sheth}, R. and {Harnois-Deraps}, J. and {Chen}, X. and 
+	{Li}, Z.},
+    title = "{Cosmic Tides}",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {1202.5804},
+ primaryClass = "astro-ph.CO",
+ keywords = {Astrophysics - Cosmology and Extragalactic Astrophysics},
+     year = 2012,
+    month = feb,
+   adsurl = {http://adsabs.harvard.edu/abs/2012arXiv1202.5804P},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2011JCAP...10..031B,
+   author = {{Baldauf}, T. and {Seljak}, U. and {Senatore}, L. and {Zaldarriaga}, M.
+	},
+    title = "{Galaxy bias and non-linear structure formation in general relativity}",
+  journal = {\jcap},
+archivePrefix = "arXiv",
+   eprint = {1106.5507},
+     year = 2011,
+    month = oct,
+   volume = 10,
+      eid = {031},
+    pages = {031},
+      doi = {10.1088/1475-7516/2011/10/031},
+   adsurl = {http://adsabs.harvard.edu/abs/2011JCAP...10..031B},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2011MNRAS.415..383M,
+   author = {{Manera}, M. and {Gazta{\~n}aga}, E.},
+    title = "{The local bias model in the large-scale halo distribution}",
+  journal = {\mnras},
+archivePrefix = "arXiv",
+   eprint = {0912.0446},
+ keywords = {large-scale structure of Universe},
+     year = 2011,
+    month = jul,
+   volume = 415,
+    pages = {383-398},
+      doi = {10.1111/j.1365-2966.2011.18705.x},
+   adsurl = {http://adsabs.harvard.edu/abs/2011MNRAS.415..383M},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2010ApJ...724..878T,
+   author = {{Tinker}, J.~L. and {Robertson}, B.~E. and {Kravtsov}, A.~V. and 
+	{Klypin}, A. and {Warren}, M.~S. and {Yepes}, G. and {Gottl{\"o}ber}, S.
+	},
+    title = "{The Large-scale Bias of Dark Matter Halos: Numerical Calibration and Model Tests}",
+  journal = {\apj},
+archivePrefix = "arXiv",
+   eprint = {1001.3162},
+ keywords = {cosmology: theory, large-scale structure of universe, methods: numerical},
+     year = 2010,
+    month = dec,
+   volume = 724,
+    pages = {878-886},
+      doi = {10.1088/0004-637X/724/2/878},
+   adsurl = {http://adsabs.harvard.edu/abs/2010ApJ...724..878T},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2008MNRAS.388.1819L,
+   author = {{Lu}, T. and {Pen}, U.-L.},
+    title = "{Precision of diffuse 21-cm lensing}",
+  journal = {\mnras},
+archivePrefix = "arXiv",
+   eprint = {0710.1108},
+ keywords = {gravitational lensing , methods: N-body simulations , cosmology: observations , cosmology: theory , dark matter , large-scale structure of Universe},
+     year = 2008,
+    month = aug,
+   volume = 388,
+    pages = {1819-1830},
+      doi = {10.1111/j.1365-2966.2008.13524.x},
+   adsurl = {http://adsabs.harvard.edu/abs/2008MNRAS.388.1819L},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2004MNRAS.355..129S,
+   author = {{Seljak}, U. and {Warren}, M.~S.},
+    title = "{Large-scale bias and stochasticity of haloes and dark matter}",
+  journal = {\mnras},
+   eprint = {astro-ph/0403698},
+ keywords = {cosmology: theory, dark matter, large-scale structure of Universe},
+     year = 2004,
+    month = nov,
+   volume = 355,
+    pages = {129-136},
+      doi = {10.1111/j.1365-2966.2004.08297.x},
+   adsurl = {http://adsabs.harvard.edu/abs/2004MNRAS.355..129S},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2003ApJ...585...34M,
+   author = {{McDonald}, P.},
+    title = "{Toward a Measurement of the Cosmological Geometry at z \~{} 2: Predicting Ly{$\alpha$} Forest Correlation in Three Dimensions and the Potential of Future Data Sets}",
+  journal = {\apj},
+   eprint = {astro-ph/0108064},
+ keywords = {Cosmology: Theory, Galaxies: Intergalactic Medium, Cosmology: Large-Scale Structure of Universe, methods: N-body simulations, Galaxies: Quasars: Absorption Lines},
+     year = 2003,
+    month = mar,
+   volume = 585,
+    pages = {34-51},
+      doi = {10.1086/345945},
+   adsurl = {http://adsabs.harvard.edu/abs/2003ApJ...585...34M},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2001MNRAS.323....1S,
+   author = {{Sheth}, R.~K. and {Mo}, H.~J. and {Tormen}, G.},
+    title = "{Ellipsoidal collapse and an improved model for the number and spatial distribution of dark matter haloes}",
+  journal = {\mnras},
+   eprint = {astro-ph/9907024},
+ keywords = {GALAXIES: CLUSTERS: GENERAL, COSMOLOGY: THEORY, DARK MATTER},
+     year = 2001,
+    month = may,
+   volume = 323,
+    pages = {1-12},
+      doi = {10.1046/j.1365-8711.2001.04006.x},
+   adsurl = {http://adsabs.harvard.edu/abs/2001MNRAS.323....1S},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{1999MNRAS.308..119S,
+   author = {{Sheth}, R.~K. and {Tormen}, G.},
+    title = "{Large-scale bias and the peak background split}",
+  journal = {\mnras},
+   eprint = {astro-ph/9901122},
+     year = 1999,
+    month = sep,
+   volume = 308,
+    pages = {119-126},
+      doi = {10.1046/j.1365-8711.1999.02692.x},
+   adsurl = {http://adsabs.harvard.edu/abs/1999MNRAS.308..119S},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{1996MNRAS.282..347M,
+   author = {{Mo}, H.~J. and {White}, S.~D.~M.},
+    title = "{An analytic model for the spatial clustering of dark matter haloes}",
+  journal = {\mnras},
+   eprint = {astro-ph/9512127},
+ keywords = {METHODS: ANALYTICAL, GALAXIES: CLUSTERS: GENERAL, GALAXIES: FORMATION, COSMOLOGY: THEORY, DARK MATTER},
+     year = 1996,
+    month = sep,
+   volume = 282,
+    pages = {347-361},
+      doi = {10.1093/mnras/282.2.347},
+   adsurl = {http://adsabs.harvard.edu/abs/1996MNRAS.282..347M},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{1986ApJ...304...15B,
+   author = {{Bardeen}, J.~M. and {Bond}, J.~R. and {Kaiser}, N. and {Szalay}, A.~S.
+	},
+    title = "{The statistics of peaks of Gaussian random fields}",
+  journal = {\apj},
+ keywords = {Cosmology, Density Distribution, Galactic Clusters, Galactic Evolution, Random Processes, Statistical Analysis, Density (Number/Volume), Mass Distribution, Mass To Light Ratios, Maxima, Missing Mass (Astrophysics), Probability Distribution Functions, Red Shift, Statistical Correlation, Velocity Distribution},
+     year = 1986,
+    month = may,
+   volume = 304,
+    pages = {15-61},
+      doi = {10.1086/164143},
+   adsurl = {http://adsabs.harvard.edu/abs/1986ApJ...304...15B},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{1984ApJ...284L...9K,
+   author = {{Kaiser}, N.},
+    title = "{On the spatial correlations of Abell clusters}",
+  journal = {\apjl},
+ keywords = {Correlation, Cosmology, Galactic Clusters, Spatial Distribution, Astronomical Models, Density Distribution, Normal Density Functions},
+     year = 1984,
+    month = sep,
+   volume = 284,
+    pages = {L9-L12},
+      doi = {10.1086/184341},
+   adsurl = {http://adsabs.harvard.edu/abs/1984ApJ...284L...9K},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+

@@ -1,0 +1,311 @@
+%We have discussed the tidal reconstruction with local dark matter 
+%density field with 2D and 3D method \citep{2015:zhu}. 
+%In practice, however, we can only observe galaxies instead of dark matter
+% density fields. And the distribution of halo is a biased tracer of the
+%  underlying dark matter density. Therefore, the reconstruction in view of
+% halo is even more relevant to the observation.\\
+
+In this section we perform reconstruction in simulated halos fields,
+following almost the same process in the previous paper. 
+To better understand the discrepancy between reconstruction in dark matter and
+halos, we try to quantify the quality of halos as a tracer of dark matter
+first. And then, we also use the cross-correlation coefficient to 
+quantify the result of reconstruction and discuss the bias and noise of it.\\
+
+%==============================================================
+\subsection{Simulation}
+{\color{red}(*)}We run N-body simulations using the $\mathrm{CUBEP^3M}$ code with $2048^3$
+ dark matter particles in a box of side length $L=1.2\ \mathrm{Gpc}/h$.
+  We have
+ adopted the following set of cosmological parameter values:
+ $\Omega_{b}=0.049$, $\Omega_{c}=0.259$, $h=0.678$, 
+ $A_s=2.139\times 10^{-9}$ and $n_s=0.968$.
+ Ten runs with independent initial conditions were performed to provide
+  better statistics. In the following calculations we use outputs 
+  at $z=0$. \\
+\subsection{Properties of halos fields}
+In this subsection, we show the power spectra of simulated
+halos fields $P_{hh}$.
+ To understand better, we also show the bias (without shot noise) 
+ of halos field 
+$b(k)=P_{\delta h}(k)/P_{\delta\delta}(k)$, and the noise power 
+$P_n(k)/b^{2}(k)=P_{hh}(k)/b^2(k)-P_{\delta \delta}(k)$, 
+defined via the stochasticity between halos and the dark matter.
+%{\color{green}The inverse signal to noise ratio (N/S) to help us understand that
+%how much information we can obtain from different halo fields.}\\
+
+Here add some figure of halos. such as power, noise, bias and N/S.
+
+%============halos property==================================
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=0.48\textwidth]{../../eps/Sim_halo_property_bias.eps}
+\end{center}
+%\vspace{-0.7cm}
+\caption{Top panel: the auto-power spectrum of halo fields. The 
+solid lines are the power spectrum of halo fields with number density of
+$0.0048\ h^{3}\mathrm{Mpc}^{-3}$, $0.0036\ h^{3}\mathrm{Mpc}^{-3}$, 
+$0.0024\ h^{3}\mathrm{Mpc}^{-3}$ and $0.0012\ h^{3}\mathrm{Mpc}^{-3}$,
+ respectively.
+The horizontal dot dash lines are corresponding shot noise $1/\bar{n}$ 
+for every halo fields. Here $\bar{n}$ is the number density.
+The black dashed line is the power
+spectrum of dark matter field.
+Bottom panel: same as the top panel, but the colored solid lines are the 
+matter-halo cross power spectrum.}
+\label{fig:Sim_bias}
+\end{figure}
+
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=0.48\textwidth]{../../eps/Sim_halo_property_PS.eps}
+\end{center}
+%\vspace{-0.7cm}
+\caption{Top panel: the auto-power spectrum of halo fields. The 
+solid lines are the power spectrum of halo fields with number density of
+$0.0048\ h^{3}\mathrm{Mpc}^{-3}$, $0.0036\ h^{3}\mathrm{Mpc}^{-3}$, 
+$0.0024\ h^{3}\mathrm{Mpc}^{-3}$ and $0.0012\ h^{3}\mathrm{Mpc}^{-3}$,
+ respectively.
+The horizontal dot dash lines are corresponding shot noise $1/\bar{n}$ 
+for every halo fields. Here $\bar{n}$ is the number density.
+The black dashed line is the power
+spectrum of dark matter field.
+Bottom panel: same as the top panel, but the colored solid lines are the 
+matter-halo cross power spectrum.}
+\label{fig:Sim_PS}
+\end{figure}
+
+
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=0.48\textwidth]{../../eps/Sim_halo_property_Pn.eps}
+\end{center}
+%\vspace{-0.7cm}
+\caption{Top panel: the auto-power spectrum of halo fields. The 
+solid lines are the power spectrum of halo fields with number density of
+$0.0048\ h^{3}\mathrm{Mpc}^{-3}$, $0.0036\ h^{3}\mathrm{Mpc}^{-3}$, 
+$0.0024\ h^{3}\mathrm{Mpc}^{-3}$ and $0.0012\ h^{3}\mathrm{Mpc}^{-3}$,
+ respectively.
+The horizontal dot dash lines are corresponding shot noise $1/\bar{n}$ 
+for every halo fields. Here $\bar{n}$ is the number density.
+The black dashed line is the power
+spectrum of dark matter field.
+Bottom panel: same as the top panel, but the colored solid lines are the 
+matter-halo cross power spectrum.}
+\label{fig:Sim_Pn}
+\end{figure}
+%==============================================================
+%\begin{figure}[tbp]
+%\begin{center}
+%\includegraphics[width=0.48\textwidth]{../../eps/Sim_bias_errorbar.eps}
+%\end{center}
+%%\vspace{-0.7cm}
+%\caption{Bias of simulated halo fields. Here we define the bias as 
+%$b=\frac{P_{\delta h}}{P_{\delta}}$ and obtain a constant bias by
+%averaging the first 6 $k$-bins where $k<0.04\ h/\mathrm{Mpc}$. The constant
+%bias is $1.1137$, $0.9704$, $0.8986$ and $0.8456$ for the halo fields with
+%number density 
+%$0.0012\ (h/\mathrm{Mpc})^3$, $0.0024\ (h/\mathrm{Mpc})^3$, 
+%$0.0036\ (h/\mathrm{Mpc})^3$ and $0.0048\ (h/\mathrm{Mpc})^3$, respectively.}
+%\label{fig:Sim_bias}
+%\end{figure}
+%==============================================================
+%\begin{figure}[tbp]
+%\begin{center}
+%\includegraphics[width=0.48\textwidth]{../../eps/Sim_Pn_errorbar.eps}
+%\includegraphics[width=0.48\textwidth]{../../eps/Sim_noise_errorbar.eps}
+%\end{center}
+%%\vspace{-0.7cm}
+%\caption{Noise of halo fields for $4$ number density. The top panel we show
+%$P_{h}-b^2P_{\delta}$, here $b$ is the $k$-dependent bias 
+%$P_{\delta h}/P_{h}$. The correlative horizontal dot dash lines are the 
+%shot noise $1/\bar{n}$ of different number density field.
+%The bottom panel is inverse signal to noise ratio 
+%$(P_{h}-b^2P_{\delta})/b^2P_{\delta}$.}
+%\label{fig:Sim_noise}
+%\end{figure}
+%==============================================================
+%copyed from zhu,maybe add something by YuYu.
+%==============================================================
+\subsection{Performance of reconstruction }
+The performance of reconstruction we mainly follow our previous works \citep{2012:pen,2015:zhu}. However, there are some changes because
+of the difference between the dark matter and halo fields. The algorithm
+of the reconstruction in view of halo is as follows.\\
+%============================================
+(i). Convolving the halo density field with a wiener filter $W$ defined as 
+\begin{equation}
+%W(\mathbf{k})=\frac{b^2P_{\delta}(\mathbf{k})}{P_{h}(\mathbf{k})+1/\bar{n}},
+W(k)=\frac{P_{\delta}(k)}{(P_{h}(k)+1/\bar{n})/b^2},
+\label{eq:nbar_filter}
+\end{equation}
+where $P_{h}$, $P_{\delta}$ and $\bar{n}$ are the auto-power spectrum of 
+halo and 
+dark matter fields and the number density of the halo filed. The bias
+factor $b$ is a $k$-independent bias and here we calculate it by
+averaging the bias in the first six $k$-bins where $k<0.04\ h/\mathrm{Mpc}$.\\
+ Here, the top
+we use $b^2P_{\delta}$ instead of $P_{h}$ because we consider the signal
+is the dark matter density field not the halo field, although we use the halo
+ field trace the dark matter density field. After applied 
+ Eq. \eqref{eq:nbar_filter}, we
+ suppress the noise in halo field (both the shot noise {\color{black} and} ).  
+Then we obtain the filtered halo density field $\tilde{\delta}_{h}$.\\
+%============================================
+(ii). Applying a Gaussian smoothing kernel to smooth filtered halo 
+density field:
+\begin{equation}
+\bar{\delta}(\mathbf{x})=\int d^{3}x'\mathbf{S}(\mathbf{x}-\mathbf{x}')\delta	(\mathbf{x}'),
+\label{equ:smooth kernel}
+\end{equation}
+where $\mathbf{S}(r)=\mathrm{e}^{-r^{2}/2R^{2}}$. Here, we calculated a lots
+of different smoothing scale and find we can obtain the optimal 
+reconstruction result with the smoothing scale of $R=1.0\mathrm{Mpc}/h$. 
+So we select $R=1.0\ \mathrm{Mpc}/h$
+as the smoothing scale in this paper. By this step, we get a smoothed
+field $\tilde{\delta}_{h}$ as matter density field which will be used in 
+later reconstruction and which is suppressed the vary small-scale 
+fluctuations.\\
+%============================================
+(iii). Then, we convolve the filtered and smoothed density field 
+$\tilde{\delta}_{h}$ and calculate $\gamma_1$, $\gamma_2$, $\gamma_x$,
+$\gamma_y$, $\gamma_z$, by 
+Eq. \eqref{equ:gamma}\eqref{equ:w}\eqref{equ:Q}. And from
+Eq. \eqref{equ:kappa3D} we obtain 3D convergence field 
+$\kappa_{3D}(\mathbf{k})$.\\
+%============================================
+(iv). To calculate $b(k_{\perp},k_{\parallel})$ and
+ $W(k_{\perp},k_{\parallel})$ to correct the estimated $\kappa_{3D}$, we 
+ estimate the power spectrum $P_{\kappa_{3D}}$ and $P_{\kappa_{3D}\delta}$ use 
+ these ten simulations. Then we obtain the reconstructed 
+ $\hat{\kappa(\mathbf{k})}$ from Eq. (\ref{eq: kappa}).\\
+ 
+ In this paper, we remove the step of Gaussianization in our reconstruction.
+ This is because there are not such huge fluctuations in halos fields 
+ compare to dark matter density fields. We applied Gaussianization smoothing
+ kernel in reconstruction with dark matter density field to avoid the effect
+ because of the huge small-scale fluctuations. However, in halo fields 
+ reconstruction, we obtain a batter result without Gaussianization.\\
+ %==============================================================
+\subsection{Result}
+In this subsection, we show the correlation coefficient, bias and noise of 
+reconstruction.\\
+
+The correlation coefficient we defined as 
+\begin{equation}
+r(k)=\frac{P_{\delta\kappa}(k)}{\sqrt{P_{\delta \delta}(k)P_{\kappa \kappa}(k)}},
+\label{equ:r}
+\end{equation}
+and the bias factor is 
+\begin{equation}
+b(k)=\frac{P_{\delta \kappa}(k)}{P_{\delta \delta}(k)}
+\label{equ:bias}
+\end{equation}
+
+%==============================================================
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=0.48\textwidth]{../../eps/recon_PS_errorbar.eps}
+\end{center}
+%\vspace{-0.7cm}
+\caption{Auto-power spectrum of dark matter, halo and reconstructed $\kappa$ 
+fields and cross-power spectrum of matter-halo and matter-kappa, 
+respectively. Here the  number density of halo fields is 
+$0.0024\ h^{3}\mathrm{Mpc}^{-3}$ and the smoothing scale is
+ $R=1.0\ \mathrm{Mpc}/h$.}
+\label{fig:recon_PS}
+\end{figure}
+%==============================================================
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=0.48\textwidth]{../../eps/CC_ND_S1.0.eps}
+\end{center}
+%\vspace{-0.7cm}
+\caption{Correlation coefficient of reconstructed tidal field $\kappa$
+and dark matter density field $\delta$ (Eq. \eqref{equ:r}). 
+Here we choose the number density 
+of halos fields as
+ $0.0012\ h^{3}\mathrm{Mpc}^{-3}$, $0.0024\ h^{3}\mathrm{Mpc}^{-3}$, 
+$0.0036\ h^{3}\mathrm{Mpc}^{-3}$ and $0.0048\ h^{3}\mathrm{Mpc}^{-3}$ 
+and apply
+a smoothing kernel with $R=1.0\ \mathrm{Mpc}/h$ 
+(Eq. \eqref{equ:smooth kernel}).
+We also plot the correlation coefficient of the reconstructed field
+from halo fields with number density of $0.0003\ h^{3}\mathrm{Mpc}^{-3}$,
+ which is 
+the average number density of BOSS.}
+\label{fig:recon_CC}
+\end{figure}
+%=============bias correcting ==============================
+In Fig. \ref{fig:recon_bias}, we show the bias of reconstruction.
+To quantify the bias of our reconstruction by Eq. \eqref{equ:bias}, we need
+to calculate the $Q$ factor in Eq. \eqref{equ:Q} and correct the bias of 
+halos and matter fields $b_h=P_{\delta h}/P_{\delta \delta}$.\\%(see \eqref{fig:Sim_bias}).\\
+
+Because of the smoothing kernel we used in Eq. \eqref{equ:smooth kernel}, 
+the $Q$ factor becomes:
+\begin{equation}
+Q=\int \frac{2k^{2}dk}{15\pi^{2}}W^{2}(k)S^2(k)f^{2}(k),
+\label{equ:Q2}
+\end{equation}
+where $S(k)$ is the smoothing kernel in $k$ space and $W(k)$ is the 
+wiener filter in Eq. \eqref{eq:nbar_filter}. Here, we solve the $Q$ factor
+by a interval from the smallest $k$ to the Nyquist frequency  
+in our cube of simulation.\\
+Then we can obtain the bias of reconstruction
+\begin{equation}
+b_{\mathrm{rec}}=\frac{P_{\kappa_{\mathrm{3D}}\delta}}{P_{\delta \delta}} 
+\frac{1}{b_{0}^{2}Q},
+\label{equ:b_recon}
+\end{equation}
+here, $b_{0}$ is the $k$-independent bias of simulated halo fields. \\
+
+%==============================================================
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=0.48\textwidth]{../../eps/recon_bias_errorbar.eps}
+\end{center}
+\vspace{-0.7cm}
+\caption{Bias factor $b(k)$ of reconstructed $\kappa$ field from different
+ number density halo fields (Eq. \eqref{equ:bias}). 
+ Here we correct the bias by 
+ Eq. \eqref{equ:b_recon} and get the constant bias of reconstruction as 
+ $0.795$, $0.725$, $0.640$ and $0.497$ for reconstructed $\kappa$ fields
+ from $0.0048\ h^{3}\mathrm{Mpc}^{-3}$, $0.0036\ h^{3}\mathrm{Mpc}^{-3}$, 
+$0.0024\ h^{3}\mathrm{Mpc}^{-3}$ and $0.0012\ h^{3}\mathrm{Mpc}^{-3}$,
+ respectively.
+Here, the constant bias is obtained by averaging 
+the bias of the first 6 $k$-bins.}
+\label{fig:recon_bias}
+\end{figure}
+%==============================================================
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=0.48\textwidth]{../../eps/recon_Pn_b2-1D.eps}
+\end{center}
+\vspace{-0.7cm}
+\caption{The noise spectrum of reconstruction. Here we define the noise 
+spectrum as $P_{n}(k)=P_{\kappa}(k)/b^2(k)-P_{\delta}(k)$ and the bias 
+$b(k)=P_{\kappa \delta}(k)/P_{\delta \delta}(k)$ is a $k$-dependent bias. 
+Four colored solid lines are 
+corresponding different number density of halos fields.}
+\label{fig:recon_noise}
+\end{figure}
+%==============================================================
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=0.48\textwidth]{../../eps/recon_CC_2D.eps}
+\includegraphics[width=0.48\textwidth]{../../eps/recon_bias_2D.eps}
+\includegraphics[width=0.48\textwidth]{../../eps/recon_noise_b2Pd_2D.eps}
+\end{center}
+\vspace{-0.7cm}
+\caption{We plot the 2D correlation coefficient, bias factor and noise 
+of reconstructed $\kappa$ field from top to bottom, respectively. Here the 
+definition of correlation coefficient and bias factor are same with
+Fig. \ref{fig:recon_CC} and Fig. \ref{fig:recon_bias}, and the noise 
+ in the bottom panel is defined as
+ $(P_{\kappa}-b^2P_{\delta})/b^2P_{\delta}$. All three panels are
+  reconstructed
+ from halo fields with number density of $0.0024\ h^{3}\mathrm{Mpc}^{-3}$.
+   }
+\label{fig:recon_2D}
+\end{figure}

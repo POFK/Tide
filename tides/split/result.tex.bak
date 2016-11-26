@@ -1,0 +1,235 @@
+\subsection{Result}
+In this subsection, we introduce the result of reconstruction by
+showing the power spectra, the correlation coefficient, the bias 
+and the noise of reconstructed density field $\kappa$.\\
+
+Here, the correlation coefficient of reconstructed density field
+ $\kappa$ and dark matter density field defined as 
+\begin{equation}
+r_{\mathrm{r}}(k)=\frac{P_{\kappa\delta}(k)}{\sqrt{P_{\delta \delta}(k)P_{\kappa \kappa}(k)}},
+\label{equ:r}
+\end{equation}
+the bias factor  
+\begin{equation}
+b_{\mathrm{r}}(k)=\frac{P_{\kappa\delta}(k)}{P_{\delta \delta}(k)},
+\label{equ:bias_kappa}
+\end{equation}
+and the noise
+\begin{equation}
+\tilde{P}_{n}(k)=P_{\kappa\kappa}(k)-b^2_{\mathrm{r}}(k)P_{\delta \delta}(k).
+\label{equ:noise_kappa}
+\end{equation}
+
+%=================reconstruction result ================================
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=0.48\textwidth]{../../eps/recon_PS_err.eps}
+\end{center}
+%\vspace{-0.7cm}
+\caption{Auto-power spectrum of dark matter, halo and reconstructed $\kappa$ 
+fields and cross-power spectrum of matter-halo and matter-kappa, 
+respectively. Here the  number density of halo fields is 
+$0.0024\ h^{3}\mathrm{Mpc}^{-3}$ and the smoothing scale is
+ $R=1.0\ \mathrm{Mpc}/h$.}
+\label{fig:recon_PS}
+\end{figure}
+%==============
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=0.48\textwidth]{../../eps/recon_CC_err.eps}
+\end{center}
+%\vspace{-0.7cm}
+\caption{Correlation coefficient of reconstructed convergence
+density field $\kappa$ and dark matter density field $\delta$ (Eq. \eqref{equ:r}). 
+Here we choose the number density 
+of halos fields as
+ $0.0012\ h^{3}\mathrm{Mpc}^{-3}$, $0.0024\ h^{3}\mathrm{Mpc}^{-3}$ 
+and $0.0048\ h^{3}\mathrm{Mpc}^{-3}$ and apply
+a smoothing kernel with $R=1.0\ \mathrm{Mpc}/h$ 
+(Eq. \eqref{equ:smooth kernel}).
+We also plot the correlation coefficient of the reconstructed field
+from halo fields with number density of $0.0003\ h^{3}\mathrm{Mpc}^{-3}$,
+ which is 
+the average number density of BOSS.}
+\label{fig:recon_CC}
+\end{figure}
+%===========================================================
+In Fig. \ref{fig:recon_PS}, we show the auto-correlation power spectra
+ of reconstructed kappa and dark matter density field and the 
+kappa-matter cross power spectrum is also plotted.
+  Here, we reconstruct with halos number density as 
+  $0.0024\ h^{3}\mathrm{Mpc}^{-3}$ and the subscript 
+$\kappa$ is the reconstructed large-scale density field 
+$\hat{\kappa}$ which has corrected bias and convolved Wiener filter 
+by Eq. \ref{eq:kappa}, the $\delta$ indicates the 
+original dark matter density field.
+The high errors on the first two $k$ bins is because of the sample variance.
+And we find on large scales ($k<0.1 h/\mathrm{Mpc}$), $P_{\delta \kappa}$ and 
+$P_{\kappa \kappa}$ almost have the same shape with $P_{\delta \delta}$. 
+Then the power of $P_{\delta \kappa}$ and $P_{\kappa \kappa}$ drop quickly.
+The almost coincidence of $P_{\delta \kappa}$ and $P_{\kappa \kappa}$ here
+is because of the Wiener filter in Eq. \ref{eq:kappa}.
+%==============
+
+In Fig. \ref{fig:recon_CC}, we show the 
+correlation coefficients (see Eq. \eqref{equ:r})
+of reconstructed density field $\kappa$
+and dark matter density field $\delta$ . 
+Here we choose the number density of halos fields as
+ $0.0012\ h^{3}\mathrm{Mpc}^{-3}$, $0.0024\ h^{3}\mathrm{Mpc}^{-3}$ 
+and $0.0048\ h^{3}\mathrm{Mpc}^{-3}$ 
+(here, the Fig. \ref{fig:recon_PS} is corresponding to the green 
+dash-dotted line)
+and apply a smoothing kernel with $R=1.0\ \mathrm{Mpc}/h$ 
+(Eq. \eqref{equ:smooth kernel}).
+We also plot the correlation coefficient of the reconstruction
+from halos fields with number density of $0.0003\ h^{3}\mathrm{Mpc}^{-3}$,
+ which is the average number density of BOSS{\color{red} cite here}.
+ For the highest number-density ($0.0048\ h^{3}\mathrm{Mpc}^{-3}$)
+  reconstruction, the correlation coefficient $r_{\mathrm{r}}$ 
+  is larger than $0.9$ in almost all $k<0.1\ h/\mathrm{Mpc}$.
+  What's more, even for the $0.0003\ h^{3}\mathrm{Mpc}^{-3}$ number-density
+  halos, the reconstruction can also obtain a result of $r_{\mathrm{r}}>0.5$
+  in nearly all $k<0.1\ h/\mathrm{Mpc}$.
+  Obviously, lower number-density halos means less information about dark
+  matter and lead to the loss of correlation coefficient. And the errors
+  also increase with the dropping of halos number density.
+  {\color{red} should mention the number density of MGS here?}
+%=============High-pass filter ==========================
+
+
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=0.48\textwidth]{../../eps/recon_cut0.1_PS_err.eps}
+\includegraphics[width=0.48\textwidth]{../../eps/recon_cut0.1_CC_err.eps}
+\end{center}
+%\vspace{-0.7cm}
+\caption{ For high-pass filtered test.}
+\label{fig:recon_cut}
+\end{figure}
+%================
+The cosmic tidal reconstruction recover the information lies at small
+scales and the long wavelength modes contribute little
+ \citep{2012PhRvD..85d3016B,2016PhRvD..93j3504Z}. So if we apply a 
+high-pass filter to remove the large-scale modes (here, we remove the modes
+where $k<0.1\ h/\mathrm{Mpc}$) of halos fields in Fourier space, the 
+reconstruction of high-pass filtered halos fields should only lose little.
+In Fig. \ref{fig:recon_cut}, on the top panel: we plot the 
+with and without high-pass filtered halos power spectra 
+$P^{k>0.1}_{hh}$ and $P_{hh}$, respectively. And the power spectrum of 
+reconstructed density fields from high-pass filtered halos fields
+ $P_{\kappa\kappa}^{k>0.1}$ is shown in green dotted line. Here,
+ the $P_{\delta\delta}$ (the black thin solid line)
+  is the power of original dark matter density fields.
+ All the power spectrum is divided by the square of bias factor
+ between dark matter to compare together.
+ We see only with the small-scale density fluctuation 
+ (the red thick solid line) can we reconstruct the large scale density
+ field (the green dotted line). Here, the first point of $P^{k>0.1}_{hh}$
+ is because this $k$-bin includes modes both which are removed by 
+ high-pass filter and which are not removed.
+ On the bottom panel: the $r^{\mathrm{all}}$ and $r^{k>0.1}$ indicate 
+ the correlation coefficients of dark matter and reconstructed density field
+ by halos and high-pass filtered halos fields, respectively.
+We find even reconstruct without the large-scale 
+($k<0.1\ h/\mathrm{Mpc}$) modes of halos can also obtain a result as good 
+as we do with all $k$ modes. It matches the discussion 
+previous.\\
+
+%===========================================================
+%==the bias of halos, k-dependent of k-independent is put in discussion!==
+%=============bias correcting ==============================
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=0.48\textwidth]{../../eps/recon_bias_err.eps}
+\end{center}
+\vspace{-0.7cm}
+\caption{Bias factor $b(k)$ of reconstructed $\kappa$ field from different
+ number density halo fields (Eq. \eqref{equ:bias}). 
+ Here we correct the bias by 
+ Eq. \eqref{equ:b_recon} and get the constant bias of reconstruction as 
+ $4.66$, $4.06$ and $3.19$ for reconstructed $\kappa$ fields
+ from $0.0048\ h^{3}\mathrm{Mpc}^{-3}$, 
+$0.0024\ h^{3}\mathrm{Mpc}^{-3}$ and $0.0012\ h^{3}\mathrm{Mpc}^{-3}$,
+ respectively.
+Here, the constant bias is obtained by averaging 
+the bias of the first 6 $k$-bins.}
+\label{fig:recon_bias}
+\end{figure}
+%==============================================================
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=0.48\textwidth]{../../eps/recon_Pn_err.eps}
+\end{center}
+\vspace{-0.7cm}
+\caption{The noise spectrum of reconstruction. Here we define the noise 
+spectrum as $P_{n}(k)=P_{\kappa}(k)/b^2(k)-P_{\delta}(k)$ and the bias 
+$b(k)=P_{\kappa \delta}(k)/P_{\delta \delta}(k)$ is a $k$-dependent bias. 
+Four colored solid lines are 
+corresponding different number density of halos fields.}
+\label{fig:recon_noise}
+\end{figure}
+%==============================================================
+\subsection{bias and noise}
+As in \ref{property_h}, we analyse the result of reconstruction by the bias 
+factor (defined in Eq. \ref{equ:bias_kappa}) and the noise
+ (defined in Eq. \ref{equ:noise_kappa}) of reconstructed density fields.\\
+
+Fortunately, in halos view, it is not necessary to take the 
+effect of Gaussianization into account and we can try to
+quantify the bias because of the estimator. When we calculate the 
+bias, the Wiener filter and the Gaussian smoothing kernel should be 
+involved in $Q$ factor (in Eq. \eqref{equ:Q}) and the bias because of halos
+ and dark matter $b_{h}$ (see Fig. \ref{fig:Sim_bias})
+  also need to be corrected.
+
+Because of the smoothing kernel we used in Eq. \eqref{equ:smooth kernel}
+and the Wiener filter in Eq. \eqref{eq:nbar_filter}, 
+the $Q$ factor becomes:
+\begin{equation}
+Q=\int \frac{2k^{2}dk}{15\pi^{2}}W_{h}^{2}(k)S^2(k)f^{2}(k),
+\label{equ:Q2}
+\end{equation}
+Here, we solve the $Q$ factor
+by integrating from the fundamental frequency to the Nyquist frequency  
+in the box of simulations.\\
+Then the Eq. \eqref{equ:bias_kappa} becomes
+\begin{equation}
+b_{\mathrm{r}}=\frac{P_{\kappa\delta}}{P_{\delta \delta}} 
+\frac{1}{b_{h}^{2}Q}.
+\label{equ:b_recon}
+\end{equation}
+
+
+In Fig. \ref{fig:recon_bias}, we show the isotropic bias factor 
+$b_{\mathrm{r}}$ of reconstructed density fields from three different 
+number-density halos fields.
+The dashed, the dash-dotted and the dotted line is corresponding to the 
+number density of $0.0012\ h^{3}\mathrm{Mpc}^{-3}$,
+ $0.0024\ h^{3}\mathrm{Mpc}^{-3}$ and $0.0048\ h^{3}\mathrm{Mpc}^{-3}$,
+ respectively. In these number density, the bias of reconstruction is 
+ about $3 \sim 5$ on large scales.
+ 
+ 
+The noise of reconstructed density field is plotted in 
+Fig. \ref{fig:recon_noise}.
+
+%==============================================================
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=0.48\textwidth]{../../eps/recon_CC_2D.eps}
+\includegraphics[width=0.48\textwidth]{../../eps/recon_bias_2D.eps}
+\includegraphics[width=0.48\textwidth]{../../eps/recon_noise_2D.eps}
+\end{center}
+\vspace{-0.7cm}
+\caption{We plot the 2D correlation coefficient, bias factor and noise 
+of reconstructed $\kappa$ field from top to bottom, respectively. Here the 
+definition of correlation coefficient and bias factor are same with
+Fig. \ref{fig:recon_CC} and Fig. \ref{fig:recon_bias}, and the noise 
+ in the bottom panel is defined as
+ $(P_{\kappa}-b^2P_{\delta})/b^2P_{\delta}$. All three panels are
+  reconstructed
+ from halo fields with number density of $0.0024\ h^{3}\mathrm{Mpc}^{-3}$.
+   }
+\label{fig:recon_2D}
+\end{figure}

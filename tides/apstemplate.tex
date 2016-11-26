@@ -22,10 +22,6 @@
 %  Add 'showpacs' option to make PACS codes appear
 %  Add 'showkeys' option to make keywords appear
 %=============================================================================
-%\documentclass[aps,prd,preprint,groupedaddress]{revtex4-1}
-%\documentclass[aps,prl,preprint,superscriptaddress]{revtex4-1}
-%\documentclass[aps,prd,reprint,groupedaddress]{revtex4-1}
-%\documentclass[aps,prd,twocolumn,groupedaddress]{revtex4-1}
 \documentclass[aps,prd,twocolumn,showpacs,superscriptaddress,groupedaddress,
 nofootinbib,floatfix]{revtex4}  % for review and submission
 %\documentclass[aps,prl,twocolumn,showpacs,superscriptaddress,groupedaddress,
@@ -51,10 +47,13 @@ nofootinbib,floatfix]{revtex4}  % for review and submission
 %\usepackage{amsmath,amssymb}   % for math
 %\usepackage{color}
 %% avoids incorrect hyphenation, added Nov/08 by SSR
-%\hyphenation{ALPGEN}
-%\hyphenation{EVTGEN}
-%\hyphenation{PYTHIA}
-\newcommand{\mnras}{Mon. Not. R. Astron. Soc.}
+\hyphenation{ALPGEN}
+\hyphenation{EVTGEN}
+\hyphenation{PYTHIA}
+\usepackage{aas_macros}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{verbatim}
 \newcommand{\mv}{\mathbf}
 \newcommand{\ii}{\mathrm{i}}
 %=============================================================================
@@ -198,8 +197,15 @@ nofootinbib,floatfix]{revtex4}  % for review and submission
 
 \section{\label{sec:performance}Performance of reconstruction}
 \input{./split/performance}
-\section{\label{sec:cross_term}The cross term of $\gamma$}
-\input{./split/last}
+\input{./split/result}
+%\section{\label{sec:cross_term}The cross term of $\gamma$}
+%\input{./split/last}
+
+\section{\label{sec:discussion}Discussion}
+%discuss: if we know all the halos and its mass, we can use the halos field 
+%recover dark matter exactly. Different number-density halos mean different
+%number of information about dark matter. And because we use the halos counts,
+%without the mass information, another problem will be involve. so ...
 %=============================================================================
 % If you have acknowledgments, this puts in the proper section head.
 %\begin{acknowledgments}
@@ -207,8 +213,9 @@ nofootinbib,floatfix]{revtex4}  % for review and submission
 %\end{acknowledgments}
 
 % Create the reference section using BibTeX:
-\bibliography{./tides.bib}
 \bibliographystyle{apsrev}
+\bibliography{./tides_201609.bib}
+%\bibliography{./tides.bib}
 \end{document}
 %
 % ****** End of file apstemplate.tex ******

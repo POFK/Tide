@@ -3,7 +3,7 @@ By measuring large-scale structure we can attempt to
 find the answers to such fundamental questions as what the initial
 conditions of the Universe are and what its future will be.
 {\color{red}There have been a lot of efforts in measuring the large-scale
-structure of our Universe (e.g. SDSS, something about DR12).} 
+structure of our Universe (e.g. SDSS,).} 
 However, the mode coupling because of nonlinear evolution 
 {\color{blue} (here add citation)} and many other observational
 problems {\color{red}(such as RSD)} make it difficult to extract cosmological information. 
@@ -45,10 +45,10 @@ of halos.
 Different with dark matter density field, reconstruction with halos field has
 many advantages. In the dark matter case, we need to take a logarithmic 
 transform or map the density fluctuations into a Gaussian distribution to
-Gaussianize the smoothed density field or suppress the high weights 
+gaussianize the smoothed density field or suppress the high weights 
 of the high density regions because of quadratic estimator
 \citep{2012arXiv1202.5804P,2016PhRvD..93j3504Z,tides3d:Hu}.
-However, for halo counts, there is not such problems. Without Gaussianization,
+However, for halo counts, there is not such problems. Without gaussianization,
 we can quantify the bias of reconstruction easier and get a simpler and 
 clearer physical picture, which we will discuss in \ref{sec:performance}. 
 Additionally, since most observed tracers of large-scale structure, 
@@ -56,21 +56,14 @@ such as galaxies, reside in halos, the statistics of halos determine
  galaxies on large scale. So the study of halos reconstruction is helpful
  for studying the reconstruction with galaxy surveys, 
  which we will study in the future.
- 
 %==================================================================
 % halo model and properties; biased tracer; what should we be cautious to in reconstruction.
-On large scales, the relation between halo and dark matter can be modeled by
-a bias factor $b(k)$ and numerous studies have been made about it
-\citep{1986ApJ...304...15B,1996MNRAS.282..347M,1999MNRAS.308..119S,2001MNRAS.323....1S,2004MNRAS.355..129S,2011MNRAS.415..383M,2010ApJ...724..878T,2011JCAP...10..031B,2016MNRAS.458.1510S}.
-As a biased tracer of dark matter, halos with different mass trace dark matter
-in different degrees. 
-{\color{blue}So can we get a better result in reconstruction by 
-dealing different halos with different ways is an interesting thing.}
-In addition, the shot noise, which due to the discrete sampling of halos,
-always assumed to the inverse of the number density $1/\bar{n}$, is another
- problem that should be solved. 
- Here, we apply a wiener filter to suppress the shot noise, which
- we will introduce later.\\
+
+Numerous attempts have been made to understand the relation between halos
+and dark matter distribution 
+\citep{1986ApJ...304...15B,1996MNRAS.282..347M,1999MNRAS.308..119S,2001MNRAS.323....1S,}
+Dark matter halos, as a biased tracer of dark matter, 
+of course, halos properties is more complicate, which need more carefully.
 %==================================================================
 
 % The relationinvestigate
@@ -112,23 +105,23 @@ always assumed to the inverse of the number density $1/\bar{n}$, is another
 
 
 %  
-%The shot noise, which due to the discrete sampling of halos, is another
-% problem that should be solved. Generally speaking, we assume the shot
-% noise is the inverse of the number density $1/\bar{n}$. 
-% So for the dark matter
-% density field, the shot noise is too small to ignore. However, the 
-% influence of the shot noise limits the result of reconstruction in view of 
-% hales. Here, we apply a wiener filter to suppress the shot noise, which
-% we will introduce later.\\
+The shot noise, which due to the discrete sampling of halos, is another
+ problem that should be solved. Generally speaking, we assume the shot
+ noise is the inverse of the number density $1/\bar{n}$. 
+ So for the dark matter
+ density field, the shot noise is too small to ignore. However, the 
+ influence of the shot noise limits the result of reconstruction in view of 
+ hales. Here, we apply a wiener filter to suppress the shot noise, which
+ we will introduce later.\\
  
-%Galaxy survey has been one of the leading methods to measure the clustering
-%of dark matter. There have been a lot of efforts in developing optimal 
-%weighting in galaxy survey \citep{OW1,OW2,OW3,OW4,OW5}. It is difficult to 
-%get the mass information in galaxy survey. However we can apply a biased
-%weighting, that bias can be given by galaxy luminosity, to improve the 
-%signal to noise ratio of the halo fields. In this paper, we are not try to
-%find a optimal bias weighting, but the optimal weighting may be needed in
-%some case.\\
+Galaxy survey has been one of the leading methods to measure the clustering
+of dark matter. There have been a lot of efforts in developing optimal 
+weighting in galaxy survey \citep{OW1,OW2,OW3,OW4,OW5}. It is difficult to 
+get the mass information in galaxy survey. However we can apply a biased
+weighting, that bias can be given by galaxy luminosity, to improve the 
+signal to noise ratio of the halo fields. In this paper, we are not try to
+find a optimal bias weighting, but the optimal weighting may be needed in
+some case.\\
 
 (*)This paper is organized as follows. In Section \ref{sec:review}, 
 we review the

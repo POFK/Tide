@@ -52,3 +52,14 @@ and $\delta_{b}$ and reconstruct the $\kappa$ field.}
 halo field is $0.0024\ h^{3}\mathrm{Mpc}^{-3}$.}
 \label{fig:H_CC_24}
 \end{figure}
+
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=0.48\textwidth]{../../eps/mb_rand_CC_err.eps}
+\includegraphics[width=0.48\textwidth]{../../eps/mb_SV_CC_err.eps}
+\end{center}
+\vspace{-0.7cm}
+\caption{Identical to Fig. \ref{fig:H_CC}, but the number density of separated
+halo field is $0.0024\ h^{3}\mathrm{Mpc}^{-3}$.}
+\label{fig:H_C_24}
+\end{figure}

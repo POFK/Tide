@@ -3,47 +3,49 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: apstemplate.aux
 The style file: apsrev.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Database file #1: ./tides.bib.bib
+Database file #1: ./tides_201609.bib.bib
+Warning--I didn't find a database entry for "tides3d:Hu"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 10 entries,
+You've used 26 entries,
             3411 wiz_defined-function locations,
-            1227 strings with 11551 characters,
-and the built_in function-call counts, 7192 in all, are:
-= -- 389
-> -- 272
-< -- 36
-+ -- 224
-- -- 66
-* -- 1026
-:= -- 771
-add.period$ -- 10
-call.type$ -- 10
-change.case$ -- 40
-chr.to.int$ -- 10
-cite$ -- 10
-duplicate$ -- 658
-empty$ -- 593
-format.name$ -- 164
-if$ -- 1324
+            1343 strings with 14745 characters,
+and the built_in function-call counts, 18654 in all, are:
+= -- 1001
+> -- 716
+< -- 95
++ -- 592
+- -- 174
+* -- 2693
+:= -- 1983
+add.period$ -- 26
+call.type$ -- 26
+change.case$ -- 104
+chr.to.int$ -- 26
+cite$ -- 26
+duplicate$ -- 1734
+empty$ -- 1541
+format.name$ -- 430
+if$ -- 3428
 int.to.chr$ -- 1
-int.to.str$ -- 11
-missing$ -- 99
-newline$ -- 45
-num.names$ -- 30
-pop$ -- 177
+int.to.str$ -- 27
+missing$ -- 265
+newline$ -- 93
+num.names$ -- 78
+pop$ -- 448
 preamble$ -- 1
-purify$ -- 40
+purify$ -- 104
 quote$ -- 0
-skip$ -- 251
+skip$ -- 645
 stack$ -- 0
-substring$ -- 163
-swap$ -- 531
-text.length$ -- 33
+substring$ -- 374
+swap$ -- 1422
+text.length$ -- 87
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 60
+type$ -- 156
 warning$ -- 0
-while$ -- 25
+while$ -- 62
 width$ -- 0
-write$ -- 122
+write$ -- 296
+(There was 1 warning)
